@@ -24,7 +24,7 @@
   },
   "sections": [
     {
-      "type": "branding",
+      "type": "Branding",
       "text": "Logo, roundel, lightbox, menus, beer mats and signs.",
       "stats": [],
       "videos": [],
@@ -68,7 +68,7 @@
       "deck": []
     },
     {
-      "type": "marketing",
+      "type": "Marketing",
       "text": "Coming-soon posts, grand opening flyers, recruitment and A-frames for private hire.",
       "stats": [],
       "videos": [],
@@ -102,7 +102,7 @@
       "deck": []
     },
     {
-      "type": "concept",
+      "type": "Conceptualisation",
       "text": "Bar mockups and the Market Place wayfinding: entrance, corridor and stair graphics.",
       "stats": [],
       "videos": [],
@@ -131,7 +131,7 @@
       "deck": []
     },
     {
-      "type": "photo",
+      "type": "Photography & videography",
       "text": "The finished bar and basement.",
       "stats": [],
       "videos": [],

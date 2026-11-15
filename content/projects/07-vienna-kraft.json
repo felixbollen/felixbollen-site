@@ -24,7 +24,7 @@
   },
   "sections": [
     {
-      "type": "branding",
+      "type": "Branding",
       "text": "A Viennese sibling of the KRAFT mark and a family of named labels.",
       "stats": [],
       "videos": [],
@@ -63,7 +63,7 @@
       "deck": []
     },
     {
-      "type": "marketing",
+      "type": "Marketing",
       "text": "Loyalty cards, brewery parties and the Vienna Kraft Bier Fest: ticket shop, email, retargeting and PR.",
       "stats": [
         {
@@ -91,7 +91,7 @@
       "deck": []
     },
     {
-      "type": "concept",
+      "type": "Conceptualisation",
       "text": "Brewery renders and the finished brewhouse.",
       "stats": [],
       "videos": [],

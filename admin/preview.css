@@ -1,0 +1,20 @@
+body{margin:0}
+.pv{min-height:100vh;font-family:inherit}
+.pv-top{position:relative;height:56vh;overflow:hidden;background:#111}
+.pv-hero{width:100%;height:100%;object-fit:cover;display:block}
+.pv-title{position:absolute;left:24px;bottom:20px;color:#fff;text-shadow:0 2px 20px rgba(0,0,0,.5)}
+.pv-title h1,.pv-big{font-size:44px;font-weight:900;text-transform:uppercase;letter-spacing:-.04em;line-height:.95;margin:0 0 6px;white-space:pre-line}
+.pv-body{padding:28px 24px 80px}
+.pv-intro{font-size:22px;line-height:1.3;font-weight:300;max-width:720px}
+.pv-credit{opacity:.7;font-size:14px}
+.pv-meta dt{font-size:11px;letter-spacing:.15em;text-transform:uppercase;opacity:.6}.pv-meta dd{margin:4px 0 0}
+.pv-sec{border-top:1px solid currentColor;padding:20px 0;margin-top:10px}
+.pv-sec h3{font-size:24px;font-weight:900;text-transform:uppercase;margin:0 0 10px}
+.pv-gal{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:14px}
+.pv-gal figure{margin:0}.pv-gal figcaption{font-size:11px;opacity:.7;margin-top:4px}
+.pv-t{aspect-ratio:4/5;overflow:hidden;background:rgba(127,127,127,.15)}
+.pv-t img,.pv-t video{width:100%;height:100%;object-fit:cover}.pv-t.c img{object-fit:contain}
+.pv-deck{display:flex;gap:8px;overflow-x:auto;margin-top:12px}.pv-deck img{height:140px}
+.pv-block{margin-top:32px}
+.pv-step{display:grid;grid-template-columns:120px 1fr;gap:12px;align-items:center;margin-top:8px}.pv-step img{width:120px;height:80px;object-fit:cover}
+.pv-labs{display:grid;grid-template-columns:repeat(8,1fr);gap:6px;margin-top:8px}.pv-labs img{width:100%}

@@ -18,9 +18,22 @@ for f in glob.glob(os.path.join(ROOT, "admin", "*")): shutil.copy(f, OUT + "/adm
 HOME = json.load(open(os.path.join(ROOT, "content/home.json"), encoding="utf-8"))
 P = [json.load(open(f, encoding="utf-8")) for f in glob.glob(os.path.join(ROOT, "content/projects/*.json"))]
 P = [p for p in P if not p.get("hidden")]
+def slugify(t): return re.sub(r"[^a-z0-9]+", "-", t.lower().replace("&", "and")).strip("-")
+for p in P:
+    p["slug"] = p.get("slug") or slugify(p["name"])
+    p.setdefault("logo", ""); p.setdefault("background", "#ffffff"); p.setdefault("text_colour", "#0b0b0b"); p.setdefault("card", "#0b0b0b")
+    p["background"] = p["background"] or "#ffffff"; p["text_colour"] = p["text_colour"] or "#0b0b0b"; p["card"] = p["card"] or "#0b0b0b"
+    h = p.setdefault("hero", {}) or {}; p["hero"] = h
+    if not h.get("type"):
+        h["type"] = "video" if h.get("video") else "slides" if h.get("slides") else "vimeo" if h.get("vimeo_id") else "lottie" if h.get("animation") else "image"
+    if h["type"] == "image" and not h.get("image"):
+        imgs = [i["image"] for s in p.get("sections", []) for i in s.get("images", []) if i.get("image")]
+        h["image"] = imgs[0] if imgs else ""
 P.sort(key=lambda p: (float(p.get("order") or 99), p["name"]))
 
-SEC = {"branding": ("Branding", ""), "marketing": ("Marketing", ""), "pr": ("P.R.", ""), "concept": ("Conceptualisation", "Architecture & build"),
+SEC = {"Branding": ("Branding", ""), "Marketing": ("Marketing", ""), "P.R.": ("P.R.", ""), "Conceptualisation": ("Conceptualisation", "Architecture & build"),
+       "Website": ("Website", ""), "Photography & videography": ("Photography & videography", ""),
+       "branding": ("Branding", ""), "marketing": ("Marketing", ""), "pr": ("P.R.", ""), "concept": ("Conceptualisation", "Architecture & build"),
        "website": ("Website", ""), "photo": ("Photography & videography", "")}
 
 # ---------- logos ----------
@@ -31,12 +44,14 @@ def sym(path, sid):
     fr = re.search(r'fill-rule="(\w+)"', s); fr = fr.group(1) if fr else "nonzero"
     return vb, paths[0], f'<symbol id="{sid}" viewBox="{vb}">' + "".join(f'<path fill="currentColor" fill-rule="{fr}" d="{d}"/>' for d in paths) + "</symbol>"
 syms = []
-for k in sorted(set(p["logo"] for p in P)):
+for k in sorted(set(p["logo"] for p in P if p["logo"])):
     f = f"{ST}/l/{k}.mono.svg"
     if os.path.exists(f): syms.append(sym(f, "l-" + k)[2])
 fvb, fp, fs = sym(f"{ST}/l/fb-logo.svg", "fb"); syms.append(fs)
 SPRITE = '<svg width="0" height="0" style="position:absolute" aria-hidden="true">' + "".join(syms) + "</svg>"
-mono = lambda k, lab="": f'<svg viewBox="0 0 10 10" role="img" aria-label="{esc(lab)}"><use href="#l-{k}"/></svg>'
+HASLOGO = lambda k: bool(k) and os.path.exists(f"{ST}/l/{k}.mono.svg")
+HASCOL = lambda k: bool(k) and os.path.exists(f"{ST}/l/{k}-colour.webp")
+mono = lambda k, lab="": f'<svg viewBox="0 0 10 10" role="img" aria-label="{esc(lab)}"><use href="#l-{k}"/></svg>' if HASLOGO(k) else f'<span class="lgt">{esc(lab)}</span>'
 FBS = f'<svg viewBox="{fvb}" aria-hidden="true"><use href="#fb"/></svg>'
 EMAIL = HOME.get("email", "felixbollen@gmail.com")
 
@@ -77,7 +92,7 @@ def vfig(v):
 cards = []
 for i, p in enumerate(P):
     cards.append(f'''<a class="vc rv" href="/work/{p['slug']}/" style="--cb:{esc(p['card'])};--cf:{esc(p['text_colour'])};transition-delay:{(i%3)*70}ms"><span class="ix">{i+1:02d}</span>
-<div class="lg">{mono(p['logo'], p['name'])}<img class="col" src="/l/{p['logo']}-colour.webp" alt="" loading="lazy"></div><div class="meta"><b>{esc(p['name'])}</b><span>{esc(p['city'])}</span></div></a>''')
+<div class="lg">{mono(p['logo'], p['name'])}{f'<img class="col" src="/l/{p["logo"]}-colour.webp" alt="" loading="lazy">' if HASCOL(p["logo"]) else ""}</div><div class="meta"><b>{esc(p['name'])}</b><span>{esc(p['city'])}</span></div></a>''')
 disc = "".join(f'<div class="rv"><span class="lbl mute">{n+1:02d}</span><h3>{esc(d["title"])}</h3><p>{esc(d["text"])}</p><ul>{"".join(f"<li>{esc(x)}</li>" for x in d.get("items", []))}</ul></div>' for n, d in enumerate(HOME["disciplines"]))
 nums = "".join(f'<div><b>{esc(n["figure"])}</b><span>{esc(n["label"])}</span></div>' for n in HOME.get("numbers", []))
 also = "".join(f'<li><b>{esc(a["name"])}</b><span>{esc(a["text"])}</span><em>{esc(a.get("tag"))}</em></li>' for a in HOME.get("also", []))
@@ -174,7 +189,7 @@ for i, p in enumerate(P):
         secs.append(f'''<div class="sec5"><button type="button" aria-expanded="false"><span class="n">{n+1:02d}</span><h3>{esc(title)}{subh}</h3><span class="c">{(len(ims)+len(vids)) or ''}</span><span class="pm"></span></button>
 <div class="bd"><div><div class="in">{body}{dk}{gal}</div></div></div></div>''')
     meta = "".join(f'<div><dt>{a}</dt><dd>{esc(b)}</dd></div>' for a, b in [("Role", p.get("role")), ("Location", p.get("city")), ("Years", p.get("years") or "—"), ("Disciplines", ", ".join(p.get("disciplines", [])))])
-    nav = "".join(f'<a href="/work/{w["slug"]}/"{" class=cu aria-current=page" if w is p else ""} style="--cb:{esc(w["card"])}" aria-label="{esc(w["name"])}" title="{esc(w["name"])}"><img src="/l/{w["logo"]}-colour.webp" alt="{esc(w["name"])}" loading="lazy"></a>' for w in P)
+    nav = "".join(f'<a href="/work/{w["slug"]}/"{" class=cu aria-current=page" if w is p else ""} style="--cb:{esc(w["card"])}" aria-label="{esc(w["name"])}" title="{esc(w["name"])}">{f'<img src="/l/{w["logo"]}-colour.webp" alt="{esc(w["name"])}" loading="lazy">' if HASCOL(w["logo"]) else f'<span class="lgt">{esc(w["name"])}</span>'}</a>' for w in P)
     cr = f'<p class="cr">{esc(p["credit"])}</p>' if p.get("credit") else ""
     page = head(f"{p['name']}: Felix Bollen", f"{p['name']}, {p.get('kind')}, {p.get('city')}. {p.get('intro')}", f"/work/{p['slug']}/", og, style, extra) + header(ov=(ht != "lottie")) + f'''
 <main id="top">{hero}

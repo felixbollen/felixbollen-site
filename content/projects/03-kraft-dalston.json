@@ -107,7 +107,7 @@
   },
   "sections": [
     {
-      "type": "branding",
+      "type": "Branding",
       "text": "A 3D KRAFT roundel in pink, yellow and black, made for glasses, the DJ booth and merchandise.",
       "stats": [],
       "videos": [],
@@ -146,7 +146,7 @@
       "deck": []
     },
     {
-      "type": "marketing",
+      "type": "Marketing",
       "text": "Weekly deals, kitchen launches and seasonal campaigns, run against covers.",
       "stats": [
         {
@@ -184,7 +184,7 @@
       "deck": []
     },
     {
-      "type": "pr",
+      "type": "P.R.",
       "text": "Launch PR with 84 PR and Purple. I ran the press calendar and hosted the visits.",
       "stats": [
         {
@@ -209,7 +209,7 @@
       "deck": []
     },
     {
-      "type": "concept",
+      "type": "Conceptualisation",
       "text": "The bar, brewery and rooftop inside the hotel.",
       "stats": [],
       "videos": [],
@@ -243,7 +243,7 @@
       "deck": []
     },
     {
-      "type": "website",
+      "type": "Website",
       "text": "Website imagery.",
       "stats": [],
       "videos": [],
@@ -262,7 +262,7 @@
       "deck": []
     },
     {
-      "type": "photo",
+      "type": "Photography & videography",
       "text": "Food, drink and people.",
       "stats": [],
       "videos": [

@@ -25,7 +25,7 @@
   },
   "sections": [
     {
-      "type": "branding",
+      "type": "Branding",
       "text": "The name, a house-shaped mark carrying the VIE.1120 postcode, and a green, cream and orange system.",
       "stats": [],
       "videos": [],
@@ -59,7 +59,7 @@
       "deck": []
     },
     {
-      "type": "marketing",
+      "type": "Marketing",
       "text": "Construction-site party, opening, recruitment, newsletters and ads.",
       "stats": [
         {
@@ -101,7 +101,7 @@
       "deck": []
     },
     {
-      "type": "pr",
+      "type": "P.R.",
       "text": "Press in-house and with an agency, from first announcement to award.",
       "stats": [
         {
@@ -130,7 +130,7 @@
       "deck": []
     },
     {
-      "type": "concept",
+      "type": "Conceptualisation",
       "text": "The depot before, the concept and the hoardings.",
       "stats": [],
       "videos": [],
@@ -154,7 +154,7 @@
       "deck": []
     },
     {
-      "type": "website",
+      "type": "Website",
       "text": "gleisgarten.com.",
       "stats": [],
       "videos": [],

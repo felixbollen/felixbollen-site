@@ -15,6 +15,8 @@ logo_url: https://felixbollen.com/favicon.svg
 locale: en
 
 media_folder: static/media
+show_preview_links: true
+search: false
 public_folder: /media
 
 collections:
@@ -69,6 +71,7 @@ collections:
   - name: projects
     label: Projects
     label_singular: Project
+    description: "Click a project to edit it. Changes go live about a minute after you click Publish."
     folder: content/projects
     format: json
     extension: json
@@ -79,51 +82,99 @@ collections:
     summary: "{{order}}. {{name}}"
     sortable_fields: [order, name]
     fields:
-      - {name: order, label: "Order on the site (1 = first)", widget: number, value_type: int}
-      - {name: hidden, label: "Hide this project", widget: boolean, default: false, required: false}
-      - {name: name, label: Name, widget: string}
-      - {name: slug, label: "Web address (felixbollen.com/work/…)", widget: string, hint: "Lowercase, hyphens, no spaces"}
-      - {name: kind, label: "Type of venue", widget: string}
+      - {name: name, label: "Project name", widget: string}
+      - {name: kind, label: "What it is (e.g. Rooftop bar & brewery)", widget: string}
       - {name: city, label: City, widget: string}
       - {name: years, label: Years, widget: string, required: false}
       - {name: role, label: "My role", widget: string}
       - {name: disciplines, label: Disciplines, widget: select, multiple: true, options: ["Marketing & Sales", "Art Direction", "Graphic Design"]}
       - {name: intro, label: "Intro text", widget: text}
       - {name: credit, label: "Credit line (optional)", widget: text, required: false}
-      - {name: logo, label: "Logo key", widget: string, hint: "Uses /l/KEY.mono.svg and /l/KEY-colour.webp. Ask Claude to add a new logo."}
-      - {name: background, label: "Page background colour", widget: color}
-      - {name: text_colour, label: "Page text colour", widget: color}
-      - {name: tile, label: "Tile colour", widget: color, required: false}
-      - {name: card, label: "Logo card colour", widget: color}
       - name: hero
-        label: "Top of page (hero)"
+        label: "Top of the page"
         widget: object
-        collapsed: true
+        hint: "Add a video OR an image. A video wins if both are set."
         fields:
-          - {name: type, label: Type, widget: select, options: [video, image, slides, vimeo, lottie]}
-          - {name: video, label: "Video (MP4, for type video)", widget: file, required: false}
-          - {name: poster, label: "Video still image", widget: image, required: false}
-          - {name: image, label: "Image (for type image)", widget: image, required: false}
-          - {name: vimeo_id, label: "Vimeo ID (for type vimeo)", widget: string, required: false}
-          - {name: slides, label: "Slideshow images (for type slides)", widget: list, required: false, field: {name: image, label: Image, widget: image}}
-          - {name: spin_logo, label: "Spinning logo over slideshow", widget: image, required: false}
-          - {name: animation, label: "Lottie animation file", widget: file, required: false}
-      - {name: tv_heading, label: "TV clips heading", widget: text, required: false}
+          - {name: video, label: "Video (MP4, max ~20 MB)", widget: file, required: false}
+          - {name: poster, label: "Video still (shown while the video loads)", widget: image, required: false}
+          - {name: image, label: "Image", widget: image, required: false}
+          - {name: slides, label: "Slideshow (Kraft Dalston)", widget: list, required: false, collapsed: true, field: {name: image, label: Image, widget: image}}
+          - {name: type, widget: hidden}
+          - {name: vimeo_id, widget: hidden}
+          - {name: spin_logo, widget: hidden}
+          - {name: animation, widget: hidden}
+      - name: sections
+        label: "What I did"
+        label_singular: section
+        widget: list
+        collapsed: true
+        summary: "{{fields.type}}"
+        hint: "Drag sections to reorder them. Open one to edit text and gallery."
+        fields:
+          - {name: type, label: Section, widget: select, options: ["Branding", "Marketing", "P.R.", "Conceptualisation", "Website", "Photography & videography"]}
+          - {name: text, label: Text, widget: text}
+          - name: stats
+            label: "Big numbers (optional)"
+            label_singular: number
+            widget: list
+            required: false
+            collapsed: true
+            summary: "{{fields.figure}} {{fields.label}}"
+            fields:
+              - {name: figure, label: "Number (e.g. £3.6m)", widget: string}
+              - {name: label, label: "What it means", widget: string}
+          - name: images
+            label: "Gallery images"
+            label_singular: image
+            widget: list
+            required: false
+            collapsed: true
+            summary: "{{fields.caption}}"
+            hint: "Drag to reorder. Add image, then drag a file onto the upload box."
+            fields:
+              - {name: image, label: Image, widget: image}
+              - {name: caption, label: Caption, widget: string, required: false}
+              - {name: cutout, label: "Logo or cut-out (show whole image, no crop)", widget: boolean, default: false, required: false}
+          - name: videos
+            label: "Gallery videos"
+            label_singular: video
+            widget: list
+            required: false
+            collapsed: true
+            summary: "{{fields.caption}}"
+            fields:
+              - {name: video, label: "Video (MP4)", widget: file}
+              - {name: poster, label: "Still image", widget: image, required: false}
+              - {name: caption, label: Caption, widget: string, required: false}
+          - {name: deck_title, label: "Slide deck title (optional)", widget: string, required: false}
+          - name: deck
+            label: "Slide deck (optional)"
+            label_singular: slide
+            widget: list
+            required: false
+            collapsed: true
+            fields:
+              - {name: image, label: Slide, widget: image}
+              - {name: caption, label: Caption, widget: string, required: false}
+          - {name: title, widget: hidden}
+      - {name: tv_heading, label: "TV clips heading (German Kraft)", widget: text, required: false}
       - name: tv
-        label: "TV clips"
+        label: "TV clips (German Kraft)"
+        label_singular: clip
         widget: list
         required: false
         collapsed: true
-        summary: "{{fields.channel}} – {{fields.title}}"
+        summary: "{{fields.channel}}: {{fields.title}}"
         fields:
           - {name: video, label: "Video (MP4)", widget: file}
           - {name: poster, label: "Still image", widget: image}
           - {name: channel, label: Channel, widget: string}
           - {name: title, label: Title, widget: string}
-      - {name: labels_heading, label: "Labels heading ({n} = number of labels)", widget: text, required: false}
+      - {name: labels_heading, label: "Labels heading (German Kraft; {n} = number of labels)", widget: text, required: false}
       - {name: labels_text, label: "Labels text", widget: text, required: false}
       - name: labels
-        label: "Beer labels"
+        label: "Beer labels (German Kraft)"
+        label_singular: label
         widget: list
         required: false
         collapsed: true
@@ -131,10 +182,11 @@ collections:
         fields:
           - {name: image, label: Label, widget: image}
           - {name: name, label: "Name, style", widget: string}
-      - {name: bricks_heading, label: "Scroll story heading", widget: string, required: false}
-      - {name: bricks_counter, label: "Scroll story counter target (0 = hide)", widget: number, value_type: int, required: false}
+      - {name: bricks_heading, label: "Scroll story heading (Mayfair)", widget: string, required: false}
+      - {name: bricks_counter, label: "Scroll story counter (0 = hide)", widget: number, value_type: int, required: false}
       - name: bricks
-        label: "Scroll story steps"
+        label: "Scroll story steps (Mayfair)"
+        label_singular: step
         widget: list
         required: false
         collapsed: true
@@ -142,45 +194,11 @@ collections:
         fields:
           - {name: image, label: Image, widget: image}
           - {name: text, label: Text, widget: text}
-      - name: sections
-        label: "What I did (sections)"
-        widget: list
-        summary: "{{fields.type}}"
-        fields:
-          - {name: type, label: Section, widget: select, options: [{label: Branding, value: branding}, {label: Marketing, value: marketing}, {label: "P.R.", value: pr}, {label: Conceptualisation, value: concept}, {label: Website, value: website}, {label: "Photography & videography", value: photo}]}
-          - {name: title, label: "Custom title (optional)", widget: string, required: false}
-          - {name: text, label: Text, widget: text}
-          - name: stats
-            label: "Numbers"
-            widget: list
-            required: false
-            summary: "{{fields.figure}}"
-            fields:
-              - {name: figure, label: Figure, widget: string}
-              - {name: label, label: Label, widget: string}
-          - name: images
-            label: Gallery
-            widget: list
-            required: false
-            summary: "{{fields.caption}}"
-            fields:
-              - {name: image, label: Image, widget: image}
-              - {name: caption, label: Caption, widget: string, required: false}
-              - {name: cutout, label: "Show whole image (logos, cut-outs)", widget: boolean, default: false, required: false}
-          - name: videos
-            label: Videos
-            widget: list
-            required: false
-            summary: "{{fields.caption}}"
-            fields:
-              - {name: video, label: "Video (MP4)", widget: file}
-              - {name: poster, label: "Still image", widget: image, required: false}
-              - {name: caption, label: Caption, widget: string, required: false}
-          - {name: deck_title, label: "Slide deck title", widget: string, required: false}
-          - name: deck
-            label: "Slide deck"
-            widget: list
-            required: false
-            fields:
-              - {name: image, label: Slide, widget: image}
-              - {name: caption, label: Caption, widget: string, required: false}
+      - {name: order, label: "Position on the site (1 = first)", widget: number, value_type: int}
+      - {name: hidden, label: "Hide this project from the site", widget: boolean, default: false, required: false}
+      - {name: background, label: "Page colour", widget: color, default: "#ffffff"}
+      - {name: text_colour, label: "Text colour", widget: color, default: "#0b0b0b"}
+      - {name: card, label: "Logo card colour (homepage)", widget: color, default: "#0b0b0b"}
+      - {name: slug, widget: hidden}
+      - {name: logo, widget: hidden}
+      - {name: tile, widget: hidden}

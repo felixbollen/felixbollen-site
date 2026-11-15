@@ -1,0 +1,176 @@
+{
+  "order": 6,
+  "slug": "gleis-garten",
+  "name": "Gleis//Garten",
+  "kind": "Food hall & brewery",
+  "city": "Vienna",
+  "years": "2022–2026",
+  "role": "Founding Partner & CMO",
+  "disciplines": [
+    "Art Direction",
+    "Graphic Design",
+    "Marketing & Sales"
+  ],
+  "logo": "gg",
+  "background": "#0a220b",
+  "text_colour": "#f2ead7",
+  "tile": "#f2ead7",
+  "card": "#0a220b",
+  "intro": "Vienna's first food hall, in a historic tram depot in Meidling, with local food, two bars and a brewery.",
+  "credit": "",
+  "hero": {
+    "type": "vimeo",
+    "vimeo_id": "951693092",
+    "poster": "/v/gg.jpg"
+  },
+  "sections": [
+    {
+      "type": "branding",
+      "text": "The name, a house-shaped mark carrying the VIE.1120 postcode, and a green, cream and orange system.",
+      "stats": [],
+      "videos": [],
+      "images": [
+        {
+          "image": "/a/gg-brand-01.webp",
+          "caption": "Primary logo",
+          "cutout": false
+        },
+        {
+          "image": "/a/gg-brand-03.webp",
+          "caption": "Tram icon",
+          "cutout": true
+        },
+        {
+          "image": "/a/gg-brand-04.webp",
+          "caption": "Staff T-shirt",
+          "cutout": true
+        },
+        {
+          "image": "/a/gg-brand-05.webp",
+          "caption": "Gift card",
+          "cutout": true
+        },
+        {
+          "image": "/a/gg-brand-06.webp",
+          "caption": "Vendor signage",
+          "cutout": true
+        }
+      ],
+      "deck": []
+    },
+    {
+      "type": "marketing",
+      "text": "Construction-site party, opening, recruitment, newsletters and ads.",
+      "stats": [
+        {
+          "figure": "1,500 m²",
+          "label": "historic tram depot turned food hall"
+        },
+        {
+          "figure": "9",
+          "label": "local food concepts at opening"
+        },
+        {
+          "figure": "1,050",
+          "label": "capacity"
+        }
+      ],
+      "videos": [],
+      "images": [
+        {
+          "image": "/a/gg-mkt-01.webp",
+          "caption": "Falstaff ad: Local Hero",
+          "cutout": false
+        },
+        {
+          "image": "/a/gg-mkt-02.webp",
+          "caption": "Construction party invitation",
+          "cutout": false
+        },
+        {
+          "image": "/a/gg-mkt-03.webp",
+          "caption": "Recruitment poster",
+          "cutout": false
+        },
+        {
+          "image": "/a/gg-mkt-05.webp",
+          "caption": "Facade banner",
+          "cutout": true
+        }
+      ],
+      "deck": []
+    },
+    {
+      "type": "pr",
+      "text": "Press in-house and with an agency, from first announcement to award.",
+      "stats": [
+        {
+          "figure": "Bierlokal des Jahres",
+          "label": "Vienna 2024, Bier Guide"
+        },
+        {
+          "figure": "8+",
+          "label": "outlets, incl. ORF, Kurier, Der Standard, Falstaff"
+        }
+      ],
+      "videos": [
+        {
+          "video": "/v/tv-orf.mp4",
+          "poster": "/v/tv-orf.jpg",
+          "caption": "ORF feature"
+        }
+      ],
+      "images": [
+        {
+          "image": "/a/gg-pr-01.webp",
+          "caption": "Bier Guide 2024: Bierlokal des Jahres, Vienna",
+          "cutout": false
+        }
+      ],
+      "deck": []
+    },
+    {
+      "type": "concept",
+      "text": "The depot before, the concept and the hoardings.",
+      "stats": [],
+      "videos": [],
+      "images": [
+        {
+          "image": "/a/gg-concept-01.webp",
+          "caption": "Bird's-eye concept",
+          "cutout": false
+        },
+        {
+          "image": "/a/gg-concept-02.webp",
+          "caption": "The depot before",
+          "cutout": false
+        },
+        {
+          "image": "/a/gg-concept-04.webp",
+          "caption": "Blueprint hoarding",
+          "cutout": false
+        }
+      ],
+      "deck": []
+    },
+    {
+      "type": "website",
+      "text": "gleisgarten.com.",
+      "stats": [],
+      "videos": [],
+      "images": [
+        {
+          "image": "/a/gg-web-01.webp",
+          "caption": "Website: weekly events",
+          "cutout": false
+        },
+        {
+          "image": "/a/gg-web-02.webp",
+          "caption": "Homepage",
+          "cutout": false
+        }
+      ],
+      "deck": []
+    }
+  ]
+}

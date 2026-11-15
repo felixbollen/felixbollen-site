@@ -1,0 +1,113 @@
+{
+  "order": 7,
+  "slug": "vienna-kraft",
+  "name": "Vienna Kraft",
+  "kind": "Brewery & beer festival",
+  "city": "Vienna",
+  "years": "2022–2026",
+  "role": "Co-founder & marketing lead",
+  "disciplines": [
+    "Graphic Design",
+    "Marketing & Sales"
+  ],
+  "logo": "vk",
+  "background": "#fdc533",
+  "text_colour": "#0b0b0b",
+  "tile": "#ffffff",
+  "card": "#fdc533",
+  "intro": "A brewery in the middle of Gleis//Garten, serving unfiltered beer straight from the tank.",
+  "credit": "",
+  "hero": {
+    "type": "video",
+    "video": "/v/vk1.mp4",
+    "poster": "/v/vk1.jpg"
+  },
+  "sections": [
+    {
+      "type": "branding",
+      "text": "A Viennese sibling of the KRAFT mark and a family of named labels.",
+      "stats": [],
+      "videos": [],
+      "images": [
+        {
+          "image": "/a/vk-brand-01.webp",
+          "caption": "Primary logo",
+          "cutout": true
+        },
+        {
+          "image": "/a/vk-brand-03.webp",
+          "caption": "Elisabeth, Vienna Lager",
+          "cutout": true
+        },
+        {
+          "image": "/a/vk-brand-05.webp",
+          "caption": "Knut, IPA",
+          "cutout": true
+        },
+        {
+          "image": "/a/vk-brand-07.webp",
+          "caption": "Ferdl, Zwickel",
+          "cutout": true
+        },
+        {
+          "image": "/a/vk-brand-10.webp",
+          "caption": "Glass design",
+          "cutout": false
+        },
+        {
+          "image": "/a/vk-brand-11.webp",
+          "caption": "T-shirt",
+          "cutout": true
+        }
+      ],
+      "deck": []
+    },
+    {
+      "type": "marketing",
+      "text": "Loyalty cards, brewery parties and the Vienna Kraft Bier Fest: ticket shop, email, retargeting and PR.",
+      "stats": [
+        {
+          "figure": "75%",
+          "label": "less CO₂ than a regular brewery"
+        },
+        {
+          "figure": "0",
+          "label": "packaging: every beer straight from the tank"
+        }
+      ],
+      "videos": [],
+      "images": [
+        {
+          "image": "/a/vk-mkt-01.webp",
+          "caption": "Stammtisch loyalty card",
+          "cutout": true
+        },
+        {
+          "image": "/a/vk-mkt-02.webp",
+          "caption": "Brewery party",
+          "cutout": true
+        }
+      ],
+      "deck": []
+    },
+    {
+      "type": "concept",
+      "text": "Brewery renders and the finished brewhouse.",
+      "stats": [],
+      "videos": [],
+      "images": [
+        {
+          "image": "/a/vk-concept-01.webp",
+          "caption": "Brewery render",
+          "cutout": false
+        },
+        {
+          "image": "/a/vk-concept-03.webp",
+          "caption": "The brewery in the hall",
+          "cutout": false
+        }
+      ],
+      "deck": []
+    }
+  ]
+}

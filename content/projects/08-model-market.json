@@ -1,0 +1,42 @@
+{
+  "order": 8,
+  "slug": "model-market",
+  "name": "Model Market",
+  "kind": "Street-food market",
+  "city": "London",
+  "years": "2025–2026",
+  "role": "Director & marketing lead",
+  "disciplines": [
+    "Marketing & Sales"
+  ],
+  "logo": "mm",
+  "background": "#002e60",
+  "text_colour": "#fffef3",
+  "tile": "#fffef3",
+  "card": "#002e60",
+  "intro": "Bringing Lewisham's Model Market back to life as Kraft Lewisham: the plan, the budget and the people to open it well.",
+  "credit": "",
+  "hero": {
+    "type": "video",
+    "video": "/v/mm.mp4",
+    "poster": "/v/mm.jpg"
+  },
+  "sections": [
+    {
+      "type": "marketing",
+      "text": "Pre-opening and first-year marketing plan, built against the P&L: PR, launch events, outdoor, signage and an on-site marketing role.",
+      "stats": [],
+      "videos": [],
+      "images": [],
+      "deck": []
+    },
+    {
+      "type": "pr",
+      "text": "Briefing PR agencies, with launch support through the landlord, and keeping the council on side.",
+      "stats": [],
+      "videos": [],
+      "images": [],
+      "deck": []
+    }
+  ]
+}

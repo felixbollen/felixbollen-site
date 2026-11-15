@@ -1,0 +1,526 @@
+{
+  "order": 1,
+  "slug": "german-kraft",
+  "name": "German Kraft",
+  "kind": "Brewery & bars",
+  "city": "London",
+  "years": "2017–today",
+  "role": "Founder, Director & CMO",
+  "disciplines": [
+    "Graphic Design",
+    "Art Direction",
+    "Marketing & Sales"
+  ],
+  "logo": "gk",
+  "background": "#f1b517",
+  "text_colour": "#0b0b0b",
+  "tile": "#ffffff",
+  "card": "#f1b517",
+  "intro": "The mother brand. Four school friends, a derelict site in Elephant & Castle and a brewhouse. German Kraft brewed on site and sold straight from the tank, then grew into breweries, a distillery and 18 bars across London.",
+  "credit": "",
+  "hero": {
+    "type": "video",
+    "video": "/v/gk-home.mp4",
+    "poster": "/v/gk-home.jpg"
+  },
+  "tv_heading": "German brewers in\npost-Brexit London",
+  "tv": [
+    {
+      "video": "/v/tv-taff-brexit.mp4",
+      "poster": "/v/tv-taff-brexit.jpg",
+      "channel": "ProSieben taff",
+      "title": "Brexit, January 2023"
+    },
+    {
+      "video": "/v/tv-taff-helles.mp4",
+      "poster": "/v/tv-taff-helles.jpg",
+      "channel": "ProSieben taff",
+      "title": "Helles"
+    },
+    {
+      "video": "/v/tv-sat1.mp4",
+      "poster": "/v/tv-sat1.jpg",
+      "channel": "Sat.1 Nachrichten",
+      "title": "Brewing through Brexit"
+    },
+    {
+      "video": "/v/tv-brexit.mp4",
+      "poster": "/v/tv-brexit.jpg",
+      "channel": "German TV",
+      "title": "Brexit special"
+    }
+  ],
+  "labels_heading": "{n} labels,\none brewery",
+  "labels_text": "Every label from the 2021 roundel system, with a name and a face for every beer, plus our collaborations.",
+  "labels": [
+    {
+      "image": "/a/gk-fl-01.webp",
+      "name": "Andrea, Italian Pilsner"
+    },
+    {
+      "image": "/a/gk-fl-02.webp",
+      "name": "Emil, Potsdamer Stange"
+    },
+    {
+      "image": "/a/gk-fl-03.webp",
+      "name": "Hans, Pale Ale"
+    },
+    {
+      "image": "/a/gk-fl-04.webp",
+      "name": "Heidi, Helles"
+    },
+    {
+      "image": "/a/gk-fl-05.webp",
+      "name": "Herbert, Kveik Pale Ale"
+    },
+    {
+      "image": "/a/gk-fl-06.webp",
+      "name": "Kalle, Kellerbier"
+    },
+    {
+      "image": "/a/gk-fl-07.webp",
+      "name": "Klaus, Keller Lager"
+    },
+    {
+      "image": "/a/gk-fl-08.webp",
+      "name": "Klaudia, Callista Pils"
+    },
+    {
+      "image": "/a/gk-fl-09.webp",
+      "name": "Lotte, Hefeweizen"
+    },
+    {
+      "image": "/a/gk-fl-10.webp",
+      "name": "Manfred, Maibock"
+    },
+    {
+      "image": "/a/gk-fl-11.webp",
+      "name": "Manni, Hazy IPA"
+    },
+    {
+      "image": "/a/gk-fl-12.webp",
+      "name": "Matze, Hopfenweisse"
+    },
+    {
+      "image": "/a/gk-fl-13.webp",
+      "name": "Roman, Pils"
+    },
+    {
+      "image": "/a/gk-fl-14.webp",
+      "name": "Ute, Session IPA"
+    },
+    {
+      "image": "/a/gk-fl-15.webp",
+      "name": "Wolfgang, Weizenbock"
+    },
+    {
+      "image": "/a/gk-fl-16.webp",
+      "name": "Heinz, Zwickel Lager"
+    },
+    {
+      "image": "/a/gk-fl-17.webp",
+      "name": "Annika, Session IPA"
+    },
+    {
+      "image": "/a/gk-fl-18.webp",
+      "name": "Willi, Berliner Weisse"
+    },
+    {
+      "image": "/a/gk-fl-19.webp",
+      "name": "Bernd, Brut IPA"
+    },
+    {
+      "image": "/a/gk-fl-20.webp",
+      "name": "Broyhan, Golden Ale"
+    },
+    {
+      "image": "/a/gk-fl-21.webp",
+      "name": "Arnold, Doppel Pils"
+    },
+    {
+      "image": "/a/gk-fl-22.webp",
+      "name": "Dorothee, El Dorado IPA"
+    },
+    {
+      "image": "/a/gk-fl-23.webp",
+      "name": "Udo, Dunkel"
+    },
+    {
+      "image": "/a/gk-fl-24.webp",
+      "name": "Emma, Pale Ale"
+    },
+    {
+      "image": "/a/gk-fl-25.webp",
+      "name": "Falco, Austrian Zwickel (Vienna Kraft)"
+    },
+    {
+      "image": "/a/gk-fl-26.webp",
+      "name": "Froni, Pale Ale"
+    },
+    {
+      "image": "/a/gk-fl-27.webp",
+      "name": "Gunda, DDH Pale Ale"
+    },
+    {
+      "image": "/a/gk-fl-28.webp",
+      "name": "Klea, Kveik Pale Ale"
+    },
+    {
+      "image": "/a/gk-fl-29.webp",
+      "name": "Knut, Cascade IPA"
+    },
+    {
+      "image": "/a/gk-fl-30.webp",
+      "name": "Ludwig, Landbier"
+    },
+    {
+      "image": "/a/gk-fl-31.webp",
+      "name": "Leopold, Festbier"
+    },
+    {
+      "image": "/a/gk-fl-32.webp",
+      "name": "Heini, Light Lager"
+    },
+    {
+      "image": "/a/gk-fl-33.webp",
+      "name": "Luzifer, Red IPA"
+    },
+    {
+      "image": "/a/gk-fl-34.webp",
+      "name": "Maike, California Pale Ale"
+    },
+    {
+      "image": "/a/gk-fl-35.webp",
+      "name": "Marie, Mandarina Bavaria Pils"
+    },
+    {
+      "image": "/a/gk-fl-36.webp",
+      "name": "Nils, NEPA"
+    },
+    {
+      "image": "/a/gk-fl-37.webp",
+      "name": "Oskar, Stout"
+    },
+    {
+      "image": "/a/gk-fl-38.webp",
+      "name": "Otto, Hopfenweisse"
+    },
+    {
+      "image": "/a/gk-fl-39.webp",
+      "name": "Peter, Pils"
+    },
+    {
+      "image": "/a/gk-fl-40.webp",
+      "name": "Rolf, Smoked Helles"
+    },
+    {
+      "image": "/a/gk-fl-41.webp",
+      "name": "Sepp, Schwarzbier"
+    },
+    {
+      "image": "/a/gk-fl-42.webp",
+      "name": "Kippe, Smoked Lager"
+    },
+    {
+      "image": "/a/gk-fl-43.webp",
+      "name": "Steinbach Helles, Vienna Kraft collaboration"
+    },
+    {
+      "image": "/a/gk-fl-44.webp",
+      "name": "Sven, West Coast IPA"
+    },
+    {
+      "image": "/a/gk-fl-45.webp",
+      "name": "Ursi, West Coast IPA"
+    },
+    {
+      "image": "/a/gk-fl-46.webp",
+      "name": "Elisabeth, Vienna Lager"
+    },
+    {
+      "image": "/a/gk-lab-w08.webp",
+      "name": "Eins Zwei G'suffa, Gipsy Hill collaboration"
+    },
+    {
+      "image": "/a/gk-lab-w09.webp",
+      "name": "Kernkraft, Solvay Society collaboration"
+    },
+    {
+      "image": "/a/gk-lab-w10.webp",
+      "name": "The Lemon Drop, Anspach & Hobday"
+    },
+    {
+      "image": "/a/gk-lab-w11.webp",
+      "name": "India Pale Ale"
+    },
+    {
+      "image": "/a/gk-lab-w12.webp",
+      "name": "Eder Rotbier, collaboration"
+    },
+    {
+      "image": "/a/gk-lab-w14.webp",
+      "name": "Sent From Above, Siren collaboration"
+    },
+    {
+      "image": "/a/gk-lab-w15.webp",
+      "name": "Walter, Bockbier"
+    },
+    {
+      "image": "/a/gk-lab-w16.webp",
+      "name": "Antonio, Italian Pilsner"
+    },
+    {
+      "image": "/a/gk-lab-w17.webp",
+      "name": "Ryan, American Brown Ale"
+    },
+    {
+      "image": "/a/gk-lab-w18.webp",
+      "name": "Citra IPA"
+    },
+    {
+      "image": "/a/gk-lab-w19.webp",
+      "name": "Elke, West Coast Pale Ale"
+    },
+    {
+      "image": "/a/gk-lab-w21.webp",
+      "name": "Fritz, Pils"
+    },
+    {
+      "image": "/a/gk-lab-w32.webp",
+      "name": "Kalle, West Coast IPA"
+    },
+    {
+      "image": "/a/gk-lab-w35.webp",
+      "name": "Melanie, Hopfenweisse"
+    },
+    {
+      "image": "/a/gk-lab-w36.webp",
+      "name": "Reinhart, Rotbier"
+    },
+    {
+      "image": "/a/gk-lab-w38.webp",
+      "name": "Jutta, Session IPA"
+    },
+    {
+      "image": "/a/gk-lab-psd1.webp",
+      "name": "Phanta, Pale Ale, Vienna Kraft × Bräuhaus Ten.Fifty"
+    }
+  ],
+  "sections": [
+    {
+      "type": "branding",
+      "text": "I named the brewery, drew the KRAFT mark and built everything that carries it. In 2021 I led the rebrand from hand-drawn craft to a bold, retro German system: roundel labels, a single word as the slogan, and a cast of characters, one per beer.",
+      "stats": [],
+      "videos": [],
+      "images": [
+        {
+          "image": "/a/gk-brand-01.webp",
+          "caption": "Brewer shirt, front",
+          "cutout": true
+        },
+        {
+          "image": "/a/gk-brand-02.webp",
+          "caption": "Brewer shirt, back",
+          "cutout": true
+        },
+        {
+          "image": "/a/gk-brand-03.webp",
+          "caption": "Bier. sticker",
+          "cutout": true
+        },
+        {
+          "image": "/a/gk-brand-04.webp",
+          "caption": "Meisters of Purity shirt",
+          "cutout": false
+        }
+      ],
+      "deck": [
+        {
+          "image": "/a/gk-reb-01.webp",
+          "caption": "Inspiration: vintage German beer branding",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-reb-02.webp",
+          "caption": "Type: retro display lettering",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-reb-03.webp",
+          "caption": "\"Bier.\" as the slogan",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-reb-04.webp",
+          "caption": "Roundel system",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-reb-05.webp",
+          "caption": "Core colours",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-reb-06.webp",
+          "caption": "Label colour combinations",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-reb-07.webp",
+          "caption": "Logo system",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-reb-08.webp",
+          "caption": "Layout and print",
+          "cutout": false
+        }
+      ],
+      "deck_title": "The 2021 rebrand"
+    },
+    {
+      "type": "marketing",
+      "text": "Social-first campaigns, events and content that filled a 2,500-capacity site, on a paid-social budget of under £500 a month.",
+      "stats": [
+        {
+          "figure": "650,000 L",
+          "label": "sold in the first two years, straight to customers"
+        },
+        {
+          "figure": "£3.6m",
+          "label": "annual turnover at the Elephant & Castle flagship"
+        },
+        {
+          "figure": "2,500",
+          "label": "capacity, inside and out"
+        }
+      ],
+      "videos": [
+        {
+          "video": "/v/gk-comp.mp4",
+          "poster": "/v/gk-comp.jpg",
+          "caption": "Mini-keg delivery ad"
+        },
+        {
+          "video": "/v/gk-okt.mp4",
+          "poster": "/v/gk-okt.jpg",
+          "caption": "Oktoberfest"
+        }
+      ],
+      "images": [
+        {
+          "image": "/a/gk-mkt-01.webp",
+          "caption": "Social content",
+          "cutout": true
+        },
+        {
+          "image": "/a/gk-mkt-02.webp",
+          "caption": "Oktoberfest",
+          "cutout": false
+        }
+      ],
+      "deck": []
+    },
+    {
+      "type": "pr",
+      "text": "Germans brewing lager in post-Brexit London made a story that travelled: features on German national TV and in UK print.",
+      "stats": [
+        {
+          "figure": "4",
+          "label": "German TV features in this portfolio: Sat.1, ProSieben taff ×2 and a Brexit special"
+        },
+        {
+          "figure": "UK press",
+          "label": "The Telegraph, T3, Glamour, Imbibe, Londonist"
+        }
+      ],
+      "videos": [],
+      "images": [],
+      "deck": []
+    },
+    {
+      "type": "concept",
+      "text": "The beer garden at Elephant & Castle: a steel frame, parasols and serving tanks, planned and built with the team.",
+      "stats": [],
+      "videos": [],
+      "images": [
+        {
+          "image": "/a/gk-concept-01.webp",
+          "caption": "The beer garden, Elephant & Castle",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-concept-02.webp",
+          "caption": "Steel frame and parasols",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-concept-03.webp",
+          "caption": "Serving tanks",
+          "cutout": false
+        }
+      ],
+      "deck": []
+    },
+    {
+      "type": "photo",
+      "text": "Product and venue photography.",
+      "stats": [],
+      "videos": [
+        {
+          "video": "/v/gk-pour.mp4",
+          "poster": "/v/gk-pour.jpg",
+          "caption": "The pour"
+        },
+        {
+          "video": "/v/gk-garden.mp4",
+          "poster": "/v/gk-garden.jpg",
+          "caption": "The garden"
+        }
+      ],
+      "images": [
+        {
+          "image": "/a/gk-wph-01.webp",
+          "caption": "German Kraft",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-wph-02.webp",
+          "caption": "German Kraft",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-wph-03.webp",
+          "caption": "German Kraft",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-wph-04.webp",
+          "caption": "German Kraft",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-wph-05.webp",
+          "caption": "German Kraft",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-wph-06.webp",
+          "caption": "German Kraft",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-wph-07.webp",
+          "caption": "German Kraft",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-wph-08.webp",
+          "caption": "German Kraft",
+          "cutout": false
+        }
+      ],
+      "deck": []
+    }
+  ]
+}

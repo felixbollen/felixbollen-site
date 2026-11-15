@@ -1,0 +1,310 @@
+{
+  "order": 3,
+  "slug": "kraft-dalston",
+  "name": "Kraft Dalston",
+  "kind": "Rooftop bar & brewery",
+  "city": "London",
+  "years": "2021",
+  "role": "Director & creative lead",
+  "disciplines": [
+    "Graphic Design",
+    "Art Direction",
+    "Marketing & Sales"
+  ],
+  "logo": "da",
+  "background": "#f4b2ac",
+  "text_colour": "#0b0b0b",
+  "tile": "#ffffff",
+  "card": "#f4b2ac",
+  "intro": "A bar, brewery, kitchen and rooftop in the Kingsland Locke hotel, with its own slanted, three-dimensional take on the KRAFT mark.",
+  "credit": "",
+  "hero": {
+    "type": "slides",
+    "slides": [
+      {
+        "image": "/ds/ds-01.webp"
+      },
+      {
+        "image": "/ds/ds-02.webp"
+      },
+      {
+        "image": "/ds/ds-03.webp"
+      },
+      {
+        "image": "/ds/ds-04.webp"
+      },
+      {
+        "image": "/ds/ds-05.webp"
+      },
+      {
+        "image": "/ds/ds-06.webp"
+      },
+      {
+        "image": "/ds/ds-07.webp"
+      },
+      {
+        "image": "/ds/ds-08.webp"
+      },
+      {
+        "image": "/ds/ds-09.webp"
+      },
+      {
+        "image": "/ds/ds-10.webp"
+      },
+      {
+        "image": "/ds/ds-11.webp"
+      },
+      {
+        "image": "/ds/ds-12.webp"
+      },
+      {
+        "image": "/ds/ds-13.webp"
+      },
+      {
+        "image": "/ds/ds-14.webp"
+      },
+      {
+        "image": "/ds/ds-15.webp"
+      },
+      {
+        "image": "/ds/ds-16.webp"
+      },
+      {
+        "image": "/ds/ds-17.webp"
+      },
+      {
+        "image": "/ds/ds-18.webp"
+      },
+      {
+        "image": "/ds/ds-19.webp"
+      },
+      {
+        "image": "/ds/ds-20.webp"
+      },
+      {
+        "image": "/ds/ds-21.webp"
+      },
+      {
+        "image": "/ds/ds-22.webp"
+      },
+      {
+        "image": "/ds/ds-23.webp"
+      },
+      {
+        "image": "/ds/ds-24.webp"
+      },
+      {
+        "image": "/ds/ds-25.webp"
+      },
+      {
+        "image": "/ds/ds-26.webp"
+      },
+      {
+        "image": "/ds/ds-27.webp"
+      }
+    ],
+    "spin_logo": "/l/da-white.svg"
+  },
+  "sections": [
+    {
+      "type": "branding",
+      "text": "A 3D KRAFT roundel in pink, yellow and black, made for glasses, the DJ booth and merchandise.",
+      "stats": [],
+      "videos": [],
+      "images": [
+        {
+          "image": "/a/da-brand-01.webp",
+          "caption": "The mark on the glass",
+          "cutout": false
+        },
+        {
+          "image": "/a/da-brand-02.webp",
+          "caption": "KRAFT, poured",
+          "cutout": false
+        },
+        {
+          "image": "/a/da-brand-03.webp",
+          "caption": "DJ booth roundel",
+          "cutout": false
+        },
+        {
+          "image": "/a/da-brand-04.webp",
+          "caption": "T-shirt",
+          "cutout": false
+        },
+        {
+          "image": "/a/da-brand-05.webp",
+          "caption": "Staff T-shirt, back",
+          "cutout": false
+        },
+        {
+          "image": "/a/da-brand-06.webp",
+          "caption": "T-shirt, front",
+          "cutout": false
+        }
+      ],
+      "deck": []
+    },
+    {
+      "type": "marketing",
+      "text": "Weekly deals, kitchen launches and seasonal campaigns, run against covers.",
+      "stats": [
+        {
+          "figure": "£0.9m",
+          "label": "annual turnover"
+        },
+        {
+          "figure": "150",
+          "label": "capacity, rooftop and bar"
+        }
+      ],
+      "videos": [],
+      "images": [
+        {
+          "image": "/a/da-mkt-01.webp",
+          "caption": "Wednesday deal campaign",
+          "cutout": false
+        },
+        {
+          "image": "/a/da-mkt-02.webp",
+          "caption": "Wednesday deal campaign",
+          "cutout": false
+        },
+        {
+          "image": "/a/da-mkt-03.webp",
+          "caption": "London Cocktail Month",
+          "cutout": false
+        },
+        {
+          "image": "/a/da-mkt-04.webp",
+          "caption": "Seoul in a Bottle kitchen launch",
+          "cutout": false
+        }
+      ],
+      "deck": []
+    },
+    {
+      "type": "pr",
+      "text": "Launch PR with 84 PR and Purple. I ran the press calendar and hosted the visits.",
+      "stats": [
+        {
+          "figure": "53",
+          "label": "pieces of coverage in the launch year"
+        },
+        {
+          "figure": "37",
+          "label": "outlets, incl. Vanity Fair, GQ, Sunday Times Style, Stylist, Time Out"
+        },
+        {
+          "figure": "36.7m",
+          "label": "combined readership and reach"
+        },
+        {
+          "figure": "44",
+          "label": "press visits hosted"
+        }
+      ],
+      "videos": [],
+      "images": [],
+      "deck": []
+    },
+    {
+      "type": "concept",
+      "text": "The bar, brewery and rooftop inside the hotel.",
+      "stats": [],
+      "videos": [],
+      "images": [
+        {
+          "image": "/a/da-concept-01.webp",
+          "caption": "The bar in Kingsland Locke",
+          "cutout": false
+        },
+        {
+          "image": "/a/da-concept-02.webp",
+          "caption": "Lounge and brewery",
+          "cutout": false
+        },
+        {
+          "image": "/a/da-concept-03.webp",
+          "caption": "The rooftop",
+          "cutout": false
+        },
+        {
+          "image": "/a/da-concept-04.webp",
+          "caption": "Copper still in the bar",
+          "cutout": false
+        },
+        {
+          "image": "/a/da-concept-05.webp",
+          "caption": "Tap wall",
+          "cutout": false
+        }
+      ],
+      "deck": []
+    },
+    {
+      "type": "website",
+      "text": "Website imagery.",
+      "stats": [],
+      "videos": [],
+      "images": [
+        {
+          "image": "/a/da-web-01.webp",
+          "caption": "Website imagery",
+          "cutout": false
+        },
+        {
+          "image": "/a/da-web-02.webp",
+          "caption": "Website imagery",
+          "cutout": false
+        }
+      ],
+      "deck": []
+    },
+    {
+      "type": "photo",
+      "text": "Food, drink and people.",
+      "stats": [],
+      "videos": [
+        {
+          "video": "/v/da.mp4",
+          "poster": "/v/da.jpg",
+          "caption": "Private-hire film"
+        }
+      ],
+      "images": [
+        {
+          "image": "/a/da-photo-01.webp",
+          "caption": "Cocktails",
+          "cutout": false
+        },
+        {
+          "image": "/a/da-photo-02.webp",
+          "caption": "Pints",
+          "cutout": false
+        },
+        {
+          "image": "/a/da-photo-03.webp",
+          "caption": "Food flatlay",
+          "cutout": false
+        },
+        {
+          "image": "/a/da-photo-04.webp",
+          "caption": "The team",
+          "cutout": false
+        },
+        {
+          "image": "/a/da-photo-05.webp",
+          "caption": "Le Bab at Kraft",
+          "cutout": false
+        },
+        {
+          "image": "/a/da-photo-06.webp",
+          "caption": "Launch night",
+          "cutout": false
+        }
+      ],
+      "deck": []
+    }
+  ]
+}

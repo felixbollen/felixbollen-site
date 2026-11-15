@@ -1,0 +1,183 @@
+{
+  "order": 5,
+  "slug": "the-lokal",
+  "name": "The Lokal",
+  "kind": "Bar & private-hire basement",
+  "city": "Hounslow, London",
+  "years": "",
+  "role": "Brand, signage & launch",
+  "disciplines": [
+    "Graphic Design",
+    "Art Direction",
+    "Marketing & Sales"
+  ],
+  "logo": "lk",
+  "background": "#f15a24",
+  "text_colour": "#0b0b0b",
+  "tile": "#fff4e8",
+  "card": "#0b0b0b",
+  "intro": "A bar and 200-capacity private-hire basement at Market Place Hounslow. A retro orange identity carried from the bar front to the beer mats.",
+  "credit": "",
+  "hero": {
+    "type": "image",
+    "image": "/a/lk-photo-01.webp"
+  },
+  "sections": [
+    {
+      "type": "branding",
+      "text": "Logo, roundel, lightbox, menus, beer mats and signs.",
+      "stats": [],
+      "videos": [],
+      "images": [
+        {
+          "image": "/a/lk-brand-01.webp",
+          "caption": "Roundel",
+          "cutout": true
+        },
+        {
+          "image": "/a/lk-brand-02.webp",
+          "caption": "Wordmark",
+          "cutout": true
+        },
+        {
+          "image": "/a/lk-brand-03.webp",
+          "caption": "Lightbox sign",
+          "cutout": false
+        },
+        {
+          "image": "/a/lk-brand-04.webp",
+          "caption": "Lokal Bar",
+          "cutout": false
+        },
+        {
+          "image": "/a/lk-brand-05.webp",
+          "caption": "Beer mat",
+          "cutout": false
+        },
+        {
+          "image": "/a/lk-brand-06.webp",
+          "caption": "Card only sign",
+          "cutout": false
+        },
+        {
+          "image": "/a/lk-brand-07.webp",
+          "caption": "Bar menu",
+          "cutout": false
+        }
+      ],
+      "deck": []
+    },
+    {
+      "type": "marketing",
+      "text": "Coming-soon posts, grand opening flyers, recruitment and A-frames for private hire.",
+      "stats": [],
+      "videos": [],
+      "images": [
+        {
+          "image": "/a/lk-mkt-01.webp",
+          "caption": "Grand opening flyer",
+          "cutout": false
+        },
+        {
+          "image": "/a/lk-mkt-02.webp",
+          "caption": "Coming soon",
+          "cutout": true
+        },
+        {
+          "image": "/a/lk-mkt-03.webp",
+          "caption": "Recruitment",
+          "cutout": false
+        },
+        {
+          "image": "/a/lk-mkt-04.webp",
+          "caption": "A-frame: private hire",
+          "cutout": false
+        },
+        {
+          "image": "/a/lk-mkt-05.webp",
+          "caption": "Flyer",
+          "cutout": false
+        }
+      ],
+      "deck": []
+    },
+    {
+      "type": "concept",
+      "text": "Bar mockups and the Market Place wayfinding: entrance, corridor and stair graphics.",
+      "stats": [],
+      "videos": [],
+      "images": [
+        {
+          "image": "/a/lk-concept-01.webp",
+          "caption": "Bar mockup",
+          "cutout": false
+        },
+        {
+          "image": "/a/lk-concept-02.webp",
+          "caption": "Entrance mockup",
+          "cutout": false
+        },
+        {
+          "image": "/a/lk-concept-03.webp",
+          "caption": "Teaser render",
+          "cutout": false
+        },
+        {
+          "image": "/a/lk-concept-06.webp",
+          "caption": "Market Place badge",
+          "cutout": true
+        }
+      ],
+      "deck": []
+    },
+    {
+      "type": "photo",
+      "text": "The finished bar and basement.",
+      "stats": [],
+      "videos": [],
+      "images": [
+        {
+          "image": "/a/lk-photo-01.webp",
+          "caption": "The Lokal bar",
+          "cutout": false
+        },
+        {
+          "image": "/a/lk-photo-02.webp",
+          "caption": "The basement",
+          "cutout": false
+        },
+        {
+          "image": "/a/lk-photo-03.webp",
+          "caption": "Behind the bar",
+          "cutout": false
+        },
+        {
+          "image": "/a/lk-photo-04.webp",
+          "caption": "Lights up",
+          "cutout": false
+        },
+        {
+          "image": "/a/lk-photo-05.webp",
+          "caption": "Live music",
+          "cutout": false
+        },
+        {
+          "image": "/a/lk-photo-06.webp",
+          "caption": "Lounge",
+          "cutout": false
+        },
+        {
+          "image": "/a/lk-photo-07.webp",
+          "caption": "Bar games",
+          "cutout": false
+        },
+        {
+          "image": "/a/lk-photo-08.webp",
+          "caption": "Chesterfields",
+          "cutout": false
+        }
+      ],
+      "deck": []
+    }
+  ]
+}

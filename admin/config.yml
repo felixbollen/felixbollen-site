@@ -1,0 +1,186 @@
+backend:
+  name: github
+  repo: REPO_PLACEHOLDER
+  branch: main
+  commit_messages:
+    update: "Update {{collection}} “{{slug}}”"
+    create: "Add {{collection}} “{{slug}}”"
+    delete: "Remove {{collection}} “{{slug}}”"
+    uploadMedia: "Upload “{{path}}”"
+    deleteMedia: "Delete “{{path}}”"
+
+site_url: https://felixbollen.com
+display_url: https://felixbollen.com
+logo_url: https://felixbollen.com/favicon.svg
+locale: en
+
+media_folder: static/media
+public_folder: /media
+
+collections:
+  - name: home
+    label: Homepage
+    files:
+      - name: home
+        label: Homepage
+        file: content/home.json
+        format: json
+        fields:
+          - {name: title, label: "Browser tab title", widget: string}
+          - {name: description, label: "Google description", widget: text}
+          - {name: name, label: "Name (big heading)", widget: string}
+          - {name: intro, label: "Intro text", widget: text}
+          - name: disciplines
+            label: Disciplines
+            widget: list
+            summary: "{{fields.title}}"
+            fields:
+              - {name: title, label: Title, widget: string}
+              - {name: text, label: Text, widget: text}
+              - {name: items, label: "Bullet points", widget: list, field: {name: item, label: Item, widget: string}}
+          - name: numbers
+            label: "In numbers"
+            widget: list
+            summary: "{{fields.figure}} – {{fields.label}}"
+            fields:
+              - {name: figure, label: Figure, widget: string}
+              - {name: label, label: Label, widget: string}
+          - name: also
+            label: "Also (other work)"
+            widget: list
+            summary: "{{fields.name}}"
+            fields:
+              - {name: name, label: Name, widget: string}
+              - {name: text, label: Text, widget: text}
+              - {name: tag, label: Tag, widget: string, required: false}
+          - {name: about_heading, label: "About heading", widget: text}
+          - {name: about, label: "About paragraphs", widget: list, field: {name: p, label: Paragraph, widget: text}}
+          - name: details
+            label: "About details"
+            widget: list
+            summary: "{{fields.label}}"
+            fields:
+              - {name: label, label: Label, widget: string}
+              - {name: value, label: Value, widget: string}
+          - {name: contact_heading, label: "Contact heading (new line = line break)", widget: text}
+          - {name: contact_text, label: "Contact text", widget: text}
+          - {name: email, label: "Email address", widget: string}
+
+  - name: projects
+    label: Projects
+    label_singular: Project
+    folder: content/projects
+    format: json
+    extension: json
+    create: true
+    delete: true
+    slug: "{{slug}}"
+    identifier_field: name
+    summary: "{{order}}. {{name}}"
+    sortable_fields: [order, name]
+    fields:
+      - {name: order, label: "Order on the site (1 = first)", widget: number, value_type: int}
+      - {name: hidden, label: "Hide this project", widget: boolean, default: false, required: false}
+      - {name: name, label: Name, widget: string}
+      - {name: slug, label: "Web address (felixbollen.com/work/…)", widget: string, hint: "Lowercase, hyphens, no spaces"}
+      - {name: kind, label: "Type of venue", widget: string}
+      - {name: city, label: City, widget: string}
+      - {name: years, label: Years, widget: string, required: false}
+      - {name: role, label: "My role", widget: string}
+      - {name: disciplines, label: Disciplines, widget: select, multiple: true, options: ["Marketing & Sales", "Art Direction", "Graphic Design"]}
+      - {name: intro, label: "Intro text", widget: text}
+      - {name: credit, label: "Credit line (optional)", widget: text, required: false}
+      - {name: logo, label: "Logo key", widget: string, hint: "Uses /l/KEY.mono.svg and /l/KEY-colour.webp. Ask Claude to add a new logo."}
+      - {name: background, label: "Page background colour", widget: color}
+      - {name: text_colour, label: "Page text colour", widget: color}
+      - {name: tile, label: "Tile colour", widget: color, required: false}
+      - {name: card, label: "Logo card colour", widget: color}
+      - name: hero
+        label: "Top of page (hero)"
+        widget: object
+        collapsed: true
+        fields:
+          - {name: type, label: Type, widget: select, options: [video, image, slides, vimeo, lottie]}
+          - {name: video, label: "Video (MP4, for type video)", widget: file, required: false}
+          - {name: poster, label: "Video still image", widget: image, required: false}
+          - {name: image, label: "Image (for type image)", widget: image, required: false}
+          - {name: vimeo_id, label: "Vimeo ID (for type vimeo)", widget: string, required: false}
+          - {name: slides, label: "Slideshow images (for type slides)", widget: list, required: false, field: {name: image, label: Image, widget: image}}
+          - {name: spin_logo, label: "Spinning logo over slideshow", widget: image, required: false}
+          - {name: animation, label: "Lottie animation file", widget: file, required: false}
+      - {name: tv_heading, label: "TV clips heading", widget: text, required: false}
+      - name: tv
+        label: "TV clips"
+        widget: list
+        required: false
+        collapsed: true
+        summary: "{{fields.channel}} – {{fields.title}}"
+        fields:
+          - {name: video, label: "Video (MP4)", widget: file}
+          - {name: poster, label: "Still image", widget: image}
+          - {name: channel, label: Channel, widget: string}
+          - {name: title, label: Title, widget: string}
+      - {name: labels_heading, label: "Labels heading ({n} = number of labels)", widget: text, required: false}
+      - {name: labels_text, label: "Labels text", widget: text, required: false}
+      - name: labels
+        label: "Beer labels"
+        widget: list
+        required: false
+        collapsed: true
+        summary: "{{fields.name}}"
+        fields:
+          - {name: image, label: Label, widget: image}
+          - {name: name, label: "Name, style", widget: string}
+      - {name: bricks_heading, label: "Scroll story heading", widget: string, required: false}
+      - {name: bricks_counter, label: "Scroll story counter target (0 = hide)", widget: number, value_type: int, required: false}
+      - name: bricks
+        label: "Scroll story steps"
+        widget: list
+        required: false
+        collapsed: true
+        summary: "{{fields.text}}"
+        fields:
+          - {name: image, label: Image, widget: image}
+          - {name: text, label: Text, widget: text}
+      - name: sections
+        label: "What I did (sections)"
+        widget: list
+        summary: "{{fields.type}}"
+        fields:
+          - {name: type, label: Section, widget: select, options: [{label: Branding, value: branding}, {label: Marketing, value: marketing}, {label: "P.R.", value: pr}, {label: Conceptualisation, value: concept}, {label: Website, value: website}, {label: "Photography & videography", value: photo}]}
+          - {name: title, label: "Custom title (optional)", widget: string, required: false}
+          - {name: text, label: Text, widget: text}
+          - name: stats
+            label: "Numbers"
+            widget: list
+            required: false
+            summary: "{{fields.figure}}"
+            fields:
+              - {name: figure, label: Figure, widget: string}
+              - {name: label, label: Label, widget: string}
+          - name: images
+            label: Gallery
+            widget: list
+            required: false
+            summary: "{{fields.caption}}"
+            fields:
+              - {name: image, label: Image, widget: image}
+              - {name: caption, label: Caption, widget: string, required: false}
+              - {name: cutout, label: "Show whole image (logos, cut-outs)", widget: boolean, default: false, required: false}
+          - name: videos
+            label: Videos
+            widget: list
+            required: false
+            summary: "{{fields.caption}}"
+            fields:
+              - {name: video, label: "Video (MP4)", widget: file}
+              - {name: poster, label: "Still image", widget: image, required: false}
+              - {name: caption, label: Caption, widget: string, required: false}
+          - {name: deck_title, label: "Slide deck title", widget: string, required: false}
+          - name: deck
+            label: "Slide deck"
+            widget: list
+            required: false
+            fields:
+              - {name: image, label: Slide, widget: image}
+              - {name: caption, label: Caption, widget: string, required: false}

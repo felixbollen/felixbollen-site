@@ -1,0 +1,86 @@
+{
+  "order": 9,
+  "slug": "dufte-berlin",
+  "name": "Dufte Berlin",
+  "kind": "Culinary & cultural house",
+  "city": "Berlin",
+  "years": "2024–2026",
+  "role": "Managing Director",
+  "disciplines": [
+    "Marketing & Sales"
+  ],
+  "logo": "du",
+  "background": "#3479e1",
+  "text_colour": "#ffffff",
+  "tile": "#ffffff",
+  "card": "#3479e1",
+  "intro": "A culinary and cultural house in the Kant-Garagen, Charlottenburg, with five food vendors across nine venue areas. Opened May 2026.",
+  "credit": "Logo and brand identity by Plusminus Studio. I ran all of the marketing and communication.",
+  "hero": {
+    "type": "lottie",
+    "animation": "/js/dufte-emblem.json"
+  },
+  "sections": [
+    {
+      "type": "marketing",
+      "text": "Open House events, opening campaign, Instagram launch and weekly programme.",
+      "stats": [
+        {
+          "figure": "334",
+          "label": "clean newsletter contacts at launch"
+        },
+        {
+          "figure": "5",
+          "label": "food vendors"
+        },
+        {
+          "figure": "9",
+          "label": "venue areas"
+        }
+      ],
+      "videos": [],
+      "images": [
+        {
+          "image": "/a/du-mkt-01.webp",
+          "caption": "Open House A2 poster",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-mkt-02.webp",
+          "caption": "Open House invitation",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-mkt-03.webp",
+          "caption": "Open House story",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-mkt-04.webp",
+          "caption": "Pre-opening teaser",
+          "cutout": true
+        }
+      ],
+      "deck": []
+    },
+    {
+      "type": "concept",
+      "text": "Concept, layouts and renderings, plus the business plan behind them.",
+      "stats": [],
+      "videos": [],
+      "images": [
+        {
+          "image": "/a/du-concept-01.webp",
+          "caption": "Rendering",
+          "cutout": true
+        },
+        {
+          "image": "/a/du-concept-02.webp",
+          "caption": "Rendering",
+          "cutout": true
+        }
+      ],
+      "deck": []
+    }
+  ]
+}

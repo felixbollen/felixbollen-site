@@ -88,11 +88,17 @@ def vfig(v):
     th = f'<img data-src="{esc(poster)}" alt="{esc(cap)}">' if poster else f'<video muted playsinline preload="metadata" src="{esc(v["video"])}#t=0.5"></video>'
     return f'<a href="{esc(v["video"])}" data-lb data-type="video" data-cap="{esc(cap)}"><figure><div class="t">{th}</div><figcaption>▶ {esc(cap)}</figcaption></figure></a>'
 
+def navlogo(w):
+    if HASCOL(w["logo"]): return '<img src="/l/%s-colour.webp" alt="%s" loading="lazy">' % (w["logo"], esc(w["name"]))
+    return '<span class="lgt">%s</span>' % esc(w["name"])
+def cardcol(p):
+    return '<img class="col" src="/l/%s-colour.webp" alt="" loading="lazy">' % p["logo"] if HASCOL(p["logo"]) else ""
+
 # ---------- home ----------
 cards = []
 for i, p in enumerate(P):
     cards.append(f'''<a class="vc rv" href="/work/{p['slug']}/" style="--cb:{esc(p['card'])};--cf:{esc(p['text_colour'])};transition-delay:{(i%3)*70}ms"><span class="ix">{i+1:02d}</span>
-<div class="lg">{mono(p['logo'], p['name'])}{f'<img class="col" src="/l/{p["logo"]}-colour.webp" alt="" loading="lazy">' if HASCOL(p["logo"]) else ""}</div><div class="meta"><b>{esc(p['name'])}</b><span>{esc(p['city'])}</span></div></a>''')
+<div class="lg">{mono(p['logo'], p['name'])}{cardcol(p)}</div><div class="meta"><b>{esc(p['name'])}</b><span>{esc(p['city'])}</span></div></a>''')
 disc = "".join(f'<div class="rv"><span class="lbl mute">{n+1:02d}</span><h3>{esc(d["title"])}</h3><p>{esc(d["text"])}</p><ul>{"".join(f"<li>{esc(x)}</li>" for x in d.get("items", []))}</ul></div>' for n, d in enumerate(HOME["disciplines"]))
 nums = "".join(f'<div><b>{esc(n["figure"])}</b><span>{esc(n["label"])}</span></div>' for n in HOME.get("numbers", []))
 also = "".join(f'<li><b>{esc(a["name"])}</b><span>{esc(a["text"])}</span><em>{esc(a.get("tag"))}</em></li>' for a in HOME.get("also", []))
@@ -189,7 +195,7 @@ for i, p in enumerate(P):
         secs.append(f'''<div class="sec5"><button type="button" aria-expanded="false"><span class="n">{n+1:02d}</span><h3>{esc(title)}{subh}</h3><span class="c">{(len(ims)+len(vids)) or ''}</span><span class="pm"></span></button>
 <div class="bd"><div><div class="in">{body}{dk}{gal}</div></div></div></div>''')
     meta = "".join(f'<div><dt>{a}</dt><dd>{esc(b)}</dd></div>' for a, b in [("Role", p.get("role")), ("Location", p.get("city")), ("Years", p.get("years") or "—"), ("Disciplines", ", ".join(p.get("disciplines", [])))])
-    nav = "".join(f'<a href="/work/{w["slug"]}/"{" class=cu aria-current=page" if w is p else ""} style="--cb:{esc(w["card"])}" aria-label="{esc(w["name"])}" title="{esc(w["name"])}">{f'<img src="/l/{w["logo"]}-colour.webp" alt="{esc(w["name"])}" loading="lazy">' if HASCOL(w["logo"]) else f'<span class="lgt">{esc(w["name"])}</span>'}</a>' for w in P)
+    nav = "".join(f'<a href="/work/{w["slug"]}/"{" class=cu aria-current=page" if w is p else ""} style="--cb:{esc(w["card"])}" aria-label="{esc(w["name"])}" title="{esc(w["name"])}">{navlogo(w)}</a>' for w in P)
     cr = f'<p class="cr">{esc(p["credit"])}</p>' if p.get("credit") else ""
     page = head(f"{p['name']}: Felix Bollen", f"{p['name']}, {p.get('kind')}, {p.get('city')}. {p.get('intro')}", f"/work/{p['slug']}/", og, style, extra) + header(ov=(ht != "lottie")) + f'''
 <main id="top">{hero}

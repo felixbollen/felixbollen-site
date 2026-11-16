@@ -89,7 +89,7 @@ def vfig(v):
     return f'<a href="{esc(v["video"])}" data-lb data-type="video" data-cap="{esc(cap)}"><figure><div class="t">{th}</div><figcaption>▶ {esc(cap)}</figcaption></figure></a>'
 
 def navlogo(w):
-    m = '<span class="m">%s</span>' % (mono(w["logo"], w["name"]) if HASLOGO(w["logo"]) else '<span class="lgt">%s</span>' % esc(w["name"]))
+    m = '<span class="m">%s</span>' % (mono(w["logo"], w["name"]) if HASLOGO(w["logo"]) else '<span class="lgt">%s</span>' % esc(w.get("card_name") or w["name"]))
     c = '<img class="c" src="/l/%s-colour.webp" alt="" loading="lazy">' % w["logo"] if HASCOL(w["logo"]) else ""
     return m + c
 def cardcol(p):
@@ -99,7 +99,7 @@ def cardcol(p):
 cards = []
 for i, p in enumerate(P):
     cards.append(f'''<a class="vc rv" href="/work/{p['slug']}/" style="--cb:{esc(p['card'])};--cf:{esc(p['text_colour'])};transition-delay:{(i%3)*70}ms"><span class="ix">{i+1:02d}</span>
-<div class="lg">{mono(p['logo'], p['name'])}{cardcol(p)}</div><div class="meta"><b>{esc(p['name'])}</b><span>{esc(p['city'])}</span></div></a>''')
+<div class="lg">{mono(p['logo'], p.get('card_name') or p['name'])}{cardcol(p)}</div><div class="meta"><b>{esc(p['name'])}</b><span>{esc(p['city'])}</span></div></a>''')
 disc = "".join(f'<div class="rv"><span class="lbl mute">{n+1:02d}</span><h3>{esc(d["title"])}</h3><p>{esc(d["text"])}</p><ul>{"".join(f"<li>{esc(x)}</li>" for x in d.get("items", []))}</ul></div>' for n, d in enumerate(HOME["disciplines"]))
 nums = "".join(f'<div><b>{esc(n["figure"])}</b><span>{esc(n["label"])}</span></div>' for n in HOME.get("numbers", []))
 also = "".join(f'<li><b>{esc(a["name"])}</b><span>{esc(a["text"])}</span><em>{esc(a.get("tag"))}</em></li>' for a in HOME.get("also", []))
@@ -113,7 +113,7 @@ home = head(HOME["title"], HOME["description"], "/", extra=IMAP) + header() + f'
 <section class="hero"><div class="mark"><div class="stk"><svg class="main" viewBox="{fvb}" aria-hidden="true"><path fill-rule="evenodd" d="{fp}"/></svg></div><button class="gyro" type="button">Tap to move with your phone</button></div>
 <div class="tx rv"><h1>{"<br>".join(esc(w) for w in HOME["name"].split(" ", 1))}</h1><p>{esc(HOME["intro"])}</p><ul>{dl}</ul></div>
 <span class="scroll lbl mute">Scroll</span></section>
-<section class="sec" id="work"><div class="sh rv"><h2>Venues</h2><span class="lbl mute">{len(P):02d}</span></div><div class="vg">{"".join(cards)}</div></section>
+<section class="sec" id="work"><div class="sh rv"><h2>Work</h2><span class="lbl mute">{len(P):02d}</span></div><div class="vg">{"".join(cards)}</div></section>
 <section class="sec"><div class="sh rv"><h2>Disciplines</h2><span class="lbl mute">{len(HOME["disciplines"]):02d}</span></div><div class="dc">{disc}</div></section>
 {f'<section class="sec"><div class="sh rv"><h2>In numbers</h2></div><div class="nm rv">{nums}</div></section>' if nums else ""}
 {f'<section class="sec al"><div class="sh rv"><h2>Also</h2></div><ul class="rv">{also}</ul></section>' if also else ""}
@@ -130,10 +130,55 @@ home = head(HOME["title"], HOME["description"], "/", extra=IMAP) + header() + f'
 </main>''' + FOOT
 open(OUT + "/index.html", "w", encoding="utf-8").write(home)
 
+# ---------- case-study pages (one-pagers) ----------
+def vnav(p, pv, nx):
+    nav = "".join(f'<a href="/work/{w["slug"]}/"{" class=cu aria-current=page" if w is p else ""} style="--cb:{esc(w["card"])}" aria-label="{esc(w["name"])}" title="{esc(w["name"])}">{navlogo(w)}</a>' for w in P)
+    return f'''<section class="vn"><div class="row">{nav}</div><div class="pn"><a href="/work/{pv['slug']}/"><small class="lbl">← Previous</small><b>{esc(pv['name'])}</b></a>
+<a href="/work/{nx['slug']}/" style="text-align:right"><small class="lbl">Next →</small><b>{esc(nx['name'])}</b></a></div></section>'''
+
+def render_case(i, p, pv, nx):
+    hero = (p.get("hero") or {}).get("image", "")
+    title = p["name"].split(":")[-1].strip(); artist = p["name"].split(":")[0].strip() if ":" in p["name"] else ""
+    facts = "".join(f'<div><dt class="lbl">{esc(f["label"])}</dt><dd>{esc(f["value"])}</dd></div>' for f in p.get("facts", []))
+    chs = ""
+    for j, c in enumerate(p.get("chapters", [])):
+        paras = "".join(f"<p>{esc(t)}</p>" for t in (c.get("text") or []))
+        fig = ('<figure class="cfig rvc"><a href="%s" data-lb data-cap="%s"><img src="%s" alt="%s" loading="lazy"></a><figcaption>%s</figcaption></figure>' % (esc(c["image"]), esc(c.get("caption")), esc(c["image"]), esc(c.get("caption")), esc(c.get("caption")))) if c.get("image") else ""
+        chs += f'''<section class="ch{" rev" if j % 2 else ""}" data-lbg><div class="ct2 rv"><span class="lbl">{esc(c.get("label"))}</span><h2>{br(c.get("heading"))}</h2>{paras}</div>{fig}</section>'''
+    apps = "".join('<a class="ap rv" style="transition-delay:%dms" href="%s" data-lb data-cap="%s"><div class="ai"><img src="%s" alt="%s" loading="lazy"></div><span>%s</span></a>' % ((k%3)*80, esc(a["image"]), esc(a.get("caption")), esc(a["image"]), esc(a.get("caption")), esc(a.get("caption"))) for k, a in enumerate(p.get("applications", [])))
+    def dval(d):
+        return '<a href="%s" target="_blank" rel="noopener">%s ↗</a>' % (esc(d["url"]), esc(d["value"])) if d.get("url") else esc(d["value"])
+    dets = "".join('<div><dt class="lbl">%s</dt><dd>%s</dd></div>' % (esc(d["label"]), dval(d)) for d in p.get("details", []))
+    page = head(f"{p['name']}: Felix Bollen", p.get("intro", ""), f"/work/{p['slug']}/") + header() + f'''
+<main id="top" class="case">
+<section class="chero"><div class="cht"><span class="lbl rv">Case study · {esc(p.get("kind"))} · {esc(p.get("years"))}</span><h1 class="rv">{esc(title)}</h1>{f'<div class="art rv">{esc(artist)}</div>' if artist else ""}<p class="lead rv">{esc(p.get("intro"))}</p></div>
+<div class="tiltw"><div class="tilt" data-lbg><a href="{esc(hero)}" data-lb data-cap="{esc(p['name'])}"><img src="{esc(hero)}" alt="{esc(p['name'])} cover"></a><span class="sheen"></span></div></div></section>
+<dl class="facts rv">{facts}</dl>
+{chs}
+<section class="apps" data-lbg><div class="ah rv"><span class="lbl">{esc(p.get("apps_label"))}</span><h2>{br(p.get("apps_heading"))}</h2><p class="lede">{esc(p.get("apps_text"))}</p></div><div class="ag">{apps}</div></section>
+<dl class="facts dets rv">{dets}</dl>
+{f'<p class="ccr">{esc(p["credit"])}</p>' if p.get("credit") else ""}
+{vnav(p, pv, nx)}</main>
+<script>
+(function(){{var w=document.querySelector('.tilt');if(!w)return;var tx=0,ty=0,cx=0,cy=0,last=0,RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+function set(x,y){{tx=Math.max(-1,Math.min(1,x));ty=Math.max(-1,Math.min(1,y));last=performance.now()}}
+addEventListener('pointermove',function(e){{if(e.pointerType==='mouse')set((e.clientX/innerWidth-.5)*2,(e.clientY/innerHeight-.5)*2)}});
+var b0=null,g0=null;function ori(e){{if(e.gamma==null)return;if(b0==null){{b0=e.beta;g0=e.gamma}}set((e.gamma-g0)/20,(e.beta-b0)/20)}}
+if(window.DeviceOrientationEvent){{if(typeof DeviceOrientationEvent.requestPermission==='function'){{document.addEventListener('touchend',function(){{DeviceOrientationEvent.requestPermission().then(function(s){{if(s==='granted')addEventListener('deviceorientation',ori)}}).catch(function(){{}})}},{{once:true}})}}else addEventListener('deviceorientation',ori)}}
+(function loop(t){{requestAnimationFrame(loop);var x=tx,y=ty;if(t-last>2500&&!RM){{x=Math.sin(t/2600)*.5;y=Math.cos(t/3300)*.35}}cx+=(x-cx)*.07;cy+=(y-cy)*.07;
+var sy=Math.min(1,scrollY/innerHeight);w.style.transform='rotateY('+(cx*14)+'deg) rotateX('+(-cy*10)+'deg) translateY('+(sy*-40)+'px) scale('+(1-sy*.06)+')';w.style.setProperty('--sx',(50+cx*40)+'%');w.style.setProperty('--sy',(50+cy*40)+'%')}})(0);
+var io=new IntersectionObserver(function(es){{es.forEach(function(e){{if(e.isIntersecting){{e.target.classList.add('in');io.unobserve(e.target)}}}})}},{{threshold:.15}});document.querySelectorAll('.rvc').forEach(function(e){{io.observe(e)}});
+}})();
+</script>''' + FOOT
+    os.makedirs(f"{OUT}/work/{p['slug']}", exist_ok=True)
+    open(f"{OUT}/work/{p['slug']}/index.html", "w", encoding="utf-8").write(page)
+
 # ---------- project pages ----------
 N = len(P)
 for i, p in enumerate(P):
     pv, nx = P[(i-1) % N], P[(i+1) % N]
+    if p.get("template") == "case":
+        render_case(i, p, pv, nx); continue
     style = f"--bg:{p['background']};--fg:{p['text_colour']};--tile:{p.get('tile') or p['background']}"; extra = ""
     h = p.get("hero") or {}; ht = h.get("type", "image"); og = "/v/gk-home.jpg"
     lgo = f'<div class="lgo">{mono(p["logo"], p["name"])}</div>'
@@ -228,4 +273,12 @@ for f in sorted(glob.glob(os.path.join(ROOT, "content/press-*.json"))):
 <div class="pm"><span class="lbl mute">{len(its)} articles</span><span class="lbl mute">{esc(pr.get("contact"))}</span></div></section>
 <section class="pg">{"".join(card(x) for x in its)}</section></main>''' + FOOT
     os.makedirs(OUT + base, exist_ok=True); open(OUT + base + "index.html", "w", encoding="utf-8").write(page)
+# ---------- serve media from GitHub Pages (free bandwidth) ----------
+MEDIA = os.environ.get("MEDIA_BASE") or ("https://felixbollen.github.io/felixbollen-site/static" if os.environ.get("NETLIFY") else "")
+if MEDIA:
+    rx = re.compile(r'((?:src|href|data-src|poster)=")/((?:v|a|ds|media|press)/)')
+    for f in glob.glob(OUT + "/**/*.html", recursive=True):
+        if "/admin/" in f: continue
+        t = open(f, encoding="utf-8").read(); t2 = rx.sub(lambda m: m.group(1) + MEDIA + "/" + m.group(2), t)
+        if t2 != t: open(f, "w", encoding="utf-8").write(t2)
 print("built", N, "projects")

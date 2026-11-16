@@ -223,6 +223,53 @@ collections:
         fields:
           - {name: image, label: Image, widget: image}
           - {name: text, label: Text, widget: text}
+      - {name: card_name, label: "Short name on homepage card (optional)", widget: string, required: false}
+      - name: facts
+        label: "Key facts (one-pager projects)"
+        widget: list
+        required: false
+        collapsed: true
+        summary: "{{fields.label}}"
+        fields:
+          - {name: label, label: Label, widget: string}
+          - {name: value, label: Value, widget: string}
+      - name: chapters
+        label: "Story chapters (one-pager projects)"
+        label_singular: chapter
+        widget: list
+        required: false
+        collapsed: true
+        summary: "{{fields.label}}"
+        fields:
+          - {name: label, label: "Small label (e.g. 01 — The idea)", widget: string}
+          - {name: heading, label: Heading, widget: text}
+          - {name: text, label: Paragraphs, widget: list, field: {name: p, label: Paragraph, widget: text}}
+          - {name: image, label: Image, widget: image, required: false}
+          - {name: caption, label: Caption, widget: string, required: false}
+      - {name: apps_label, label: "Applications label (one-pager)", widget: string, required: false}
+      - {name: apps_heading, label: "Applications heading", widget: string, required: false}
+      - {name: apps_text, label: "Applications text", widget: text, required: false}
+      - name: applications
+        label: "Applications gallery (one-pager)"
+        label_singular: item
+        widget: list
+        required: false
+        collapsed: true
+        summary: "{{fields.caption}}"
+        fields:
+          - {name: image, label: Image, widget: image}
+          - {name: caption, label: Caption, widget: string, required: false}
+      - name: details
+        label: "Closing details (one-pager)"
+        widget: list
+        required: false
+        collapsed: true
+        summary: "{{fields.label}}"
+        fields:
+          - {name: label, label: Label, widget: string}
+          - {name: value, label: Value, widget: string}
+          - {name: url, label: "Link (optional)", widget: string, required: false}
+      - {name: template, widget: hidden}
       - {name: order, label: "Position on the site (1 = first)", widget: number, value_type: int}
       - {name: hidden, label: "Hide this project from the site", widget: boolean, default: false, required: false}
       - {name: background, label: "Page colour", widget: color, default: "#ffffff"}

@@ -218,7 +218,7 @@ for f in sorted(glob.glob(os.path.join(ROOT, "content/press-*.json"))):
     base = f"/work/{pr.get('project')}/presse/" if proj else f"/presse/{os.path.basename(f)[6:-5]}/"
     its = [x for x in pr.get("items", []) if x.get("outlet") or x.get("title")]
     def card(x):
-        url = x.get("url") or ""; ext = url.lower().endswith(".pdf"); tag = "PDF ↓" if ext else "Read article ↗"
+        url = x.get("pdf") or x.get("url") or ""; ext = url.lower().endswith(".pdf"); tag = "PDF ↓" if ext else "Read article ↗"
         im = f'<div class="pt"><img src="{esc(x["image"])}" alt="" loading="lazy"></div>' if x.get("image") else '<div class="pt e"></div>'
         inner = f'{im}<div class="pc"><span class="lbl">{esc(x.get("outlet"))}</span>{("<h3>" + esc(x["title"]) + "</h3>") if x.get("title") else ""}<div class="pd"><span>{esc(x.get("date"))}</span><span>{tag if url else ""}</span></div></div>'
         return f'<a class="pi rv" href="{esc(url)}" target="_blank" rel="noopener">{inner}</a>' if url else f'<div class="pi rv">{inner}</div>'

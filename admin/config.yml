@@ -86,12 +86,13 @@ collections:
             label_singular: article
             widget: list
             summary: "{{fields.date}} – {{fields.outlet}}"
-            hint: "Newest first. Drag to reorder. For a PDF, upload it in Link."
+            hint: "Newest first. Drag to reorder."
             fields:
               - {name: outlet, label: Publication, widget: string}
               - {name: title, label: "Headline (optional)", widget: text, required: false}
               - {name: date, label: "Date (e.g. 25.6.2026)", widget: string, required: false}
-              - {name: url, label: "Link to article or PDF", widget: file, required: false, allow_multiple: false}
+              - {name: url, label: "Link to article (web address)", widget: string, required: false}
+              - {name: pdf, label: "Or upload a PDF instead", widget: file, required: false}
               - {name: image, label: Image, widget: image, required: false}
 
   - name: projects

@@ -460,7 +460,35 @@
           "cutout": false
         }
       ],
-      "deck": []
+      "deck": [],
+      "pano": [
+        {
+          "image": "/a/pano/gk-360-1.jpg",
+          "thumb": "/a/pano/gk-360-1-t.jpg",
+          "caption": "The bar, brewhouse and market hall"
+        },
+        {
+          "image": "/a/pano/gk-360-2.jpg",
+          "thumb": "/a/pano/gk-360-2-t.jpg",
+          "caption": "Brewhouse: fermenters and the stairs to the platform"
+        },
+        {
+          "image": "/a/pano/gk-360-3.jpg",
+          "thumb": "/a/pano/gk-360-3-t.jpg",
+          "caption": "Brewhouse: mash tun and fermentation tanks"
+        },
+        {
+          "image": "/a/pano/gk-360-4.jpg",
+          "thumb": "/a/pano/gk-360-4-t.jpg",
+          "caption": "Keg washing behind the brewhouse"
+        },
+        {
+          "image": "/a/pano/gk-360-5.jpg",
+          "thumb": "/a/pano/gk-360-5-t.jpg",
+          "caption": "The beer garden and tank-beer bar"
+        }
+      ],
+      "pano_title": "Walk around the Elephant & Castle site in 360°"
     },
     {
       "type": "Photography & videography",

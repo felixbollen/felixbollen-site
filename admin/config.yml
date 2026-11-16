@@ -175,6 +175,18 @@ collections:
               - {name: caption, label: Caption, widget: string, required: false}
           - {name: link, label: "Button link (optional)", widget: string, required: false}
           - {name: link_label, label: "Button text", widget: string, required: false}
+          - {name: pano_title, label: "360° tour title (optional)", widget: string, required: false}
+          - name: pano
+            label: "360° photos (optional, opens full screen)"
+            label_singular: 360 photo
+            widget: list
+            required: false
+            collapsed: true
+            summary: "{{fields.caption}}"
+            fields:
+              - {name: image, label: "360° image (equirectangular, 2:1)", widget: image}
+              - {name: thumb, label: "Thumbnail (optional)", widget: image, required: false}
+              - {name: caption, label: Caption, widget: string, required: false}
           - {name: deck_title, label: "Slide deck title (optional)", widget: string, required: false}
           - name: deck
             label: "Slide deck (optional)"

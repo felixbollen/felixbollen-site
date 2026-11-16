@@ -7,6 +7,7 @@ ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, "public")
 ST = os.path.join(ROOT, "static")
 VER = (os.environ.get("COMMIT_REF") or "dev")[:7]
+MEDIA = os.environ.get("MEDIA_BASE") or ("https://felixbollen.github.io/felixbollen-site/static" if os.environ.get("NETLIFY") else "")
 esc = lambda s: html.escape(str(s or ""))
 br = lambda s: esc(s).replace("\n", "<br>")
 
@@ -243,6 +244,12 @@ for i, p in enumerate(P):
                 f'<figure><img data-src="{esc(d["image"])}" alt=""><figcaption><b>{j+1:02d} / {len(deck):02d}</b>{esc(d.get("caption"))}</figcaption></figure>' for j, d in enumerate(deck)) + '</div><div class="nv"><button type="button" data-d="0" aria-label="Previous">←</button><button type="button" data-d="1" aria-label="Next">→</button></div></div>'
         body = stats(s.get("stats")) + f'<p class="lede">{esc(s.get("text"))}</p>'
         lk = f'<p class="sl"><a class="btn" href="{esc(s["link"])}">{esc(s.get("link_label") or "More")}</a></p>' if s.get("link") else ""
+        pano = [x for x in s.get("pano", []) if x.get("image")]
+        if pano:
+            pj = json.dumps([{"image": MEDIA + x["image"] if x["image"].startswith("/") else x["image"], "thumb": (MEDIA + x["thumb"] if (x.get("thumb") or "").startswith("/") else x.get("thumb") or ""), "caption": x.get("caption", "")} for x in pano]).replace("</", "<\\/")
+            lk += f'<p class="sl"><a class="btn" href="#" data-pano-open>Open the 360° tour ↗</a></p><script type="application/json" class="pano-data" data-title="{esc(s.get("pano_title") or "360°")}">{pj}</script>'
+            extra += '<script type="importmap">{"imports":{"three":"/js/three.module.min.js"}}</script><script type="module" src="/js/pano.js?' + VER + '"></script>'
+
         body += lk
         gal = f'<div class="gal5" data-lbg>{"".join(vfig(v) for v in vids)}{"".join(gfig(x) for x in ims)}</div>' if (ims or vids) else ""
         subh = f"<small>{esc(sub)}</small>" if sub else ""
@@ -280,7 +287,6 @@ for f in sorted(glob.glob(os.path.join(ROOT, "content/press-*.json"))):
 <section class="pg">{"".join(card(x) for x in its)}</section></main>''' + FOOT
     os.makedirs(OUT + base, exist_ok=True); open(OUT + base + "index.html", "w", encoding="utf-8").write(page)
 # ---------- serve media from GitHub Pages (free bandwidth) ----------
-MEDIA = os.environ.get("MEDIA_BASE") or ("https://felixbollen.github.io/felixbollen-site/static" if os.environ.get("NETLIFY") else "")
 if MEDIA:
     rx = re.compile(r'((?:src|href|data-src|poster)=")/((?:v|a|ds|media|press)/)')
     for f in glob.glob(OUT + "/**/*.html", recursive=True):

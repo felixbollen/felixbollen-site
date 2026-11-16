@@ -482,3 +482,26 @@ dialog button{margin-top:8px;border:1px solid #0b0b0b;padding:8px 16px;border-ra
 .vn .row a>*{inset:auto!important;left:18%!important;top:18%!important;width:64%!important;height:64%!important}
 .vn .row a img.c{object-fit:contain;max-width:none}
 .vn .row{overflow:visible}
+/* 360 viewer */
+.pano{position:fixed;inset:0;z-index:200;background:#0b0b0b;color:#fff;display:none}
+.pano.open{display:block}
+.pano .pv3{position:absolute;inset:0;cursor:grab;touch-action:none}
+.pano .pv3:active{cursor:grabbing}
+.pano .pv3 canvas{display:block}
+.pano .pv3.ld::after{content:"Loading…";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font-size:12px;letter-spacing:.2em;text-transform:uppercase;opacity:.7}
+.pano .ptop{position:absolute;left:0;right:0;top:0;display:flex;justify-content:space-between;align-items:center;padding:20px var(--pad);background:linear-gradient(180deg,rgba(0,0,0,.55),transparent);pointer-events:none}
+.pano .ptop .lbl{color:#fff;opacity:.85}
+.pano .px{pointer-events:auto;width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.6);color:#fff;background:rgba(0,0,0,.25);font-size:18px}
+.pano .phint{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);padding:12px 18px;border-radius:30px;background:rgba(0,0,0,.45);color:#fff;pointer-events:none;transition:opacity .6s;white-space:nowrap}
+.pano.used .phint,.pano.gy .phint{opacity:0}
+.pano .pbar{position:absolute;left:0;right:0;bottom:0;padding:18px var(--pad) 22px;background:linear-gradient(0deg,rgba(0,0,0,.7),transparent)}
+.pano .pcap{font-size:15px;margin-bottom:12px;opacity:.9}
+.pano .pthumbs{display:flex;gap:10px;overflow-x:auto;scrollbar-width:none}
+.pano .pthumbs button{position:relative;flex:0 0 auto;width:140px;aspect-ratio:2/1;border:2px solid transparent;border-radius:3px;overflow:hidden;opacity:.6;transition:opacity .3s,border-color .3s;padding:0;background:#222}
+.pano .pthumbs button.on{opacity:1;border-color:#fff}
+.pano .pthumbs button:hover{opacity:1}
+.pano .pthumbs img{width:100%;height:100%;object-fit:cover;display:block}
+.pano .pthumbs span{position:absolute;left:6px;bottom:4px;font-size:11px;font-weight:700;color:#fff;text-shadow:0 1px 4px #000}
+.pano .pgyro{display:none;margin-top:12px;padding:10px 16px;border-radius:30px;border:1px solid rgba(255,255,255,.6);color:#fff;font-size:13px;background:transparent}
+.pano .pgyro.on{display:inline-block}
+@media(max-width:700px){.pano .pthumbs button{width:104px}.pano .pcap{font-size:13px}}

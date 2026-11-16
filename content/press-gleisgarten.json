@@ -1,0 +1,709 @@
+{
+  "title": "Gleis//Garten: Presse",
+  "heading": "Presse",
+  "intro": "Press coverage of Gleis//Garten, Vienna, since opening in October 2023.",
+  "contact": "Press enquiries: felix@gleisgarten.com",
+  "project": "gleis-garten",
+  "items": [
+    {
+      "outlet": "1000Things",
+      "title": "Michi mampft (beim WM Public Viewing): So schmeckt’s im Gleis//Garten in Meidling",
+      "date": "25.6.2026",
+      "url": "https://www.1000thingsmagazine.com/de/a/2207831/michi-mampft-gleis-garten-wien-meidling/",
+      "image": "/a/press/gg-press-001.webp"
+    },
+    {
+      "outlet": "Heute.at",
+      "title": "",
+      "date": "18.11.2025",
+      "url": "https://www.heute.at/s/foodmarket-lockt-mit-wintermarkt-und-weihnachtsbaeckerei-120143522",
+      "image": "/a/press/gg-press-002.webp"
+    },
+    {
+      "outlet": "Von London nach Wien-Meidling",
+      "title": "Mit dem Gleis//Garten haben Felix Bollen und Anton Borkmann Wiens ersten Food-Market mit eigener Brauerei eröffnet. Funktioniert das Konzept?",
+      "date": "9.1.2025",
+      "url": "https://www.gast.at/gastronomie/gleisgarten-wien-funktioniert-das-konzept-55004",
+      "image": "/a/press/gg-press-003.webp"
+    },
+    {
+      "outlet": "Bezirksblatt",
+      "title": "Austern und Kaviar treffen auf Freibier und Stimmung",
+      "date": "24.8.2026",
+      "url": "https://wienerbezirksblatt.at/gleisgarten-september26/",
+      "image": "/a/press/gg-press-004.webp"
+    },
+    {
+      "outlet": "Vienna Online",
+      "title": "Austern, Kaviar und Freibier: Wien bekommt zwei Genuss-Feste",
+      "date": "24.8.2026",
+      "url": "https://www.vienna.at/austern-kaviar-und-freibier-wien-bekommt-zwei-genuss-feste/10405076",
+      "image": "/a/press/gg-press-005.webp"
+    },
+    {
+      "outlet": "Mein Bezirk",
+      "title": "Internationaler Tag des Biers: Gratis-IPA im Gleisgarten",
+      "date": "28.7.2026",
+      "url": "https://www.meinbezirk.at/event/meidling/c-kulinarik/internationaler-tag-des-biers-gratis-ipa-im-gleisgarten_e3973971",
+      "image": "/a/press/gg-press-006.webp"
+    },
+    {
+      "outlet": "Kalk & Kegel",
+      "title": "Mehr als 1000 Menschen beim Klassentreffen und Sunday Afternoon Wine Club",
+      "date": "19.7.2026",
+      "url": "https://kalkundkegel.com/.well-known/sgcaptcha/?r=%2Fsawc-klassentreffen%2F&y=ipr:5.180.61.123:1784543587.545",
+      "image": "/a/press/gg-press-007.webp"
+    },
+    {
+      "outlet": "A.R.T.",
+      "title": "Erstmals verlieh das Fachmagazin KALK&KEGEL einen „Innovations Award“ für Sommeliers. Als Sieger wurden Julia Seidl (Belétage am Traunsee) und Hannes Margreiter (Geniesserhotel Der Böglerhof) geehrt.",
+      "date": "15.7.2026",
+      "url": "https://www.art-redaktionsteam.at/de/pressenews/geniesserhotel-selection-mittendrin-bei-der-ehrung-von-oesterreichs-innovativste-sommeliers",
+      "image": "/a/press/gg-press-008.webp"
+    },
+    {
+      "outlet": "Schauvorbei",
+      "title": "Von 11. Juni bis 19. Juli 2026 wird im Gleis//Garten wieder gemeinsam mitgefiebert:",
+      "date": "5.6.2026",
+      "url": "https://schauvorbei.at/event/wm-public-viewing-im-gleis-garten/",
+      "image": "/a/press/gg-press-009.webp"
+    },
+    {
+      "outlet": "Heute.at",
+      "title": "Public Viewing im Gleis//Garten",
+      "date": "29.5.2026",
+      "url": "https://www.heute.at/s/public-viewing-im-gleisgarten-120198467",
+      "image": "/a/press/gg-press-010.webp"
+    },
+    {
+      "outlet": "Weinguide.at",
+      "title": "Erst verkosten, dann mitfiebern: Mit „Sip & Score“ bringt Rebentanz am Freitag, 19. Juni 2026, Wein und Fußball im Wiener Gleisgarten in einer besonders entspannten Kombination.",
+      "date": "14.5.2026",
+      "url": "https://weinguide.at/event/rebentanz-weinverkostung",
+      "image": "/a/press/gg-press-011.webp"
+    },
+    {
+      "outlet": "1000things",
+      "title": "Hopfenfans, aufgepasst: Am 12. und 13. Juni wird der Gleis//Garten in Wien wieder zum wahrscheinlich entspanntesten Bier-Hotspot der Stadt.",
+      "date": "13.5.2026",
+      "url": "https://www.1000thingsmagazine.com/de/a/2201527/kulinarik-events-im-sommer-in-oesterreich/",
+      "image": "/a/press/gg-press-012.webp"
+    },
+    {
+      "outlet": "Ganz Wien",
+      "title": "Public Viewing in Wien: Die besten Plätze für die WM 2026",
+      "date": "7.5.2026",
+      "url": "https://www.ganz-wien.at/freizeit/sport/fussball/europameisterschaft/public-viewing.html",
+      "image": "/a/press/gg-press-013.webp"
+    },
+    {
+      "outlet": "TV21",
+      "title": "Charity‑Flohmarkt im Gleisgarten: Prominenz, Raritäten & starke Unterstützung für Global Family",
+      "date": "28.4.2026",
+      "url": "",
+      "image": "/a/press/gg-press-014.webp"
+    },
+    {
+      "outlet": "Schauvorbei",
+      "title": "ESC-Public-Viewing im Gleis//Garten",
+      "date": "24.4.2026",
+      "url": "https://schauvorbei.at/event/esc-public-viewing-im-gleis-garten/2026-05-16/",
+      "image": "/a/press/gg-press-015.webp"
+    },
+    {
+      "outlet": "viennainside",
+      "title": "Guide zum Rahmenprogramm und Public Viewings",
+      "date": "15.4.2026",
+      "url": "https://www.viennainside.at/freizeit/eurovision-song-contest-2026-wien-rahmenprogramm-und-public-viewing/",
+      "image": "/a/press/gg-press-016.webp"
+    },
+    {
+      "outlet": "Ganz-Wien.at",
+      "title": "Der Eurovision Song Contest 2026 beschränkt sich nicht auf die Stadthalle – ganz Wien wird zur Bühne.",
+      "date": "14.4.2026",
+      "url": "https://www.ganz-wien.at/veranstaltungen/festival/esc-public-viewing.html",
+      "image": "/a/press/gg-press-017.webp"
+    },
+    {
+      "outlet": "Wien.gv",
+      "title": "Na Bumm! - Das Kinderkonzert im Gleis//Garten",
+      "date": "13.4.2026",
+      "url": "https://www.wien.gv.at/veranstaltungen/na-bumm",
+      "image": "/a/press/gg-press-018.webp"
+    },
+    {
+      "outlet": "Kurier",
+      "title": "Kultur Public Viewing: Wo kann man beim ESC live mitfiebern?",
+      "date": "11.4.2026",
+      "url": "https://kurier.at/kultur/esc-2026-public-viewing-oesterreich/403148887",
+      "image": "/a/press/gg-press-019.webp"
+    },
+    {
+      "outlet": "Gastportal",
+      "title": "Gleis//Garten wird zur Wein-Oase",
+      "date": "9.4.2026",
+      "url": "https://gastroportal.at/gleis-garten-wird-zur-wein-oase/95674/",
+      "image": "/a/press/gg-press-020.webp"
+    },
+    {
+      "outlet": "Falstaff Wein Event",
+      "title": "Tastings & Touren: Top Weinevents am Wochenende",
+      "date": "9.4.2026",
+      "url": "https://www.falstaff.com/at/news/tastings-touren-top-weinevents-am-wochenende",
+      "image": "/a/press/gg-press-021.webp"
+    },
+    {
+      "outlet": "Falter",
+      "title": "Public Viewing & andere Events",
+      "date": "8.4.2026",
+      "url": "https://www.falter.at/morgen/20260408/was-die-inflation-mit-kleinen-betrieben-macht",
+      "image": "/a/press/gg-press-022.webp"
+    },
+    {
+      "outlet": "MSN",
+      "title": "ESC – Hier kannst du beim Public Viewing mitfiebern",
+      "date": "8.4.2026",
+      "url": "https://www.msn.com/de-at/nachrichten/inland/esc-hier-kannst-du-beim-public-viewing-mitfiebern/ar-AA20kHgo",
+      "image": "/a/press/gg-press-023.webp"
+    },
+    {
+      "outlet": "Heute ESC",
+      "title": "Public Viewings in Wien - Der Gleis//Garten ist mit dabei!",
+      "date": "8.4.2026",
+      "url": "https://www.heute.at/s/esc-hier-kannst-du-beim-public-viewing-mitfiebern-120178670",
+      "image": "/a/press/gg-press-024.webp"
+    },
+    {
+      "outlet": "Dreams Happen",
+      "title": "Österreichs coolstes Wine-Tasting-Event kommt in den Gleis//Garten",
+      "date": "7.4.2026",
+      "url": "https://dreamshappen.at/mit-oesterreichs-laengster-champagner-bar-sunday-afternoon-wine-club-oesterreichs-coolstes-wine-tasting-event-kommt-am-12-juli-in-den-gleis-garten-nach-wien/",
+      "image": "/a/press/gg-press-025.webp"
+    },
+    {
+      "outlet": "Lebensmittel Handwerk",
+      "title": "Heimische und internationale Biervielfalt treffen sich im Gleis//Garten",
+      "date": "27.3.2026",
+      "url": "/press/20260326_Das-Lebensmittel-Handwerk_17297769_compressed.pdf",
+      "image": "/a/press/gg-press-026.webp"
+    },
+    {
+      "outlet": "OE24",
+      "title": "Grünes Bier und Live-Musik: So feiert Wien den St. Patrick’s Day",
+      "date": "17.3.2026",
+      "url": "https://www.oe24.at/oesterreich/chronik/wien/lifestyle/gruenes-bier-und-live-musik-so-feiert-wien-den-st-patricks-day/673051529",
+      "image": "/a/press/gg-press-027.webp"
+    },
+    {
+      "outlet": "schauvorbei",
+      "title": "Saint Patrick’s Day im Gleis//Garten",
+      "date": "16.3.2026",
+      "url": "https://schauvorbei.at/event/saint-patricks-day-im-gleis-garten/",
+      "image": "/a/press/gg-press-028.webp"
+    },
+    {
+      "outlet": "Leaders Net",
+      "title": "Vienna Kraft Bier Fest brachte internationale Braukunst nach Wien",
+      "date": "26.2.2026",
+      "url": "https://www.leadersnet.at/news/97618,vienna-kraft-bier-fest-brachte-internationale-braukunst-nach.html",
+      "image": "/a/press/gg-press-029.webp"
+    },
+    {
+      "outlet": "MSN",
+      "title": "Am 20. und 21. Februar steigt im Gleis//Garten Wiens größtes Craft-Bier-Festival.",
+      "date": "17.2.2026",
+      "url": "https://www.msn.com/de-at/nachrichten/inland/70-bierstile-bei-wiens-gr%C3%B6%C3%9Ftem-craft-bier-festival/ar-AA1Wrerv",
+      "image": "/a/press/gg-press-030.webp"
+    },
+    {
+      "outlet": "Sempre-Vita",
+      "title": "Bierfans, die auf handwerklich gebraute Biere setzen können am 20. und 21. Februar 2026 im Gleis//Garten vorbeischauen",
+      "date": "16.2.2026",
+      "url": "https://www.sempre-vita.com/2026/02/vienna-kraft-bier-fest-2026/",
+      "image": "/a/press/gg-press-031.webp"
+    },
+    {
+      "outlet": "Falstaff",
+      "title": "Vienna Kraft Bier Fest: Wiens größtes Craft-Bier-Festival kehrt im Februar zurück",
+      "date": "14.2.2026",
+      "url": "https://www.falstaff.com/at/news/vienna-kraft-bier-fest-wiens-groesstes-craft-bier-festival-kehrt-im-februar-zurueck",
+      "image": "/a/press/gg-press-032.webp"
+    },
+    {
+      "outlet": "Kalk und Kegel",
+      "title": "Wiens größtes Bierfestival kehrt in den Gleis//Garten zurück",
+      "date": "11.2.2026",
+      "url": "https://kalkundkegel.com/gleisgarten-kraft-bier-fest/",
+      "image": "/a/press/gg-press-033.webp"
+    },
+    {
+      "outlet": "Mein Bezirk",
+      "title": "Vienna Kraft Bier Fest feiert Bierkultur im Meidlinger Gleisgarten",
+      "date": "10.2.2026",
+      "url": "https://www.meinbezirk.at/meidling/c-freizeit/vienna-kraft-bier-fest-feiert-bierkultur-im-meidlinger-gleisgarten_a8057197",
+      "image": "/a/press/gg-press-034.webp"
+    },
+    {
+      "outlet": "Bezirksblatt",
+      "title": "Vienna Kraft Bier Fest Wien: Über 70 Biersorten im Gleisgarten",
+      "date": "9.2.2026",
+      "url": "https://www.meinbezirk.at/event/meidling/c-kulinarik/vienna-kraft-bier-fest-wien-ueber-70-biersorten-im-gleisgarten_e3566722",
+      "image": "/a/press/gg-press-035.webp"
+    },
+    {
+      "outlet": "Oe24",
+      "title": "Meidlinger Gleisgarten wird ab Februar zum Kinosaal",
+      "date": "27.1.2026",
+      "url": "https://www.oe24.at/oesterreich/chronik/wien/meidlinger-gleisgarten-wird-ab-februar-zum-kinosaal/667174707",
+      "image": "/a/press/gg-press-036.webp"
+    },
+    {
+      "outlet": "Der Rest vom Wochenende",
+      "title": "Es ist zwar natürlich wirklich groß, aber es ist trotzdem total gemütlich und auch warm!",
+      "date": "26.1.2026",
+      "url": "https://blog.lei.at/2026/01/25/der-rest-vom-wochenende/",
+      "image": "/a/press/gg-press-037.webp"
+    },
+    {
+      "outlet": "Weinguide",
+      "title": "Am 22. Jänner 2026 kommen die Winzerinnen und Winzer der Thermenregion mit ihren prämierten Weinen in den Wiener Gleis//Garten und laden zur Verkostung der prämierten Weine der 2. Thermenregion DAC Trophy ein.",
+      "date": "20.1.2026",
+      "url": "https://weinguide.at/event/weinoase-by-thermenregion-dac",
+      "image": "/a/press/gg-press-038.webp"
+    },
+    {
+      "outlet": "oe24",
+      "title": "Vielseitiges Programm im Gleis//Garten im Januar!",
+      "date": "19.1.2026",
+      "url": "https://www.oe24.at/oesterreich/chronik/wien/vielseitiges-programm-im-gleis-garten-in-meidling/665559032",
+      "image": "/a/press/gg-press-039.webp"
+    },
+    {
+      "outlet": "Meinbezirk",
+      "title": "Wintermarkt poppt im Gleisgarten auf!",
+      "date": "19.11.2025",
+      "url": "https://apis.observer.at/mailview/f9803897-d60e-48ee-824c-c7835c0af1b2-2/15064810/1",
+      "image": "/a/press/gg-press-040.webp"
+    },
+    {
+      "outlet": "Vienna.at",
+      "title": "Buntes Weihnachtsprogramm im Wiener Gleis//Garten",
+      "date": "16.11.2025",
+      "url": "https://www.vienna.at/buntes-weihnachtsprogramm-im-wiener-gleis-garten/9798272",
+      "image": "/a/press/gg-press-041.webp"
+    },
+    {
+      "outlet": "MeinBezirk",
+      "title": "Der Gleisgarten wird zur winterlichen Bühne für Kunst und Musik",
+      "date": "14.11.2025",
+      "url": "https://www.meinbezirk.at/meidling/c-freizeit/der-gleisgarten-wird-zur-winterlichen-buehne-fuer-kunst-und-musik_a7811807",
+      "image": "/a/press/gg-press-042.webp"
+    },
+    {
+      "outlet": "Falter",
+      "title": "Kürbisfest im Gleisgarten",
+      "date": "27.10.2025",
+      "url": "https://www.falter.at/event/1059654/kuerbisfest",
+      "image": "/a/press/gg-press-043.webp"
+    },
+    {
+      "outlet": "Schauvorbei",
+      "title": "6 herbstliche Events für Kinder im Winter",
+      "date": "27.10.2025",
+      "url": "https://schauvorbei.at/6-herbstliche-events-fuer-kinder-im-wiener-gleis-garten/",
+      "image": "/a/press/gg-press-044.webp"
+    },
+    {
+      "outlet": "Falter",
+      "title": "Das Gleisgarten Oktoberfest",
+      "date": "2.10.2025",
+      "url": "https://www.falter.at/event/1054718/gleisgarten-oktoberfest",
+      "image": "/a/press/gg-press-045.webp"
+    },
+    {
+      "outlet": "1000Things",
+      "title": "Die 1 besten Restaurants in Wien",
+      "date": "1.10.2025",
+      "url": "https://www.1000thingsmagazine.com/de/a/1102061/top-10-restaurants-in-wien-im-oktober/",
+      "image": "/a/press/gg-press-046.webp"
+    },
+    {
+      "outlet": "Der Standard",
+      "title": "Das Street-Art-Festival Calle Libre: \"Kunst, die für alle zugängig ist\"",
+      "date": "18.8.2025",
+      "url": "https://www.derstandard.at/story/3000000283508/das-street-art-festival-calle-libre-kunst-die-fuer-alle-zugaengig-ist",
+      "image": "/a/press/gg-press-047.webp"
+    },
+    {
+      "outlet": "Meinbezirk",
+      "title": "Meidlings Häuserwänden wird ein frischer Farbton verpasst",
+      "date": "18.8.2025",
+      "url": "https://www.meinbezirk.at/meidling/c-freizeit/meidlings-haeuserwaenden-wird-ein-frischer-farbton-verpasst_a7506448#gallery=null",
+      "image": "/a/press/gg-press-048.webp"
+    },
+    {
+      "outlet": "1000Things",
+      "title": "Die schönsten Gastgärten in Wien",
+      "date": "6.8.2025",
+      "url": "https://www.1000thingsmagazine.com/de/a/1248/gastgaerten-in-wien/",
+      "image": "/a/press/gg-press-049.webp"
+    },
+    {
+      "outlet": "Falter.at",
+      "title": "Die schönsten Lokale mit großem Gastgarten",
+      "date": "6.8.2025",
+      "url": "https://www.falter.at/lokalfuehrer/die-schoensten-lokale-mit-grossem-gastgarten",
+      "image": "/a/press/gg-press-050.webp"
+    },
+    {
+      "outlet": "Falstaff",
+      "title": "Diese Food-Events stehen an",
+      "date": "1.8.2025",
+      "url": "https://www.falstaff.com/at/news/august-vorschau-diese-food-events-stehen-an",
+      "image": "/a/press/gg-press-051.webp"
+    },
+    {
+      "outlet": "Messe & Event",
+      "title": "Wo Hopfen auf Herz trifft: Vienna Kraft Bier Fest 2025 im Gleis//Garten",
+      "date": "31.7.2025",
+      "url": "https://messe-event.at/wo-hopfen-auf-herz-trifft-vienna-kraft-bier-fest-2025-im-gleis-garten/",
+      "image": "/a/press/gg-press-052.webp"
+    },
+    {
+      "outlet": "Medianet",
+      "title": "Vienna Kraft Bier Fest bringt internationale Brauereien nach Wien",
+      "date": "29.7.2025",
+      "url": "https://medianet.at/news/retail/vienna-kraft-bier-fest-bringt-internationale-brauereien-nach-wien-69387.html",
+      "image": "/a/press/gg-press-053.webp"
+    },
+    {
+      "outlet": "Meinbezirk",
+      "title": "Vienna Kraft Bier Fest bringt Europas Brauereien nach Wien",
+      "date": "27.7.2025",
+      "url": "https://www.meinbezirk.at/event/meidling/c-kulinarik/vienna-kraft-bier-fest-bringt-europas-brauereien-nach-wien_e1501978",
+      "image": "/a/press/gg-press-054.webp"
+    },
+    {
+      "outlet": "Vienna.at",
+      "title": "Sommer-Highlights im Wiener Gleis//Garten",
+      "date": "2.7.2025",
+      "url": "https://www.vienna.at/sommer-highlights-im-wiener-gleis-garten/9520688",
+      "image": "/a/press/gg-press-055.webp"
+    },
+    {
+      "outlet": "OE24",
+      "title": "Gläschen unter Palmen: Wine-Tasting im Gleisgarten",
+      "date": "1.7.2025",
+      "url": "https://www.oe24.at/oesterreich/chronik/wien/lifestyle/glaeschen-unter-palmen-wine-tasting-im-gleisgarten/639075476",
+      "image": "/a/press/gg-press-056.webp"
+    },
+    {
+      "outlet": "Meinbezirk",
+      "title": "Eurovision - Mega-Leinwand und freier Eintritt",
+      "date": "15.5.2025",
+      "url": "https://www.meinbezirk.at/meidling/c-wirtschaft/gleisgarten-zeigt-esc-finale-auf-mega-leinwand_a7318092",
+      "image": "/a/press/gg-press-057.webp"
+    },
+    {
+      "outlet": "ORF",
+      "title": "Toni Polster passt nicht mehr in seine Outfits",
+      "date": "8.4.2025",
+      "url": "https://on.orf.at/video/14270798/15858041/toni-polster-passt-nicht-mehr-in-seine-outfits",
+      "image": "/a/press/gg-press-058.webp"
+    },
+    {
+      "outlet": "Falstaff",
+      "title": "Meidling ist kulinarisch nicht so auffällig wie andere Bezirke: Wer aber weiß, wo er suchen muss, wird hier auch abseits des gehypten Meidlinger Marktes einige Lokale in Top-Qualität finden. Und Wiens einzige Food Hall.",
+      "date": "3.3.2025",
+      "url": "https://www.falstaff.com/ch/news/wien-lokale-1120-meidling",
+      "image": "/a/press/gg-press-059.webp"
+    },
+    {
+      "outlet": "Falstaff",
+      "title": "EIN PLATZ FÜR LOCAL HEROES",
+      "date": "28.2.2025",
+      "url": "/press/20250228_Falstaff-Spezial_16508908_compressed.pdf",
+      "image": "/a/press/gg-press-060.webp"
+    },
+    {
+      "outlet": "Die Presse",
+      "title": "Lebertacos und Flechtendrinks: Die aktuellen Kulinariktermine",
+      "date": "20.2.2025",
+      "url": "https://www.diepresse.com/19384222/lebertacos-und-flechtendrinks-die-aktuellen-kulinariktermine",
+      "image": "/a/press/gg-press-061.webp"
+    },
+    {
+      "outlet": "Heute",
+      "title": "Läuft! 50 Sorten zum Kosten bei Wiens größtem Bierfest",
+      "date": "19.2.2025",
+      "url": "https://www.heute.at/s/laeuft-50-sorten-zum-kosten-bei-wiens-groesstem-bierfest-120091479",
+      "image": "/a/press/gg-press-062.webp"
+    },
+    {
+      "outlet": "Gastro.news",
+      "title": "Ein Wochenende im Zeichen des Bieres: Das Vienna Kraft Bier Fest kehrt zurück nach Meidling",
+      "date": "16.2.2025",
+      "url": "https://www.gastro.news/magazin/ein-wochenende-im-zeichen-des-bieres-das-vienna-kraft-bier-fest-kehrt-zurueck-nach-meidling/",
+      "image": "/a/press/gg-press-063.webp"
+    },
+    {
+      "outlet": "Mein Bezirk",
+      "title": "Vienna Kraft Bier Fest: 50 Sorten Craft-Bier zum Verkosten",
+      "date": "7.2.2025",
+      "url": "https://www.meinbezirk.at/event/innere-stadt/c-kulinarik/vienna-kraft-bier-fest-50-sorten-craft-bier-zum-verkosten_e1410519",
+      "image": "/a/press/gg-press-064.webp"
+    },
+    {
+      "outlet": "Kulturblick",
+      "title": "Zum Wohl in Wien-Meidling",
+      "date": "1.2.2025",
+      "url": "https://kulturblick.at/berichte/2-vienna-kraft-bier-fest",
+      "image": "/a/press/gg-press-065.webp"
+    },
+    {
+      "outlet": "Strawanzerin",
+      "title": "Abwechslung garantiert die bunte Vielfalt an Produkten von regionalen Privatbrauereien bis hin zu internationalen Spitzenbrauereien",
+      "date": "29.1.2025",
+      "url": "https://www.strawanzerin.at/termin/2-vienna-kraft-bier-fest-im-gleis-garten/",
+      "image": "/a/press/gg-press-066.webp"
+    },
+    {
+      "outlet": "Bezirksblatt",
+      "title": "Im Gleis//Garten, dem ersten Foodmarket Wiens, findet am 21. und 22. Februar das Vienna Kraft Bier Festival statt",
+      "date": "20.1.2025",
+      "url": "https://wienerbezirksblatt.at/der-gleis-garten-laedt-wieder-zum-vienna-kraft-bier-festival/",
+      "image": "/a/press/gg-press-067.webp"
+    },
+    {
+      "outlet": "Mein Bezirk",
+      "title": "Aufgrund des großen Erfolges im Vorjahr geht das Vienna Craft Bier Fest in der ehemaligen Remise der Badner Bahn in die nächste Runde.",
+      "date": "17.1.2025",
+      "url": "https://www.meinbezirk.at/event/meidling/c-kulinarik/2-vienna-kraft-bier-fest-im-gleisgarten_e1399687",
+      "image": "/a/press/gg-press-068.webp"
+    },
+    {
+      "outlet": "Wohin Vienna",
+      "title": "Highlight für alle Bierliebhaber:innen",
+      "date": "15.1.2025",
+      "url": "http://wohin.vienna.at/2025/2-vienna-kraft-bier-fest-im-gleis-garten-z/12-meidling",
+      "image": "/a/press/gg-press-069.webp"
+    },
+    {
+      "outlet": "Leaders Net",
+      "title": "Hopfen und Malz, Gott erhalt's: Toni Faber gab seinen Segen für \"Vienna Kraft\"-Bier",
+      "date": "19.12.2024",
+      "url": "https://www.leadersnet.at/news/85408,hopfen-und-malz-gott-erhalts-toni-faber-gab-seinen-segen-fuer.html",
+      "image": "/a/press/gg-press-070.webp"
+    },
+    {
+      "outlet": "Gast.at",
+      "title": "Der Gastronomie Club Wien lädt am 20. Jänner 2025 zum Neujahrsempfang im Stil der \"Goldenen Zwanziger\".",
+      "date": "4.12.2024",
+      "url": "https://www.gast.at/gastronomie/wien-neujahrsempfang-fuer-gastronomen-im-gleisgarten-54805",
+      "image": "/a/press/gg-press-071.webp"
+    },
+    {
+      "outlet": "Heute.at",
+      "title": "Weihnachten rückt näher. Adventszeit für die ganze Familie im Gleis//Garten.",
+      "date": "27.11.2024",
+      "url": "https://www.heute.at/s/adventszeit-fuer-die-ganze-familie-im-gleisgarten-120074994",
+      "image": "/a/press/gg-press-072.webp"
+    },
+    {
+      "outlet": "Meinbezirk",
+      "title": "Eine Party für den Gleisgarten zum ersten Geburtstag",
+      "date": "13.10.2024",
+      "url": "https://www.meinbezirk.at/meidling/c-lokales/eine-party-fuer-den-gleisgarten-zum-ersten-geburtstag_a6944714#gallery=null",
+      "image": "/a/press/gg-press-073.webp"
+    },
+    {
+      "outlet": "Vienna.at",
+      "title": "Am 26. Oktober 2024 feiert der \"Gleis//Garten\" in Wien-Meidling seinen 1. Geburtstag. Für alle Besucher, die um 18 Uhr anwesend sind, gibt es kostenloses Bier.",
+      "date": "10.10.2024",
+      "url": "https://www.vienna.at/gleis-garten-in-wien-meidling-feiert-1-geburtstag-mit-gratis-bier/9000058",
+      "image": "/a/press/gg-press-074.webp"
+    },
+    {
+      "outlet": "The Chill Report",
+      "title": "Oktoberfest 2024 im Gleis//Garten",
+      "date": "27.9.2024",
+      "url": "https://thechillreport.com/2024/09/30/gastro-tipps-in-wien-oktober-2024/",
+      "image": "/a/press/gg-press-075.webp"
+    },
+    {
+      "outlet": "Kurier",
+      "title": "Gemeinsam mit \"Global Family\" und \"FC Global Kickers\" möchte Toni Polster im Gleis//Garten in Wien Meidling schwer vom Hochwasser betroffenen Familien helfen.",
+      "date": "24.9.2024",
+      "url": "https://kurier.at/stars/austropromis/kicker-legende-toni-polster-will-mit-promi-auktion-hochwasseropfern-helfen-global-family/402952441",
+      "image": "/a/press/gg-press-076.webp"
+    },
+    {
+      "outlet": "Falstaff",
+      "title": "Ein Muss für Bierliebhaber:innen: Im »Gleisgarten« steigt das »Vienna Kraft Bier Festival«",
+      "date": "27.8.2024",
+      "url": "https://www.falstaff.com/profi/newsbeitrag/ein-muss-fuer-bierliebhaberinnen-im-gleisgarten-steigt-das-vienna-kraft-bier-festival/",
+      "image": "/a/press/gg-press-077.webp"
+    },
+    {
+      "outlet": "Vienna Kraft Bier Festival",
+      "title": "Im Gleis//Garten, dem ersten Foodmarket Wiens, findet am 30. Und 31. August das Vienna Kraft Bier Festival statt",
+      "date": "27.8.2024",
+      "url": "https://events.wien.info/de/18ds/vienna-kraft-bier-festival/",
+      "image": "/a/press/gg-press-078.webp"
+    },
+    {
+      "outlet": "hopfenhelden.de",
+      "title": "Eigentlich, sagen die Betreiber des Wiener Gleis//Garten, sei es die Idee gewesen „ein Craft Bier Fest mit lokalen Brauereien zu hosten und die Idee vom konzernfreien ‚Craftbeer & Loop‘ Festival von TenFifty weiterzuführen“...",
+      "date": "23.8.2024",
+      "url": "https://www.hopfenhelden.de/wien-feiert-erstes-kraft-bier-fest/",
+      "image": "/a/press/gg-press-079.webp"
+    },
+    {
+      "outlet": "Wiener Bezirksblatt",
+      "title": "Der Gleis//Garten lädt zum Vienna Kraft Bier Festival",
+      "date": "18.8.2024",
+      "url": "https://wienerbezirksblatt.at/meidling-gleis-garten-laedt-zum-vienna-kraft-bier-festival/",
+      "image": "/a/press/gg-press-080.webp"
+    },
+    {
+      "outlet": "Kronenzeitung",
+      "title": "Das sind die besten Fanzones Wiens",
+      "date": "16.6.2024",
+      "url": "https://www.krone.at/3414763",
+      "image": "/a/press/gg-press-081.webp"
+    },
+    {
+      "outlet": "Fallstaff",
+      "title": "PUBLIC VIEWING ZUR FUSSBALL-EM 2024: TOP LOCATIONS FÜR FANS IN WIEN",
+      "date": "14.6.2024",
+      "url": "https://www.falstaff.com/at/news/public-viewing-zur-fussball-em-2024-top-locations-fuer-fans-in-wien",
+      "image": "/a/press/gg-press-082.webp"
+    },
+    {
+      "outlet": "Wien.Info",
+      "title": "In der Wiener Foodhall Gleisgarten werden alle Spiele auf einer Großleinwand übertragen.",
+      "date": "12.6.2024",
+      "url": "https://www.wien.info/de/lebenswertes-wien/sport/public-viewing-356030",
+      "image": "/a/press/gg-press-083.webp"
+    },
+    {
+      "outlet": "Falter",
+      "title": "Mit den längeren Tagen und dem zunehmend schönen Wetter erwacht Wien zu neuem Leben, und die Menschen strömen in Scharen nach draußen, um die warmen Sonnenstrahlen zu genießen.",
+      "date": "14.5.2024",
+      "url": "https://www.falter.at/advertorial/die-besten-geheimen-gastgaerten-in-wien",
+      "image": "/a/press/gg-press-084.webp"
+    },
+    {
+      "outlet": "Bezirksblatt",
+      "title": "Erste Foodhall Wiens eröffnet eigenen „Gast//Garten“",
+      "date": "22.4.2024",
+      "url": "https://wienerbezirksblatt.at/erste-foodhall-wiens-eroeffnet-eigenen-gast-garten/",
+      "image": "/a/press/gg-press-085.webp"
+    },
+    {
+      "outlet": "Fablstyle",
+      "title": "What has long been a trend in cities like London and New York has finally made its way to the Austrian capital:",
+      "date": "25.3.2024",
+      "url": "https://fablstyle.com/blog/gleisgarten-gastronomic-wonderland-and-viennas-first-food-hall/",
+      "image": "/a/press/gg-press-086.webp"
+    },
+    {
+      "outlet": "Wien.Info",
+      "title": "The Gleisgarten is located in a former carriage shed and offers culinary delights to suit every taste.",
+      "date": "17.1.2024",
+      "url": "https://www.wien.info/en/dine-drink/gleisgarten-foodhall-470444",
+      "image": "/a/press/gg-press-087.webp"
+    },
+    {
+      "outlet": "Lust auf Österreich",
+      "title": "Vienna Kraft und die Kunst des Craft-Brauens",
+      "date": "14.1.2024",
+      "url": "https://lust-auf-oesterreich.at/vienna-kraft-und-die-kunst-des-craft-brauens/402706744",
+      "image": "/a/press/gg-press-088.webp"
+    },
+    {
+      "outlet": "Im Graetzl.",
+      "title": "Die ehemalige Remise in Wien-Meidling wird zur Bühne, auf der das Handwerk aus Kunst//Kultur//Kulinarik authentisch erlebt werden kann.",
+      "date": "22.12.2023",
+      "url": "https://www.imgraetzl.at/meidling-zentrum/locations/gleis-garten-wiens-markthalle",
+      "image": "/a/press/gg-press-089.webp"
+    },
+    {
+      "outlet": "Vienna Kraft und die Kunst des Craft-Brauens",
+      "title": "Fruchtig, frisch, nachhaltig: Vienna Kraft revolutioniert Wiens Bierszene. Direkt aus dem Tank ins Glas",
+      "date": "13.12.2023",
+      "url": "https://lust-auf-oesterreich.at/preview/article/9b4f83b3-8b78-4dac-b7ba-dba2bb2788ef",
+      "image": "/a/press/gg-press-090.webp"
+    },
+    {
+      "outlet": "Die Presse",
+      "title": "Auf ein Bierchen mit Anton & Felix",
+      "date": "9.11.2023",
+      "url": "https://www.derstandard.at/story/3000000191389/felix-anton-auf-ein-bierchen",
+      "image": "/a/press/gg-press-091.webp"
+    },
+    {
+      "outlet": "Mein Bezirk",
+      "title": "Speisen wie in einer Londoner Foodhall, aber in Meidling",
+      "date": "28.10.2023",
+      "url": "https://www.meinbezirk.at/meidling/c-wirtschaft/speisen-wie-in-einer-londoner-foodhall-aber-in-meidling_a6339419",
+      "image": "/a/press/gg-press-092.webp"
+    },
+    {
+      "outlet": "Wien.Info",
+      "title": "Der Gleisgarten in einer ehemaligen Remise bietet Kulinarik für jeden Geschmack.",
+      "date": "25.10.2023",
+      "url": "https://www.wien.info/de/essen-trinken/gleisgarten-foodhall-470168",
+      "image": "/a/press/gg-press-093.webp"
+    },
+    {
+      "outlet": "Profil",
+      "title": "Die Aufregung um Wiens erste Food Hall ist riesig. Aber wie schmeckt's dort eigentlich? Ein Lokalaugenschein.",
+      "date": "23.10.2023",
+      "url": "https://www.profil.at/gesellschaft/der-gleisgarten-ein-besuch-in-wiens-erster-food-hall/402642473",
+      "image": "/a/press/gg-press-094.webp"
+    },
+    {
+      "outlet": "Events at",
+      "title": "Was kann die neue Foodhalle Gleis//Garten?",
+      "date": "19.10.2023",
+      "url": "https://events.at/was-ist-los-in-wien/gleisgarten-wien-eroeffnung/402624497",
+      "image": "/a/press/gg-press-095.webp"
+    },
+    {
+      "outlet": "Gault Millau",
+      "title": "Die Wiener Foodhall ist eröffnet",
+      "date": "16.10.2023",
+      "url": "https://www.gaultmillau.at/news/die-wiener-foodhall-geisgarten-ist-eroeffnet",
+      "image": "/a/press/gg-press-096.webp"
+    },
+    {
+      "outlet": "Kurier",
+      "title": "Ein Fest für die Gaumen Influencer",
+      "date": "15.10.2023",
+      "url": "https://kurier.at/kolumnen/johannas-fest-ein-fest-fuer-die-gaumen-influencer/402629477",
+      "image": "/a/press/gg-press-097.webp"
+    },
+    {
+      "outlet": "Die Presse",
+      "title": "",
+      "date": "12.10.2023",
+      "url": "https://www.diepresse.com/17731057/gleisgarten-wiens-neue-erste-food-hall-in-der-alten-remise",
+      "image": "/a/press/gg-press-098.webp"
+    },
+    {
+      "outlet": "Heute",
+      "title": "Nachhaltig, jung, zugänglich",
+      "date": "10.10.2023",
+      "url": "https://www.heute.at/s/zwei-jahre-bauzeit-nun-eroeffnet-meidlinger-gleisgarten-100294329",
+      "image": "/a/press/gg-press-099.webp"
+    },
+    {
+      "outlet": "Gastro portal",
+      "title": "Wiens neue Foodhall „Gleis//Garten“ wird bargeldlos",
+      "date": "6.10.2023",
+      "url": "https://www.gastroportal.at/wiens-neue-foodhall-gleis-garten-wird-bargeldlos/67809",
+      "image": "/a/press/gg-press-100.webp"
+    }
+  ]
+}

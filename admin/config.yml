@@ -68,6 +68,32 @@ collections:
           - {name: contact_text, label: "Contact text", widget: text}
           - {name: email, label: "Email address", widget: string}
 
+  - name: press
+    label: "Press pages"
+    files:
+      - name: gleisgarten
+        label: "Gleis//Garten press"
+        file: content/press-gleisgarten.json
+        format: json
+        fields:
+          - {name: title, label: "Browser tab title", widget: string}
+          - {name: heading, label: Heading, widget: string}
+          - {name: intro, label: Intro, widget: text}
+          - {name: contact, label: "Contact line", widget: string}
+          - {name: project, widget: hidden}
+          - name: items
+            label: Articles
+            label_singular: article
+            widget: list
+            summary: "{{fields.date}} – {{fields.outlet}}"
+            hint: "Newest first. Drag to reorder. For a PDF, upload it in Link."
+            fields:
+              - {name: outlet, label: Publication, widget: string}
+              - {name: title, label: "Headline (optional)", widget: text, required: false}
+              - {name: date, label: "Date (e.g. 25.6.2026)", widget: string, required: false}
+              - {name: url, label: "Link to article or PDF", widget: file, required: false, allow_multiple: false}
+              - {name: image, label: Image, widget: image, required: false}
+
   - name: projects
     label: Projects
     label_singular: Project
@@ -146,6 +172,8 @@ collections:
               - {name: video, label: "Video (MP4)", widget: file}
               - {name: poster, label: "Still image", widget: image, required: false}
               - {name: caption, label: Caption, widget: string, required: false}
+          - {name: link, label: "Button link (optional)", widget: string, required: false}
+          - {name: link_label, label: "Button text", widget: string, required: false}
           - {name: deck_title, label: "Slide deck title (optional)", widget: string, required: false}
           - name: deck
             label: "Slide deck (optional)"

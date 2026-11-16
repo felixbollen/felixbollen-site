@@ -89,8 +89,9 @@ def vfig(v):
     return f'<a href="{esc(v["video"])}" data-lb data-type="video" data-cap="{esc(cap)}"><figure><div class="t">{th}</div><figcaption>▶ {esc(cap)}</figcaption></figure></a>'
 
 def navlogo(w):
-    if HASCOL(w["logo"]): return '<img src="/l/%s-colour.webp" alt="%s" loading="lazy">' % (w["logo"], esc(w["name"]))
-    return '<span class="lgt">%s</span>' % esc(w["name"])
+    m = '<span class="m">%s</span>' % (mono(w["logo"], w["name"]) if HASLOGO(w["logo"]) else '<span class="lgt">%s</span>' % esc(w["name"]))
+    c = '<img class="c" src="/l/%s-colour.webp" alt="" loading="lazy">' % w["logo"] if HASCOL(w["logo"]) else ""
+    return m + c
 def cardcol(p):
     return '<img class="col" src="/l/%s-colour.webp" alt="" loading="lazy">' % p["logo"] if HASCOL(p["logo"]) else ""
 
@@ -190,6 +191,8 @@ for i, p in enumerate(P):
             dk = f'<div class="deck"><span class="lbl">{esc(s.get("deck_title") or "Presentation")}</span><div class="rail">' + "".join(
                 f'<figure><img data-src="{esc(d["image"])}" alt=""><figcaption><b>{j+1:02d} / {len(deck):02d}</b>{esc(d.get("caption"))}</figcaption></figure>' for j, d in enumerate(deck)) + '</div><div class="nv"><button type="button" data-d="0" aria-label="Previous">←</button><button type="button" data-d="1" aria-label="Next">→</button></div></div>'
         body = stats(s.get("stats")) + f'<p class="lede">{esc(s.get("text"))}</p>'
+        lk = f'<p class="sl"><a class="btn" href="{esc(s["link"])}">{esc(s.get("link_label") or "More")}</a></p>' if s.get("link") else ""
+        body += lk
         gal = f'<div class="gal5" data-lbg>{"".join(vfig(v) for v in vids)}{"".join(gfig(x) for x in ims)}</div>' if (ims or vids) else ""
         subh = f"<small>{esc(sub)}</small>" if sub else ""
         secs.append(f'''<div class="sec5"><button type="button" aria-expanded="false"><span class="n">{n+1:02d}</span><h3>{esc(title)}{subh}</h3><span class="c">{(len(ims)+len(vids)) or ''}</span><span class="pm"></span></button>
@@ -208,4 +211,21 @@ for i, p in enumerate(P):
 <a href="/work/{nx['slug']}/" style="text-align:right"><small class="lbl">Next →</small><b>{esc(nx['name'])}</b></a></div></section></main>''' + FOOT
     os.makedirs(f"{OUT}/work/{p['slug']}", exist_ok=True)
     open(f"{OUT}/work/{p['slug']}/index.html", "w", encoding="utf-8").write(page)
+# ---------- press pages ----------
+for f in sorted(glob.glob(os.path.join(ROOT, "content/press-*.json"))):
+    pr = json.load(open(f, encoding="utf-8"))
+    proj = next((p for p in P if p["slug"] == pr.get("project")), None)
+    base = f"/work/{pr.get('project')}/presse/" if proj else f"/presse/{os.path.basename(f)[6:-5]}/"
+    its = [x for x in pr.get("items", []) if x.get("outlet") or x.get("title")]
+    def card(x):
+        url = x.get("url") or ""; ext = url.lower().endswith(".pdf"); tag = "PDF ↓" if ext else "Read article ↗"
+        im = f'<div class="pt"><img src="{esc(x["image"])}" alt="" loading="lazy"></div>' if x.get("image") else '<div class="pt e"></div>'
+        inner = f'{im}<div class="pc"><span class="lbl">{esc(x.get("outlet"))}</span>{("<h3>" + esc(x["title"]) + "</h3>") if x.get("title") else ""}<div class="pd"><span>{esc(x.get("date"))}</span><span>{tag if url else ""}</span></div></div>'
+        return f'<a class="pi rv" href="{esc(url)}" target="_blank" rel="noopener">{inner}</a>' if url else f'<div class="pi rv">{inner}</div>'
+    back = f'<a class="bk lbl" href="/work/{proj["slug"]}/">← {esc(proj["name"])}</a>' if proj else ""
+    page = head(pr.get("title") or "Press", pr.get("intro") or "", base) + header() + f'''
+<main id="top" class="press"><section class="ph">{back}<h1>{br(pr.get("heading") or "Press")}</h1><p class="lead">{esc(pr.get("intro"))}</p>
+<div class="pm"><span class="lbl mute">{len(its)} articles</span><span class="lbl mute">{esc(pr.get("contact"))}</span></div></section>
+<section class="pg">{"".join(card(x) for x in its)}</section></main>''' + FOOT
+    os.makedirs(OUT + base, exist_ok=True); open(OUT + base + "index.html", "w", encoding="utf-8").write(page)
 print("built", N, "projects")

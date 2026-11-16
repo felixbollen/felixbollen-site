@@ -59,7 +59,7 @@ def head(title, desc, path, og="/v/gk-home.jpg", style="", extra=""):
     return f'''<!DOCTYPE html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{esc(title)}</title><meta name="description" content="{esc(desc)}">
 <meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:type" content="website">
-<meta property="og:url" content="https://felixbollen.com{path}"><meta property="og:image" content="https://felixbollen.com{og}"><link rel="canonical" href="https://felixbollen.com{path}">
+<meta property="og:url" content="https://felixbollen.com{path}"><meta property="og:image" content="https://felixbollen.com/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Felix Bollen monogram"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://felixbollen.com/og.jpg"><link rel="canonical" href="https://felixbollen.com{path}">
 <meta name="theme-color" content="#ffffff"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
 <link rel="preload" href="/fonts/hero-super.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/hero-light.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css?{VER}">{f"<style>:root{{{style}}}</style>" if style else ""}{extra}</head><body>{SPRITE}'''

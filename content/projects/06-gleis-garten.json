@@ -24,12 +24,17 @@
         },
         {
           "image": "/media/gleisgarten-business-cards-mockup.webp",
-          "caption": "",
+          "caption": "Business Cards",
           "cutout": false
         },
         {
+          "cutout": false,
+          "image": "/media/t-shirt-mock-up-gg-1-front.webp",
+          "caption": "Staff Uniform"
+        },
+        {
           "image": "/media/t-shirt-mock-up-gg-1-back.webp",
-          "caption": "Staff T-shirt",
+          "caption": "T-shirt Merch",
           "cutout": true
         },
         {
@@ -43,8 +48,54 @@
           "cutout": true
         },
         {
+          "cutout": true,
+          "image": "/media/screenshot-2026-11-16-at-10.14.21.webp",
+          "caption": "Venue signage"
+        },
+        {
           "cutout": false,
-          "image": "/media/t-shirt-mock-up-gg-1-front.webp"
+          "image": "/media/screenshot-2026-11-16-at-09.24.41.webp",
+          "caption": "Design Systems"
+        },
+        {
+          "cutout": false,
+          "image": "/media/tote-bag-mockup-gg.webp",
+          "caption": "Tote Bag Merch"
+        },
+        {
+          "cutout": false,
+          "image": "/media/screenshot-2026-11-16-at-10.14.42.webp",
+          "caption": "Colour system"
+        },
+        {
+          "cutout": false,
+          "image": "/media/chatgpt-image-jan-8-2026-07-07-59-am-2.webp",
+          "caption": "Printed Poster Campagin"
+        },
+        {
+          "cutout": false,
+          "image": "/media/gemini-generated-image-f8vow8f8vow8f8vo.webp",
+          "caption": "Printed Poster Campagin 2"
+        },
+        {
+          "cutout": false,
+          "image": "/media/gleisgarten-brochure-mockup.webp",
+          "caption": "Brochures"
+        },
+        {
+          "cutout": false,
+          "image": "/media/ubahn-poster-0.4x.webp",
+          "caption": "Poster Design"
+        },
+        {
+          "cutout": false,
+          "image": "/media/img-7043.webp",
+          "caption": "Central Train Station Advertisement"
+        },
+        {
+          "cutout": false,
+          "image": "/media/gleisgarten-berliner.webp",
+          "caption": "Branded Pastries"
         }
       ],
       "deck": []

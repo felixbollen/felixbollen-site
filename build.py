@@ -137,25 +137,31 @@ def vnav(p, pv, nx):
 <a href="/work/{nx['slug']}/" style="text-align:right"><small class="lbl">Next →</small><b>{esc(nx['name'])}</b></a></div></section>'''
 
 def render_case(i, p, pv, nx):
-    hero = (p.get("hero") or {}).get("image", "")
+    H = p.get("hero") or {}; hero = H.get("image", ""); wide = H.get("shape") == "wide"
+    if wide:
+        herofig = '<figure class="cwide rvc" data-lbg><a href="%s" data-lb data-cap="%s"><img src="%s" alt=""></a>%s</figure>' % (esc(hero), esc(H.get("caption")), esc(hero), ('<figcaption>%s</figcaption>' % esc(H.get("caption"))) if H.get("caption") else "")
+    else:
+        herofig = '<div class="tiltw"><div class="tilt" data-lbg><a href="%s" data-lb data-cap="%s"><img src="%s" alt=""></a><span class="sheen"></span></div></div>' % (esc(hero), esc(p["name"]), esc(hero))
+    lists = "".join('<div class="cl rv"><span class="lbl">%s</span><ul>%s</ul></div>' % (esc(L.get("heading")), "".join('<li><b>%s</b><span>%s</span></li>' % (esc(it.get("a")), esc(it.get("b"))) for it in L.get("items", []))) for L in p.get("lists", []))
     title = p["name"].split(":")[-1].strip(); artist = p["name"].split(":")[0].strip() if ":" in p["name"] else ""
     facts = "".join(f'<div><dt class="lbl">{esc(f["label"])}</dt><dd>{esc(f["value"])}</dd></div>' for f in p.get("facts", []))
     chs = ""
     for j, c in enumerate(p.get("chapters", [])):
         paras = "".join(f"<p>{esc(t)}</p>" for t in (c.get("text") or []))
         fig = ('<figure class="cfig rvc"><a href="%s" data-lb data-cap="%s"><img src="%s" alt="%s" loading="lazy"></a><figcaption>%s</figcaption></figure>' % (esc(c["image"]), esc(c.get("caption")), esc(c["image"]), esc(c.get("caption")), esc(c.get("caption")))) if c.get("image") else ""
-        chs += f'''<section class="ch{" rev" if j % 2 else ""}" data-lbg><div class="ct2 rv"><span class="lbl">{esc(c.get("label"))}</span><h2>{br(c.get("heading"))}</h2>{paras}</div>{fig}</section>'''
+        chs += f'''<section class="ch{" rev" if j % 2 else ""}{"" if fig else " solo"}" data-lbg><div class="ct2 rv"><span class="lbl">{esc(c.get("label"))}</span><h2>{br(c.get("heading"))}</h2>{paras}</div>{fig}</section>'''
     apps = "".join('<a class="ap rv" style="transition-delay:%dms" href="%s" data-lb data-cap="%s"><div class="ai"><img src="%s" alt="%s" loading="lazy"></div><span>%s</span></a>' % ((k%3)*80, esc(a["image"]), esc(a.get("caption")), esc(a["image"]), esc(a.get("caption")), esc(a.get("caption"))) for k, a in enumerate(p.get("applications", [])))
     def dval(d):
         return '<a href="%s" target="_blank" rel="noopener">%s ↗</a>' % (esc(d["url"]), esc(d["value"])) if d.get("url") else esc(d["value"])
     dets = "".join('<div><dt class="lbl">%s</dt><dd>%s</dd></div>' % (esc(d["label"]), dval(d)) for d in p.get("details", []))
     page = head(f"{p['name']}: Felix Bollen", p.get("intro", ""), f"/work/{p['slug']}/") + header() + f'''
 <main id="top" class="case">
-<section class="chero"><div class="cht"><span class="lbl rv">Case study · {esc(p.get("kind"))} · {esc(p.get("years"))}</span><h1 class="rv">{esc(title)}</h1>{f'<div class="art rv">{esc(artist)}</div>' if artist else ""}<p class="lead rv">{esc(p.get("intro"))}</p></div>
-<div class="tiltw"><div class="tilt" data-lbg><a href="{esc(hero)}" data-lb data-cap="{esc(p['name'])}"><img src="{esc(hero)}" alt="{esc(p['name'])} cover"></a><span class="sheen"></span></div></div></section>
+<section class="chero{' wide' if wide else ''}"><div class="cht"><span class="lbl rv">Case study · {esc(p.get("kind"))} · {esc(p.get("years"))}</span><h1 class="rv">{esc(title)}</h1>{f'<div class="art rv">{esc(artist)}</div>' if artist else ""}<p class="lead rv">{esc(p.get("intro"))}</p></div>
+{herofig}</section>
 <dl class="facts rv">{facts}</dl>
 {chs}
-<section class="apps" data-lbg><div class="ah rv"><span class="lbl">{esc(p.get("apps_label"))}</span><h2>{br(p.get("apps_heading"))}</h2><p class="lede">{esc(p.get("apps_text"))}</p></div><div class="ag">{apps}</div></section>
+<section class="apps{' wide' if p.get('apps_shape')=='wide' else ''}" data-lbg><div class="ah rv"><span class="lbl">{esc(p.get("apps_label"))}</span><h2>{br(p.get("apps_heading"))}</h2>{f'<p class="lede">{esc(p.get("apps_text"))}</p>' if p.get("apps_text") else ""}</div><div class="ag">{apps}</div></section>
+{f'<section class="clists">{lists}</section>' if lists else ""}
 <dl class="facts dets rv">{dets}</dl>
 {f'<p class="ccr">{esc(p["credit"])}</p>' if p.get("credit") else ""}
 {vnav(p, pv, nx)}</main>

@@ -1,32 +1,19 @@
 {
-  "order": 6,
-  "slug": "gleis-garten",
-  "name": "Gleis//Garten",
-  "kind": "Food hall & brewery",
-  "city": "Vienna",
-  "years": "2022–2026",
-  "role": "Founding Partner & CMO",
   "disciplines": [
     "Art Direction",
     "Graphic Design",
     "Marketing & Sales"
   ],
+  "city": "Vienna",
   "logo": "gg",
+  "name": "Gleis//Garten",
+  "slug": "gleis-garten",
+  "intro": "Vienna's first food market, in a historic tram depot in Meidling, with local food, two bars and a brewery.",
   "background": "#0a220b",
-  "text_colour": "#f2ead7",
-  "tile": "#f2ead7",
-  "card": "#0a220b",
-  "intro": "Vienna's first food hall, in a historic tram depot in Meidling, with local food, two bars and a brewery.",
-  "credit": "",
-  "hero": {
-    "type": "vimeo",
-    "vimeo_id": "951693092",
-    "poster": "/v/gg.jpg"
-  },
   "sections": [
     {
       "type": "Branding",
-      "text": "The name, a house-shaped mark carrying the VIE.1120 postcode, and a green, cream and orange system.",
+      "text": "The name, translated to 'Track//Garden' as we planted trees inbetweent he old train tracks inside the old building. The logo is positioned to be family friendly & welcoming with a calming colour palette and a timeless serif font.",
       "stats": [],
       "videos": [],
       "images": [
@@ -36,9 +23,9 @@
           "cutout": false
         },
         {
-          "image": "/a/gg-brand-03.webp",
-          "caption": "Tram icon",
-          "cutout": true
+          "image": "/media/gleisgarten-business-cards-mockup.webp",
+          "caption": "",
+          "cutout": false
         },
         {
           "image": "/a/gg-brand-04.webp",
@@ -174,5 +161,18 @@
       ],
       "deck": []
     }
-  ]
+  ],
+  "tile": "#f2ead7",
+  "order": 6,
+  "card": "#0a220b",
+  "kind": "Food market & brewery",
+  "role": "Founding Partner & CMO",
+  "years": "2022–2026",
+  "credit": "",
+  "hero": {
+    "type": "vimeo",
+    "vimeo_id": "951693092",
+    "poster": ""
+  },
+  "text_colour": "#f2ead7"
 }

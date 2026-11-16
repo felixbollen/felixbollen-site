@@ -166,14 +166,14 @@ def render_case(i, p, pv, nx):
 {f'<p class="ccr">{esc(p["credit"])}</p>' if p.get("credit") else ""}
 {vnav(p, pv, nx)}</main>
 <script>
-(function(){{var w=document.querySelector('.tilt');if(!w)return;var tx=0,ty=0,cx=0,cy=0,last=0,RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
+(function(){{var io=new IntersectionObserver(function(es){{es.forEach(function(e){{if(e.isIntersecting){{e.target.classList.add('in');io.unobserve(e.target)}}}})}},{{threshold:.1}});document.querySelectorAll('.rvc').forEach(function(e){{io.observe(e)}});
+var w=document.querySelector('.tilt');if(!w)return;var tx=0,ty=0,cx=0,cy=0,last=0,RM=matchMedia('(prefers-reduced-motion:reduce)').matches;
 function set(x,y){{tx=Math.max(-1,Math.min(1,x));ty=Math.max(-1,Math.min(1,y));last=performance.now()}}
 addEventListener('pointermove',function(e){{if(e.pointerType==='mouse')set((e.clientX/innerWidth-.5)*2,(e.clientY/innerHeight-.5)*2)}});
 var b0=null,g0=null;function ori(e){{if(e.gamma==null)return;if(b0==null){{b0=e.beta;g0=e.gamma}}set((e.gamma-g0)/20,(e.beta-b0)/20)}}
 if(window.DeviceOrientationEvent){{if(typeof DeviceOrientationEvent.requestPermission==='function'){{document.addEventListener('touchend',function(){{DeviceOrientationEvent.requestPermission().then(function(s){{if(s==='granted')addEventListener('deviceorientation',ori)}}).catch(function(){{}})}},{{once:true}})}}else addEventListener('deviceorientation',ori)}}
 (function loop(t){{requestAnimationFrame(loop);var x=tx,y=ty;if(t-last>2500&&!RM){{x=Math.sin(t/2600)*.5;y=Math.cos(t/3300)*.35}}cx+=(x-cx)*.07;cy+=(y-cy)*.07;
 var sy=Math.min(1,scrollY/innerHeight);w.style.transform='rotateY('+(cx*14)+'deg) rotateX('+(-cy*10)+'deg) translateY('+(sy*-40)+'px) scale('+(1-sy*.06)+')';w.style.setProperty('--sx',(50+cx*40)+'%');w.style.setProperty('--sy',(50+cy*40)+'%')}})(0);
-var io=new IntersectionObserver(function(es){{es.forEach(function(e){{if(e.isIntersecting){{e.target.classList.add('in');io.unobserve(e.target)}}}})}},{{threshold:.15}});document.querySelectorAll('.rvc').forEach(function(e){{io.observe(e)}});
 }})();
 </script>''' + FOOT
     os.makedirs(f"{OUT}/work/{p['slug']}", exist_ok=True)

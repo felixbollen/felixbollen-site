@@ -126,6 +126,7 @@ collections:
           - {name: poster, label: "Video still (shown while the video loads)", widget: image, required: false}
           - {name: image, label: "Image", widget: image, required: false}
           - {name: slides, label: "Slideshow (Kraft Dalston)", widget: list, required: false, collapsed: true, field: {name: image, label: Image, widget: image}}
+          - {name: hide_logo, label: "Hide logo over the video/image", widget: boolean, default: false, required: false}
           - {name: type, widget: hidden}
           - {name: vimeo_id, widget: hidden}
           - {name: spin_logo, widget: hidden}

@@ -188,10 +188,10 @@ for i, p in enumerate(P):
         render_case(i, p, pv, nx); continue
     style = f"--bg:{p['background']};--fg:{p['text_colour']};--tile:{p.get('tile') or p['background']}"; extra = ""
     h = p.get("hero") or {}; ht = h.get("type", "image"); og = "/v/gk-home.jpg"
-    lgo = f'<div class="lgo">{mono(p["logo"], p["name"])}</div>'
+    lgo = "" if (p.get("hero") or {}).get("hide_logo") else f'<div class="lgo">{mono(p["logo"], p["name"])}</div>'
     if ht == "video" and h.get("video"):
         og = h.get("poster") or og
-        hero = f'<section class="vh"><video autoplay muted loop playsinline preload="metadata" poster="{esc(h.get("poster"))}"><source src="{esc(h["video"])}" type="video/mp4"></video>{lgo}'
+        hero = f'<section class="vh"><video autoplay muted loop playsinline webkit-playsinline disablepictureinpicture disableremoteplayback preload="auto" poster="{esc(h.get("poster"))}"><source src="{esc(h["video"])}" type="video/mp4"></video>{lgo}'
     elif ht == "vimeo":
         og = h.get("poster") or og
         hero = f'<section class="vh"><img class="po" src="{esc(h.get("poster"))}" alt=""><iframe src="https://player.vimeo.com/video/{esc(h.get("vimeo_id"))}?background=1&autoplay=1&loop=1&muted=1&dnt=1" allow="autoplay; fullscreen" title="{esc(p["name"])}" loading="eager"></iframe>{lgo}'
@@ -246,7 +246,7 @@ for i, p in enumerate(P):
         lk = f'<p class="sl"><a class="btn" href="{esc(s["link"])}">{esc(s.get("link_label") or "More")}</a></p>' if s.get("link") else ""
         pano = [x for x in s.get("pano", []) if x.get("image")]
         if pano:
-            pj = json.dumps([{"image": MEDIA + x["image"] if x["image"].startswith("/") else x["image"], "thumb": (MEDIA + x["thumb"] if (x.get("thumb") or "").startswith("/") else x.get("thumb") or ""), "caption": x.get("caption", "")} for x in pano]).replace("</", "<\\/")
+            pj = json.dumps([{"image": MEDIA + x["image"] if x["image"].startswith("/") else x["image"], "thumb": (MEDIA + x["thumb"] if (x.get("thumb") or "").startswith("/") else x.get("thumb") or ""), "caption": x.get("caption", ""), "vto": x.get("vto") or 1} for x in pano]).replace("</", "<\\/")
             lk += f'<p class="sl"><a class="btn" href="#" data-pano-open>Open the 360° tour ↗</a></p><script type="application/json" class="pano-data" data-title="{esc(s.get("pano_title") or "360°")}">{pj}</script>'
             extra += '<script type="importmap">{"imports":{"three":"/js/three.module.min.js"}}</script><script type="module" src="/js/pano.js?' + VER + '"></script>'
 

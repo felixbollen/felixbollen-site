@@ -9,8 +9,11 @@ const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.targ
 $$('.rv').forEach(e=>io.observe(e));
 
 /* hero video pause offscreen */
-$$('.vh video').forEach(v=>{if(RM){v.removeAttribute('autoplay');v.pause();return}
-  new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting?v.play().catch(()=>{}):v.pause())).observe(v)});
+$$('.vh video').forEach(v=>{v.muted=true;v.defaultMuted=true;v.setAttribute('muted','');v.playsInline=true;
+  const go=()=>{const p=v.play();if(p)p.catch(()=>{})};go();
+  ['touchstart','pointerdown','scroll','keydown'].forEach(t=>addEventListener(t,go,{once:true,passive:true}));
+  document.addEventListener('visibilitychange',()=>{if(!document.hidden)go()});
+  new IntersectionObserver(es=>es.forEach(e=>e.isIntersecting?go():v.pause())).observe(v)});
 
 /* dalston slides */
 const sl=$$('.slides img');if(sl.length){let i=0;const nx=()=>{sl[i].classList.remove('on');i=(i+1)%sl.length;const im=sl[i];if(!im.src)im.src=im.dataset.src;im.classList.add('on');const n=sl[(i+1)%sl.length];if(!n.src)n.src=n.dataset.src};

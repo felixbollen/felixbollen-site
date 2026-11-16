@@ -20,8 +20,9 @@
   "credit": "",
   "hero": {
     "type": "video",
-    "video": "/v/gk-home.mp4",
-    "poster": "/v/gk-home.jpg"
+    "video": "/v/gk-hero.mp4",
+    "poster": "/v/gk-hero.jpg",
+    "hide_logo": true
   },
   "tv_heading": "German brewers in\npost-Brexit London",
   "tv": [
@@ -486,6 +487,24 @@
           "image": "/a/pano/gk-360-5.jpg",
           "thumb": "/a/pano/gk-360-5-t.jpg",
           "caption": "The beer garden and tank-beer bar"
+        },
+        {
+          "image": "/a/pano/gk-360-g1.jpg",
+          "thumb": "/a/pano/gk-360-g1-t.jpg",
+          "caption": "Beer garden by the taproom entrance",
+          "vto": 0.6494
+        },
+        {
+          "image": "/a/pano/gk-360-g2.jpg",
+          "thumb": "/a/pano/gk-360-g2-t.jpg",
+          "caption": "Taproom bar and brewhouse",
+          "vto": 0.668
+        },
+        {
+          "image": "/a/pano/gk-360-g3.jpg",
+          "thumb": "/a/pano/gk-360-g3-t.jpg",
+          "caption": "Beer garden and keg bar",
+          "vto": 0.6914
         }
       ],
       "pano_title": "Walk around the Elephant & Castle site in 360°"

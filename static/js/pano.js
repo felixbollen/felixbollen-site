@@ -17,7 +17,7 @@ if (data) {
 
   const host = ov.querySelector('.pv3');
   let renderer, scene, camera, mesh, raf = 0, cur = -1, open = false;
-  let lon = 180, lat = 0, vlon = 0, vlat = 0, fov = 75, useGyro = false, gq = null;
+  let latMin = -85, lon = 180, lat = 0, vlon = 0, vlat = 0, fov = 75, useGyro = false, gq = null;
   const loader = new THREE.TextureLoader(); loader.setCrossOrigin('anonymous');
   const cache = {};
 
@@ -40,10 +40,13 @@ if (data) {
     ov.querySelectorAll('.pthumbs button').forEach((b, j) => b.classList.toggle('on', j === i));
     ov.querySelector('.pcap').textContent = items[i].caption || '';
     host.classList.add('ld');
-    const apply = t => { if (cur !== i) return; mesh.material.dispose(); mesh.material = new THREE.MeshBasicMaterial({ map: t }); host.classList.remove('ld'); };
+    const apply = t => { if (cur !== i) return;
+      const vto = +items[i].vto || 1; latMin = vto < 1 ? 90 - vto * 180 + 28 : -85;
+      mesh.geometry.dispose(); const g = new THREE.SphereGeometry(500, 64, 40, 0, Math.PI * 2, 0, Math.PI * vto); g.scale(-1, 1, 1); mesh.geometry = g;
+      mesh.material.dispose(); mesh.material = new THREE.MeshBasicMaterial({ map: t }); host.classList.remove('ld'); };
     if (cache[i]) apply(cache[i]);
     else loader.load(items[i].image, t => { t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 4; cache[i] = t; apply(t); });
-    lon = 180; lat = 0; vlon = 0.06;
+    lon = 180; lat = 0; vlon = 0.06; if (+items[i].vto < 1) lat = 10;
     if (items[i + 1] && !cache[i + 1]) loader.load(items[i + 1].image, t => { t.colorSpace = THREE.SRGBColorSpace; cache[i + 1] = t; });
   }
 
@@ -71,7 +74,7 @@ if (data) {
       camera.rotateOnWorldAxis(new THREE.Vector3(0, 1, 0), yawOff);
     } else {
       if (!drag) { lon += vlon; vlon *= 0.95; if (Math.abs(vlon) < 0.02) vlon = 0.02; }
-      lat = Math.max(-85, Math.min(85, lat));
+      lat = Math.max(Math.min(latMin, 20), Math.min(85, lat));
       const phi = THREE.MathUtils.degToRad(90 - lat), th = THREE.MathUtils.degToRad(lon);
       camera.lookAt(500 * Math.sin(phi) * Math.cos(th), 500 * Math.cos(phi), 500 * Math.sin(phi) * Math.sin(th));
     }

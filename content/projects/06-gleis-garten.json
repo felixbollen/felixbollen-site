@@ -28,7 +28,7 @@
           "cutout": false
         },
         {
-          "image": "/a/gg-brand-04.webp",
+          "image": "/media/t-shirt-mock-up-gg-1-back.webp",
           "caption": "Staff T-shirt",
           "cutout": true
         },
@@ -41,6 +41,10 @@
           "image": "/a/gg-brand-06.webp",
           "caption": "Vendor signage",
           "cutout": true
+        },
+        {
+          "cutout": false,
+          "image": "/media/t-shirt-mock-up-gg-1-front.webp"
         }
       ],
       "deck": []

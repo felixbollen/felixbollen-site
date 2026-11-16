@@ -1,8 +1,23 @@
 {
-  "title": "Felix Bollen: Marketing & Sales, Art Direction, Graphic Design",
-  "description": "Felix Bollen: marketing & sales, art direction and graphic design. Brands built from scratch across London, Vienna, Graz and Berlin.",
-  "name": "Felix Bollen",
-  "intro": "I build brands from scratch and sell them, from the first sketch of the logo to the last ticket sold. Berlin & London, working remotely.",
+  "details": [
+    {
+      "label": "Education",
+      "value": "BA (Hons) Graphic & Media Design, UAL London College of Communication"
+    },
+    {
+      "label": "Industry year",
+      "value": "RCKT and Denkwerk, Berlin"
+    },
+    {
+      "label": "Languages",
+      "value": "German (native), English (fluent)"
+    },
+    {
+      "label": "Tools",
+      "value": "Adobe CC, Webflow, Squarespace, Google & Meta Ads, Mailchimp, Zoho, AI tools"
+    }
+  ],
+  "contact_heading": "Let's build\nsomething honest.",
   "disciplines": [
     {
       "title": "Marketing & Sales",
@@ -39,6 +54,18 @@
       ]
     }
   ],
+  "also": [
+    {
+      "name": "KRAFTMoments Graz",
+      "text": "Marketing for four business units, including Thaler See Garten and a new 1,200 m² outdoor venue.",
+      "tag": "Marketing & Sales"
+    },
+    {
+      "name": "Emancipator: Baralku",
+      "text": "Album cover and merchandise illustrations.",
+      "tag": "Graphic Design"
+    }
+  ],
   "numbers": [
     {
       "figure": "£55m",
@@ -57,42 +84,15 @@
       "label": "Markets: Germany, Austria, UK"
     }
   ],
-  "also": [
-    {
-      "name": "KRAFTMoments Graz",
-      "text": "Marketing for four business units, including Thaler See Garten and a new 1,200 m² outdoor venue.",
-      "tag": "Marketing & Sales"
-    },
-    {
-      "name": "Emancipator: Baralku",
-      "text": "Album cover and merchandise illustrations.",
-      "tag": "Graphic Design"
-    }
-  ],
-  "about_heading": "Self-taught in business, trained in design, not afraid of the deep end.",
+  "name": "Felix Bollen",
+  "contact_text": "Brand identities, campaigns, art direction or a marketing lead, part-time or remote. Tell me what you're building.",
+  "intro": "I build brands from scratch. Specialised in marketing & communication. Berlin & London, working remotely.",
   "about": [
     "I started my first company in my final year at university, aged 21, with friends I've known since I was 16. We still run it together. What began as German Kraft in London grew into breweries, bars, food halls and a distillery across the UK and Austria.",
     "I've been involved in every department, but my home is brand and marketing. I create brands from scratch, position them in their market and make noise about them through campaigns, PR and events. Now I take on freelance and remote work for independent brands that care about honest materials and good people."
   ],
-  "details": [
-    {
-      "label": "Education",
-      "value": "BA (Hons) Graphic & Media Design, UAL London College of Communication"
-    },
-    {
-      "label": "Industry year",
-      "value": "RCKT and Denkwerk, Berlin"
-    },
-    {
-      "label": "Languages",
-      "value": "German (native), English (fluent)"
-    },
-    {
-      "label": "Tools",
-      "value": "Adobe CC, Webflow, Squarespace, Google & Meta Ads, Mailchimp, Zoho, AI tools"
-    }
-  ],
-  "contact_heading": "Let's build\nsomething honest.",
-  "contact_text": "Brand identities, campaigns, art direction or a marketing lead, part-time or remote. Tell me what you're building.",
-  "email": "felixbollen@gmail.com"
+  "about_heading": "Self-taught in business, trained in design, not afraid of the deep end.",
+  "title": "Felix Bollen: Marketing & Sales, Art Direction, Graphic Design",
+  "email": "felixbollen@gmail.com",
+  "description": "Felix Bollen: marketing & sales, art direction and graphic design. Brands built from scratch across London, Vienna, Graz and Berlin."
 }

@@ -102,63 +102,53 @@
     },
     {
       "type": "Marketing",
-      "text": "Construction-site party, opening, recruitment, newsletters and ads.",
+      "text": "Pre-opening aquisition of newsletter contacts, Construction-site party, opening, recruitment, newsletters, expos and ads.",
       "stats": [
         {
-          "figure": "1,500 m²",
-          "label": "historic tram depot turned food hall"
+          "figure": "1,900 m²",
+          "label": "Historic tram depot turned food hall"
         },
         {
           "figure": "9",
-          "label": "local food concepts at opening"
+          "label": "local food concepts"
         },
         {
-          "figure": "1,050",
+          "figure": "950",
           "label": "capacity"
         }
       ],
       "videos": [],
       "images": [
         {
-          "image": "/a/gg-mkt-01.webp",
-          "caption": "Falstaff ad: Local Hero",
+          "image": "/media/gleisgarten-website-performance.jpg",
+          "caption": "Website Insights",
           "cutout": false
         },
         {
-          "image": "/a/gg-mkt-02.webp",
-          "caption": "Construction party invitation",
+          "image": "/media/gleisgarten-newsletter-report.jpg",
+          "caption": "Newsletter Insights",
           "cutout": false
-        },
-        {
-          "image": "/a/gg-mkt-03.webp",
-          "caption": "Recruitment poster",
-          "cutout": false
-        },
-        {
-          "image": "/a/gg-mkt-05.webp",
-          "caption": "Facade banner",
-          "cutout": true
         }
       ],
       "deck": []
     },
     {
       "type": "P.R.",
-      "text": "Press in-house and with an agency, from first announcement to award.",
+      "text": "Our Press outreach. I was working together closely with 'Himmelhoch' P.R. company, creating monthly press releases",
       "stats": [
         {
-          "figure": "Bierlokal des Jahres",
+          "figure": "'The best beer bar Vienna'",
           "label": "Vienna 2024, Bier Guide"
         },
         {
-          "figure": "8+",
+          "figure": "100+ Listings",
           "label": "outlets, incl. ORF, Kurier, Der Standard, Falstaff"
         }
       ],
       "videos": [
         {
           "video": "/v/tv-orf.mp4",
-          "poster": "/v/tv-orf.jpg",
+          "poster": "/media/gg-web-03.webp",
           "caption": "ORF feature"
         }
       ],
@@ -176,7 +166,12 @@
     {
       "type": "Conceptualisation",
       "text": "The depot before, the concept and the hoardings.",
-      "stats": [],
+      "stats": [
+        {
+          "figure": "2 years of construction",
+          "label": "Working closely together with the local government"
+        }
+      ],
       "videos": [],
       "images": [
         {
@@ -199,7 +194,7 @@
     },
     {
       "type": "Website",
-      "text": "gleisgarten.com.",
+      "text": "Designed and kept the website up to date.",
       "stats": [],
       "videos": [],
       "images": [
@@ -214,7 +209,9 @@
           "cutout": false
         }
       ],
-      "deck": []
+      "deck": [],
+      "link_label": "Website",
+      "link": "https://web.archive.org/web/20260611124652/https://www.gleisgarten.com/"
     }
   ],
   "tile": "#f2ead7",

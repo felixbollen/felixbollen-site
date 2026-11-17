@@ -162,6 +162,7 @@ collections:
             fields:
               - {name: image, label: Image, widget: image}
               - {name: caption, label: Caption, widget: string, required: false}
+              - {name: bare, label: "No tile background (show whole image)", widget: boolean, required: false}
               - {name: cutout, label: "Logo or cut-out (show whole image, no crop)", widget: boolean, default: false, required: false}
           - name: videos
             label: "Gallery videos"
@@ -198,6 +199,37 @@ collections:
             fields:
               - {name: image, label: Slide, widget: image}
               - {name: caption, label: Caption, widget: string, required: false}
+          - {name: instagram, label: "Instagram handle (shows live feed)", widget: string, required: false}
+          - {name: photos_title, label: "Photo gallery title", widget: string, required: false}
+          - name: photos
+            label: "Photo gallery (masonry)"
+            widget: list
+            required: false
+            collapsed: true
+            fields:
+              - {name: image, label: Image, widget: image}
+              - {name: caption, label: Caption, widget: string, required: false}
+              - {name: w, label: "Width (px)", widget: number, required: false}
+              - {name: h, label: "Height (px)", widget: number, required: false}
+          - name: press_teaser
+            label: "Press teaser (Gleis//Garten)"
+            widget: object
+            required: false
+            collapsed: true
+            fields:
+              - {name: link, label: Link, widget: string, required: false}
+              - {name: label, label: "Button text", widget: string, required: false}
+              - {name: count, label: "Number of cards", widget: number, required: false}
+          - name: site_teaser
+            label: "Website teaser"
+            widget: object
+            required: false
+            collapsed: true
+            fields:
+              - {name: image, label: "Full-page screenshot", widget: image, required: false}
+              - {name: url, label: URL, widget: string, required: false}
+              - {name: display, label: "Address shown", widget: string, required: false}
+              - {name: label, label: "Button text", widget: string, required: false}
           - {name: reels_title, label: "Swipe video gallery title (optional)", widget: string, required: false}
           - name: reels
             label: "Swipe video gallery (vertical videos)"
@@ -277,7 +309,8 @@ collections:
         collapsed: true
         summary: "{{fields.channel}}: {{fields.title}}"
         fields:
-          - {name: video, label: "Video (MP4)", widget: file}
+          - {name: video, label: "Video (MP4)", widget: file, required: false}
+          - {name: youtube, label: "…or YouTube video ID", widget: string, required: false}
           - {name: poster, label: "Still image", widget: image}
           - {name: channel, label: Channel, widget: string}
           - {name: title, label: Title, widget: string}

@@ -1,3 +1,4 @@
+import json
 #!/usr/bin/env python3
 """Builds felixbollen.com from content/*.json + static/ into public/.
 Edit content through /admin (Decap CMS); Netlify runs this on every save."""
@@ -81,13 +82,19 @@ def stats(st):
     return '<div class="stats">' + "".join(f'<div><b>{esc(s["figure"])}</b><span>{esc(s.get("label"))}</span></div>' for s in st) + "</div>" if st else ""
 
 def gfig(i):
-    cap = i.get("caption") or ""; c = " c" if i.get("cutout") else ""; src = esc(i["image"])
+    cap = i.get("caption") or ""; c = (" c" if i.get("cutout") else "") + (" b" if i.get("bare") else ""); src = esc(i["image"])
     return f'<a href="{src}" data-lb data-cap="{esc(cap)}"><figure><div class="t{c}"><img data-src="{src}" alt="{esc(cap)}"></div><figcaption>{esc(cap)}</figcaption></figure></a>'
 
 def vfig(v):
     cap = v.get("caption") or ""; poster = v.get("poster") or ""
     th = f'<img data-src="{esc(poster)}" alt="{esc(cap)}">' if poster else f'<video muted playsinline preload="metadata" src="{esc(v["video"])}#t=0.5"></video>'
     return f'<a href="{esc(v["video"])}" data-lb data-type="video" data-cap="{esc(cap)}"><figure><div class="t">{th}</div><figcaption>▶ {esc(cap)}</figcaption></figure></a>'
+
+def tvlink(t):
+    cap = "%s: %s" % (t.get("channel") or "", t.get("title") or "")
+    if t.get("youtube"):
+        return '<a hidden href="https://www.youtube.com/watch?v=%s" data-lb data-type="youtube" data-yt="%s" data-cap="%s"></a>' % (esc(t["youtube"]), esc(t["youtube"]), esc(cap))
+    return '<a hidden href="%s" data-lb data-type="video" data-cap="%s"></a>' % (esc(t.get("video")), esc(cap))
 
 def navlogo(w):
     m = '<span class="m">%s</span>' % (mono(w["logo"], w["name"]) if HASLOGO(w["logo"]) else '<span class="lgt">%s</span>' % esc(w.get("card_name") or w["name"]))
@@ -148,6 +155,35 @@ def fest_block(s):
     gl = [g for g in s.get("fest_gallery", []) if g.get("image")]
     gal = ('<div class="fgal"><span class="lbl">%s</span><div class="gal5" data-lbg>%s</div></div>' % (esc(s.get("fest_gallery_title") or "Campaign"), "".join(gfig(g) for g in gl))) if gl else ""
     return '<div class="fest"><div class="fh"><span class="lbl">Highlight</span><h4>%s</h4></div><div class="fs">%s</div>%s%s%s%s</div>' % (esc(s["fest_heading"]), fs, more, vid, gal, ov)
+
+def photos_block(s):
+    ph = [x for x in s.get("photos", []) if x.get("image")]
+    if not ph: return ""
+    items = "".join('<a href="%s" data-lb data-cap="%s"><img data-src="%s" alt="%s"%s></a>' % (esc(x["image"]), esc(x.get("caption")), esc(x["image"]), esc(x.get("caption") or ""), (' width="%d" height="%d"' % (x["w"], x["h"])) if x.get("w") else "") for x in ph)
+    return '<div class="phg"><div class="rh"><span class="lbl">%s</span><span class="lbl mute">%d photos</span></div><div class="mas" data-lbg>%s</div></div>' % (esc(s.get("photos_title") or "Photography"), len(ph), items)
+
+def insta_block(s):
+    h = (s.get("instagram") or "").strip().lstrip("@")
+    if not h: return ""
+    return ('<div class="igf"><div class="rh"><span class="lbl">Instagram</span><a class="lbl" href="https://www.instagram.com/%s/" target="_blank" rel="noopener">@%s ↗</a></div>'
+            '<div class="igw"><iframe data-src="https://www.instagram.com/%s/embed/" title="@%s on Instagram" scrolling="no" loading="lazy"></iframe></div>'
+            '<a class="fdl" href="https://www.instagram.com/%s/" target="_blank" rel="noopener">Follow on Instagram ↗</a></div>') % (h, h, h, h, h)
+
+def press_teaser(s, p):
+    pt = s.get("press_teaser") or {}
+    if not pt.get("link"): return ""
+    try: items = json.load(open("content/press-gleisgarten.json", encoding="utf-8"))["items"]
+    except Exception: items = []
+    items = [i for i in items if i.get("image") and i.get("title")][:int(pt.get("count") or 9)]
+    cards = "".join('<div class="pc"><div class="pi"><img data-src="%s" alt=""></div><span class="po">%s · %s</span><b>%s</b></div>' % (esc(i["image"]), esc(i.get("outlet")), esc(i.get("date")), esc(i["title"])) for i in items)
+    return '<div class="ptz"><a class="ptg" href="%s">%s</a><div class="pfade"><a class="fmore" href="%s">%s <span>→</span></a></div></div>' % (esc(pt["link"]), cards, esc(pt["link"]), esc(pt.get("label") or "All press coverage"))
+
+def site_teaser(s):
+    st = s.get("site_teaser") or {}
+    if not st.get("image"): return ""
+    url = st.get("url") or "#"
+    return ('<a class="stz" href="%s" target="_blank" rel="noopener"><div class="sbar"><i></i><i></i><i></i><span>%s</span></div>'
+            '<div class="svw"><img data-src="%s" alt="%s"></div><span class="sgo">%s ↗</span></a>') % (esc(url), esc(st.get("display") or url), esc(st["image"]), esc(st.get("display") or "Website"), esc(st.get("label") or "Visit website"))
 
 def reels_block(s):
     rl = [r for r in s.get("reels", []) if r.get("video")]
@@ -243,7 +279,7 @@ for i, p in enumerate(P):
     tv = p.get("tv", [])
     if tv:
         nw = "".join(f'<button type="button" onclick="this.closest(\'section\').querySelectorAll(\'a[data-lb]\')[{j}].click()"><img src="{esc(t.get("poster"))}" alt="{esc(t.get("channel"))}" loading="lazy"><span class="pl">▶</span><span class="cap"><b>{esc(t.get("channel"))}</b>{esc(t.get("title"))}</span></button>' for j, t in enumerate(tv))
-        hid = "".join(f'<a hidden href="{esc(t["video"])}" data-lb data-type="video" data-cap="{esc(t.get("channel"))}: {esc(t.get("title"))}"></a>' for t in tv)
+        hid = "".join(tvlink(t) for t in tv)
         rest += f'<section class="blk" data-lbg><span class="lbl">On TV</span><h2 class="big rv">{br(p.get("tv_heading"))}</h2><div class="news rv">{nw}</div>{hid}</section>'
     # labels
     labs = [l for l in p.get("labels", []) if l.get("image")]
@@ -267,7 +303,7 @@ for i, p in enumerate(P):
             dk = f'<div class="deck"><span class="lbl">{esc(s.get("deck_title") or "Presentation")}</span><div class="rail">' + "".join(
                 f'<figure><img data-src="{esc(d["image"])}" alt=""><figcaption><b>{j+1:02d} / {len(deck):02d}</b>{esc(d.get("caption"))}</figcaption></figure>' for j, d in enumerate(deck)) + '</div><div class="nv"><button type="button" data-d="0" aria-label="Previous">←</button><button type="button" data-d="1" aria-label="Next">→</button></div></div>'
         body = stats(s.get("stats")) + f'<p class="lede">{esc(s.get("text"))}</p>'
-        body += fest_block(s) + reels_block(s)
+        body += fest_block(s) + reels_block(s) + photos_block(s) + insta_block(s) + press_teaser(s, p) + site_teaser(s)
         lk = f'<p class="sl"><a class="btn" href="{esc(s["link"])}">{esc(s.get("link_label") or "More")}</a></p>' if s.get("link") else ""
         pano = [x for x in s.get("pano", []) if x.get("image")]
         if pano:

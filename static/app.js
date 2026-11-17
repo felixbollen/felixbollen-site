@@ -43,7 +43,7 @@ const sp=$('.spinlab');if(sp){const ims=$$('img',sp),tg=$('.tag',sp);let i=0;if(
 const lb=D.createElement('div');lb.className='lb';lb.innerHTML='<div class="st"></div><div class="cp"></div><div class="ix"></div><button class="x" aria-label="Close">✕</button><button class="pv" aria-label="Previous">←</button><button class="nx" aria-label="Next">→</button>';D.body.appendChild(lb);
 let set=[],cur=0;
 function show(){const a=set[cur],st=$('.st',lb);const src=a.dataset.full||a.getAttribute('href');
-  st.innerHTML=a.dataset.type==='video'?`<video src="${src}" controls autoplay playsinline></video>`:`<img src="${src}" alt="">`;
+  st.innerHTML=a.dataset.type==='youtube'?`<iframe class="yt" src="https://www.youtube-nocookie.com/embed/${a.dataset.yt}?autoplay=1&rel=0&playsinline=1" allow="autoplay; encrypted-media; fullscreen; picture-in-picture" allowfullscreen></iframe>`:a.dataset.type==='video'?`<video src="${src}" controls autoplay playsinline></video>`:`<img src="${src}" alt="">`;
   $('.cp',lb).textContent=a.dataset.cap||'';$('.ix',lb).textContent=`${cur+1} / ${set.length}`}
 function open(a){const g=a.closest('[data-lbg]');set=g?$$('a[data-lb]',g):[a];cur=set.indexOf(a);lb.classList.add('on');D.body.style.overflow='hidden';show()}
 function close(){lb.classList.remove('on');$('.st',lb).innerHTML='';if(!$('.lbg.on'))D.body.style.overflow=''}
@@ -74,4 +74,11 @@ const ib=D.getElementById('imp'),dg=D.getElementById('impd');if(ib&&dg)ib.onclic
   const lb=document.querySelector('.lb');if(lb){let x0=null;
     lb.addEventListener('touchstart',e=>{x0=e.touches[0].clientX},{passive:true});
     lb.addEventListener('touchend',e=>{if(x0===null)return;const dx=e.changedTouches[0].clientX-x0;x0=null;if(Math.abs(dx)>50)lb.querySelector(dx<0?'.nx':'.pv').click()},{passive:true});}
+})();
+/* instagram embeds: lazy-load on section open, size to grid */
+(function(){
+  const fit=f=>{const w=f.clientWidth;if(w)f.style.height=Math.round((w<500?124:164)+w*2/3)+'px'};
+  const load=()=>document.querySelectorAll('.igw iframe[data-src]').forEach(f=>{if(f.offsetParent){f.src=f.dataset.src;f.removeAttribute('data-src');fit(f)}});
+  document.addEventListener('click',()=>setTimeout(load,350));load();
+  addEventListener('resize',()=>document.querySelectorAll('.igw iframe').forEach(fit));
 })();

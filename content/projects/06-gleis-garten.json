@@ -96,6 +96,11 @@
           "cutout": false,
           "image": "/media/gleisgarten-berliner.webp",
           "caption": "Branded Pastries"
+        },
+        {
+          "image": "/a/gg-oktoberfest.webp",
+          "caption": "Oktoberfest poster",
+          "cutout": false
         }
       ],
       "deck": []
@@ -130,7 +135,8 @@
           "cutout": false
         }
       ],
-      "deck": []
+      "deck": [],
+      "instagram": "gleisgarten"
     },
     {
       "type": "P.R.",
@@ -145,23 +151,16 @@
           "label": "outlets, incl. ORF, Kurier, Der Standard, Falstaff"
         }
       ],
-      "videos": [
-        {
-          "video": "/v/tv-orf.mp4",
-          "poster": "/media/gg-web-03.webp",
-          "caption": "ORF feature"
-        }
-      ],
-      "images": [
-        {
-          "image": "/a/gg-pr-01.webp",
-          "caption": "Bier Guide 2024: Bierlokal des Jahres, Vienna",
-          "cutout": false
-        }
-      ],
+      "videos": [],
+      "images": [],
       "deck": [],
-      "link": "/work/gleis-garten/presse/",
-      "link_label": "All press coverage →"
+      "link": "",
+      "link_label": "",
+      "press_teaser": {
+        "link": "/work/gleis-garten/presse/",
+        "label": "All press coverage",
+        "count": 9
+      }
     },
     {
       "type": "Conceptualisation",
@@ -271,21 +270,16 @@
       "text": "Designed and kept the website up to date.",
       "stats": [],
       "videos": [],
-      "images": [
-        {
-          "image": "/a/gg-web-01.webp",
-          "caption": "Website: weekly events",
-          "cutout": false
-        },
-        {
-          "image": "/a/gg-web-02.webp",
-          "caption": "Homepage",
-          "cutout": false
-        }
-      ],
+      "images": [],
       "deck": [],
-      "link_label": "Website",
-      "link": "https://web.archive.org/web/20260611124652/https://www.gleisgarten.com/"
+      "link_label": "",
+      "link": "",
+      "site_teaser": {
+        "image": "/a/gg-site-full.webp",
+        "url": "https://www.gleisgarten.com/",
+        "display": "gleisgarten.com",
+        "label": "Visit website"
+      }
     }
   ],
   "tile": "#f2ead7",

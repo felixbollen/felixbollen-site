@@ -35,34 +35,43 @@
           "cutout": true
         },
         {
-          "image": "/a/vk-brand-03.webp",
-          "caption": "Elisabeth, Vienna Lager",
-          "cutout": true
-        },
-        {
-          "image": "/a/vk-brand-05.webp",
-          "caption": "Knut, IPA",
-          "cutout": true
-        },
-        {
-          "image": "/a/vk-brand-07.webp",
-          "caption": "Ferdl, Zwickel",
-          "cutout": true
-        },
-        {
-          "image": "/a/vk-brand-10.webp",
-          "caption": "Glass design",
+          "image": "/a/vk-signage.webp",
+          "caption": "Brewery bar signage",
           "cutout": false
         },
         {
-          "image": "/a/vk-brand-11.webp",
-          "caption": "T-shirt",
-          "cutout": true
+          "image": "/a/vk-shirt-front.webp",
+          "caption": "T-shirt, front",
+          "cutout": true,
+          "bare": true
         },
         {
-          "image": "/a/vk-brochure.webp",
-          "caption": "Brewery handbook, folded brochure",
+          "image": "/a/vk-shirt-back.webp",
+          "caption": "T-shirt, back: Bier für Wien",
+          "cutout": true,
+          "bare": true
+        },
+        {
+          "image": "/a/vk-ph-shirt-front.webp",
+          "caption": "Staff shirt",
           "cutout": false
+        },
+        {
+          "image": "/a/vk-ph-shirt-back.webp",
+          "caption": "Staff shirt, back",
+          "cutout": false
+        },
+        {
+          "image": "/a/vk-brochure-outside.webp",
+          "caption": "Brewery handbook, outside",
+          "cutout": true,
+          "bare": true
+        },
+        {
+          "image": "/a/vk-brochure-inside.webp",
+          "caption": "Brewery handbook, inside",
+          "cutout": true,
+          "bare": true
         },
         {
           "image": "/a/vk-menu.webp",
@@ -70,8 +79,8 @@
           "cutout": false
         },
         {
-          "image": "/a/vk-brauereien.webp",
-          "caption": "Bier Fest 2026 brewery line-up",
+          "image": "/a/vk-taps.webp",
+          "caption": "Tap handles",
           "cutout": false
         },
         {
@@ -82,6 +91,51 @@
         {
           "image": "/a/vk-glass-winterlager.webp",
           "caption": "Glassware design, Winterlager",
+          "cutout": false
+        },
+        {
+          "image": "/a/vk-glass-kraft.webp",
+          "caption": "Glassware design, KRAFT",
+          "cutout": false
+        },
+        {
+          "image": "/a/vk-brauereien.webp",
+          "caption": "Bier Fest 2026 brewery line-up",
+          "cutout": false
+        },
+        {
+          "image": "/a/vk-ph-festbox.webp",
+          "caption": "Bier Fest tasting box",
+          "cutout": false
+        },
+        {
+          "image": "/a/vk-ph-festflyer.webp",
+          "caption": "Bier Fest programme",
+          "cutout": false
+        },
+        {
+          "image": "/a/vk-xmas-siphon.webp",
+          "caption": "Christmas siphon campaign",
+          "cutout": false
+        },
+        {
+          "image": "/a/vk-ph-tattoo-1.webp",
+          "caption": "KRAFT tattoo day",
+          "cutout": false
+        },
+        {
+          "image": "/a/vk-ph-tattoo-2.webp",
+          "caption": "KRAFT tattoo day",
+          "cutout": false
+        },
+        {
+          "image": "/a/vk-ph-tattoo-3.webp",
+          "caption": "KRAFT tattoo",
+          "cutout": false
+        },
+        {
+          "image": "/a/vk-ph-tattoo-4.webp",
+          "caption": "KRAFT tattoo & beer",
           "cutout": false
         }
       ],
@@ -101,18 +155,7 @@
         }
       ],
       "videos": [],
-      "images": [
-        {
-          "image": "/a/vk-mkt-01.webp",
-          "caption": "Stammtisch loyalty card",
-          "cutout": true
-        },
-        {
-          "image": "/a/vk-mkt-02.webp",
-          "caption": "Brewery party",
-          "cutout": true
-        }
-      ],
+      "images": [],
       "deck": [],
       "fest_heading": "Vienna Kraft Bier Fest",
       "fest_text": "Vienna's independent craft beer festival, which we hosted at Gleis//Garten: five editions from the launch in August 2024 to June 2026, with 15+ independent breweries and 50+ beers per edition. I ran it end to end: brewery line-up, ticket shop, email, retargeting, PR and the event itself. In 2026 it was the only craft beer festival left in Vienna.",
@@ -186,10 +229,6 @@
       "fest_gallery_title": "Posters & campaigns",
       "fest_gallery": [
         {
-          "image": "/a/vk-p-kuss-column.webp",
-          "caption": "'Der Kuss' poster on a Viennese advertising column"
-        },
-        {
           "image": "/a/vk-p-kuss.webp",
           "caption": "Der Kuss, after Klimt"
         },
@@ -220,8 +259,13 @@
         {
           "image": "/a/vk-p-barrel.webp",
           "caption": "Bier Fest poster"
+        },
+        {
+          "image": "/a/vk-mkt-01.webp",
+          "caption": "Stammtisch loyalty card"
         }
-      ]
+      ],
+      "instagram": "vienna.kraft"
     },
     {
       "type": "Conceptualisation",

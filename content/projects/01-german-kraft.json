@@ -27,28 +27,34 @@
   "tv_heading": "German brewers in\npost-Brexit London",
   "tv": [
     {
+      "youtube": "37_ZVpyDjIk",
+      "poster": "/v/tv-zdf-th.jpg",
+      "channel": "ZDF",
+      "title": "Hallo Deutschland"
+    },
+    {
+      "video": "/v/tv-brexit.mp4",
+      "poster": "/v/tv-pro7-th.jpg",
+      "channel": "Pro 7",
+      "title": "Brexit special"
+    },
+    {
       "video": "/v/tv-taff-brexit.mp4",
-      "poster": "/v/tv-taff-brexit.jpg",
-      "channel": "ProSieben taff",
+      "poster": "/v/tv-taff-th.jpg",
+      "channel": "Taff TV",
       "title": "Brexit, January 2023"
+    },
+    {
+      "video": "/v/tv-sat1.mp4",
+      "poster": "/v/tv-sat1-th.jpg",
+      "channel": "Sat.1 Nachrichten",
+      "title": "Brewing through Brexit"
     },
     {
       "video": "/v/tv-taff-helles.mp4",
       "poster": "/v/tv-taff-helles.jpg",
       "channel": "ProSieben taff",
       "title": "Helles"
-    },
-    {
-      "video": "/v/tv-sat1.mp4",
-      "poster": "/v/tv-sat1.jpg",
-      "channel": "Sat.1 Nachrichten",
-      "title": "Brewing through Brexit"
-    },
-    {
-      "video": "/v/tv-brexit.mp4",
-      "poster": "/v/tv-brexit.jpg",
-      "channel": "German TV",
-      "title": "Brexit special"
     }
   ],
   "labels_heading": "{n} labels,\none brewery",
@@ -420,7 +426,8 @@
           "cutout": false
         }
       ],
-      "deck": []
+      "deck": [],
+      "instagram": "germankraftbeer"
     },
     {
       "type": "P.R.",
@@ -567,7 +574,112 @@
           "cutout": false
         }
       ],
-      "deck": []
+      "deck": [],
+      "photos_title": "German Kraft in pictures",
+      "photos": [
+        {
+          "image": "/a/gk-ph-01.webp",
+          "w": 2000,
+          "h": 1334,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-02.webp",
+          "w": 2000,
+          "h": 1333,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-03.webp",
+          "w": 2000,
+          "h": 1364,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-04.webp",
+          "w": 2000,
+          "h": 1333,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-05.webp",
+          "w": 2000,
+          "h": 1489,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-06.webp",
+          "w": 2000,
+          "h": 1333,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-07.webp",
+          "w": 1336,
+          "h": 2000,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-08.webp",
+          "w": 2000,
+          "h": 1335,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-09.webp",
+          "w": 2000,
+          "h": 1333,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-10.webp",
+          "w": 1191,
+          "h": 2000,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-11.webp",
+          "w": 2000,
+          "h": 1122,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-12.webp",
+          "w": 1333,
+          "h": 2000,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-13.webp",
+          "w": 1336,
+          "h": 2000,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-14.webp",
+          "w": 2000,
+          "h": 1352,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-15.webp",
+          "w": 2000,
+          "h": 1334,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-16.webp",
+          "w": 2000,
+          "h": 1424,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-17.webp",
+          "w": 2000,
+          "h": 1333,
+          "caption": ""
+        }
+      ]
     }
   ]
 }

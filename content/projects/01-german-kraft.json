@@ -464,6 +464,24 @@
       "deck": [],
       "pano": [
         {
+          "image": "/a/pano/gk-360-g1.jpg",
+          "thumb": "/a/pano/gk-360-g1-t.jpg",
+          "caption": "Beer garden by the taproom entrance",
+          "vto": 0.6494
+        },
+        {
+          "image": "/a/pano/gk-360-g2.jpg",
+          "thumb": "/a/pano/gk-360-g2-t.jpg",
+          "caption": "Taproom bar and brewhouse",
+          "vto": 0.668
+        },
+        {
+          "image": "/a/pano/gk-360-g3.jpg",
+          "thumb": "/a/pano/gk-360-g3-t.jpg",
+          "caption": "Beer garden and keg bar",
+          "vto": 0.6914
+        },
+        {
           "image": "/a/pano/gk-360-1.jpg",
           "thumb": "/a/pano/gk-360-1-t.jpg",
           "caption": "The bar, brewhouse and market hall"
@@ -487,24 +505,6 @@
           "image": "/a/pano/gk-360-5.jpg",
           "thumb": "/a/pano/gk-360-5-t.jpg",
           "caption": "The beer garden and tank-beer bar"
-        },
-        {
-          "image": "/a/pano/gk-360-g1.jpg",
-          "thumb": "/a/pano/gk-360-g1-t.jpg",
-          "caption": "Beer garden by the taproom entrance",
-          "vto": 0.6494
-        },
-        {
-          "image": "/a/pano/gk-360-g2.jpg",
-          "thumb": "/a/pano/gk-360-g2-t.jpg",
-          "caption": "Taproom bar and brewhouse",
-          "vto": 0.668
-        },
-        {
-          "image": "/a/pano/gk-360-g3.jpg",
-          "thumb": "/a/pano/gk-360-g3-t.jpg",
-          "caption": "Beer garden and keg bar",
-          "vto": 0.6914
         }
       ],
       "pano_title": "Walk around the Elephant & Castle site in 360°"

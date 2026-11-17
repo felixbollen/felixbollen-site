@@ -191,10 +191,10 @@ for i, p in enumerate(P):
     lgo = "" if (p.get("hero") or {}).get("hide_logo") else f'<div class="lgo">{mono(p["logo"], p["name"])}</div>'
     if ht == "video" and h.get("video"):
         og = h.get("poster") or og
-        hero = f'<section class="vh"><video autoplay muted loop playsinline webkit-playsinline disablepictureinpicture disableremoteplayback preload="auto" poster="{esc(h.get("poster"))}"><source src="{esc(h["video"])}" type="video/mp4"></video>{lgo}'
+        hero = f'<section class="vh vid"><video autoplay muted loop playsinline webkit-playsinline disablepictureinpicture disableremoteplayback preload="auto" poster="{esc(h.get("poster"))}"><source src="{esc(h["video"])}" type="video/mp4"></video>{lgo}'
     elif ht == "vimeo":
         og = h.get("poster") or og
-        hero = f'<section class="vh"><img class="po" src="{esc(h.get("poster"))}" alt=""><iframe src="https://player.vimeo.com/video/{esc(h.get("vimeo_id"))}?background=1&autoplay=1&loop=1&muted=1&dnt=1" allow="autoplay; fullscreen" title="{esc(p["name"])}" loading="eager"></iframe>{lgo}'
+        hero = f'<section class="vh vid vim"><img class="po" src="{esc(h.get("poster"))}" alt=""><iframe src="https://player.vimeo.com/video/{esc(h.get("vimeo_id"))}?background=1&autoplay=1&loop=1&muted=1&dnt=1" allow="autoplay; fullscreen" title="{esc(p["name"])}" loading="eager"></iframe>{lgo}'
     elif ht == "slides":
         sl = [s["image"] for s in h.get("slides", [])]; og = sl[0] if sl else og
         imgs = "".join(f'<img {"src" if j==0 else "data-src"}="{esc(s)}" alt="">' for j, s in enumerate(sl))

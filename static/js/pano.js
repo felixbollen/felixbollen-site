@@ -17,13 +17,13 @@ if (data) {
 
   const host = ov.querySelector('.pv3');
   let renderer, scene, camera, mesh, raf = 0, cur = -1, open = false;
-  let latMin = -85, lon = 180, lat = 0, vlon = 0, vlat = 0, fov = 75, useGyro = false, gq = null;
+  let latMin = -85, lon = 180, lat = 0, vlon = 0, vlat = 0, fov = 65, useGyro = false, gq = null;
   const loader = new THREE.TextureLoader(); loader.setCrossOrigin('anonymous');
   const cache = {};
 
   function init() {
     renderer = new THREE.WebGLRenderer({ antialias: true });
-    renderer.setPixelRatio(Math.min(2, devicePixelRatio || 1));
+    renderer.setPixelRatio(Math.min(3, devicePixelRatio || 1));
     renderer.outputColorSpace = THREE.SRGBColorSpace;
     host.appendChild(renderer.domElement);
     scene = new THREE.Scene();
@@ -31,9 +31,9 @@ if (data) {
     const geo = new THREE.SphereGeometry(500, 64, 40); geo.scale(-1, 1, 1);
     mesh = new THREE.Mesh(geo, new THREE.MeshBasicMaterial({ color: 0x111111 }));
     scene.add(mesh);
-    addEventListener('resize', size); size();
+    addEventListener('resize', size); new ResizeObserver(size).observe(host); size();
   }
-  function size() { if (!renderer) return; const w = innerWidth, h = innerHeight; renderer.setSize(w, h); camera.aspect = w / h; camera.updateProjectionMatrix(); }
+  function size() { if (!renderer) return; const w = host.clientWidth || innerWidth, h = host.clientHeight || innerHeight; renderer.setSize(w, h); camera.aspect = w / h; camera.updateProjectionMatrix(); }
 
   function show(i) {
     if (i === cur) return; cur = i;
@@ -41,7 +41,7 @@ if (data) {
     ov.querySelector('.pcap').textContent = items[i].caption || '';
     host.classList.add('ld');
     const apply = t => { if (cur !== i) return;
-      const vto = +items[i].vto || 1; latMin = vto < 1 ? 90 - vto * 180 + 28 : -85;
+      const vto = +items[i].vto || 1; latMin = vto < 1 ? 90 - vto * 180 + fov / 2 + 2 : -85;
       mesh.geometry.dispose(); const g = new THREE.SphereGeometry(500, 64, 40, 0, Math.PI * 2, 0, Math.PI * vto); g.scale(-1, 1, 1); mesh.geometry = g;
       mesh.material.dispose(); mesh.material = new THREE.MeshBasicMaterial({ map: t }); host.classList.remove('ld'); };
     if (cache[i]) apply(cache[i]);
@@ -87,7 +87,7 @@ if (data) {
   host.addEventListener('pointermove', e => {
     if (!drag) return;
     if (useGyro) { yawOff += (e.clientX - lastX) * 0.004; lastX = e.clientX; return; }
-    const k = fov / innerHeight; lon = plon - (e.clientX - px) * k * 1.2; lat = plat + (e.clientY - py) * k * 1.2; vlon = -(e.clientX - lastX) * k; lastX = e.clientX;
+    const k = fov / (host.clientHeight || innerHeight); lon = plon - (e.clientX - px) * k * 1.2; lat = plat + (e.clientY - py) * k * 1.2; vlon = -(e.clientX - lastX) * k; lastX = e.clientX;
   });
   host.addEventListener('pointerup', () => drag = false); host.addEventListener('pointercancel', () => drag = false);
   // scroll / trackpad: look around; pinch (ctrl+wheel) zooms

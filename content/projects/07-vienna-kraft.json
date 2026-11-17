@@ -109,5 +109,217 @@
       ],
       "deck": []
     }
+  ],
+  "labels_heading": "{n} labels,\none brewery",
+  "labels_text": "Every Vienna Kraft beer gets a name and a face, in the same roundel label system as German Kraft, plus the collaborations brewed in Vienna.",
+  "labels": [
+    {
+      "image": "/a/vkl/vk-lab-01.png",
+      "name": "Hubert, Keller Zwickel"
+    },
+    {
+      "image": "/a/vkl/vk-lab-02.png",
+      "name": "Hannes, Hazy Pale Ale"
+    },
+    {
+      "image": "/a/vkl/vk-lab-03.png",
+      "name": "Torben, Tropical IPA"
+    },
+    {
+      "image": "/a/vkl/vk-lab-04.png",
+      "name": "Emil, Potsdamer Stange"
+    },
+    {
+      "image": "/a/vkl/vk-lab-05.png",
+      "name": "Gitti, DDH India Pale Ale"
+    },
+    {
+      "image": "/a/vkl/vk-lab-06.png",
+      "name": "Knut, Cascade India Pale Ale"
+    },
+    {
+      "image": "/a/vkl/vk-lab-07.png",
+      "name": "Lotte, Hefeweizen"
+    },
+    {
+      "image": "/a/vkl/vk-lab-08.png",
+      "name": "Rainer, Red IPA"
+    },
+    {
+      "image": "/a/vkl/vk-lab-09.png",
+      "name": "Sven, West Coast IPA"
+    },
+    {
+      "image": "/a/vkl/vk-lab-10.png",
+      "name": "Rosi, Hefeweizen"
+    },
+    {
+      "image": "/a/vkl/vk-lab-11.png",
+      "name": "Gabi, Sommer Lager"
+    },
+    {
+      "image": "/a/vkl/vk-lab-12.png",
+      "name": "Lisl, Session IPA"
+    },
+    {
+      "image": "/a/vkl/vk-lab-13.png",
+      "name": "Berliner Weisse, Mikkeller collaboration"
+    },
+    {
+      "image": "/a/vkl/vk-lab-14.png",
+      "name": "Willi, Berliner Weisse"
+    },
+    {
+      "image": "/a/vkl/vk-lab-15.png",
+      "name": "Hajo, Pale Ale"
+    },
+    {
+      "image": "/a/vkl/vk-lab-16.png",
+      "name": "Hubert, Keller Lager"
+    },
+    {
+      "image": "/a/vkl/vk-lab-17.png",
+      "name": "Walter, Bockbier"
+    },
+    {
+      "image": "/a/vkl/vk-lab-18.png",
+      "name": "Wolfi, Sommer Weisse"
+    },
+    {
+      "image": "/a/vkl/vk-lab-19.png",
+      "name": "Ferdl, Keller Zwickel"
+    },
+    {
+      "image": "/a/vkl/vk-lab-20.png",
+      "name": "Phanta, Pale Ale, Bräuhaus Ten.Fifty collaboration"
+    },
+    {
+      "image": "/a/vkl/vk-lab-21.png",
+      "name": "Hannelore, West Coast IPA"
+    },
+    {
+      "image": "/a/vkl/vk-lab-22.png",
+      "name": "Alois, Pale Ale"
+    },
+    {
+      "image": "/a/vkl/vk-lab-23.png",
+      "name": "Anna, Ananas India Pale Ale"
+    },
+    {
+      "image": "/a/vkl/vk-lab-24.png",
+      "name": "Aroha, NZ Zwickel"
+    },
+    {
+      "image": "/a/vkl/vk-lab-25.png",
+      "name": "Berti, West Coast IPA"
+    },
+    {
+      "image": "/a/vkl/vk-lab-26.png",
+      "name": "Jochen, Schwarzbier"
+    },
+    {
+      "image": "/a/vkl/vk-lab-27.png",
+      "name": "Mirli, Mango Madness India Pale Ale"
+    },
+    {
+      "image": "/a/vkl/vk-lab-28.png",
+      "name": "Tonja, Weissbier"
+    },
+    {
+      "image": "/a/vkl/vk-lab-29.png",
+      "name": "Anton, Zwickel"
+    },
+    {
+      "image": "/a/vkl/vk-lab-30.png",
+      "name": "Bernadette, West Coast IPA"
+    },
+    {
+      "image": "/a/vkl/vk-lab-31.png",
+      "name": "Bernd, Pale Ale"
+    },
+    {
+      "image": "/a/vkl/vk-lab-32.png",
+      "name": "Bettina, Schank IPA"
+    },
+    {
+      "image": "/a/vkl/vk-lab-33.png",
+      "name": "Conni, Cold IPA"
+    },
+    {
+      "image": "/a/vkl/vk-lab-34.png",
+      "name": "Erwin, Natur Pils"
+    },
+    {
+      "image": "/a/vkl/vk-lab-35.png",
+      "name": "Elfi, West Coast Pils"
+    },
+    {
+      "image": "/a/vkl/vk-lab-36.png",
+      "name": "Jürgen, Euro Helles"
+    },
+    {
+      "image": "/a/vkl/vk-lab-37.png",
+      "name": "Finnrik, Stout"
+    },
+    {
+      "image": "/a/vkl/vk-lab-38.png",
+      "name": "Hannelore, West Coast Pale Ale"
+    },
+    {
+      "image": "/a/vkl/vk-lab-39.png",
+      "name": "Idris, Citra Hazy IPA"
+    },
+    {
+      "image": "/a/vkl/vk-lab-40.png",
+      "name": "Helge, Dry Hopped Helles"
+    },
+    {
+      "image": "/a/vkl/vk-lab-41.png",
+      "name": "Karli, Hazy Pale Ale"
+    },
+    {
+      "image": "/a/vkl/vk-lab-42.png",
+      "name": "Perli, Pils"
+    },
+    {
+      "image": "/a/vkl/vk-lab-43.png",
+      "name": "Rudi, Winter Lager"
+    },
+    {
+      "image": "/a/vkl/vk-lab-44.png",
+      "name": "Rudi, Winterbier"
+    },
+    {
+      "image": "/a/vkl/vk-lab-45.png",
+      "name": "Sepp, Schwarzbier"
+    },
+    {
+      "image": "/a/vkl/vk-lab-46.png",
+      "name": "Simone, Smash Hell"
+    },
+    {
+      "image": "/a/vkl/vk-lab-47.png",
+      "name": "Paula, Sommermärzen"
+    },
+    {
+      "image": "/a/vkl/vk-lab-48.png",
+      "name": "Stephani, Wiener Lager"
+    },
+    {
+      "image": "/a/vkl/vk-lab-49.png",
+      "name": "Wai-iti, NZ Zwickel"
+    },
+    {
+      "image": "/a/vkl/vk-lab-50.png",
+      "name": "Werner, Weissbier"
+    },
+    {
+      "image": "/a/vkl/vk-lab-51.png",
+      "name": "Wanda, Witbier"
+    },
+    {
+      "image": "/a/vkl/vk-lab-52.png",
+      "name": "Anton, Zwickel (yellow)"
+    }
   ]
 }

@@ -1,0 +1,406 @@
+{
+  "title": "German Kraft: Press",
+  "heading": "Press",
+  "path": "press",
+  "intro": "Press coverage of German Kraft Brewery, London. Most of it came through our PR agency, Jukebox: interviews, guide inclusions, the World Cup fan zone and the last summer at Elephant & Castle.",
+  "contact": "",
+  "project": "german-kraft",
+  "items": [
+    {
+      "outlet": "Pellicle",
+      "title": "The Metropolis Model: German Kraft Brewery in Elephant & Castle",
+      "date": "11.6.2025",
+      "url": "https://www.pelliclemag.com/home/2025/6/1/german-kraft-brewery-in-elephant-amp-castle-london",
+      "image": "/a/press/gk-press-001.webp",
+      "reach": "",
+      "group": "Feature"
+    },
+    {
+      "outlet": "The Mirror",
+      "title": "Best places to watch England World Cup games from fan parks to quirky venues",
+      "date": "5.6.2026",
+      "url": "https://www.mirror.co.uk/money/world-cup-2026-best-places-37253185",
+      "image": "/a/press/gk-press-002.webp",
+      "reach": "47.5M UMVs",
+      "group": "World Cup"
+    },
+    {
+      "outlet": "The Times",
+      "title": "The best bars and pubs to watch the World Cup 2026 in London",
+      "date": "",
+      "url": "https://www.thetimes.com/uk/london/article/world-cup-2026-best-bars-pubs-to-watch-football-wpp0qjl3v",
+      "image": "/a/press/gk-press-003.webp",
+      "reach": "29M UMVs",
+      "group": "World Cup"
+    },
+    {
+      "outlet": "Metro",
+      "title": "The best places in London to watch the World Cup 2026",
+      "date": "17.6.2026",
+      "url": "https://metro.co.uk/2026/06/17/best-places-london-watch-world-cup-2026-28810934/",
+      "image": "/a/press/gk-press-004.webp",
+      "reach": "17M UMVs",
+      "group": "World Cup"
+    },
+    {
+      "outlet": "Time Out",
+      "title": "Best Places To Watch the World Cup 2026 in London",
+      "date": "12.7.2026",
+      "url": "https://www.timeout.com/london/things-to-do/where-to-watch-world-cup-london",
+      "image": "/a/press/gk-press-005.webp",
+      "reach": "15.5M UMVs",
+      "group": "World Cup"
+    },
+    {
+      "outlet": "The London Standard",
+      "title": "World Cup 2026: Where to watch every country if you're in London",
+      "date": "15.6.2026",
+      "url": "https://www.standard.co.uk/going-out/bars/world-cup-london-pubs-b1283912.html",
+      "image": "/a/press/gk-press-006.webp",
+      "reach": "13.7M UMVs",
+      "group": "World Cup"
+    },
+    {
+      "outlet": "Yahoo! News",
+      "title": "This London fan zone is giving away beer every time England score",
+      "date": "",
+      "url": "https://uk.news.yahoo.com/london-fan-zone-giving-away-160000124.html",
+      "image": "/a/press/gk-press-007.webp",
+      "reach": "10M UMVs",
+      "group": "World Cup"
+    },
+    {
+      "outlet": "Daily Star",
+      "title": "Final summer at Elephant & Castle brewery site – come join the celebrations",
+      "date": "26.3.2026",
+      "url": "https://www.dailystar.co.uk/life-style/iconic-london-brewery-closing-down-36924534",
+      "image": "/a/press/gk-press-008.webp",
+      "reach": "8.8M UMVs",
+      "group": "Last summer"
+    },
+    {
+      "outlet": "Indy100",
+      "title": "Where to watch the World Cup in London",
+      "date": "",
+      "url": "",
+      "image": "/a/press/gk-press-009.webp",
+      "reach": "1.9M UMVs",
+      "group": "World Cup"
+    },
+    {
+      "outlet": "Condé Nast Traveller",
+      "title": "11 best London breweries you need to visit",
+      "date": "12.3.2021",
+      "url": "https://www.cntraveller.com/gallery/best-breweries-london",
+      "image": "/a/press/gk-press-010.webp",
+      "reach": "1.7M UMVs",
+      "group": "Guide"
+    },
+    {
+      "outlet": "Londonist",
+      "title": "Where to watch the World Cup 2026 in London",
+      "date": "",
+      "url": "https://londonist.com/london/sport/watch-world-cup-2026-london-pubs-bars",
+      "image": "/a/press/gk-press-011.webp",
+      "reach": "670K UMVs",
+      "group": "World Cup"
+    },
+    {
+      "outlet": "Londonist",
+      "title": "What's going on at Elephant and Castle? An explainer",
+      "date": "",
+      "url": "https://londonist.com/london/features/elephant-and-castle-explainer-elephant-square-tube-station",
+      "image": "/a/press/gk-press-012.webp",
+      "reach": "670K UMVs",
+      "group": "Last summer"
+    },
+    {
+      "outlet": "London Now",
+      "title": "This London fan zone is giving away beer every time England score",
+      "date": "5.6.2026",
+      "url": "https://www.london-now.co.uk/news/26163317.german-kraft-launches-world-cup-fan-zone-south-london/",
+      "image": "/a/press/gk-press-013.webp",
+      "reach": "570K UMVs",
+      "group": "World Cup"
+    },
+    {
+      "outlet": "Metro: The Slice",
+      "title": "Newsletter feature",
+      "date": "",
+      "url": "https://link.news.metro.co.uk/view/6228f18fcbd3f35f3102bff7rdv88.g9v/7d572148",
+      "image": "/a/press/gk-press-014.webp",
+      "reach": "500K subscribers",
+      "group": "World Cup"
+    },
+    {
+      "outlet": "The Handbook",
+      "title": "Brilliant beer gardens ideal for this summer",
+      "date": "",
+      "url": "https://www.thehandbook.com/best-beer-gardens-london/",
+      "image": "/a/press/gk-press-015.webp",
+      "reach": "460K UMVs",
+      "group": "Guide"
+    },
+    {
+      "outlet": "Southwark News",
+      "title": "Mercato Metropolitano in Elephant and Castle prepares for final summer",
+      "date": "13.5.2026",
+      "url": "https://southwarknews.co.uk/area/elephant-and-castle/mercato-metropolitano-in-elephant-and-castle-prepares-for-closure-at-the-end-of-summer/",
+      "image": "/a/press/gk-press-016.webp",
+      "reach": "350K UMVs",
+      "group": "Interview"
+    },
+    {
+      "outlet": "Southwark News",
+      "title": "Where to watch the World Cup in Bermondsey, Borough and Rotherhithe",
+      "date": "31.5.2026",
+      "url": "https://southwarknews.co.uk/area/rotherhithe/where-to-watch-the-world-cup-in-bermondsey-borough-and-rotherhithe/",
+      "image": "/a/press/gk-press-017.webp",
+      "reach": "350K UMVs",
+      "group": "World Cup"
+    },
+    {
+      "outlet": "Southwark News",
+      "title": "South London food news: New openings and summer events",
+      "date": "10.5.2026",
+      "url": "https://southwarknews.co.uk/news/community/south-london-food-news-new-openings-and-summer-events/",
+      "image": "/a/press/gk-press-018.webp",
+      "reach": "350K UMVs",
+      "group": "Last summer"
+    },
+    {
+      "outlet": "South London Weekly",
+      "title": "Print feature",
+      "date": "",
+      "url": "https://drive.google.com/file/d/1r-Ms9VFolycI-2H40hWqG0Ppjn9nuuIs/view",
+      "image": "/a/press/gk-press-019.webp",
+      "reach": "303K print circulation",
+      "group": "Last summer"
+    },
+    {
+      "outlet": "Shortlist",
+      "title": "This London pub is offering free World Cup pints every time England scores — But there",
+      "date": "22.4.2026",
+      "url": "https://www.shortlist.com/food-and-drink/this-london-pub-is-offering-free-world-cup-pints-every-time-england-or-germany-scores-but-theres-a-major-catch",
+      "image": "/a/press/gk-press-020.webp",
+      "reach": "300K UMVs",
+      "group": "World Cup"
+    },
+    {
+      "outlet": "Shortlist",
+      "title": "Elephant & Castle brewery pub plans to go out with a bang this summer",
+      "date": "11.3.2026",
+      "url": "https://www.shortlist.com/food-and-drink/elephant-and-castle-brewery-pub-plans-to-go-out-with-a-bang-this-summer",
+      "image": "/a/press/gk-press-021.webp",
+      "reach": "300K UMVs",
+      "group": "Last summer"
+    },
+    {
+      "outlet": "South West Londoner",
+      "title": "Where to watch World Cup 2026 in London",
+      "date": "9.6.2026",
+      "url": "https://www.swlondoner.co.uk/sport/09062026-where-to-watch-world-cup-2026-in-london-10-places-gearing-up-for-the-tournament",
+      "image": "/a/press/gk-press-022.webp",
+      "reach": "110K UMVs",
+      "group": "World Cup"
+    },
+    {
+      "outlet": "That's Up London",
+      "title": "Where to watch the football in London",
+      "date": "",
+      "url": "https://thatsup.co.uk/london/guide/where-to-watch-the-euros-2025-in-london/",
+      "image": "/a/press/gk-press-023.webp",
+      "reach": "100K UMVs",
+      "group": "World Cup"
+    },
+    {
+      "outlet": "Verge Magazine",
+      "title": "Free Pints Every England Goal at German Kraft Brewery’s Open Air World Cup Fan Zone - Verge Magazine",
+      "date": "21.4.2026",
+      "url": "https://vergemagazine.co.uk/free-pints-every-england-goal-at-german-kraft-brewerys-open-air-world-cup-fan-zone/",
+      "image": "/a/press/gk-press-024.webp",
+      "reach": "95K UMVs",
+      "group": "World Cup"
+    },
+    {
+      "outlet": "Verge Magazine",
+      "title": "Mercato Metropolitano Elephant & Castle announces big move, but the party isn't over yet",
+      "date": "29.4.2026",
+      "url": "https://vergemagazine.co.uk/mercato-metropolitano-elephant-castle-announces-big-move-but-the-party-isnt-over-yet/",
+      "image": "/a/press/gk-press-025.webp",
+      "reach": "95K UMVs",
+      "group": "Last summer"
+    },
+    {
+      "outlet": "FACT Magazine",
+      "title": "Where to Watch the FIFA World Cup 2026 Finals in Londons",
+      "date": "16.7.2026",
+      "url": "https://www.factmagazines.com/london/london/things-to-do/fifa-world-cup-2026-in-london",
+      "image": "/a/press/gk-press-026.webp",
+      "reach": "50K UMVs",
+      "group": "World Cup"
+    },
+    {
+      "outlet": "London Post",
+      "title": "Free Pints After Every England Goal at German Kraft Brewery",
+      "date": "21.4.2026",
+      "url": "https://london-post.co.uk/free-pints-after-every-england-goal-at-german-kraft-brewery/",
+      "image": "/a/press/gk-press-027.webp",
+      "reach": "45K UMVs",
+      "group": "World Cup"
+    },
+    {
+      "outlet": "Beer Today",
+      "title": "Last summer for original German Kraft Brewery venue",
+      "date": "17.3.2026",
+      "url": "https://beertoday.co.uk/2026/03/17/german-kraft-brewery-0326/",
+      "image": "/a/press/gk-press-028.webp",
+      "reach": "20K UMVs",
+      "group": "Last summer"
+    },
+    {
+      "outlet": "Bar Magazine",
+      "title": "German Kraft Brewery Announces Brand-New Open-Air World Cup Screening Arena with Free Pints Every Time England Score - Bar Magazine",
+      "date": "27.4.2026",
+      "url": "https://barmagazine.co.uk/german-kraft-brewery-announces-brand-new-open-air-world-cup-screening-arena-with-free-pints-every-time-england-score/",
+      "image": "/a/press/gk-press-029.webp",
+      "reach": "15K UMVs",
+      "group": "World Cup"
+    },
+    {
+      "outlet": "Beer Republic",
+      "title": "Last summer for original German Kraft Brewery venue",
+      "date": "",
+      "url": "",
+      "image": "/a/press/gk-press-030.webp",
+      "reach": "10K UMVs",
+      "group": "Last summer"
+    },
+    {
+      "outlet": "Southwark News × Bermondsey Biscuit",
+      "title": "Instagram collaboration post",
+      "date": "",
+      "url": "https://www.instagram.com/p/DYSD_LOiFKO/",
+      "image": "/a/press/gk-press-031.webp",
+      "reach": "9,364 followers",
+      "group": "World Cup"
+    },
+    {
+      "outlet": "T3",
+      "title": "This brewery makes German beer in London using spectacular eco tech",
+      "date": "",
+      "url": "https://www.t3.com/features/this-brewery-makes-german-beer-in-london-using-spectacular-eco-tech",
+      "image": "/a/press/gk-press-032.webp",
+      "reach": "",
+      "group": "More coverage"
+    },
+    {
+      "outlet": "Beer52 Ferment",
+      "title": "Franconia via London",
+      "date": "",
+      "url": "https://www.beer52.com/ferment/article/1892/franconia-via-london",
+      "image": "/a/press/gk-press-033.webp",
+      "reach": "",
+      "group": "More coverage"
+    },
+    {
+      "outlet": "Larder Magazine",
+      "title": "Landsec appoints German Kraft to lead revival of Lewisham’s Model Market - Larder Magazine",
+      "date": "19.6.2026",
+      "url": "https://lardermag.co.uk/?p=2543473",
+      "image": "/a/press/gk-press-034.webp",
+      "reach": "",
+      "group": "More coverage"
+    },
+    {
+      "outlet": "Hot Dinners",
+      "title": "Lewisham's Model Market is coming back, with German Kraft Brewery in charge",
+      "date": "",
+      "url": "https://www.hot-dinners.com/2026061715137/Gastroblog/Latest-news/lewisham-model-market-reopening-german-kraft-brewery",
+      "image": "/a/press/gk-press-035.webp",
+      "reach": "",
+      "group": "More coverage"
+    },
+    {
+      "outlet": "The Brewers Journal",
+      "title": "Brewery to spearhead London market revival",
+      "date": "",
+      "url": "https://www.brewersjournal.info/brewery-to-spearhead-london-market-revival/",
+      "image": "/a/press/gk-press-036.webp",
+      "reach": "",
+      "group": "More coverage"
+    },
+    {
+      "outlet": "Fame Magazine",
+      "title": "One Last Stein: German Kraft’s Final Oktoberfest at Elephant & Castle – famemagazine.co.uk",
+      "date": "",
+      "url": "https://www.famemagazine.co.uk/one-last-stein-german-krafts-final-oktoberfest-at-elephant-castle/",
+      "image": "/a/press/gk-press-037.webp",
+      "reach": "",
+      "group": "More coverage"
+    },
+    {
+      "outlet": "Beer Today",
+      "title": "Final Elephant and Castle Oktoberfest for German Kraft",
+      "date": "25.9.2025",
+      "url": "https://beertoday.co.uk/2025/09/25/german-kraft-oktoberfest-0925/",
+      "image": "/a/press/gk-press-038.webp",
+      "reach": "",
+      "group": "More coverage"
+    },
+    {
+      "outlet": "London Drinker (CAMRA)",
+      "title": "German Kraft: fresh beer and some unusual outlets!",
+      "date": "",
+      "url": "https://londondrinker.camra.org.uk/wordpress/index.php/2023/07/21/german-kraft-fresh-beer-and-some-unusual-outlets/",
+      "image": "/a/press/gk-press-039.webp",
+      "reach": "",
+      "group": "More coverage"
+    },
+    {
+      "outlet": "Beer Today",
+      "title": "The craft behind London German beer specialists Kraft",
+      "date": "26.5.2022",
+      "url": "https://beertoday.co.uk/?p=72954",
+      "image": "/a/press/gk-press-040.webp",
+      "reach": "",
+      "group": "More coverage"
+    },
+    {
+      "outlet": "Time Out",
+      "title": "London Craft Oktoberfest",
+      "date": "30.9.2021",
+      "url": "https://www.timeout.com/london/things-to-do/london-craft-oktoberfest",
+      "image": "/a/press/gk-press-041.webp",
+      "reach": "",
+      "group": "More coverage"
+    },
+    {
+      "outlet": "Secret London",
+      "title": "A heavenly-good food market inside a restored Mayfair church",
+      "date": "25.8.2021",
+      "url": "https://secretldn.com/mercato-mayfair-italian-food-hall/",
+      "image": "/a/press/gk-press-042.webp",
+      "reach": "",
+      "group": "More coverage"
+    },
+    {
+      "outlet": "London Drinker (CAMRA)",
+      "title": "Matters of Taste: German Kraft on the rise",
+      "date": "",
+      "url": "https://londondrinker.camra.org.uk/wordpress/index.php/2021/03/29/matters-of-taste-german-kraft-on-the-rise/",
+      "image": "/a/press/gk-press-043.webp",
+      "reach": "",
+      "group": "More coverage"
+    },
+    {
+      "outlet": "Time Out",
+      "title": "German Kraft Brewing",
+      "date": "31.1.2018",
+      "url": "https://www.timeout.com/london/bars-and-pubs/german-kraft-brewing",
+      "image": "/a/press/gk-press-044.webp",
+      "reach": "",
+      "group": "More coverage"
+    }
+  ]
+}

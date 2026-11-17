@@ -120,8 +120,4 @@ if (data) {
 
   // open when the section is expanded, or from its button
   document.querySelectorAll('[data-pano-open]').forEach(b => b.addEventListener('click', e => { e.preventDefault(); openPano(0); }));
-  const sec = data.closest('.sec5');
-  if (sec) sec.querySelector(':scope > button').addEventListener('click', () => {
-    setTimeout(() => { if (sec.querySelector(':scope > button').getAttribute('aria-expanded') === 'true') openPano(0); }, 30);
-  });
 }

@@ -83,7 +83,9 @@ def stats(st):
 
 def gfig(i):
     cap = i.get("caption") or ""; c = (" c" if i.get("cutout") else "") + (" b" if i.get("bare") else ""); src = esc(i["image"])
-    return f'<a href="{src}" data-lb data-cap="{esc(cap)}"><figure><div class="t{c}"><img data-src="{src}" alt="{esc(cap)}"></div><figcaption>{esc(cap)}</figcaption></figure></a>'
+    th = esc(i.get("thumb") or i["image"]); ty = ' data-type="scroll"' if i.get("scroll") else ""
+    if i.get("scroll"): c += " nl"
+    return f'<a href="{src}" data-lb{ty} data-cap="{esc(cap)}"><figure><div class="t{c}"><img data-src="{th}" alt="{esc(cap)}"></div><figcaption>{esc(cap)}</figcaption></figure></a>'
 
 def vfig(v):
     cap = v.get("caption") or ""; poster = v.get("poster") or ""
@@ -159,7 +161,9 @@ def fest_block(s):
 def photos_block(s):
     ph = [x for x in s.get("photos", []) if x.get("image")]
     if not ph: return ""
-    items = "".join('<a href="%s" data-lb data-cap="%s"><img data-src="%s" alt="%s"%s></a>' % (esc(x["image"]), esc(x.get("caption")), esc(x["image"]), esc(x.get("caption") or ""), (' width="%d" height="%d"' % (x["w"], x["h"])) if x.get("w") else "") for x in ph)
+    vids = [v for v in s.get("videos", []) if v.get("video")]
+    vt = "".join('<a href="%s" data-lb data-type="video" data-cap="%s" class="mv"><img data-src="%s" alt=""></a>' % (esc(v["video"]), esc(v.get("caption")), esc(v.get("poster"))) for v in vids)
+    items = vt + "".join('<a href="%s" data-lb data-cap="%s"><img data-src="%s" alt="%s"%s></a>' % (esc(x["image"]), esc(x.get("caption")), esc(x["image"]), esc(x.get("caption") or ""), (' width="%d" height="%d"' % (x["w"], x["h"])) if x.get("w") else "") for x in ph)
     return '<div class="phg"><div class="rh"><span class="lbl">%s</span><span class="lbl mute">%d photos</span></div><div class="mas" data-lbg>%s</div></div>' % (esc(s.get("photos_title") or "Photography"), len(ph), items)
 
 def insta_block(s):
@@ -172,11 +176,12 @@ def insta_block(s):
 def press_teaser(s, p):
     pt = s.get("press_teaser") or {}
     if not pt.get("link"): return ""
-    try: items = json.load(open("content/press-gleisgarten.json", encoding="utf-8"))["items"]
+    try: items = json.load(open("content/" + (pt.get("source") or "press-gleisgarten.json"), encoding="utf-8"))["items"]
     except Exception: items = []
     items = [i for i in items if i.get("image") and i.get("title")][:int(pt.get("count") or 9)]
-    cards = "".join('<div class="pc"><div class="pi"><img data-src="%s" alt=""></div><span class="po">%s · %s</span><b>%s</b></div>' % (esc(i["image"]), esc(i.get("outlet")), esc(i.get("date")), esc(i["title"])) for i in items)
-    return '<div class="ptz"><a class="ptg" href="%s">%s</a><div class="pfade"><a class="fmore" href="%s">%s <span>→</span></a></div></div>' % (esc(pt["link"]), cards, esc(pt["link"]), esc(pt.get("label") or "All press coverage"))
+    cards = "".join('<div class="pc"><div class="pi"><img data-src="%s" alt=""></div><span class="po">%s</span><b>%s</b></div>' % (esc(i["image"]), esc(" · ".join(x for x in [i.get("outlet"), i.get("reach") or i.get("date")] if x)), esc(i["title"])) for i in items)
+    hd = ('<p class="pth">%s</p>' % esc(pt["heading"])) if pt.get("heading") else ""
+    return hd + '<div class="ptz"><a class="ptg" href="%s">%s</a><div class="pfade"><a class="fmore" href="%s">%s <span>→</span></a></div></div>' % (esc(pt["link"]), cards, esc(pt["link"]), esc(pt.get("label") or "All press coverage"))
 
 def site_teaser(s):
     st = s.get("site_teaser") or {}
@@ -296,7 +301,7 @@ for i, p in enumerate(P):
     for n, s in enumerate(p.get("sections", [])):
         title, sub = SEC.get(s.get("type"), (s.get("type", "").title(), ""))
         if s.get("title"): title = s["title"]
-        ims = [x for x in s.get("images", []) if x.get("image")]; vids = [x for x in s.get("videos", []) if x.get("video")]
+        ims = [x for x in s.get("images", []) if x.get("image")]; vids = [] if s.get("photos") else [x for x in s.get("videos", []) if x.get("video")]
         deck = [x for x in s.get("deck", []) if x.get("image")]
         dk = ""
         if deck:
@@ -311,6 +316,14 @@ for i, p in enumerate(P):
             lk += f'<p class="sl"><a class="btn" href="#" data-pano-open>Open the 360° tour ↗</a></p><script type="application/json" class="pano-data" data-title="{esc(s.get("pano_title") or "360°")}">{pj}</script>'
             extra += '<script type="importmap">{"imports":{"three":"/js/three.module.min.js"}}</script><script type="module" src="/js/pano.js?' + VER + '"></script>'
 
+        pres = [x for x in s.get("pres", []) if x.get("image")]
+        if pres:
+            lk += '<div class="prs" data-lbg><button type="button" class="prb" onclick="this.parentNode.querySelector(\'a[data-lb]\').click()"><img src="%s" alt="" loading="lazy"><span><small class="lbl">Presentation · %d slides</small><b>%s</b><i>View slides →</i></span></button>%s%s</div>' % (esc(pres[0]["image"]), len(pres), esc(s.get("pres_title") or "Presentation"), "".join('<a hidden href="%s" data-lb data-cap="%s · %d / %d"></a>' % (esc(x["image"]), esc(s.get("pres_title") or ""), j + 1, len(pres)) for j, x in enumerate(pres)), ('<a class="prp lbl" href="%s" target="_blank" rel="noopener">Download PDF ↓</a>' % esc(s["pres_pdf"])) if s.get("pres_pdf") else "")
+        bf = s.get("before") or {}
+        if bf.get("image") and pano:
+            cards = "".join('<button type="button" class="b4p" onclick="window.openPano&&openPano(%d)"><img data-src="%s" alt=""><span>%s</span><em>360°</em></button>' % (j, esc(x.get("thumb") or x["image"]), esc(x.get("caption"))) for j, x in enumerate(pano))
+            body = body.replace('<p class="lede">', '<div class="b4"><div class="rr"><figure class="old"><div><img data-src="%s" alt="%s"></div><figcaption>%s</figcaption></figure><div class="b4c"><span class="lbl">%s</span><b>%s</b><i>→</i></div>%s</div></div><p class="lede">' % (esc(bf["image"]), esc(bf.get("caption")), esc(bf.get("caption")), esc(bf.get("cta_kicker") or "Then"), esc(bf.get("cta") or "Swipe to step inside"), cards), 1)
+            lk = lk.replace('<p class="sl"><a class="btn" href="#" data-pano-open>Open the 360° tour ↗</a></p>', '')
         body += lk
         gal = f'<div class="gal5" data-lbg>{"".join(vfig(v) for v in vids)}{"".join(gfig(x) for x in ims)}</div>' if (ims or vids) else ""
         subh = f"<small>{esc(sub)}</small>" if sub else ""
@@ -334,12 +347,12 @@ for i, p in enumerate(P):
 for f in sorted(glob.glob(os.path.join(ROOT, "content/press-*.json"))):
     pr = json.load(open(f, encoding="utf-8"))
     proj = next((p for p in P if p["slug"] == pr.get("project")), None)
-    base = f"/work/{pr.get('project')}/presse/" if proj else f"/presse/{os.path.basename(f)[6:-5]}/"
+    base = f"/work/{pr.get('project')}/{pr.get('path') or 'presse'}/" if proj else f"/presse/{os.path.basename(f)[6:-5]}/"
     its = [x for x in pr.get("items", []) if x.get("outlet") or x.get("title")]
     def card(x):
         url = x.get("pdf") or x.get("url") or ""; ext = url.lower().endswith(".pdf"); tag = "PDF ↓" if ext else "Read article ↗"
         im = f'<div class="pt"><img src="{esc(x["image"])}" alt="" loading="lazy"></div>' if x.get("image") else '<div class="pt e"></div>'
-        inner = f'{im}<div class="pc"><span class="lbl">{esc(x.get("outlet"))}</span>{("<h3>" + esc(x["title"]) + "</h3>") if x.get("title") else ""}<div class="pd"><span>{esc(x.get("date"))}</span><span>{tag if url else ""}</span></div></div>'
+        inner = f'{im}<div class="pc"><span class="lbl">{esc(x.get("outlet"))}</span>{("<h3>" + esc(x["title"]) + "</h3>") if x.get("title") else ""}<div class="pd"><span>{esc(" · ".join(v for v in [x.get("reach"), x.get("date")] if v))}</span><span>{tag if url else ""}</span></div></div>'
         return f'<a class="pi rv" href="{esc(url)}" target="_blank" rel="noopener">{inner}</a>' if url else f'<div class="pi rv">{inner}</div>'
     back = f'<a class="bk lbl" href="/work/{proj["slug"]}/">← {esc(proj["name"])}</a>' if proj else ""
     page = head(pr.get("title") or "Press", pr.get("intro") or "", base) + header() + f'''

@@ -172,7 +172,13 @@
           "label": "Working closely together with the local government"
         }
       ],
-      "videos": [],
+      "videos": [
+        {
+          "video": "/v/gg-drone.mp4",
+          "poster": "/v/gg-drone.jpg",
+          "caption": "Drone flight through the depot"
+        }
+      ],
       "images": [
         {
           "image": "/a/gg-concept-01.webp",
@@ -190,7 +196,75 @@
           "cutout": false
         }
       ],
-      "deck": []
+      "deck": [],
+      "reels_title": "Building Gleis//Garten",
+      "reels": [
+        {
+          "video": "/v/reels/gg-reel-01.mp4",
+          "poster": "/v/reels/gg-reel-01.jpg",
+          "caption": ""
+        },
+        {
+          "video": "/v/reels/gg-reel-02.mp4",
+          "poster": "/v/reels/gg-reel-02.jpg",
+          "caption": ""
+        },
+        {
+          "video": "/v/reels/gg-reel-03.mp4",
+          "poster": "/v/reels/gg-reel-03.jpg",
+          "caption": ""
+        },
+        {
+          "video": "/v/reels/gg-reel-04.mp4",
+          "poster": "/v/reels/gg-reel-04.jpg",
+          "caption": ""
+        },
+        {
+          "video": "/v/reels/gg-reel-05.mp4",
+          "poster": "/v/reels/gg-reel-05.jpg",
+          "caption": ""
+        },
+        {
+          "video": "/v/reels/gg-reel-06.mp4",
+          "poster": "/v/reels/gg-reel-06.jpg",
+          "caption": ""
+        },
+        {
+          "video": "/v/reels/gg-reel-07.mp4",
+          "poster": "/v/reels/gg-reel-07.jpg",
+          "caption": ""
+        },
+        {
+          "video": "/v/reels/gg-reel-08.mp4",
+          "poster": "/v/reels/gg-reel-08.jpg",
+          "caption": ""
+        },
+        {
+          "video": "/v/reels/gg-reel-09.mp4",
+          "poster": "/v/reels/gg-reel-09.jpg",
+          "caption": ""
+        },
+        {
+          "video": "/v/reels/gg-reel-10.mp4",
+          "poster": "/v/reels/gg-reel-10.jpg",
+          "caption": ""
+        },
+        {
+          "video": "/v/reels/gg-reel-11.mp4",
+          "poster": "/v/reels/gg-reel-11.jpg",
+          "caption": ""
+        },
+        {
+          "video": "/v/reels/gg-reel-12.mp4",
+          "poster": "/v/reels/gg-reel-12.jpg",
+          "caption": ""
+        },
+        {
+          "video": "/v/reels/gg-reel-13.mp4",
+          "poster": "/v/reels/gg-reel-13.jpg",
+          "caption": ""
+        }
+      ]
     },
     {
       "type": "Website",
@@ -222,9 +296,9 @@
   "years": "2022–2026",
   "credit": "",
   "hero": {
-    "type": "vimeo",
-    "vimeo_id": "951693092",
-    "poster": ""
+    "type": "video",
+    "video": "/v/gg-aufbau.mp4",
+    "poster": "/v/gg-aufbau.jpg"
   },
   "text_colour": "#f2ead7"
 }

@@ -131,6 +131,24 @@ home = head(HOME["title"], HOME["description"], "/", extra=IMAP) + header() + f'
 </main>''' + FOOT
 open(OUT + "/index.html", "w", encoding="utf-8").write(home)
 
+
+def fest_block(s):
+    if not s.get("fest_heading"): return ""
+    v = s.get("fest_video") or {}; r = s.get("fest_report") or {}; ch = s.get("fest_chart") or {}
+    vid = ('<div class="fv"><video autoplay muted loop playsinline preload="metadata" poster="%s" src="%s"></video><button type="button" class="snd" aria-label="Sound on">Sound on</button></div>' % (esc(v.get("poster")), esc(v["video"]))) if v.get("video") else ""
+    fs = "".join('<div><b>%s</b><span>%s</span></div>' % (esc(x["figure"]), esc(x["label"])) for x in s.get("fest_stats", []))
+    bars = ch.get("bars", []); mx = max([b.get("value") or 0 for b in bars] or [1])
+    chart = ('<div class="fchart"><span class="lbl">%s</span><div class="fb">%s</div><p class="fn">%s</p></div>' % (esc(ch.get("title")), "".join(
+        '<div class="bar" style="--h:%.1f%%"><em>%s</em><i></i><b>%s</b><small>%s</small></div>' % (100 * (b.get("value") or 0) / mx, esc(b.get("text")), esc(b.get("label")), esc(b.get("sub"))) for b in bars), esc(ch.get("note")))) if bars else ""
+    rep = ('<a class="frep" href="%s" target="_blank" rel="noopener"><img src="%s" alt="%s" loading="lazy"><span>%s ↓ PDF</span></a>' % (esc(r.get("pdf") or r.get("image")), esc(r["image"]), esc(r.get("caption")), esc(r.get("caption")))) if r.get("image") else ""
+    return ('<div class="fest"><div class="fh"><span class="lbl">Highlight</span><h4>%s</h4><p>%s</p></div>%s<div class="fs">%s</div><div class="fg">%s%s</div></div>' % (esc(s["fest_heading"]), esc(s.get("fest_text")), vid, fs, chart, rep))
+
+def reels_block(s):
+    rl = [r for r in s.get("reels", []) if r.get("video")]
+    if not rl: return ""
+    items = "".join('<figure class="reel"><video muted loop playsinline preload="none" poster="%s" data-src="%s"></video><button type="button" class="rs" aria-label="Sound on">♪</button>%s</figure>' % (esc(r.get("poster")), esc(r["video"]), ('<figcaption>%s</figcaption>' % esc(r["caption"])) if r.get("caption") else "") for r in rl)
+    return '<div class="reels"><div class="rh"><span class="lbl">%s</span><span class="lbl mute">Swipe →</span></div><div class="rr">%s</div></div>' % (esc(s.get("reels_title") or "Videos"), items)
+
 # ---------- case-study pages (one-pagers) ----------
 def vnav(p, pv, nx):
     nav = "".join(f'<a href="/work/{w["slug"]}/"{" class=cu aria-current=page" if w is p else ""} style="--cb:{esc(w["card"])}" aria-label="{esc(w["name"])}" title="{esc(w["name"])}">{navlogo(w)}</a>' for w in P)
@@ -243,6 +261,7 @@ for i, p in enumerate(P):
             dk = f'<div class="deck"><span class="lbl">{esc(s.get("deck_title") or "Presentation")}</span><div class="rail">' + "".join(
                 f'<figure><img data-src="{esc(d["image"])}" alt=""><figcaption><b>{j+1:02d} / {len(deck):02d}</b>{esc(d.get("caption"))}</figcaption></figure>' for j, d in enumerate(deck)) + '</div><div class="nv"><button type="button" data-d="0" aria-label="Previous">←</button><button type="button" data-d="1" aria-label="Next">→</button></div></div>'
         body = stats(s.get("stats")) + f'<p class="lede">{esc(s.get("text"))}</p>'
+        body += fest_block(s) + reels_block(s)
         lk = f'<p class="sl"><a class="btn" href="{esc(s["link"])}">{esc(s.get("link_label") or "More")}</a></p>' if s.get("link") else ""
         pano = [x for x in s.get("pano", []) if x.get("image")]
         if pano:

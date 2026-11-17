@@ -88,13 +88,92 @@
           "cutout": true
         }
       ],
-      "deck": []
+      "deck": [],
+      "fest_heading": "Vienna Kraft Bier Fest",
+      "fest_text": "Vienna's independent craft beer festival, which we hosted at Gleis//Garten: five editions from the launch in August 2024 to June 2026, with 15+ independent breweries and 50+ beers per edition. I ran it end to end: brewery line-up, ticket shop, email, retargeting, PR and the event itself. In 2026 it was the only craft beer festival left in Vienna.",
+      "fest_stats": [
+        {
+          "figure": "≈€116.3K",
+          "label": "estimated total revenue: tickets online, at the door and tasting tokens, 2025–26"
+        },
+        {
+          "figure": "2,177",
+          "label": "tickets sold online, ≈2,830 ticket holders incl. door sales"
+        },
+        {
+          "figure": "1,003",
+          "label": "unique buyers, 116 came back for two or more editions"
+        },
+        {
+          "figure": "+27%",
+          "label": "online revenue 2026 vs 2025 (€32.9K → €41.7K)"
+        },
+        {
+          "figure": "739",
+          "label": "online tickets for Feb 2026, the best edition yet"
+        },
+        {
+          "figure": "40+",
+          "label": "articles in major newspapers and media"
+        }
+      ],
+      "fest_chart": {
+        "title": "Revenue per edition",
+        "note": "Online ticket revenue plus estimated door sales (+30%) and tasting tokens (+20%). The August 2024 launch isn't in the ticket shop export.",
+        "bars": [
+          {
+            "label": "Feb 2025",
+            "sub": "617 online tickets",
+            "value": 30.1,
+            "text": "≈€30.1K"
+          },
+          {
+            "label": "Aug 2025",
+            "sub": "384 online tickets",
+            "value": 21.2,
+            "text": "≈€21.2K"
+          },
+          {
+            "label": "Feb 2026",
+            "sub": "739 online tickets",
+            "value": 41.6,
+            "text": "≈€41.6K"
+          },
+          {
+            "label": "Jun 2026",
+            "sub": "437 online tickets",
+            "value": 23.4,
+            "text": "≈€23.4K"
+          }
+        ]
+      },
+      "fest_video": {
+        "video": "/v/vk-fest.mp4",
+        "poster": "/v/vk-fest.jpg",
+        "caption": "Vienna Kraft Bier Fest"
+      },
+      "fest_report": {
+        "image": "/a/vk-fest-report.webp",
+        "pdf": "/press/vienna-kraft-bier-fest-report.pdf",
+        "caption": "Festival report, 2024–2026"
+      }
     },
     {
       "type": "Conceptualisation",
       "text": "Brewery renders and the finished brewhouse.",
       "stats": [],
-      "videos": [],
+      "videos": [
+        {
+          "video": "/v/vk-brauerei-tag.mp4",
+          "poster": "/v/vk-brauerei-tag.jpg",
+          "caption": "Brewery day at Vienna Kraft"
+        },
+        {
+          "video": "/v/vk-insta-build.mp4",
+          "poster": "/v/vk-insta-build.jpg",
+          "caption": "Building the brewery"
+        }
+      ],
       "images": [
         {
           "image": "/a/vk-concept-01.webp",

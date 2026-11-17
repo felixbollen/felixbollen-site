@@ -128,7 +128,7 @@ home = head(HOME["title"], HOME["description"], "/", extra=IMAP) + header() + f'
 {f'<section class="sec"><div class="sh rv"><h2>In numbers</h2></div><div class="nm rv">{nums}</div></section>' if nums else ""}
 {f'<section class="sec al"><div class="sh rv"><h2>Also</h2></div><ul class="rv">{also}</ul></section>' if also else ""}
 <section class="sec" id="about"><div class="sh rv"><h2>About</h2></div><div class="ab">
-<h3 class="rv">{br(HOME.get("about_heading"))}</h3><div class="rv">{abt}<dl>{dets}</dl></div></div></section>
+<div class="abl"><h3 class="rv">{br(HOME.get("about_heading"))}</h3>{('<figure class="abp rv"><img src="%s" alt="%s" loading="lazy"></figure>' % (esc(HOME["about_image"]), esc(HOME.get("about_image_alt")))) if HOME.get("about_image") else ""}</div><div class="rv">{abt}<dl>{dets}</dl></div></div></section>
 <section class="ct" id="contact"><h2 class="rv">{br(HOME.get("contact_heading"))}</h2>
 <div class="cg"><div class="rv"><span class="lbl mute">Write to me</span><br><br><a class="ml" href="mailto:{esc(EMAIL)}">{esc(EMAIL)}</a>
 <p>{esc(HOME.get("contact_text"))}</p></div>
@@ -165,6 +165,16 @@ def photos_block(s):
     vt = "".join('<a href="%s" data-lb data-type="video" data-cap="%s" class="mv"><img data-src="%s" alt=""></a>' % (esc(v["video"]), esc(v.get("caption")), esc(v.get("poster"))) for v in vids)
     items = vt + "".join('<a href="%s" data-lb data-cap="%s"><img data-src="%s" alt="%s"%s></a>' % (esc(x["image"]), esc(x.get("caption")), esc(x["image"]), esc(x.get("caption") or ""), (' width="%d" height="%d"' % (x["w"], x["h"])) if x.get("w") else "") for x in ph)
     return '<div class="phg"><div class="rh"><span class="lbl">%s</span><span class="lbl mute">%d photos</span></div><div class="mas" data-lbg>%s</div></div>' % (esc(s.get("photos_title") or "Photography"), len(ph), items)
+
+def ig_grid(s):
+    g = s.get("ig") or {}
+    its = [x for x in g.get("items", []) if x.get("image")]
+    if not its: return ""
+    h = esc(g.get("handle"))
+    eye = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5C6.5 5 2.7 9.4 1.5 12c1.2 2.6 5 7 10.5 7s9.3-4.4 10.5-7C21.3 9.4 17.5 5 12 5zm0 11.5A4.5 4.5 0 1 1 12 7.5a4.5 4.5 0 0 1 0 9zm0-7a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z" fill="currentColor"/></svg>'
+    reel = '<svg class="rl" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5zm2 3v11h14V8H5zm1.6-3 2 2h2.6l-2-2H6.6zm6 0 2 2h2.6l-2-2h-2.6zM10 10.5l5 3-5 3v-6z" fill="currentColor"/></svg>'
+    cells = "".join('<a class="igc" href="%s" target="_blank" rel="noopener"><img data-src="%s" alt="">%s%s</a>' % (esc(x.get("url")), esc(x["image"]), reel if x.get("type") == "reel" else "", ('<span class="igv">%s%s</span>' % (eye, esc(x["views"]))) if x.get("views") else "") for x in its)
+    return ('<div class="igm"><div class="igh"><img data-src="%s" alt=""><div><b>%s</b><span>%s</span><ul><li><b>%s</b> posts</li><li><b>%s</b> followers</li><li><b>%s</b> following</li></ul><p>%s</p></div><a class="igf2" href="https://www.instagram.com/%s/" target="_blank" rel="noopener">Follow</a></div><div class="igg">%s</div></div>') % (esc(g.get("avatar")), h, esc(g.get("name")), esc(g.get("posts")), esc(g.get("followers")), esc(g.get("following")), esc(g.get("bio")), h, cells)
 
 def insta_block(s):
     h = (s.get("instagram") or "").strip().lstrip("@")
@@ -315,7 +325,7 @@ for i, p in enumerate(P):
             body += '<div class="strip"><span class="lbl">%s</span><img data-src="%s" alt=""></div>' % (esc(s.get("strip_label") or ""), esc(s["strip"]))
         if s.get("chips"):
             body += '<div class="chips"><span class="lbl">%s</span><ul>%s</ul></div>' % (esc(s.get("chips_label") or ""), "".join("<li>%s</li>" % esc(c) for c in s["chips"]))
-        body += fest_block(s) + reels_block(s) + photos_block(s) + insta_block(s) + press_teaser(s, p) + site_teaser(s)
+        body += fest_block(s) + reels_block(s) + photos_block(s) + insta_block(s) + ig_grid(s) + press_teaser(s, p) + site_teaser(s)
         lk = f'<p class="sl"><a class="btn" href="{esc(s["link"])}">{esc(s.get("link_label") or "More")}</a></p>' if s.get("link") else ""
         pano = [x for x in s.get("pano", []) if x.get("image")]
         if pano:
@@ -339,6 +349,8 @@ for i, p in enumerate(P):
         subh = f"<small>{esc(sub)}</small>" if sub else ""
         secs.append(f'''<div class="sec5"><button type="button" aria-expanded="false"><span class="n">{n+1:02d}</span><h3>{esc(title)}{subh}</h3><span class="c">{(len(ims)+len(vids)) or ''}</span><span class="pm"></span></button>
 <div class="bd"><div><div class="in">{body}{dk}{gal}</div></div></div></div>''')
+    gl_ = [x for x in p.get("gallery", []) if x.get("image")]
+    did = (f'<section class="sec" id="did"><div class="sh rv"><h2>What I did</h2><span class="lbl mute">{len(secs):02d}</span></div><div class="acc">{"".join(secs)}</div></section>' if secs else "") + (f'<section class="sec pgal" id="did"><div class="sh rv"><h2>What I did</h2><span class="lbl mute">{len(gl_):02d}</span></div><p class="lede rv">{esc(p.get("gallery_text"))}</p><div class="gal5 open" data-lbg>{"".join(gfig(x) for x in gl_)}</div></section>' if gl_ else "")
     meta = "".join(f'<div><dt>{a}</dt><dd>{esc(b)}</dd></div>' for a, b in [("Role", p.get("role")), ("Location", p.get("city")), ("Years", p.get("years") or "—"), ("Disciplines", ", ".join(p.get("disciplines", [])))])
     nav = "".join(f'<a href="/work/{w["slug"]}/"{" class=cu aria-current=page" if w is p else ""} style="--cb:{esc(w["card"])}" aria-label="{esc(w["name"])}" title="{esc(w["name"])}">{navlogo(w)}</a>' for w in P)
     cr = f'<p class="cr">{esc(p["credit"])}</p>' if p.get("credit") else ""
@@ -348,7 +360,7 @@ for i, p in enumerate(P):
 {first}
 <section class="vi"><div class="rv"><p class="lead">{esc(p.get('intro'))}</p>{cr}</div><dl class="rv">{meta}</dl></section>
 {rest}
-<section class="sec" id="did"><div class="sh rv"><h2>What I did</h2><span class="lbl mute">{len(secs):02d}</span></div><div class="acc">{"".join(secs)}</div></section>
+{did}
 <section class="vn"><div class="row">{nav}</div><div class="pn"><a href="/work/{pv['slug']}/"><small class="lbl">← Previous</small><b>{esc(pv['name'])}</b></a>
 <a href="/work/{nx['slug']}/" style="text-align:right"><small class="lbl">Next →</small><b>{esc(nx['name'])}</b></a></div></section></main>''' + FOOT
     os.makedirs(f"{OUT}/work/{p['slug']}", exist_ok=True)

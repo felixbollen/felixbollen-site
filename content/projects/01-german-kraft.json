@@ -285,6 +285,90 @@
       "name": "Phanta, Pale Ale, Vienna Kraft × Bräuhaus Ten.Fifty"
     },
     {
+      "image": "/a/gkl/gk-paper-01.png",
+      "name": "Chim Chimeny, Dunkles Rauchbier"
+    },
+    {
+      "image": "/a/gkl/gk-paper-02.png",
+      "name": "Fox Schuh, Amber Ale"
+    },
+    {
+      "image": "/a/gkl/gk-paper-03.png",
+      "name": "Home Melone, Single Hop Pils"
+    },
+    {
+      "image": "/a/gkl/gk-paper-04.png",
+      "name": "Keller König, Keller Lager"
+    },
+    {
+      "image": "/a/gkl/gk-paper-05.png",
+      "name": "Lager Zen Life, Dry Hopped Lager"
+    },
+    {
+      "image": "/a/gkl/gk-paper-06.png",
+      "name": "O'zapft is!, Festbier"
+    },
+    {
+      "image": "/a/gkl/gk-paper-07.png",
+      "name": "Sommer (W)heat, Hopfen Weisse"
+    },
+    {
+      "image": "/a/gkl/gk-paper-08.png",
+      "name": "The Pale, Mercato Mayfair"
+    },
+    {
+      "image": "/a/gkl/gk-paper-09.png",
+      "name": "Smash, Vienna Lager"
+    },
+    {
+      "image": "/a/gkl/gk-paper-10.png",
+      "name": "Fritz Taube, Fest Wheatbeer"
+    },
+    {
+      "image": "/a/gkl/gk-paper-11.png",
+      "name": "Heidi Blonde, Das Lager"
+    },
+    {
+      "image": "/a/gkl/gk-paper-12.png",
+      "name": "Hopfen Kiss, Pale Ale"
+    },
+    {
+      "image": "/a/gkl/gk-paper-13.png",
+      "name": "Kraft Rocket, Smoked Lager"
+    },
+    {
+      "image": "/a/gkl/gk-paper-14.png",
+      "name": "Edel Weiss, Wheatbeer"
+    },
+    {
+      "image": "/a/gkl/gk-paper-15.png",
+      "name": "O, Festbier"
+    },
+    {
+      "image": "/a/gkl/gk-paper-16.png",
+      "name": "Perlin, DH Pils"
+    },
+    {
+      "image": "/a/gkl/gk-paper-17.png",
+      "name": "Powercut, Triple-fermented Festbier"
+    },
+    {
+      "image": "/a/gkl/gk-paper-18.png",
+      "name": "Smoko, Smoked Lager"
+    },
+    {
+      "image": "/a/gkl/gk-paper-19.png",
+      "name": "White Bock, Wheat Bock"
+    },
+    {
+      "image": "/a/gkl/gk-paper-20.png",
+      "name": "Coming soon"
+    },
+    {
+      "image": "/a/gkl/gk-paper-21.png",
+      "name": "Hüftgold, with The Wild Beer Co"
+    },
+    {
       "image": "/a/gkl/gk-label-57.png",
       "name": "India Pale Ale"
     },
@@ -395,11 +479,6 @@
           "caption": "Brewer shirt, back",
           "cutout": true,
           "bare": true
-        },
-        {
-          "image": "/a/gk-brand-03.webp",
-          "caption": "Bier. sticker",
-          "cutout": true
         },
         {
           "image": "/a/gk-brand-04.webp",
@@ -539,19 +618,19 @@
     },
     {
       "type": "Marketing",
-      "text": "Social-first campaigns, events and content that filled a 2,500-capacity site, on a paid-social budget of under £500 a month.",
+      "text": "Social-first campaigns, events and content that filled a 3,500-capacity beer garden, on a paid-social budget of under £500 a month. This is where I learned the most valuable lesson in marketing: if you have a good product, it will sell.",
       "stats": [
         {
-          "figure": "650,000 L",
-          "label": "sold in the first two years, straight to customers"
+          "figure": "50,000 L",
+          "label": "tank capacity"
         },
         {
-          "figure": "£3.6m",
-          "label": "annual turnover at the Elephant & Castle flagship"
+          "figure": "3,500",
+          "label": "capacity beer garden"
         },
         {
-          "figure": "2,500",
-          "label": "capacity, inside and out"
+          "figure": "2 million+",
+          "label": "litres of beer produced"
         }
       ],
       "videos": [],
@@ -564,7 +643,7 @@
       "text": "Germans brewing lager in post-Brexit London made a story that travelled, from German national TV to The Times.",
       "stats": [
         {
-          "figure": "44+",
+          "figure": "42+",
           "label": "articles published, from The Times to Time Out"
         },
         {
@@ -592,23 +671,7 @@
       "text": "The beer garden at Elephant & Castle: a steel frame, parasols and serving tanks, planned and built with the team.",
       "stats": [],
       "videos": [],
-      "images": [
-        {
-          "image": "/a/gk-concept-01.webp",
-          "caption": "The beer garden, Elephant & Castle",
-          "cutout": false
-        },
-        {
-          "image": "/a/gk-concept-02.webp",
-          "caption": "Steel frame and parasols",
-          "cutout": false
-        },
-        {
-          "image": "/a/gk-concept-03.webp",
-          "caption": "Serving tanks",
-          "cutout": false
-        }
-      ],
+      "images": [],
       "deck": [],
       "pano": [
         {

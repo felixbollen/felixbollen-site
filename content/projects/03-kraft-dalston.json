@@ -1,5 +1,5 @@
 {
-  "order": 20,
+  "order": 10,
   "slug": "kraft-dalston",
   "name": "Kraft Dalston",
   "kind": "Rooftop bar & brewery",
@@ -108,7 +108,7 @@
   "sections": [
     {
       "type": "Branding",
-      "text": "A 3D KRAFT roundel in pink, yellow and black, made for glasses, the DJ booth and merchandise.",
+      "text": "Developed the trademarked logomark 'KRAFT' further into a modern, less 'traditional beer only' logo and adapted it to the modern space built within the design hotel Locke Dalston.",
       "stats": [],
       "videos": [],
       "images": [
@@ -140,44 +140,6 @@
         {
           "image": "/a/da-brand-06.webp",
           "caption": "T-shirt, front",
-          "cutout": false
-        }
-      ],
-      "deck": []
-    },
-    {
-      "type": "Marketing",
-      "text": "Weekly deals, kitchen launches and seasonal campaigns, run against covers.",
-      "stats": [
-        {
-          "figure": "£0.9m",
-          "label": "annual turnover"
-        },
-        {
-          "figure": "150",
-          "label": "capacity, rooftop and bar"
-        }
-      ],
-      "videos": [],
-      "images": [
-        {
-          "image": "/a/da-mkt-01.webp",
-          "caption": "Wednesday deal campaign",
-          "cutout": false
-        },
-        {
-          "image": "/a/da-mkt-02.webp",
-          "caption": "Wednesday deal campaign",
-          "cutout": false
-        },
-        {
-          "image": "/a/da-mkt-03.webp",
-          "caption": "London Cocktail Month",
-          "cutout": false
-        },
-        {
-          "image": "/a/da-mkt-04.webp",
-          "caption": "Seoul in a Bottle kitchen launch",
           "cutout": false
         }
       ],
@@ -243,25 +205,6 @@
       "deck": []
     },
     {
-      "type": "Website",
-      "text": "Website imagery.",
-      "stats": [],
-      "videos": [],
-      "images": [
-        {
-          "image": "/a/da-web-01.webp",
-          "caption": "Website imagery",
-          "cutout": false
-        },
-        {
-          "image": "/a/da-web-02.webp",
-          "caption": "Website imagery",
-          "cutout": false
-        }
-      ],
-      "deck": []
-    },
-    {
       "type": "Photography & videography",
       "text": "Food, drink and people.",
       "stats": [],
@@ -307,5 +250,5 @@
       "deck": []
     }
   ],
-  "hidden": true
+  "hidden": false
 }

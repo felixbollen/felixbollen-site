@@ -33,6 +33,7 @@ $$('.sec5>button').forEach(b=>b.addEventListener('click',()=>{const s=b.parentEl
   if(s.classList.contains('open'))$$('img[data-src]',s).forEach(i=>{i.src=i.dataset.src;i.removeAttribute('data-src')})}));
 
 $$('.sec5.open img[data-src]').forEach(i=>{i.src=i.dataset.src;i.removeAttribute('data-src')});
+$$('.pgal img[data-src]').forEach(i=>{i.loading='lazy';i.src=i.dataset.src;i.removeAttribute('data-src')});
 /* deck */
 $$('.deck').forEach(d=>{const r=$('.rail',d);$$('.nv button',d).forEach(b=>b.onclick=()=>r.scrollBy({left:(b.dataset.d==='1'?1:-1)*r.clientWidth*.8,behavior:'smooth'}))});
 

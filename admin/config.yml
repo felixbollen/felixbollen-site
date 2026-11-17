@@ -56,6 +56,8 @@ collections:
               - {name: text, label: Text, widget: text}
               - {name: tag, label: Tag, widget: string, required: false}
           - {name: about_heading, label: "About heading", widget: text}
+          - {name: about_image, label: "About photo", widget: image, required: false}
+          - {name: about_image_alt, label: "About photo description", widget: string, required: false}
           - {name: about, label: "About paragraphs", widget: list, field: {name: p, label: Paragraph, widget: text}}
           - name: details
             label: "About details"

@@ -48,20 +48,96 @@
     },
     {
       "type": "Branding",
-      "text": "The revived Model Market identity: the retro lettering on the original sign, rebuilt for a new chapter.",
-      "images": [
+      "text": "The revived Model Market identity, carried through the trader deck we used to sign the food vendors: retro lettering, hand-drawn illustrations and the market's orange.",
+      "images": [],
+      "videos": [],
+      "deck": [
         {
-          "image": "/l/mm-colour.webp",
-          "caption": "Model Market logo",
-          "cutout": true
+          "image": "/a/mm-deck/s-01.webp",
+          "caption": ""
         },
         {
-          "image": "/a/mm-render.webp",
-          "caption": "The revived market, illustrated render",
-          "cutout": false
+          "image": "/a/mm-deck/s-02.webp",
+          "caption": ""
+        },
+        {
+          "image": "/a/mm-deck/s-03.webp",
+          "caption": ""
+        },
+        {
+          "image": "/a/mm-deck/s-04.webp",
+          "caption": ""
+        },
+        {
+          "image": "/a/mm-deck/s-05.webp",
+          "caption": ""
+        },
+        {
+          "image": "/a/mm-deck/s-06.webp",
+          "caption": ""
+        },
+        {
+          "image": "/a/mm-deck/s-07.webp",
+          "caption": ""
+        },
+        {
+          "image": "/a/mm-deck/s-08.webp",
+          "caption": ""
+        },
+        {
+          "image": "/a/mm-deck/s-09.webp",
+          "caption": ""
+        },
+        {
+          "image": "/a/mm-deck/s-10.webp",
+          "caption": ""
+        },
+        {
+          "image": "/a/mm-deck/s-11.webp",
+          "caption": ""
+        },
+        {
+          "image": "/a/mm-deck/s-12.webp",
+          "caption": ""
+        },
+        {
+          "image": "/a/mm-deck/s-13.webp",
+          "caption": ""
+        },
+        {
+          "image": "/a/mm-deck/s-14.webp",
+          "caption": ""
+        },
+        {
+          "image": "/a/mm-deck/s-15.webp",
+          "caption": ""
+        },
+        {
+          "image": "/a/mm-deck/s-16.webp",
+          "caption": ""
+        },
+        {
+          "image": "/a/mm-deck/s-17.webp",
+          "caption": ""
+        },
+        {
+          "image": "/a/mm-deck/s-18.webp",
+          "caption": ""
+        },
+        {
+          "image": "/a/mm-deck/s-19.webp",
+          "caption": ""
+        },
+        {
+          "image": "/a/mm-deck/s-20.webp",
+          "caption": ""
+        },
+        {
+          "image": "/a/mm-deck/s-21.webp",
+          "caption": ""
         }
       ],
-      "videos": []
+      "deck_title": "Trader deck"
     },
     {
       "type": "Marketing",
@@ -76,7 +152,6 @@
           "label": "newsletter sign-ups pre-opening"
         }
       ],
-      "instagram": "modelmarket.lewisham",
       "images": [
         {
           "image": "/a/mm-newsletter.webp",
@@ -91,7 +166,78 @@
           "bare": true
         }
       ],
-      "videos": []
+      "videos": [],
+      "ig": {
+        "handle": "modelmarket.lewisham",
+        "name": "Model Market",
+        "avatar": "/l/mm-colour.webp",
+        "posts": "10",
+        "followers": "3,164",
+        "following": "13",
+        "bio": "The iconic Model Market is coming back in 2026. If you want to be part of the family, get in touch!",
+        "items": [
+          {
+            "image": "/a/mm-ig-01.webp",
+            "url": "https://www.instagram.com/p/DZr-ekqjSQA/",
+            "type": "p",
+            "views": ""
+          },
+          {
+            "image": "/a/mm-ig-02.webp",
+            "url": "https://www.instagram.com/p/DYto25YDQfU/",
+            "type": "p",
+            "views": ""
+          },
+          {
+            "image": "/a/mm-ig-03.webp",
+            "url": "https://www.instagram.com/p/DYDKDpSDTjh/",
+            "type": "p",
+            "views": ""
+          },
+          {
+            "image": "/a/mm-ig-04.webp",
+            "url": "https://www.instagram.com/p/DWbbVqdjHTP/",
+            "type": "p",
+            "views": ""
+          },
+          {
+            "image": "/a/mm-ig-05.webp",
+            "url": "https://www.instagram.com/p/DU8l4_7jONc/",
+            "type": "p",
+            "views": ""
+          },
+          {
+            "image": "/a/mm-ig-06.webp",
+            "url": "https://www.instagram.com/reel/DUBaqZVDUYO/",
+            "type": "reel",
+            "views": "44.2K"
+          },
+          {
+            "image": "/a/mm-ig-07.webp",
+            "url": "https://www.instagram.com/p/DT_EZuwjTtO/",
+            "type": "p",
+            "views": ""
+          },
+          {
+            "image": "/a/mm-ig-08.webp",
+            "url": "https://www.instagram.com/reel/DSeS8UuE25w/",
+            "type": "reel",
+            "views": "6,347"
+          },
+          {
+            "image": "/a/mm-ig-09.webp",
+            "url": "https://www.instagram.com/reel/DRulgiljda5/",
+            "type": "reel",
+            "views": "7,377"
+          },
+          {
+            "image": "/a/mm-ig-10.webp",
+            "url": "https://www.instagram.com/p/DRmNLUNDJD_/",
+            "type": "p",
+            "views": ""
+          }
+        ]
+      }
     }
   ]
 }

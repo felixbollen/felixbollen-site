@@ -54,28 +54,7 @@
       ]
     }
   ],
-  "also": [
-    {
-      "name": "Emancipator: Baralku",
-      "text": "Album cover and merchandise illustrations.",
-      "tag": "Graphic Design"
-    },
-    {
-      "name": "Square Gallery, London",
-      "text": "The Square Gallery is an exhibition space in the heart of Battersea, South West London, which opened May 2016. The Square Gallery was founded by Morgane Wagner, I designed the CI, shop frontage & website.",
-      "tag": "Graphic design"
-    },
-    {
-      "name": "Stein Garten Graz",
-      "text": "CI & marketin material for a new opening of a beergarden in Graz",
-      "tag": "Graphic Design & Marketing"
-    },
-    {
-      "name": "Thaler See Garten Graz",
-      "text": "Marketing for four business units, including Thaler See Garten and a new 1,200 m² outdoor venue.",
-      "tag": "Marketing & Sales"
-    }
-  ],
+  "also": [],
   "numbers": [
     {
       "figure": "£55m",
@@ -104,5 +83,7 @@
   "about_heading": "Self-taught in business, trained in design, not afraid of the deep end.",
   "title": "Felix Bollen: Marketing & Sales, Art Direction, Graphic Design",
   "email": "felixbollen@gmail.com",
-  "description": "Felix Bollen: marketing & sales, art direction and graphic design. Brands built from scratch across London, Vienna, Graz and Berlin."
+  "description": "Felix Bollen: marketing & sales, art direction and graphic design. Brands built from scratch across London, Vienna, Graz and Berlin.",
+  "about_image": "/a/felix-beers.webp",
+  "about_image_alt": "Felix carrying ten steins of German Kraft beer"
 }

@@ -132,120 +132,6 @@
       "videos": []
     },
     {
-      "type": "spaces",
-      "title": "One roof, ten spaces",
-      "text": "A public living room with no consumption minimum and no table service: four micro-restaurants, a bakery and café, two bars, a gallery and a beer garden. I found, pitched and signed every concept.",
-      "strip": "/a/du-vendors.png",
-      "strip_label": "The line-up",
-      "points": [
-        {
-          "title": "Mani in Pasta",
-          "text": "Fresh pasta, made in-house and served à la minute."
-        },
-        {
-          "title": "Abuya",
-          "text": "Hummus culture and Levantine cuisine."
-        },
-        {
-          "title": "The Curried Cactus",
-          "text": "Indian and Mexican on one plate."
-        },
-        {
-          "title": "Tacho",
-          "text": "German cuisine, reinterpreted by three local chefs."
-        },
-        {
-          "title": "Domberger Brot-Werk",
-          "text": "Sourdough baked on site, plus Café Dufte from 08:30."
-        },
-        {
-          "title": "Tresen, Wein & Sprit",
-          "text": "Nine taps with our own beer, wine, cocktails and spritz."
-        },
-        {
-          "title": "Galerie Pollaks",
-          "text": "An art space with a living programme."
-        },
-        {
-          "title": "Biergarten",
-          "text": "A 300 m² courtyard in the heart of Charlottenburg."
-        }
-      ],
-      "images": [
-        {
-          "image": "/a/du-ph-09.webp",
-          "caption": "Opening night with the kitchen teams",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-14.webp",
-          "caption": "The Curried Cactus",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-20.webp",
-          "caption": "Tacho",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-04.webp",
-          "caption": "Café Dufte and Domberger",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-08.webp",
-          "caption": "The bars",
-          "cutout": false
-        }
-      ],
-      "videos": []
-    },
-    {
-      "type": "week",
-      "title": "A week at Dufte",
-      "text": "A programme that gives regulars a reason to come back every day, written and named by me.",
-      "points": [
-        {
-          "title": "Kaffee Happy Hour",
-          "text": "Every day, 09:00 to 10:00: every coffee €2."
-        },
-        {
-          "title": "Tankrabatt Donnerstag",
-          "text": "Thursday: €1.70 off all alcoholic drinks, a nod to the garage."
-        },
-        {
-          "title": "Freibier Freitag",
-          "text": "Friday: a wooden cask is tapped and the beer is free until it's empty."
-        },
-        {
-          "title": "Die Berliner Auster",
-          "text": "Saturday: oysters, Mett, beer and bubbles."
-        },
-        {
-          "title": "Bingo, Kneipenquiz, comedy",
-          "text": "Weekly evenings with Bingo mit Laszlo, a pub quiz, Skoa Comedy Club and live painting."
-        }
-      ],
-      "images": [
-        {
-          "image": "/a/du-ph-21.webp",
-          "caption": "Kaffee Happy Hour",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-12.webp",
-          "caption": "Freibier Freitag",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-16.webp",
-          "caption": "Die Berliner Auster",
-          "cutout": false
-        }
-      ],
-      "videos": []
-    },
-    {
       "type": "events",
       "title": "Events & partners",
       "text": "Dufte and the 1,500 m² event loft on the 5th floor are sold together as one venue for brand events, launches and shoots. Within the first months 17 brands and organisers booked it.",
@@ -283,16 +169,6 @@
         {
           "image": "/a/du-ph-15.webp",
           "caption": "Brand event",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-07.webp",
-          "caption": "Event in the beer garden",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-18.webp",
-          "caption": "Party night",
           "cutout": false
         },
         {
@@ -336,39 +212,14 @@
       "instagram": "dufte_berlin",
       "images": [
         {
-          "image": "/a/du-brand-apps.webp",
-          "caption": "Brand in use: merch, menus and screens",
-          "cutout": false,
-          "bare": true
-        },
-        {
-          "image": "/a/du-iconography.webp",
-          "caption": "Iconography and pattern system",
-          "cutout": false,
-          "bare": true
-        },
-        {
-          "image": "/a/du-mkt-01.webp",
-          "caption": "Open House A2 poster",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-mkt-02.webp",
-          "caption": "Open House invitation",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-mkt-03.webp",
-          "caption": "Open House story",
-          "cutout": false
-        },
-        {
           "image": "/a/du-mkt-04.webp",
           "caption": "Pre-opening teaser",
           "cutout": true
         }
       ],
-      "videos": []
+      "videos": [],
+      "plan": "/a/du-floorplan.svg",
+      "plan_label": "Floor plan"
     },
     {
       "type": "Photography & videography",
@@ -376,6 +227,18 @@
       "text": "Opening night, the vendors and full houses.",
       "photos_title": "Dufte in pictures",
       "photos": [
+        {
+          "image": "/a/du-ph-18.webp",
+          "caption": "",
+          "w": 1920,
+          "h": 2560
+        },
+        {
+          "image": "/a/du-ph-07.webp",
+          "caption": "",
+          "w": 1920,
+          "h": 2560
+        },
         {
           "image": "/a/du-ph-01.webp",
           "w": 1800,

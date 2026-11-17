@@ -321,6 +321,8 @@ for i, p in enumerate(P):
         pts = [x for x in s.get("points", []) if x.get("title")]
         if pts:
             body += '<ol class="pts">' + "".join('<li><span class="pn">%02d</span><div><b>%s</b>%s</div></li>' % (j + 1, esc(x["title"]), ('<p>%s</p>' % esc(x["text"])) if x.get("text") else "") for j, x in enumerate(pts)) + '</ol>'
+        if s.get("plan"):
+            body += '<figure class="fpl"><span class="lbl">%s</span><img data-src="%s" alt="Floor plan"></figure>' % (esc(s.get("plan_label") or ""), esc(s["plan"]))
         if s.get("strip"):
             body += '<div class="strip"><span class="lbl">%s</span><img data-src="%s" alt=""></div>' % (esc(s.get("strip_label") or ""), esc(s["strip"]))
         if s.get("chips"):
@@ -346,6 +348,8 @@ for i, p in enumerate(P):
             lk = lk.replace('<p class="sl"><a class="btn" href="#" data-pano-open>Open the 360° tour ↗</a></p>', '')
         body += lk
         gal = f'<div class="gal5" data-lbg>{"".join(vfig(v) for v in vids)}{"".join(gfig(x) for x in ims)}</div>' if (ims or vids) else ""
+        if s.get("gal_first") and gal:
+            body = body.replace('</p>', '</p>' + gal, 1) if '<p class="lede">' in body else gal + body; gal = ""
         subh = f"<small>{esc(sub)}</small>" if sub else ""
         secs.append(f'''<div class="sec5"><button type="button" aria-expanded="false"><span class="n">{n+1:02d}</span><h3>{esc(title)}{subh}</h3><span class="c">{(len(ims)+len(vids)) or ''}</span><span class="pm"></span></button>
 <div class="bd"><div><div class="in">{body}{dk}{gal}</div></div></div></div>''')

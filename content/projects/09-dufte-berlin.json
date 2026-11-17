@@ -124,37 +124,37 @@
           "cutout": false
         },
         {
-          "image": "/a/du-menu-cafe-1.webp",
+          "image": "/a/du-menu3-cafe-1.webp",
           "caption": "Café Dufte menu, outside",
           "cutout": false,
           "bare": true
         },
         {
-          "image": "/a/du-menu-cafe-2.webp",
+          "image": "/a/du-menu3-cafe-2.webp",
           "caption": "Café Dufte menu, inside",
           "cutout": false,
           "bare": true
         },
         {
-          "image": "/a/du-menu-ws-1.webp",
+          "image": "/a/du-menu3-ws-1.webp",
           "caption": "Sprit Tanken menu, outside",
           "cutout": false,
           "bare": true
         },
         {
-          "image": "/a/du-menu-ws-2.webp",
+          "image": "/a/du-menu3-ws-2.webp",
           "caption": "Sprit Tanken menu, inside",
           "cutout": false,
           "bare": true
         },
         {
-          "image": "/a/du-menu-ws-3.webp",
+          "image": "/a/du-menu3-ws-3.webp",
           "caption": "Wein & Sprit menu, outside",
           "cutout": false,
           "bare": true
         },
         {
-          "image": "/a/du-menu-ws-4.webp",
+          "image": "/a/du-menu3-ws-4.webp",
           "caption": "Wein & Sprit menu, inside",
           "cutout": false,
           "bare": true
@@ -162,6 +162,16 @@
         {
           "image": "/a/du-glass.webp",
           "caption": "Glass design, Sahm Willi Becher 0.4 l",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-ph-glass-1.webp",
+          "caption": "The Dufte glass",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-ph-glass-2.webp",
+          "caption": "Fresh pint at the window",
           "cutout": false
         },
         {
@@ -175,8 +185,38 @@
           "cutout": false
         },
         {
+          "image": "/a/du-ph-can-2.webp",
+          "caption": "Helles can",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-ph-bottle-helles.webp",
+          "caption": "Helles AF bottle",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-ph-bottle-weizen.webp",
+          "caption": "Weizen AF bottle",
+          "cutout": false
+        },
+        {
           "image": "/a/du-ph-cask.webp",
           "caption": "The Freibier cask",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-ph-coffee.webp",
+          "caption": "Coffee packaging",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-ph-knives.webp",
+          "caption": "Engraved cutlery",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-ph-forks.webp",
+          "caption": "Engraved cutlery",
           "cutout": false
         },
         {
@@ -200,8 +240,23 @@
           "cutout": false
         },
         {
+          "image": "/a/du-ph-sign-install.webp",
+          "caption": "Hanging the emblem sign",
+          "cutout": false
+        },
+        {
           "image": "/a/du-ph-sign.webp",
           "caption": "Emblem sign",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-ph-emblem.webp",
+          "caption": "Emblem sculpture inside",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-ph-building.webp",
+          "caption": "Kant-Garagenpalast with the emblem",
           "cutout": false
         },
         {

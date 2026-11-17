@@ -165,23 +165,7 @@
         "Berlin Fashion Week",
         "Berlin State Ballet"
       ],
-      "images": [
-        {
-          "image": "/a/du-ph-15.webp",
-          "caption": "Brand event",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-loft-1.webp",
-          "caption": "The 5th-floor event loft",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-loft-2.webp",
-          "caption": "Event loft",
-          "cutout": false
-        }
-      ],
+      "images": [],
       "videos": []
     },
     {
@@ -202,24 +186,129 @@
           "label": "Google rating"
         }
       ],
-      "chips_label": "What Berlin says",
-      "chips": [
-        "Berliner Zeitung",
-        "Berliner Morgenpost",
-        "tip Berlin",
-        "Qiez"
-      ],
       "instagram": "dufte_berlin",
       "images": [
+        {
+          "image": "/a/du-p-kaffee.webp",
+          "caption": "Dauerbrenner poster: Kaffee Flatrate, 50 × 40",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-p-tankrabatt.webp",
+          "caption": "Dauerbrenner poster: Tankrabatt Donnerstag, 50 × 40",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-p-freibier.webp",
+          "caption": "Dauerbrenner poster: Frischbier Freitag, 50 × 40",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-p-auster.webp",
+          "caption": "Dauerbrenner poster: Die Berliner Auster, 50 × 40",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-menu-cafe-1.webp",
+          "caption": "Café Dufte menu, outside",
+          "cutout": false,
+          "bare": true
+        },
+        {
+          "image": "/a/du-menu-cafe-2.webp",
+          "caption": "Café Dufte menu, inside",
+          "cutout": false,
+          "bare": true
+        },
+        {
+          "image": "/a/du-menu-ws-1.webp",
+          "caption": "Sprit Tanken menu, outside",
+          "cutout": false,
+          "bare": true
+        },
+        {
+          "image": "/a/du-menu-ws-2.webp",
+          "caption": "Sprit Tanken menu, inside",
+          "cutout": false,
+          "bare": true
+        },
+        {
+          "image": "/a/du-menu-ws-3.webp",
+          "caption": "Wein & Sprit menu, outside",
+          "cutout": false,
+          "bare": true
+        },
+        {
+          "image": "/a/du-menu-ws-4.webp",
+          "caption": "Wein & Sprit menu, inside",
+          "cutout": false,
+          "bare": true
+        },
+        {
+          "image": "/a/du-glass.webp",
+          "caption": "Glass design, Sahm Willi Becher 0.4 l",
+          "cutout": false
+        },
         {
           "image": "/a/du-mkt-04.webp",
           "caption": "Pre-opening teaser",
           "cutout": true
+        },
+        {
+          "image": "/a/du-ph-cans.webp",
+          "caption": "Heidi Helles cans",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-ph-can.webp",
+          "caption": "Helles can",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-ph-cask.webp",
+          "caption": "The Freibier cask",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-ph-keyring.webp",
+          "caption": "Keyring",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-ph-jackets.webp",
+          "caption": "Staff jackets",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-ph-jacket-beer.webp",
+          "caption": "Staff jacket",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-ph-jacket-back.webp",
+          "caption": "Staff jacket, back",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-ph-sign.webp",
+          "caption": "Emblem sign",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-ph-facade.webp",
+          "caption": "The facade",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-ph-facade-car.webp",
+          "caption": "Window lettering, Kantstraße",
+          "cutout": false
         }
       ],
       "videos": [],
       "plan": "/a/du-floorplan.svg",
-      "plan_label": "Floor plan"
+      "plan_label": "Floor plan",
+      "gal_after_plan": true
     },
     {
       "type": "Photography & videography",

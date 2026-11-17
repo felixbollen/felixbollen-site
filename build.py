@@ -348,6 +348,8 @@ for i, p in enumerate(P):
             lk = lk.replace('<p class="sl"><a class="btn" href="#" data-pano-open>Open the 360° tour ↗</a></p>', '')
         body += lk
         gal = f'<div class="gal5" data-lbg>{"".join(vfig(v) for v in vids)}{"".join(gfig(x) for x in ims)}</div>' if (ims or vids) else ""
+        if s.get("gal_after_plan") and gal and '</figure>' in body and 'class="fpl"' in body:
+            i_ = body.index('</figure>', body.index('class="fpl"')) + len('</figure>'); body = body[:i_] + gal + body[i_:]; gal = ""
         if s.get("gal_first") and gal:
             body = body.replace('</p>', '</p>' + gal, 1) if '<p class="lede">' in body else gal + body; gal = ""
         subh = f"<small>{esc(sub)}</small>" if sub else ""

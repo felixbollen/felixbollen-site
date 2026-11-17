@@ -348,6 +348,9 @@ for i, p in enumerate(P):
             lk = lk.replace('<p class="sl"><a class="btn" href="#" data-pano-open>Open the 360° tour ↗</a></p>', '')
         body += lk
         gal = f'<div class="gal5" data-lbg>{"".join(vfig(v) for v in vids)}{"".join(gfig(x) for x in ims)}</div>' if (ims or vids) else ""
+        bk = [x for x in s.get("book", []) if x.get("image")]
+        if bk:
+            body += '<div class="book" data-lbg><a class="bkc" href="%s" data-lb data-cap="1 / %d"><div class="pg"><img src="%s" alt="" loading="lazy"></div><div class="lf"><img src="%s" alt=""></div></a>%s<span class="lbl bkh">Hover to leaf through · click to open · %d pages</span><script type="application/json" class="bkd">%s</script></div>' % (esc(bk[0]["image"]), len(bk), esc(bk[0]["image"]), esc(bk[0]["image"]), "".join('<a hidden href="%s" data-lb data-cap="%d / %d"></a>' % (esc(x["image"]), j + 2, len(bk)) for j, x in enumerate(bk[1:])), len(bk), json.dumps([x["image"] for x in bk]))
         if s.get("gal_after_plan") and gal and '</figure>' in body and 'class="fpl"' in body:
             i_ = body.index('</figure>', body.index('class="fpl"')) + len('</figure>'); body = body[:i_] + gal + body[i_:]; gal = ""
         if s.get("gal_first") and gal:

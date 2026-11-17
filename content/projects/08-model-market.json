@@ -51,7 +51,7 @@
       "text": "The revived Model Market identity, carried through the trader deck we used to sign the food vendors: retro lettering, hand-drawn illustrations and the market's orange.",
       "images": [],
       "videos": [],
-      "deck": [
+      "book": [
         {
           "image": "/a/mm-deck/s-01.webp",
           "caption": ""
@@ -136,8 +136,7 @@
           "image": "/a/mm-deck/s-21.webp",
           "caption": ""
         }
-      ],
-      "deck_title": "Trader deck"
+      ]
     },
     {
       "type": "Marketing",
@@ -152,92 +151,9 @@
           "label": "newsletter sign-ups pre-opening"
         }
       ],
-      "images": [
-        {
-          "image": "/a/mm-newsletter.webp",
-          "caption": "Newsletter sign-up, modelmarket.london",
-          "cutout": false,
-          "bare": true
-        },
-        {
-          "image": "/a/mm-vendor-form.webp",
-          "caption": "Trader application form",
-          "cutout": false,
-          "bare": true
-        }
-      ],
+      "images": [],
       "videos": [],
-      "ig": {
-        "handle": "modelmarket.lewisham",
-        "name": "Model Market",
-        "avatar": "/l/mm-colour.webp",
-        "posts": "10",
-        "followers": "3,164",
-        "following": "13",
-        "bio": "The iconic Model Market is coming back in 2026. If you want to be part of the family, get in touch!",
-        "items": [
-          {
-            "image": "/a/mm-ig-01.webp",
-            "url": "https://www.instagram.com/p/DZr-ekqjSQA/",
-            "type": "p",
-            "views": ""
-          },
-          {
-            "image": "/a/mm-ig-02.webp",
-            "url": "https://www.instagram.com/p/DYto25YDQfU/",
-            "type": "p",
-            "views": ""
-          },
-          {
-            "image": "/a/mm-ig-03.webp",
-            "url": "https://www.instagram.com/p/DYDKDpSDTjh/",
-            "type": "p",
-            "views": ""
-          },
-          {
-            "image": "/a/mm-ig-04.webp",
-            "url": "https://www.instagram.com/p/DWbbVqdjHTP/",
-            "type": "p",
-            "views": ""
-          },
-          {
-            "image": "/a/mm-ig-05.webp",
-            "url": "https://www.instagram.com/p/DU8l4_7jONc/",
-            "type": "p",
-            "views": ""
-          },
-          {
-            "image": "/a/mm-ig-06.webp",
-            "url": "https://www.instagram.com/reel/DUBaqZVDUYO/",
-            "type": "reel",
-            "views": "44.2K"
-          },
-          {
-            "image": "/a/mm-ig-07.webp",
-            "url": "https://www.instagram.com/p/DT_EZuwjTtO/",
-            "type": "p",
-            "views": ""
-          },
-          {
-            "image": "/a/mm-ig-08.webp",
-            "url": "https://www.instagram.com/reel/DSeS8UuE25w/",
-            "type": "reel",
-            "views": "6,347"
-          },
-          {
-            "image": "/a/mm-ig-09.webp",
-            "url": "https://www.instagram.com/reel/DRulgiljda5/",
-            "type": "reel",
-            "views": "7,377"
-          },
-          {
-            "image": "/a/mm-ig-10.webp",
-            "url": "https://www.instagram.com/p/DRmNLUNDJD_/",
-            "type": "p",
-            "views": ""
-          }
-        ]
-      }
+      "instagram": "modelmarket.lewisham"
     }
   ]
 }

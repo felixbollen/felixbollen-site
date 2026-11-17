@@ -17,7 +17,7 @@
   "text_colour": "#ffffff",
   "tile": "#ffffff",
   "card": "#3479e1",
-  "intro": "A 1,000 m² culinary house of culture in the Kant-Garagenpalast, Europe's oldest surviving high-rise garage (1930), Charlottenburg: four kitchens, a bakery and café, two bars, a gallery and a 300 m² beer garden under one roof. Opened May 2026.",
+  "intro": "A 1,000 m² culinary house of culture on the ground floor of the Kant-Garagenpalast, Charlottenburg: Europe's oldest surviving high-rise garage, built in 1930 in the Neue Sachlichkeit style and listed for its double-helix ramp. Four kitchens, a bakery and café, two bars, a gallery and a 300 m² south-facing beer garden under one roof, with a 300-element LED ceiling and eight audio zones, right on the S-Bahn tracks. Opened May 2026.",
   "credit": "Logo and brand identity by Plusminus Studio. Everything else, from concept, vendors and contracts to marketing, sales and day-to-day running, I led as Managing Director.",
   "hero": {
     "type": "lottie",
@@ -79,91 +79,6 @@
           "title": "Investors & partners",
           "text": "Investor deck, landlord relations and the partnership with Better Life, who run the event loft."
         }
-      ],
-      "images": [],
-      "videos": []
-    },
-    {
-      "type": "building",
-      "title": "The building",
-      "text": "Dufte lives on the ground floor of the Kant-Garagenpalast: Europe's oldest surviving high-rise garage, built in 1930 in the Neue Sachlichkeit style and listed for its double-helix ramp. Concrete architecture meets a 300-element LED ceiling, eight audio zones and a south-facing beer garden, right on the S-Bahn tracks at Charlottenburg.",
-      "stats": [
-        {
-          "figure": "1930",
-          "label": "built, a listed monument of Berlin Modernism"
-        },
-        {
-          "figure": "450",
-          "label": "guests capacity on the ground floor"
-        },
-        {
-          "figure": "300 m²",
-          "label": "south-facing terrace and Biergarten"
-        }
-      ],
-      "images": [
-        {
-          "image": "/a/du-building.webp",
-          "caption": "Kant-Garagenpalast, Kantstraße 127",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-facade-night.webp",
-          "caption": "The facade at night",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-floorplan.webp",
-          "caption": "Floor plan",
-          "cutout": false,
-          "bare": true
-        },
-        {
-          "image": "/a/du-concept-01.webp",
-          "caption": "Rendering",
-          "cutout": true
-        },
-        {
-          "image": "/a/du-concept-02.webp",
-          "caption": "Rendering",
-          "cutout": true
-        }
-      ],
-      "videos": []
-    },
-    {
-      "type": "events",
-      "title": "Events & partners",
-      "text": "Dufte and the 1,500 m² event loft on the 5th floor are sold together as one venue for brand events, launches and shoots. Within the first months 17 brands and organisers booked it.",
-      "stats": [
-        {
-          "figure": "17",
-          "label": "brands and organisers hosted"
-        },
-        {
-          "figure": "1,500 m²",
-          "label": "event loft on the 5th floor, run with Better Life"
-        },
-        {
-          "figure": "4.9★",
-          "label": "on Google"
-        }
-      ],
-      "chips_label": "Booked by",
-      "chips": [
-        "Google",
-        "Hermès",
-        "Adidas × Zalando",
-        "Lululemon",
-        "Design Hotels × Amex",
-        "Longchamp",
-        "Avène × Lena Gercke",
-        "Instagram / Amazon",
-        "Skoda",
-        "Honda",
-        "Bosch-Siemens (IFA)",
-        "Berlin Fashion Week",
-        "Berlin State Ballet"
       ],
       "images": [],
       "videos": []
@@ -250,11 +165,6 @@
           "cutout": false
         },
         {
-          "image": "/a/du-mkt-04.webp",
-          "caption": "Pre-opening teaser",
-          "cutout": true
-        },
-        {
           "image": "/a/du-ph-cans.webp",
           "caption": "Heidi Helles cans",
           "cutout": false
@@ -309,6 +219,43 @@
       "plan": "/a/du-floorplan.svg",
       "plan_label": "Floor plan",
       "gal_after_plan": true
+    },
+    {
+      "type": "events",
+      "title": "Events & partners",
+      "text": "Dufte and the 1,500 m² event loft on the 5th floor are sold together as one venue for brand events, launches and shoots. Within the first months 17 brands and organisers booked it.",
+      "stats": [
+        {
+          "figure": "17",
+          "label": "brands and organisers hosted"
+        },
+        {
+          "figure": "1,500 m²",
+          "label": "event loft on the 5th floor, run with Better Life"
+        },
+        {
+          "figure": "4.9★",
+          "label": "on Google"
+        }
+      ],
+      "chips_label": "Booked by",
+      "chips": [
+        "Google",
+        "Hermès",
+        "Adidas × Zalando",
+        "Lululemon",
+        "Design Hotels × Amex",
+        "Longchamp",
+        "Avène × Lena Gercke",
+        "Instagram / Amazon",
+        "Skoda",
+        "Honda",
+        "Bosch-Siemens (IFA)",
+        "Berlin Fashion Week",
+        "Berlin State Ballet"
+      ],
+      "images": [],
+      "videos": []
     },
     {
       "type": "Photography & videography",

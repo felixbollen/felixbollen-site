@@ -710,3 +710,11 @@ dialog button{margin-top:8px;border:1px solid #0b0b0b;padding:8px 16px;border-ra
 .fpl img{display:block;width:100%;max-width:1100px;height:auto;margin-top:16px;clip-path:inset(0 100% 0 0);transition:clip-path 2.4s cubic-bezier(.65,0,.35,1) .2s;animation:fpf 9s ease-in-out infinite alternate}
 .sec5.open .fpl img[src]{clip-path:inset(0 0 0 0)}
 @keyframes fpf{0%{transform:translateY(0)}100%{transform:translateY(-6px)}}
+/* flip book */
+.book{margin-top:34px;max-width:860px}
+.bkc{display:block;position:relative;aspect-ratio:16/9;perspective:2200px;cursor:zoom-in;box-shadow:0 28px 50px -28px rgba(0,0,0,.55)}
+.bkc .pg,.bkc .lf{position:absolute;inset:0;overflow:hidden}
+.bkc img{display:block;width:100%;height:100%;object-fit:cover}
+.bkc .lf{transform-origin:left center;transform-style:preserve-3d;backface-visibility:hidden;z-index:2}
+.bkc .lf.go{transition:transform .75s cubic-bezier(.45,.05,.3,1),filter .75s;transform:rotateY(-100deg);filter:brightness(.7)}
+.bkh{display:block;margin-top:14px;opacity:.7}

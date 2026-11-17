@@ -1,41 +1,136 @@
 {
-  "order": 9,
+  "order": 5,
   "slug": "dufte-berlin",
   "name": "Dufte Berlin",
   "kind": "Culinary & cultural house",
   "city": "Berlin",
-  "years": "2024–2026",
+  "years": "2025–2026",
   "role": "Managing Director",
   "disciplines": [
-    "Marketing & Sales"
+    "Management",
+    "Marketing & Sales",
+    "Concept",
+    "Partnerships"
   ],
   "logo": "du",
   "background": "#3479e1",
   "text_colour": "#ffffff",
   "tile": "#ffffff",
   "card": "#3479e1",
-  "intro": "A culinary and cultural house in the Kant-Garagen, Charlottenburg, with five food vendors across nine venue areas. Opened May 2026.",
-  "credit": "Logo and brand identity by Plusminus Studio. I ran all of the marketing and communication.",
+  "intro": "A 1,000 m² culinary house of culture in the Kant-Garagenpalast, Europe's oldest surviving high-rise garage (1930), Charlottenburg: four kitchens, a bakery and café, two bars, a gallery and a 300 m² beer garden under one roof. Opened May 2026.",
+  "credit": "Logo and brand identity by Plusminus Studio. Everything else, from concept, vendors and contracts to marketing, sales and day-to-day running, I led as Managing Director.",
   "hero": {
     "type": "lottie",
     "animation": "/js/dufte-emblem.json"
   },
   "sections": [
     {
+      "type": "management",
+      "title": "My role",
+      "text": "As Geschäftsführer of Dufte Kraft GmbH I took Dufte from an empty garage floor to a venue with 450 guests on a busy night. What I was in charge of:",
+      "stats": [
+        {
+          "figure": "1,000 m²",
+          "label": "indoor space, plus a 300 m² beer garden"
+        },
+        {
+          "figure": "10",
+          "label": "spaces under one roof: 4 kitchens, bakery & café, 2 bars, gallery, beer garden"
+        },
+        {
+          "figure": "4.9★",
+          "label": "on Google from regulars"
+        },
+        {
+          "figure": "17",
+          "label": "brands and organisers hosted for B2B events"
+        }
+      ],
+      "points": [
+        {
+          "title": "Concept & business plan",
+          "text": "The 'culinary house of culture' idea: no consumption minimum, no table service, art, music and events every week. Layouts, renderings and the plan behind them."
+        },
+        {
+          "title": "Vendor acquisition & leasing",
+          "text": "Wrote the food vendor package, signed the five concepts (Mani in Pasta, Abuya, The Curried Cactus, Tacho, Domberger Brot-Werk) and negotiated the subleases and addenda."
+        },
+        {
+          "title": "Build-out & opening",
+          "text": "Facade signage and neon, furniture, floor plan and the opening itself in May 2026."
+        },
+        {
+          "title": "Operations & systems",
+          "text": "Lightspeed POS and cash rules for all tenants, opening hours, staffing set-up and revenue reporting across the vendors."
+        },
+        {
+          "title": "Marketing & communication",
+          "text": "Pre-opening teasers, Open House events, Instagram launch, newsletter, website brief for dufteberlin.com and the press that followed."
+        },
+        {
+          "title": "Weekly programme",
+          "text": "Formats like Kaffee Happy Hour, Tankrabatt Donnerstag, Freibier Freitag, Die Berliner Auster, Bingo, Kneipenquiz and comedy nights."
+        },
+        {
+          "title": "B2B events & sales",
+          "text": "Event deck and sales for brand events, together with the 1,500 m² event loft on the 5th floor. Booked by Google, Hermès, Adidas × Zalando, Lululemon and more."
+        },
+        {
+          "title": "Investors & partners",
+          "text": "Investor deck, landlord relations and the partnership with Better Life, who run the event loft."
+        }
+      ],
+      "images": [],
+      "videos": []
+    },
+    {
+      "type": "Branding",
+      "text": "The Dufte logo, emblem and identity were designed by Plusminus Studio. I carried it into everything people actually touch: signage, menus, decks, the floor plan, social and merchandise.",
+      "strip": "/a/du-vendors.png",
+      "strip_label": "One roof, ten spaces",
+      "images": [
+        {
+          "image": "/a/du-brand-apps.webp",
+          "caption": "Brand in use: merch, menus and screens",
+          "cutout": false,
+          "bare": true
+        },
+        {
+          "image": "/a/du-iconography.webp",
+          "caption": "Iconography and pattern system",
+          "cutout": false,
+          "bare": true
+        },
+        {
+          "image": "/a/du-brand-mood.webp",
+          "caption": "Brand mood",
+          "cutout": false,
+          "bare": true
+        },
+        {
+          "image": "/a/du-floorplan.webp",
+          "caption": "Floor plan graphic",
+          "cutout": false,
+          "bare": true
+        }
+      ],
+      "videos": []
+    },
+    {
       "type": "Marketing",
-      "text": "Open House events, opening campaign, Instagram launch and weekly programme.",
+      "text": "Pre-opening teasers, Open House events, the opening campaign, Instagram launch and a weekly programme that gave regulars a reason to come back every day.",
       "stats": [
         {
           "figure": "334",
           "label": "clean newsletter contacts at launch"
         },
         {
-          "figure": "5",
-          "label": "food vendors"
+          "figure": "4",
+          "label": "weekly regulars, from Kaffee Happy Hour to Freibier Freitag"
         },
         {
-          "figure": "9",
-          "label": "venue areas"
+          "figure": "4.9★",
+          "label": "Google rating"
         }
       ],
       "videos": [],
@@ -62,14 +157,262 @@
         }
       ],
       "deck": [],
-      "instagram": "dufte_berlin"
+      "instagram": "dufte_berlin",
+      "chips_label": "What Berlin says",
+      "chips": [
+        "Berliner Zeitung",
+        "Berliner Morgenpost",
+        "tip Berlin",
+        "Qiez"
+      ]
+    },
+    {
+      "type": "sales",
+      "title": "Sales & partnerships",
+      "text": "The decks I built to sign vendors, win investors and sell Dufte as an event space.",
+      "chips_label": "B2B events already booked by",
+      "chips": [
+        "Google",
+        "Hermès",
+        "Adidas × Zalando",
+        "Lululemon",
+        "Design Hotels × Amex",
+        "Longchamp",
+        "Avène × Lena Gercke",
+        "Instagram / Amazon",
+        "Skoda",
+        "Honda",
+        "Bosch-Siemens (IFA)",
+        "Berlin Fashion Week",
+        "Berlin State Ballet"
+      ],
+      "decks": [
+        {
+          "title": "Investor deck, October 2026",
+          "kicker": "Investor deck",
+          "slides": [
+            {
+              "image": "/a/du-inv/s-01.webp"
+            },
+            {
+              "image": "/a/du-inv/s-02.webp"
+            },
+            {
+              "image": "/a/du-inv/s-03.webp"
+            },
+            {
+              "image": "/a/du-inv/s-04.webp"
+            },
+            {
+              "image": "/a/du-inv/s-05.webp"
+            },
+            {
+              "image": "/a/du-inv/s-06.webp"
+            },
+            {
+              "image": "/a/du-inv/s-07.webp"
+            },
+            {
+              "image": "/a/du-inv/s-08.webp"
+            },
+            {
+              "image": "/a/du-inv/s-09.webp"
+            },
+            {
+              "image": "/a/du-inv/s-10.webp"
+            },
+            {
+              "image": "/a/du-inv/s-11.webp"
+            },
+            {
+              "image": "/a/du-inv/s-12.webp"
+            }
+          ]
+        },
+        {
+          "title": "Food vendor package",
+          "kicker": "Vendor deck",
+          "slides": [
+            {
+              "image": "/a/du-vp/s-01.webp"
+            },
+            {
+              "image": "/a/du-vp/s-02.webp"
+            },
+            {
+              "image": "/a/du-vp/s-03.webp"
+            },
+            {
+              "image": "/a/du-vp/s-04.webp"
+            },
+            {
+              "image": "/a/du-vp/s-05.webp"
+            },
+            {
+              "image": "/a/du-vp/s-06.webp"
+            },
+            {
+              "image": "/a/du-vp/s-07.webp"
+            },
+            {
+              "image": "/a/du-vp/s-08.webp"
+            },
+            {
+              "image": "/a/du-vp/s-09.webp"
+            },
+            {
+              "image": "/a/du-vp/s-10.webp"
+            },
+            {
+              "image": "/a/du-vp/s-11.webp"
+            },
+            {
+              "image": "/a/du-vp/s-12.webp"
+            },
+            {
+              "image": "/a/du-vp/s-13.webp"
+            },
+            {
+              "image": "/a/du-vp/s-14.webp"
+            },
+            {
+              "image": "/a/du-vp/s-15.webp"
+            },
+            {
+              "image": "/a/du-vp/s-16.webp"
+            },
+            {
+              "image": "/a/du-vp/s-17.webp"
+            },
+            {
+              "image": "/a/du-vp/s-18.webp"
+            },
+            {
+              "image": "/a/du-vp/s-19.webp"
+            },
+            {
+              "image": "/a/du-vp/s-20.webp"
+            },
+            {
+              "image": "/a/du-vp/s-21.webp"
+            },
+            {
+              "image": "/a/du-vp/s-22.webp"
+            },
+            {
+              "image": "/a/du-vp/s-23.webp"
+            },
+            {
+              "image": "/a/du-vp/s-24.webp"
+            },
+            {
+              "image": "/a/du-vp/s-25.webp"
+            },
+            {
+              "image": "/a/du-vp/s-26.webp"
+            },
+            {
+              "image": "/a/du-vp/s-27.webp"
+            },
+            {
+              "image": "/a/du-vp/s-28.webp"
+            },
+            {
+              "image": "/a/du-vp/s-29.webp"
+            },
+            {
+              "image": "/a/du-vp/s-30.webp"
+            },
+            {
+              "image": "/a/du-vp/s-31.webp"
+            }
+          ]
+        },
+        {
+          "title": "Event deck",
+          "kicker": "B2B event deck",
+          "slides": [
+            {
+              "image": "/a/du-ev/s-01.webp"
+            },
+            {
+              "image": "/a/du-ev/s-02.webp"
+            },
+            {
+              "image": "/a/du-ev/s-03.webp"
+            },
+            {
+              "image": "/a/du-ev/s-04.webp"
+            },
+            {
+              "image": "/a/du-ev/s-05.webp"
+            },
+            {
+              "image": "/a/du-ev/s-06.webp"
+            },
+            {
+              "image": "/a/du-ev/s-07.webp"
+            },
+            {
+              "image": "/a/du-ev/s-08.webp"
+            },
+            {
+              "image": "/a/du-ev/s-09.webp"
+            },
+            {
+              "image": "/a/du-ev/s-10.webp"
+            },
+            {
+              "image": "/a/du-ev/s-11.webp"
+            },
+            {
+              "image": "/a/du-ev/s-12.webp"
+            },
+            {
+              "image": "/a/du-ev/s-13.webp"
+            },
+            {
+              "image": "/a/du-ev/s-14.webp"
+            },
+            {
+              "image": "/a/du-ev/s-15.webp"
+            },
+            {
+              "image": "/a/du-ev/s-16.webp"
+            }
+          ]
+        }
+      ],
+      "images": [
+        {
+          "image": "/a/du-loft-1.webp",
+          "caption": "The 5th-floor event loft, 1,500 m²",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-loft-2.webp",
+          "caption": "Event loft",
+          "cutout": false
+        }
+      ],
+      "videos": []
     },
     {
       "type": "Conceptualisation",
-      "text": "Concept, layouts and renderings, plus the business plan behind them.",
+      "text": "The Kant-Garagenpalast: a listed 1930 Neue Sachlichkeit garage with a double-helix ramp, turned into a public living room for Charlottenburg. Concept, layouts and renderings, plus the business plan behind them.",
       "stats": [],
       "videos": [],
       "images": [
+        {
+          "image": "/a/du-building.webp",
+          "caption": "Kant-Garagenpalast, Kantstraße 127",
+          "cutout": false
+        },
+        {
+          "image": "/a/du-facade-night.webp",
+          "caption": "The facade at night",
+          "cutout": false
+        },
         {
           "image": "/a/du-concept-01.webp",
           "caption": "Rendering",
@@ -79,9 +422,157 @@
           "image": "/a/du-concept-02.webp",
           "caption": "Rendering",
           "cutout": true
+        },
+        {
+          "image": "/a/du-floorplan.webp",
+          "caption": "Floor plan",
+          "cutout": false,
+          "bare": true
         }
       ],
       "deck": []
+    },
+    {
+      "type": "Photography & videography",
+      "title": "Dufte in pictures",
+      "text": "Opening night, the vendors and a normal week at Dufte.",
+      "photos_title": "Dufte in pictures",
+      "photos": [
+        {
+          "image": "/a/du-ph-01.webp",
+          "w": 1800,
+          "h": 1013,
+          "caption": ""
+        },
+        {
+          "image": "/a/du-ph-02.webp",
+          "w": 1800,
+          "h": 1013,
+          "caption": ""
+        },
+        {
+          "image": "/a/du-ph-03.webp",
+          "w": 1800,
+          "h": 1200,
+          "caption": ""
+        },
+        {
+          "image": "/a/du-ph-04.webp",
+          "w": 1800,
+          "h": 1200,
+          "caption": ""
+        },
+        {
+          "image": "/a/du-ph-05.webp",
+          "w": 1800,
+          "h": 1200,
+          "caption": ""
+        },
+        {
+          "image": "/a/du-ph-06.webp",
+          "w": 933,
+          "h": 1400,
+          "caption": ""
+        },
+        {
+          "image": "/a/du-ph-07.webp",
+          "w": 1350,
+          "h": 1800,
+          "caption": ""
+        },
+        {
+          "image": "/a/du-ph-08.webp",
+          "w": 1000,
+          "h": 667,
+          "caption": ""
+        },
+        {
+          "image": "/a/du-ph-09.webp",
+          "w": 1800,
+          "h": 1200,
+          "caption": ""
+        },
+        {
+          "image": "/a/du-ph-10.webp",
+          "w": 933,
+          "h": 1400,
+          "caption": ""
+        },
+        {
+          "image": "/a/du-ph-11.webp",
+          "w": 1000,
+          "h": 667,
+          "caption": ""
+        },
+        {
+          "image": "/a/du-ph-12.webp",
+          "w": 800,
+          "h": 672,
+          "caption": ""
+        },
+        {
+          "image": "/a/du-ph-13.webp",
+          "w": 1800,
+          "h": 1200,
+          "caption": ""
+        },
+        {
+          "image": "/a/du-ph-14.webp",
+          "w": 1800,
+          "h": 1200,
+          "caption": ""
+        },
+        {
+          "image": "/a/du-ph-15.webp",
+          "w": 1012,
+          "h": 1800,
+          "caption": ""
+        },
+        {
+          "image": "/a/du-ph-16.webp",
+          "w": 1000,
+          "h": 667,
+          "caption": ""
+        },
+        {
+          "image": "/a/du-ph-17.webp",
+          "w": 1800,
+          "h": 1201,
+          "caption": ""
+        },
+        {
+          "image": "/a/du-ph-18.webp",
+          "w": 1350,
+          "h": 1800,
+          "caption": ""
+        },
+        {
+          "image": "/a/du-ph-19.webp",
+          "w": 1800,
+          "h": 1200,
+          "caption": ""
+        },
+        {
+          "image": "/a/du-ph-20.webp",
+          "w": 1800,
+          "h": 1200,
+          "caption": ""
+        },
+        {
+          "image": "/a/du-ph-21.webp",
+          "w": 1000,
+          "h": 718,
+          "caption": ""
+        },
+        {
+          "image": "/a/du-ph-22.webp",
+          "w": 1800,
+          "h": 1201,
+          "caption": ""
+        }
+      ],
+      "images": [],
+      "videos": []
     }
   ]
 }

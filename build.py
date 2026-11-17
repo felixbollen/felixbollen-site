@@ -308,6 +308,13 @@ for i, p in enumerate(P):
             dk = f'<div class="deck"><span class="lbl">{esc(s.get("deck_title") or "Presentation")}</span><div class="rail">' + "".join(
                 f'<figure><img data-src="{esc(d["image"])}" alt=""><figcaption><b>{j+1:02d} / {len(deck):02d}</b>{esc(d.get("caption"))}</figcaption></figure>' for j, d in enumerate(deck)) + '</div><div class="nv"><button type="button" data-d="0" aria-label="Previous">←</button><button type="button" data-d="1" aria-label="Next">→</button></div></div>'
         body = stats(s.get("stats")) + f'<p class="lede">{esc(s.get("text"))}</p>'
+        pts = [x for x in s.get("points", []) if x.get("title")]
+        if pts:
+            body += '<ol class="pts">' + "".join('<li><span class="pn">%02d</span><div><b>%s</b>%s</div></li>' % (j + 1, esc(x["title"]), ('<p>%s</p>' % esc(x["text"])) if x.get("text") else "") for j, x in enumerate(pts)) + '</ol>'
+        if s.get("strip"):
+            body += '<div class="strip"><span class="lbl">%s</span><img data-src="%s" alt=""></div>' % (esc(s.get("strip_label") or ""), esc(s["strip"]))
+        if s.get("chips"):
+            body += '<div class="chips"><span class="lbl">%s</span><ul>%s</ul></div>' % (esc(s.get("chips_label") or ""), "".join("<li>%s</li>" % esc(c) for c in s["chips"]))
         body += fest_block(s) + reels_block(s) + photos_block(s) + insta_block(s) + press_teaser(s, p) + site_teaser(s)
         lk = f'<p class="sl"><a class="btn" href="{esc(s["link"])}">{esc(s.get("link_label") or "More")}</a></p>' if s.get("link") else ""
         pano = [x for x in s.get("pano", []) if x.get("image")]
@@ -319,6 +326,9 @@ for i, p in enumerate(P):
         pres = [x for x in s.get("pres", []) if x.get("image")]
         if pres:
             lk += '<div class="prs" data-lbg><button type="button" class="prb" onclick="this.parentNode.querySelector(\'a[data-lb]\').click()"><img src="%s" alt="" loading="lazy"><span><small class="lbl">Presentation · %d slides</small><b>%s</b><i>View slides →</i></span></button>%s%s</div>' % (esc(pres[0]["image"]), len(pres), esc(s.get("pres_title") or "Presentation"), "".join('<a hidden href="%s" data-lb data-cap="%s · %d / %d"></a>' % (esc(x["image"]), esc(s.get("pres_title") or ""), j + 1, len(pres)) for j, x in enumerate(pres)), ('<a class="prp lbl" href="%s" target="_blank" rel="noopener">Download PDF ↓</a>' % esc(s["pres_pdf"])) if s.get("pres_pdf") else "")
+        for dk_ in [x for x in s.get("decks", []) if x.get("slides")]:
+            sl = [x for x in dk_["slides"] if x.get("image")]
+            lk += '<div class="prs" data-lbg><button type="button" class="prb" onclick="this.parentNode.querySelector(\'a[data-lb]\').click()"><img src="%s" alt="" loading="lazy"><span><small class="lbl">%s · %d slides</small><b>%s</b><i>View slides →</i></span></button>%s</div>' % (esc(sl[0]["image"]), esc(dk_.get("kicker") or "Presentation"), len(sl), esc(dk_.get("title")), "".join('<a hidden href="%s" data-lb data-cap="%s · %d / %d"></a>' % (esc(x["image"]), esc(dk_.get("title")), j + 1, len(sl)) for j, x in enumerate(sl)))
         bf = s.get("before") or {}
         if bf.get("image") and pano:
             cards = "".join('<button type="button" class="b4p" onclick="window.openPano&&openPano(%d)"><img data-src="%s" alt=""><span>%s</span><em>360°</em></button>' % (j, esc(x.get("thumb") or x["image"]), esc(x.get("caption"))) for j, x in enumerate(pano))

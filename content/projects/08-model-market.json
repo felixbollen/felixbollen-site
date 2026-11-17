@@ -1,5 +1,5 @@
 {
-  "order": 8,
+  "order": 6,
   "slug": "model-market",
   "name": "Model Market",
   "kind": "Street-food market",
@@ -14,7 +14,7 @@
   "text_colour": "#fffef3",
   "tile": "#fffef3",
   "card": "#002e60",
-  "intro": "Bringing Lewisham's Model Market back to life as Kraft Lewisham: the plan, the budget and the people to open it well.",
+  "intro": "Bringing Lewisham's Model Market back to life after five years: German Kraft runs the revived 1950s market at Lewisham Shopping Centre for Landsec, as an all-day hub for street food, makers, events and our own taproom.",
   "credit": "",
   "hero": {
     "type": "video",
@@ -23,20 +23,75 @@
   },
   "sections": [
     {
-      "type": "Marketing",
-      "text": "Pre-opening and first-year marketing plan, built against the P&L: PR, launch events, outdoor, signage and an on-site marketing role.",
-      "stats": [],
-      "videos": [],
+      "type": "P.R.",
+      "title": "Press & P.R.",
+      "text": "The announcement in June 2026 made the market's return a London story, from Time Out to The Caterer.",
+      "stats": [
+        {
+          "figure": "18+",
+          "label": "articles in the first weeks after the announcement"
+        },
+        {
+          "figure": "15.5M",
+          "label": "monthly readers (UMVs) of Time Out alone"
+        }
+      ],
+      "press_teaser": {
+        "link": "/work/model-market/press/",
+        "label": "All press coverage",
+        "count": 9,
+        "source": "press-modelmarket.json",
+        "heading": "Most of the press coverage came through our PR agency, Jukebox."
+      },
       "images": [],
-      "deck": []
+      "videos": []
     },
     {
-      "type": "P.R.",
-      "text": "Briefing PR agencies, with launch support through the landlord, and keeping the council on side.",
-      "stats": [],
-      "videos": [],
-      "images": [],
-      "deck": []
+      "type": "Branding",
+      "text": "The revived Model Market identity: the retro lettering on the original sign, rebuilt for a new chapter.",
+      "images": [
+        {
+          "image": "/l/mm-colour.webp",
+          "caption": "Model Market logo",
+          "cutout": true
+        },
+        {
+          "image": "/a/mm-render.webp",
+          "caption": "The revived market, illustrated render",
+          "cutout": false
+        }
+      ],
+      "videos": []
+    },
+    {
+      "type": "Marketing",
+      "text": "Pre-opening and first-year marketing built against the P&L: a trader call-out, newsletter, Instagram, PR, launch events and outdoor.",
+      "stats": [
+        {
+          "figure": "250+",
+          "label": "food vendors applied"
+        },
+        {
+          "figure": "750+",
+          "label": "newsletter sign-ups pre-opening"
+        }
+      ],
+      "instagram": "modelmarket.lewisham",
+      "images": [
+        {
+          "image": "/a/mm-newsletter.webp",
+          "caption": "Newsletter sign-up, modelmarket.london",
+          "cutout": false,
+          "bare": true
+        },
+        {
+          "image": "/a/mm-vendor-form.webp",
+          "caption": "Trader application form",
+          "cutout": false,
+          "bare": true
+        }
+      ],
+      "videos": []
     }
   ]
 }

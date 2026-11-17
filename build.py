@@ -135,19 +135,25 @@ open(OUT + "/index.html", "w", encoding="utf-8").write(home)
 def fest_block(s):
     if not s.get("fest_heading"): return ""
     v = s.get("fest_video") or {}; r = s.get("fest_report") or {}; ch = s.get("fest_chart") or {}
-    vid = ('<div class="fv"><video autoplay muted loop playsinline preload="metadata" poster="%s" src="%s"></video><button type="button" class="snd" aria-label="Sound on">Sound on</button></div>' % (esc(v.get("poster")), esc(v["video"]))) if v.get("video") else ""
+    uid = "rep-" + slugify(s["fest_heading"])
     fs = "".join('<div><b>%s</b><span>%s</span></div>' % (esc(x["figure"]), esc(x["label"])) for x in s.get("fest_stats", []))
+    vid = ('<div class="fv"><video autoplay muted loop playsinline preload="metadata" poster="%s" src="%s"></video><button type="button" class="snd" aria-label="Sound on">Sound on</button></div>' % (esc(v.get("poster")), esc(v["video"]))) if v.get("video") else ""
     bars = ch.get("bars", []); mx = max([b.get("value") or 0 for b in bars] or [1])
     chart = ('<div class="fchart"><span class="lbl">%s</span><div class="fb">%s</div><p class="fn">%s</p></div>' % (esc(ch.get("title")), "".join(
         '<div class="bar" style="--h:%.1f%%"><em>%s</em><i></i><b>%s</b><small>%s</small></div>' % (100 * (b.get("value") or 0) / mx, esc(b.get("text")), esc(b.get("label")), esc(b.get("sub"))) for b in bars), esc(ch.get("note")))) if bars else ""
-    rep = ('<a class="frep" href="%s" target="_blank" rel="noopener"><img src="%s" alt="%s" loading="lazy"><span>%s ↓ PDF</span></a>' % (esc(r.get("pdf") or r.get("image")), esc(r["image"]), esc(r.get("caption")), esc(r.get("caption")))) if r.get("image") else ""
-    return ('<div class="fest"><div class="fh"><span class="lbl">Highlight</span><h4>%s</h4><p>%s</p></div>%s<div class="fs">%s</div><div class="fg">%s%s</div></div>' % (esc(s["fest_heading"]), esc(s.get("fest_text")), vid, fs, chart, rep))
+    rep = ('<figure class="frep"><img data-src="%s" alt="%s"></figure>' % (esc(r["image"]), esc(r.get("caption")))) if r.get("image") else ""
+    dl = ('<a class="fdl" href="%s" target="_blank" rel="noopener">Download PDF ↓</a>' % esc(r["pdf"])) if r.get("pdf") else ""
+    more = ('<button type="button" class="fmore" data-open="%s">%s <span>→</span></button>' % (uid, esc(s.get("fest_more_label") or "More info")))
+    ov = ('<div class="lbg frpt" id="%s"><button class="x" aria-label="Close">✕</button><span class="lbl">Report</span><h2>%s</h2><p class="frt">%s</p>%s%s%s</div>' % (uid, esc(s["fest_heading"]), esc(s.get("fest_text")), chart, rep, dl))
+    gl = [g for g in s.get("fest_gallery", []) if g.get("image")]
+    gal = ('<div class="fgal"><span class="lbl">%s</span><div class="gal5" data-lbg>%s</div></div>' % (esc(s.get("fest_gallery_title") or "Campaign"), "".join(gfig(g) for g in gl))) if gl else ""
+    return '<div class="fest"><div class="fh"><span class="lbl">Highlight</span><h4>%s</h4></div><div class="fs">%s</div>%s%s%s%s</div>' % (esc(s["fest_heading"]), fs, more, vid, gal, ov)
 
 def reels_block(s):
     rl = [r for r in s.get("reels", []) if r.get("video")]
     if not rl: return ""
-    items = "".join('<figure class="reel"><video muted loop playsinline preload="none" poster="%s" data-src="%s"></video><button type="button" class="rs" aria-label="Sound on">♪</button>%s</figure>' % (esc(r.get("poster")), esc(r["video"]), ('<figcaption>%s</figcaption>' % esc(r["caption"])) if r.get("caption") else "") for r in rl)
-    return '<div class="reels"><div class="rh"><span class="lbl">%s</span><span class="lbl mute">Swipe →</span></div><div class="rr">%s</div></div>' % (esc(s.get("reels_title") or "Videos"), items)
+    items = "".join('<a class="reel" href="%s" data-lb data-type="video" data-cap="%s"><video muted loop playsinline preload="none" poster="%s" data-src="%s"></video><span class="rp">▶</span></a>' % (esc(r["video"]), esc(r.get("caption")), esc(r.get("poster")), esc(r["video"])) for r in rl)
+    return '<div class="reels"><div class="rh"><span class="lbl">%s</span><span class="lbl mute">%d videos · swipe →</span></div><div class="rr" data-lbg>%s</div></div>' % (esc(s.get("reels_title") or "Videos"), len(rl), items)
 
 # ---------- case-study pages (one-pagers) ----------
 def vnav(p, pv, nx):

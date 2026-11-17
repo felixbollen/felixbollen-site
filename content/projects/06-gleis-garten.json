@@ -174,9 +174,9 @@
       ],
       "videos": [
         {
-          "video": "/v/gg-drone.mp4",
-          "poster": "/v/gg-drone.jpg",
-          "caption": "Drone flight through the depot"
+          "video": "/v/gg-aufbau.mp4",
+          "poster": "/v/gg-aufbau.jpg",
+          "caption": "Building Gleis//Garten"
         }
       ],
       "images": [
@@ -297,8 +297,8 @@
   "credit": "",
   "hero": {
     "type": "video",
-    "video": "/v/gg-aufbau.mp4",
-    "poster": "/v/gg-aufbau.jpg"
+    "video": "/v/gg-drone.mp4",
+    "poster": "/v/gg-drone.jpg"
   },
   "text_colour": "#f2ead7"
 }

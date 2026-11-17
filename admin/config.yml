@@ -247,6 +247,17 @@ collections:
                   - {name: sub, label: "Sub-label", widget: string, required: false}
                   - {name: value, label: "Value (for bar height)", widget: number, value_type: float}
                   - {name: text, label: "Shown value", widget: string, required: false}
+          - {name: fest_more_label, label: "Highlight: button text", widget: string, required: false}
+          - {name: fest_gallery_title, label: "Highlight: gallery title", widget: string, required: false}
+          - name: fest_gallery
+            label: "Highlight: poster gallery"
+            widget: list
+            required: false
+            collapsed: true
+            summary: "{{fields.caption}}"
+            fields:
+              - {name: image, label: Image, widget: image}
+              - {name: caption, label: Caption, widget: string, required: false}
           - name: fest_report
             label: "Highlight: report"
             widget: object

@@ -58,6 +58,31 @@
           "image": "/a/vk-brand-11.webp",
           "caption": "T-shirt",
           "cutout": true
+        },
+        {
+          "image": "/a/vk-brochure.webp",
+          "caption": "Brewery handbook, folded brochure",
+          "cutout": false
+        },
+        {
+          "image": "/a/vk-menu.webp",
+          "caption": "Beer menu",
+          "cutout": false
+        },
+        {
+          "image": "/a/vk-brauereien.webp",
+          "caption": "Bier Fest 2026 brewery line-up",
+          "cutout": false
+        },
+        {
+          "image": "/a/vk-glass-helles.webp",
+          "caption": "Glassware design",
+          "cutout": false
+        },
+        {
+          "image": "/a/vk-glass-winterlager.webp",
+          "caption": "Glassware design, Winterlager",
+          "cutout": false
         }
       ],
       "deck": []
@@ -156,7 +181,47 @@
         "image": "/a/vk-fest-report.webp",
         "pdf": "/press/vienna-kraft-bier-fest-report.pdf",
         "caption": "Festival report, 2024–2026"
-      }
+      },
+      "fest_more_label": "More info",
+      "fest_gallery_title": "Posters & campaigns",
+      "fest_gallery": [
+        {
+          "image": "/a/vk-p-kuss-column.webp",
+          "caption": "'Der Kuss' poster on a Viennese advertising column"
+        },
+        {
+          "image": "/a/vk-p-kuss.webp",
+          "caption": "Der Kuss, after Klimt"
+        },
+        {
+          "image": "/a/vk-p-wiesn.webp",
+          "caption": "Wiesn campaign"
+        },
+        {
+          "image": "/a/vk-p-siphons.webp",
+          "caption": "Für Dahoam: 1L / 2L siphons"
+        },
+        {
+          "image": "/a/vk-p-sommer.webp",
+          "caption": "Bier Fest, Summer Edition"
+        },
+        {
+          "image": "/a/vk-p-wiesn2.webp",
+          "caption": "Wiesn poster"
+        },
+        {
+          "image": "/a/vk-p-unlocked.webp",
+          "caption": "Unlocked"
+        },
+        {
+          "image": "/a/vk-p-release.webp",
+          "caption": "Zwickel release party"
+        },
+        {
+          "image": "/a/vk-p-barrel.webp",
+          "caption": "Bier Fest poster"
+        }
+      ]
     },
     {
       "type": "Conceptualisation",

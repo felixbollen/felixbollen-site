@@ -198,6 +198,64 @@ collections:
             fields:
               - {name: image, label: Slide, widget: image}
               - {name: caption, label: Caption, widget: string, required: false}
+          - {name: reels_title, label: "Swipe video gallery title (optional)", widget: string, required: false}
+          - name: reels
+            label: "Swipe video gallery (vertical videos)"
+            widget: list
+            required: false
+            collapsed: true
+            summary: "{{fields.video}}"
+            fields:
+              - {name: video, label: "Video (mp4)", widget: file}
+              - {name: poster, label: "Poster image", widget: image, required: false}
+              - {name: caption, label: "Caption", widget: string, required: false}
+          - {name: fest_heading, label: "Highlight: heading (optional)", widget: string, required: false}
+          - {name: fest_text, label: "Highlight: text", widget: text, required: false}
+          - name: fest_stats
+            label: "Highlight: big numbers"
+            widget: list
+            required: false
+            collapsed: true
+            summary: "{{fields.figure}} {{fields.label}}"
+            fields:
+              - {name: figure, label: "Number", widget: string}
+              - {name: label, label: "Label", widget: string}
+          - name: fest_video
+            label: "Highlight: video"
+            widget: object
+            required: false
+            collapsed: true
+            fields:
+              - {name: video, label: "Video (mp4)", widget: file, required: false}
+              - {name: poster, label: "Poster image", widget: image, required: false}
+              - {name: caption, label: "Caption", widget: string, required: false}
+          - name: fest_chart
+            label: "Highlight: bar chart"
+            widget: object
+            required: false
+            collapsed: true
+            fields:
+              - {name: title, label: "Title", widget: string, required: false}
+              - {name: note, label: "Footnote", widget: text, required: false}
+              - name: bars
+                label: "Bars"
+                widget: list
+                required: false
+                summary: "{{fields.label}} {{fields.text}}"
+                fields:
+                  - {name: label, label: "Label", widget: string}
+                  - {name: sub, label: "Sub-label", widget: string, required: false}
+                  - {name: value, label: "Value (for bar height)", widget: number, value_type: float}
+                  - {name: text, label: "Shown value", widget: string, required: false}
+          - name: fest_report
+            label: "Highlight: report"
+            widget: object
+            required: false
+            collapsed: true
+            fields:
+              - {name: image, label: "Preview image", widget: image, required: false}
+              - {name: pdf, label: "PDF", widget: file, required: false}
+              - {name: caption, label: "Caption", widget: string, required: false}
           - {name: title, widget: hidden}
       - {name: tv_heading, label: "TV clips heading (German Kraft)", widget: text, required: false}
       - name: tv

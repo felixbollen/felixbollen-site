@@ -66,8 +66,8 @@ def head(title, desc, path, og="/v/gk-home.jpg", style="", extra=""):
 <link rel="preload" href="/fonts/hero-super.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/hero-light.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/style.css?{VER}">{f"<style>:root{{{style}}}</style>" if style else ""}{extra}</head><body>{SPRITE}'''
 
-def header(ov=False):
-    return f'''<header class="hd{' ov' if ov else ''}"><a class="br" href="/" aria-label="Felix Bollen, home">{FBS}Felix Bollen</a>
+def header(ov=False, lt=False):
+    return f'''<header class="hd{' ov' if ov else ''}{' lt' if lt else ''}"><a class="br" href="/" aria-label="Felix Bollen, home">{FBS}Felix Bollen</a>
 <nav><a href="/#work">Work</a><a class="hm" href="/#about">About</a><a href="/#contact">Contact</a></nav></header>'''
 
 FOOT = f'''<footer class="ft"><div class="r"><a href="/" aria-label="Home">{FBS}</a><span>© 2026 Felix Bollen. Marketing & Sales, Art Direction, Graphic Design.</span>
@@ -325,6 +325,10 @@ for i, p in enumerate(P):
             body += '<figure class="fpl"><span class="lbl">%s</span><img data-src="%s" alt="Floor plan"></figure>' % (esc(s.get("plan_label") or ""), esc(s["plan"]))
         if s.get("strip"):
             body += '<div class="strip"><span class="lbl">%s</span><img data-src="%s" alt=""></div>' % (esc(s.get("strip_label") or ""), esc(s["strip"]))
+        if s.get("logos"):
+            def _lp(x):
+                return ('<span class="lgt">%s</span>' % esc(x["text"])) if x.get("text") else ('<img data-src="%s" alt="">' % esc(x["image"]))
+            body += '<div class="lgw"><span class="lbl">%s</span><ul>%s</ul></div>' % (esc(s.get("logos_label") or ""), "".join('<li><div class="lgm">%s</div><span>%s</span></li>' % ('<i>×</i>'.join(_lp(x) for x in it["parts"]), esc(it["name"])) for it in s["logos"]))
         if s.get("chips"):
             body += '<div class="chips"><span class="lbl">%s</span><ul>%s</ul></div>' % (esc(s.get("chips_label") or ""), "".join("<li>%s</li>" % esc(c) for c in s["chips"]))
         body += fest_block(s) + reels_block(s) + photos_block(s) + insta_block(s) + ig_grid(s) + press_teaser(s, p) + site_teaser(s)
@@ -363,7 +367,7 @@ for i, p in enumerate(P):
     meta = "".join(f'<div><dt>{a}</dt><dd>{esc(b)}</dd></div>' for a, b in [("Role", p.get("role")), ("Location", p.get("city")), ("Years", p.get("years") or "—"), ("Disciplines", ", ".join(p.get("disciplines", [])))])
     nav = "".join(f'<a href="/work/{w["slug"]}/"{" class=cu aria-current=page" if w is p else ""} style="--cb:{esc(w["card"])}" aria-label="{esc(w["name"])}" title="{esc(w["name"])}">{navlogo(w)}</a>' for w in P)
     cr = f'<p class="cr">{esc(p["credit"])}</p>' if p.get("credit") else ""
-    page = head(f"{p['name']}: Felix Bollen", f"{p['name']}, {p.get('kind')}, {p.get('city')}. {p.get('intro')}", f"/work/{p['slug']}/", og, style, extra) + header(ov=(ht != "lottie")) + f'''
+    page = head(f"{p['name']}: Felix Bollen", f"{p['name']}, {p.get('kind')}, {p.get('city')}. {p.get('intro')}", f"/work/{p['slug']}/", og, style, extra) + header(ov=(ht != "lottie"), lt=bool((p.get("hero") or {}).get("light"))) + f'''
 <main id="top">{hero}
 <div class="bot"><div><h1>{esc(p['name'])}</h1><div class="kd">{esc(p.get('kind'))} · {esc(p.get('city'))}{" · " + esc(p['years']) if p.get('years') else ""}</div></div><span class="lbl">{i+1:02d} / {N:02d}</span></div></section>
 {first}

@@ -21,7 +21,8 @@
   "credit": "Logo and brand identity by Plusminus Studio. Everything else, from concept, vendors and contracts to marketing, sales and day-to-day running, I led as Managing Director.",
   "hero": {
     "type": "lottie",
-    "animation": "/js/dufte-emblem.json"
+    "animation": "/js/dufte-emblem.json",
+    "light": true
   },
   "sections": [
     {
@@ -104,6 +105,11 @@
       "instagram": "dufte_berlin",
       "images": [
         {
+          "image": "/a/du-p-opening.webp",
+          "caption": "Opening poster",
+          "cutout": false
+        },
+        {
           "image": "/a/du-p-kaffee.webp",
           "caption": "Dauerbrenner poster: Kaffee Flatrate, 50 × 40",
           "cutout": false
@@ -180,11 +186,6 @@
           "cutout": false
         },
         {
-          "image": "/a/du-ph-can.webp",
-          "caption": "Helles can",
-          "cutout": false
-        },
-        {
           "image": "/a/du-ph-can-2.webp",
           "caption": "Helles can",
           "cutout": false
@@ -197,11 +198,6 @@
         {
           "image": "/a/du-ph-bottle-weizen.webp",
           "caption": "Weizen AF bottle",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-cask.webp",
-          "caption": "The Freibier cask",
           "cutout": false
         },
         {
@@ -237,11 +233,6 @@
         {
           "image": "/a/du-ph-jacket-back.webp",
           "caption": "Staff jacket, back",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-sign-install.webp",
-          "caption": "Hanging the emblem sign",
           "cutout": false
         },
         {
@@ -293,24 +284,133 @@
           "label": "on Google"
         }
       ],
-      "chips_label": "Booked by",
-      "chips": [
-        "Google",
-        "Hermès",
-        "Adidas × Zalando",
-        "Lululemon",
-        "Design Hotels × Amex",
-        "Longchamp",
-        "Avène × Lena Gercke",
-        "Instagram / Amazon",
-        "Skoda",
-        "Honda",
-        "Bosch-Siemens (IFA)",
-        "Berlin Fashion Week",
-        "Berlin State Ballet"
-      ],
       "images": [],
-      "videos": []
+      "videos": [],
+      "logos": [
+        {
+          "name": "Google",
+          "parts": [
+            {
+              "image": "/a/du-logos/google.svg"
+            }
+          ]
+        },
+        {
+          "name": "Hermès",
+          "parts": [
+            {
+              "image": "/a/du-logos/hermes.svg"
+            }
+          ]
+        },
+        {
+          "name": "Adidas × Zalando",
+          "parts": [
+            {
+              "image": "/a/du-logos/adidas.svg"
+            },
+            {
+              "image": "/a/du-logos/zalando.svg"
+            }
+          ]
+        },
+        {
+          "name": "Lululemon",
+          "parts": [
+            {
+              "image": "/a/du-logos/lululemon.png"
+            }
+          ]
+        },
+        {
+          "name": "Design Hotels × Amex",
+          "parts": [
+            {
+              "image": "/a/du-logos/designhotels.svg"
+            },
+            {
+              "image": "/a/du-logos/americanexpress.svg"
+            }
+          ]
+        },
+        {
+          "name": "Longchamp",
+          "parts": [
+            {
+              "image": "/a/du-logos/longchamp.svg"
+            }
+          ]
+        },
+        {
+          "name": "Avène × Lena Gercke",
+          "parts": [
+            {
+              "text": "Avène"
+            },
+            {
+              "text": "Lena Gercke"
+            }
+          ]
+        },
+        {
+          "name": "Instagram × Amazon",
+          "parts": [
+            {
+              "image": "/a/du-logos/instagram.svg"
+            },
+            {
+              "image": "/a/du-logos/amazon.svg"
+            }
+          ]
+        },
+        {
+          "name": "Škoda",
+          "parts": [
+            {
+              "image": "/a/du-logos/skoda.svg"
+            }
+          ]
+        },
+        {
+          "name": "Honda",
+          "parts": [
+            {
+              "image": "/a/du-logos/honda.svg"
+            }
+          ]
+        },
+        {
+          "name": "Bosch-Siemens at IFA",
+          "parts": [
+            {
+              "image": "/a/du-logos/bosch.svg"
+            },
+            {
+              "image": "/a/du-logos/siemens.svg"
+            },
+            {
+              "image": "/a/du-logos/ifa.svg"
+            }
+          ]
+        },
+        {
+          "name": "Berlin Fashion Week",
+          "parts": [
+            {
+              "text": "Berlin Fashion Week"
+            }
+          ]
+        },
+        {
+          "name": "Staatsballett Berlin",
+          "parts": [
+            {
+              "image": "/a/du-logos/staatsballett.svg"
+            }
+          ]
+        }
+      ],
+      "logos_label": "Booked by"
     },
     {
       "type": "Photography & videography",

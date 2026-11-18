@@ -146,26 +146,6 @@
      "image": "/a/my-concept-01.webp",
      "caption": "Section through the church",
      "cutout": false
-    },
-    {
-     "image": "/a/my-deck-01.webp",
-     "caption": "German Kraft Projects deck: Mayfair",
-     "cutout": false
-    },
-    {
-     "image": "/a/my-deck-02.webp",
-     "caption": "A full church",
-     "cutout": false
-    },
-    {
-     "image": "/a/my-deck-03.webp",
-     "caption": "Glass bricks from broken pint glasses",
-     "cutout": false
-    },
-    {
-     "image": "/a/my-deck-04.webp",
-     "caption": "The crypt",
-     "cutout": false
     }
    ],
    "deck": []

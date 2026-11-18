@@ -1,513 +1,504 @@
 {
-  "order": 4,
-  "slug": "vienna-kraft",
-  "name": "Vienna Kraft",
-  "kind": "Brewery & beer festival",
-  "city": "Vienna",
-  "years": "2022–2026",
-  "role": "Co-founder & marketing lead",
-  "disciplines": [
-    "Graphic Design",
-    "Marketing & Sales"
-  ],
-  "logo": "vk",
-  "background": "#fdc533",
-  "text_colour": "#0b0b0b",
-  "tile": "#ffffff",
-  "card": "#fdc533",
-  "intro": "A brewery in the middle of Gleis//Garten, serving unfiltered beer straight from the tank.",
-  "credit": "",
-  "hero": {
-    "type": "video",
-    "video": "/v/vk1.mp4",
-    "poster": "/v/vk1.jpg"
+ "order": 4,
+ "slug": "vienna-kraft",
+ "name": "Vienna Kraft",
+ "kind": "Brewery & beer festival",
+ "city": "Vienna",
+ "years": "2022–2026",
+ "role": "Co-founder & marketing lead",
+ "disciplines": [
+  "Graphic Design",
+  "Marketing & Sales"
+ ],
+ "logo": "vk",
+ "background": "#fdc533",
+ "text_colour": "#0b0b0b",
+ "tile": "#ffffff",
+ "card": "#fdc533",
+ "intro": "A brewery in the middle of Gleis//Garten, serving unfiltered beer straight from the tank.",
+ "credit": "",
+ "hero": {
+  "type": "video",
+  "video": "/v/vk1.mp4",
+  "poster": "/v/vk1.jpg"
+ },
+ "sections": [
+  {
+   "type": "Branding",
+   "text": "A Viennese sibling of the KRAFT mark and a family of named labels.",
+   "stats": [],
+   "videos": [],
+   "images": [
+    {
+     "image": "/a/vk-brand-01.webp",
+     "caption": "Primary logo",
+     "cutout": true
+    },
+    {
+     "image": "/a/vk-signage.webp",
+     "caption": "Brewery bar signage",
+     "cutout": false
+    },
+    {
+     "image": "/a/vk-shirt-front.webp",
+     "caption": "T-shirt, front",
+     "cutout": true,
+     "bare": true
+    },
+    {
+     "image": "/a/vk-shirt-back.webp",
+     "caption": "T-shirt, back: Bier für Wien",
+     "cutout": true,
+     "bare": true
+    },
+    {
+     "image": "/a/vk-ph-shirt-front.webp",
+     "caption": "Staff shirt",
+     "cutout": false
+    },
+    {
+     "image": "/a/vk-ph-shirt-back.webp",
+     "caption": "Staff shirt, back",
+     "cutout": false
+    },
+    {
+     "image": "/a/vk-brochure-outside.webp",
+     "caption": "Brewery handbook, outside",
+     "cutout": true,
+     "bare": true
+    },
+    {
+     "image": "/a/vk-brochure-inside.webp",
+     "caption": "Brewery handbook, inside",
+     "cutout": true,
+     "bare": true
+    },
+    {
+     "image": "/a/vk-menu.webp",
+     "caption": "Beer menu",
+     "cutout": false
+    },
+    {
+     "image": "/a/vk-taps.webp",
+     "caption": "Tap handles",
+     "cutout": false
+    },
+    {
+     "image": "/a/vk-glass-helles.webp",
+     "caption": "Glassware design",
+     "cutout": false
+    },
+    {
+     "image": "/a/vk-glass-winterlager.webp",
+     "caption": "Glassware design, Winterlager",
+     "cutout": false
+    },
+    {
+     "image": "/a/vk-glass-kraft.webp",
+     "caption": "Glassware design, KRAFT",
+     "cutout": false
+    },
+    {
+     "image": "/a/vk-brauereien.webp",
+     "caption": "Bier Fest 2026 brewery line-up",
+     "cutout": false
+    },
+    {
+     "image": "/a/vk-ph-festbox.webp",
+     "caption": "Bier Fest tasting box",
+     "cutout": false
+    },
+    {
+     "image": "/a/vk-ph-festflyer.webp",
+     "caption": "Bier Fest programme",
+     "cutout": false
+    },
+    {
+     "image": "/a/vk-xmas-siphon.webp",
+     "caption": "Christmas siphon campaign",
+     "cutout": false
+    },
+    {
+     "image": "/a/vk-ph-tattoo-1.webp",
+     "caption": "KRAFT tattoo day",
+     "cutout": false
+    },
+    {
+     "image": "/a/vk-ph-tattoo-2.webp",
+     "caption": "KRAFT tattoo day",
+     "cutout": false
+    },
+    {
+     "image": "/a/vk-ph-tattoo-3.webp",
+     "caption": "KRAFT tattoo",
+     "cutout": false
+    },
+    {
+     "image": "/a/vk-ph-tattoo-4.webp",
+     "caption": "KRAFT tattoo & beer",
+     "cutout": false
+    }
+   ],
+   "deck": []
   },
-  "sections": [
+  {
+   "type": "Marketing",
+   "text": "",
+   "stats": [],
+   "videos": [],
+   "images": [],
+   "deck": [],
+   "fest_heading": "Vienna Kraft Bier Fest",
+   "fest_text": "Vienna's independent craft beer festival, which we hosted at Gleis//Garten: five editions from the launch in August 2024 to June 2026, with 15+ independent breweries and 50+ beers per edition. I ran it end to end: brewery line-up, ticket shop, email, retargeting, PR and the event itself. In 2026 it was the only craft beer festival left in Vienna.",
+   "fest_stats": [
     {
-      "type": "Branding",
-      "text": "A Viennese sibling of the KRAFT mark and a family of named labels.",
-      "stats": [],
-      "videos": [],
-      "images": [
-        {
-          "image": "/a/vk-brand-01.webp",
-          "caption": "Primary logo",
-          "cutout": true
-        },
-        {
-          "image": "/a/vk-signage.webp",
-          "caption": "Brewery bar signage",
-          "cutout": false
-        },
-        {
-          "image": "/a/vk-shirt-front.webp",
-          "caption": "T-shirt, front",
-          "cutout": true,
-          "bare": true
-        },
-        {
-          "image": "/a/vk-shirt-back.webp",
-          "caption": "T-shirt, back: Bier für Wien",
-          "cutout": true,
-          "bare": true
-        },
-        {
-          "image": "/a/vk-ph-shirt-front.webp",
-          "caption": "Staff shirt",
-          "cutout": false
-        },
-        {
-          "image": "/a/vk-ph-shirt-back.webp",
-          "caption": "Staff shirt, back",
-          "cutout": false
-        },
-        {
-          "image": "/a/vk-brochure-outside.webp",
-          "caption": "Brewery handbook, outside",
-          "cutout": true,
-          "bare": true
-        },
-        {
-          "image": "/a/vk-brochure-inside.webp",
-          "caption": "Brewery handbook, inside",
-          "cutout": true,
-          "bare": true
-        },
-        {
-          "image": "/a/vk-menu.webp",
-          "caption": "Beer menu",
-          "cutout": false
-        },
-        {
-          "image": "/a/vk-taps.webp",
-          "caption": "Tap handles",
-          "cutout": false
-        },
-        {
-          "image": "/a/vk-glass-helles.webp",
-          "caption": "Glassware design",
-          "cutout": false
-        },
-        {
-          "image": "/a/vk-glass-winterlager.webp",
-          "caption": "Glassware design, Winterlager",
-          "cutout": false
-        },
-        {
-          "image": "/a/vk-glass-kraft.webp",
-          "caption": "Glassware design, KRAFT",
-          "cutout": false
-        },
-        {
-          "image": "/a/vk-brauereien.webp",
-          "caption": "Bier Fest 2026 brewery line-up",
-          "cutout": false
-        },
-        {
-          "image": "/a/vk-ph-festbox.webp",
-          "caption": "Bier Fest tasting box",
-          "cutout": false
-        },
-        {
-          "image": "/a/vk-ph-festflyer.webp",
-          "caption": "Bier Fest programme",
-          "cutout": false
-        },
-        {
-          "image": "/a/vk-xmas-siphon.webp",
-          "caption": "Christmas siphon campaign",
-          "cutout": false
-        },
-        {
-          "image": "/a/vk-ph-tattoo-1.webp",
-          "caption": "KRAFT tattoo day",
-          "cutout": false
-        },
-        {
-          "image": "/a/vk-ph-tattoo-2.webp",
-          "caption": "KRAFT tattoo day",
-          "cutout": false
-        },
-        {
-          "image": "/a/vk-ph-tattoo-3.webp",
-          "caption": "KRAFT tattoo",
-          "cutout": false
-        },
-        {
-          "image": "/a/vk-ph-tattoo-4.webp",
-          "caption": "KRAFT tattoo & beer",
-          "cutout": false
-        }
-      ],
-      "deck": []
+     "figure": "≈€116.3K",
+     "label": "estimated total revenue: tickets online, at the door and tasting tokens, 2025–26"
     },
     {
-      "type": "Marketing",
-      "text": "Loyalty cards, brewery parties and the Vienna Kraft Bier Fest: ticket shop, email, retargeting and PR.",
-      "stats": [
-        {
-          "figure": "75%",
-          "label": "less CO₂ than a regular brewery"
-        },
-        {
-          "figure": "0",
-          "label": "packaging: every beer straight from the tank"
-        }
-      ],
-      "videos": [],
-      "images": [],
-      "deck": [],
-      "fest_heading": "Vienna Kraft Bier Fest",
-      "fest_text": "Vienna's independent craft beer festival, which we hosted at Gleis//Garten: five editions from the launch in August 2024 to June 2026, with 15+ independent breweries and 50+ beers per edition. I ran it end to end: brewery line-up, ticket shop, email, retargeting, PR and the event itself. In 2026 it was the only craft beer festival left in Vienna.",
-      "fest_stats": [
-        {
-          "figure": "≈€116.3K",
-          "label": "estimated total revenue: tickets online, at the door and tasting tokens, 2025–26"
-        },
-        {
-          "figure": "2,177",
-          "label": "tickets sold online, ≈2,830 ticket holders incl. door sales"
-        },
-        {
-          "figure": "1,003",
-          "label": "unique buyers, 116 came back for two or more editions"
-        },
-        {
-          "figure": "+27%",
-          "label": "online revenue 2026 vs 2025 (€32.9K → €41.7K)"
-        },
-        {
-          "figure": "739",
-          "label": "online tickets for Feb 2026, the best edition yet"
-        },
-        {
-          "figure": "40+",
-          "label": "articles in major newspapers and media"
-        }
-      ],
-      "fest_chart": {
-        "title": "Revenue per edition",
-        "note": "Online ticket revenue plus estimated door sales (+30%) and tasting tokens (+20%). The August 2024 launch isn't in the ticket shop export.",
-        "bars": [
-          {
-            "label": "Feb 2025",
-            "sub": "617 online tickets",
-            "value": 30.1,
-            "text": "≈€30.1K"
-          },
-          {
-            "label": "Aug 2025",
-            "sub": "384 online tickets",
-            "value": 21.2,
-            "text": "≈€21.2K"
-          },
-          {
-            "label": "Feb 2026",
-            "sub": "739 online tickets",
-            "value": 41.6,
-            "text": "≈€41.6K"
-          },
-          {
-            "label": "Jun 2026",
-            "sub": "437 online tickets",
-            "value": 23.4,
-            "text": "≈€23.4K"
-          }
-        ]
-      },
-      "fest_video": {
-        "video": "/v/vk-fest.mp4",
-        "poster": "/v/vk-fest.jpg",
-        "caption": "Vienna Kraft Bier Fest"
-      },
-      "fest_report": {
-        "image": "/a/vk-fest-report.webp",
-        "pdf": "/press/vienna-kraft-bier-fest-report.pdf",
-        "caption": "Festival report, 2024–2026"
-      },
-      "fest_more_label": "More info",
-      "fest_gallery_title": "Posters & campaigns",
-      "fest_gallery": [
-        {
-          "image": "/a/vk-p-kuss.webp",
-          "caption": "Der Kuss, after Klimt"
-        },
-        {
-          "image": "/a/vk-p-wiesn.webp",
-          "caption": "Wiesn campaign"
-        },
-        {
-          "image": "/a/vk-p-siphons.webp",
-          "caption": "Für Dahoam: 1L / 2L siphons"
-        },
-        {
-          "image": "/a/vk-p-sommer.webp",
-          "caption": "Bier Fest, Summer Edition"
-        },
-        {
-          "image": "/a/vk-p-wiesn2.webp",
-          "caption": "Wiesn poster"
-        },
-        {
-          "image": "/a/vk-p-unlocked.webp",
-          "caption": "Unlocked"
-        },
-        {
-          "image": "/a/vk-p-release.webp",
-          "caption": "Zwickel release party"
-        },
-        {
-          "image": "/a/vk-p-barrel.webp",
-          "caption": "Bier Fest poster"
-        },
-        {
-          "image": "/a/vk-mkt-01.webp",
-          "caption": "Stammtisch loyalty card"
-        }
-      ],
-      "instagram": "vienna.kraft"
+     "figure": "2,177",
+     "label": "tickets sold online, ≈2,830 ticket holders incl. door sales"
     },
     {
-      "type": "Conceptualisation",
-      "text": "Brewery renders and the finished brewhouse.",
-      "stats": [],
-      "videos": [
-        {
-          "video": "/v/vk-brauerei-tag.mp4",
-          "poster": "/v/vk-brauerei-tag.jpg",
-          "caption": "Brewery day at Vienna Kraft"
-        },
-        {
-          "video": "/v/vk-insta-build.mp4",
-          "poster": "/v/vk-insta-build.jpg",
-          "caption": "Building the brewery"
-        }
-      ],
-      "images": [
-        {
-          "image": "/a/vk-concept-01.webp",
-          "caption": "Brewery render",
-          "cutout": false
-        },
-        {
-          "image": "/a/vk-concept-03.webp",
-          "caption": "The brewery in the hall",
-          "cutout": false
-        }
-      ],
-      "deck": []
+     "figure": "1,003",
+     "label": "unique buyers, 116 came back for two or more editions"
+    },
+    {
+     "figure": "+27%",
+     "label": "online revenue 2026 vs 2025 (€32.9K → €41.7K)"
+    },
+    {
+     "figure": "739",
+     "label": "online tickets for Feb 2026, the best edition yet"
+    },
+    {
+     "figure": "40+",
+     "label": "articles in major newspapers and media"
     }
-  ],
-  "labels_heading": "{n} labels,\none brewery",
-  "labels_text": "Every Vienna Kraft beer gets a name and a face, in the same roundel label system as German Kraft, plus the collaborations brewed in Vienna.",
-  "labels": [
+   ],
+   "fest_chart": {
+    "title": "Revenue per edition",
+    "note": "Online ticket revenue plus estimated door sales (+30%) and tasting tokens (+20%). The August 2024 launch isn't in the ticket shop export.",
+    "bars": [
+     {
+      "label": "Feb 2025",
+      "sub": "617 online tickets",
+      "value": 30.1,
+      "text": "≈€30.1K"
+     },
+     {
+      "label": "Aug 2025",
+      "sub": "384 online tickets",
+      "value": 21.2,
+      "text": "≈€21.2K"
+     },
+     {
+      "label": "Feb 2026",
+      "sub": "739 online tickets",
+      "value": 41.6,
+      "text": "≈€41.6K"
+     },
+     {
+      "label": "Jun 2026",
+      "sub": "437 online tickets",
+      "value": 23.4,
+      "text": "≈€23.4K"
+     }
+    ]
+   },
+   "fest_video": {
+    "video": "/v/vk-fest.mp4",
+    "poster": "/v/vk-fest.jpg",
+    "caption": "Vienna Kraft Bier Fest"
+   },
+   "fest_report": {
+    "image": "/a/vk-fest-report.webp",
+    "pdf": "/press/vienna-kraft-bier-fest-report.pdf",
+    "caption": "Festival report, 2024–2026"
+   },
+   "fest_more_label": "More info",
+   "fest_gallery_title": "Posters & campaigns",
+   "fest_gallery": [
     {
-      "image": "/a/vkl/vk-lab-01.png",
-      "name": "Hubert, Keller Zwickel"
+     "image": "/a/vk-p-kuss.webp",
+     "caption": "Der Kuss, after Klimt"
     },
     {
-      "image": "/a/vkl/vk-lab-02.png",
-      "name": "Hannes, Hazy Pale Ale"
+     "image": "/a/vk-p-wiesn.webp",
+     "caption": "Wiesn campaign"
     },
     {
-      "image": "/a/vkl/vk-lab-03.png",
-      "name": "Torben, Tropical IPA"
+     "image": "/a/vk-p-siphons.webp",
+     "caption": "Für Dahoam: 1L / 2L siphons"
     },
     {
-      "image": "/a/vkl/vk-lab-04.png",
-      "name": "Emil, Potsdamer Stange"
+     "image": "/a/vk-p-sommer.webp",
+     "caption": "Bier Fest, Summer Edition"
     },
     {
-      "image": "/a/vkl/vk-lab-05.png",
-      "name": "Gitti, DDH India Pale Ale"
+     "image": "/a/vk-p-wiesn2.webp",
+     "caption": "Wiesn poster"
     },
     {
-      "image": "/a/vkl/vk-lab-06.png",
-      "name": "Knut, Cascade India Pale Ale"
+     "image": "/a/vk-p-unlocked.webp",
+     "caption": "Unlocked"
     },
     {
-      "image": "/a/vkl/vk-lab-07.png",
-      "name": "Lotte, Hefeweizen"
+     "image": "/a/vk-p-release.webp",
+     "caption": "Zwickel release party"
     },
     {
-      "image": "/a/vkl/vk-lab-08.png",
-      "name": "Rainer, Red IPA"
+     "image": "/a/vk-p-barrel.webp",
+     "caption": "Bier Fest poster"
     },
     {
-      "image": "/a/vkl/vk-lab-09.png",
-      "name": "Sven, West Coast IPA"
-    },
-    {
-      "image": "/a/vkl/vk-lab-10.png",
-      "name": "Rosi, Hefeweizen"
-    },
-    {
-      "image": "/a/vkl/vk-lab-11.png",
-      "name": "Gabi, Sommer Lager"
-    },
-    {
-      "image": "/a/vkl/vk-lab-12.png",
-      "name": "Lisl, Session IPA"
-    },
-    {
-      "image": "/a/vkl/vk-lab-13.png",
-      "name": "Berliner Weisse, Mikkeller collaboration"
-    },
-    {
-      "image": "/a/vkl/vk-lab-14.png",
-      "name": "Willi, Berliner Weisse"
-    },
-    {
-      "image": "/a/vkl/vk-lab-15.png",
-      "name": "Hajo, Pale Ale"
-    },
-    {
-      "image": "/a/vkl/vk-lab-16.png",
-      "name": "Hubert, Keller Lager"
-    },
-    {
-      "image": "/a/vkl/vk-lab-17.png",
-      "name": "Walter, Bockbier"
-    },
-    {
-      "image": "/a/vkl/vk-lab-18.png",
-      "name": "Wolfi, Sommer Weisse"
-    },
-    {
-      "image": "/a/vkl/vk-lab-19.png",
-      "name": "Ferdl, Keller Zwickel"
-    },
-    {
-      "image": "/a/vkl/vk-lab-20.png",
-      "name": "Phanta, Pale Ale, Bräuhaus Ten.Fifty collaboration"
-    },
-    {
-      "image": "/a/vkl/vk-lab-21.png",
-      "name": "Hannelore, West Coast IPA"
-    },
-    {
-      "image": "/a/vkl/vk-lab-22.png",
-      "name": "Alois, Pale Ale"
-    },
-    {
-      "image": "/a/vkl/vk-lab-23.png",
-      "name": "Anna, Ananas India Pale Ale"
-    },
-    {
-      "image": "/a/vkl/vk-lab-24.png",
-      "name": "Aroha, NZ Zwickel"
-    },
-    {
-      "image": "/a/vkl/vk-lab-25.png",
-      "name": "Berti, West Coast IPA"
-    },
-    {
-      "image": "/a/vkl/vk-lab-26.png",
-      "name": "Jochen, Schwarzbier"
-    },
-    {
-      "image": "/a/vkl/vk-lab-27.png",
-      "name": "Mirli, Mango Madness India Pale Ale"
-    },
-    {
-      "image": "/a/vkl/vk-lab-28.png",
-      "name": "Tonja, Weissbier"
-    },
-    {
-      "image": "/a/vkl/vk-lab-29.png",
-      "name": "Anton, Zwickel"
-    },
-    {
-      "image": "/a/vkl/vk-lab-30.png",
-      "name": "Bernadette, West Coast IPA"
-    },
-    {
-      "image": "/a/vkl/vk-lab-31.png",
-      "name": "Bernd, Pale Ale"
-    },
-    {
-      "image": "/a/vkl/vk-lab-32.png",
-      "name": "Bettina, Schank IPA"
-    },
-    {
-      "image": "/a/vkl/vk-lab-33.png",
-      "name": "Conni, Cold IPA"
-    },
-    {
-      "image": "/a/vkl/vk-lab-34.png",
-      "name": "Erwin, Natur Pils"
-    },
-    {
-      "image": "/a/vkl/vk-lab-35.png",
-      "name": "Elfi, West Coast Pils"
-    },
-    {
-      "image": "/a/vkl/vk-lab-36.png",
-      "name": "Jürgen, Euro Helles"
-    },
-    {
-      "image": "/a/vkl/vk-lab-37.png",
-      "name": "Finnrik, Stout"
-    },
-    {
-      "image": "/a/vkl/vk-lab-38.png",
-      "name": "Hannelore, West Coast Pale Ale"
-    },
-    {
-      "image": "/a/vkl/vk-lab-39.png",
-      "name": "Idris, Citra Hazy IPA"
-    },
-    {
-      "image": "/a/vkl/vk-lab-40.png",
-      "name": "Helge, Dry Hopped Helles"
-    },
-    {
-      "image": "/a/vkl/vk-lab-41.png",
-      "name": "Karli, Hazy Pale Ale"
-    },
-    {
-      "image": "/a/vkl/vk-lab-42.png",
-      "name": "Perli, Pils"
-    },
-    {
-      "image": "/a/vkl/vk-lab-43.png",
-      "name": "Rudi, Winter Lager"
-    },
-    {
-      "image": "/a/vkl/vk-lab-44.png",
-      "name": "Rudi, Winterbier"
-    },
-    {
-      "image": "/a/vkl/vk-lab-45.png",
-      "name": "Sepp, Schwarzbier"
-    },
-    {
-      "image": "/a/vkl/vk-lab-46.png",
-      "name": "Simone, Smash Hell"
-    },
-    {
-      "image": "/a/vkl/vk-lab-47.png",
-      "name": "Paula, Sommermärzen"
-    },
-    {
-      "image": "/a/vkl/vk-lab-48.png",
-      "name": "Stephani, Wiener Lager"
-    },
-    {
-      "image": "/a/vkl/vk-lab-49.png",
-      "name": "Wai-iti, NZ Zwickel"
-    },
-    {
-      "image": "/a/vkl/vk-lab-50.png",
-      "name": "Werner, Weissbier"
-    },
-    {
-      "image": "/a/vkl/vk-lab-51.png",
-      "name": "Wanda, Witbier"
-    },
-    {
-      "image": "/a/vkl/vk-lab-52.png",
-      "name": "Anton, Zwickel (yellow)"
+     "image": "/a/vk-mkt-01.webp",
+     "caption": "Stammtisch loyalty card"
     }
-  ]
+   ],
+   "instagram": "vienna.kraft"
+  },
+  {
+   "type": "Conceptualisation",
+   "text": "Brewery renders and the finished brewhouse.",
+   "stats": [],
+   "videos": [
+    {
+     "video": "/v/vk-brauerei-tag.mp4",
+     "poster": "/v/vk-brauerei-tag.jpg",
+     "caption": "Brewery day at Vienna Kraft"
+    },
+    {
+     "video": "/v/vk-insta-build.mp4",
+     "poster": "/v/vk-insta-build.jpg",
+     "caption": "Building the brewery"
+    }
+   ],
+   "images": [
+    {
+     "image": "/a/vk-concept-01.webp",
+     "caption": "Brewery render",
+     "cutout": false
+    },
+    {
+     "image": "/a/vk-concept-03.webp",
+     "caption": "The brewery in the hall",
+     "cutout": false
+    }
+   ],
+   "deck": []
+  }
+ ],
+ "labels_heading": "{n} labels,\none brewery",
+ "labels_text": "Every Vienna Kraft beer gets a name and a face, in the same roundel label system as German Kraft, plus the collaborations brewed in Vienna.",
+ "labels": [
+  {
+   "image": "/a/vkl/vk-lab-01.png",
+   "name": "Hubert, Keller Zwickel"
+  },
+  {
+   "image": "/a/vkl/vk-lab-02.png",
+   "name": "Hannes, Hazy Pale Ale"
+  },
+  {
+   "image": "/a/vkl/vk-lab-03.png",
+   "name": "Torben, Tropical IPA"
+  },
+  {
+   "image": "/a/vkl/vk-lab-04.png",
+   "name": "Emil, Potsdamer Stange"
+  },
+  {
+   "image": "/a/vkl/vk-lab-05.png",
+   "name": "Gitti, DDH India Pale Ale"
+  },
+  {
+   "image": "/a/vkl/vk-lab-06.png",
+   "name": "Knut, Cascade India Pale Ale"
+  },
+  {
+   "image": "/a/vkl/vk-lab-07.png",
+   "name": "Lotte, Hefeweizen"
+  },
+  {
+   "image": "/a/vkl/vk-lab-08.png",
+   "name": "Rainer, Red IPA"
+  },
+  {
+   "image": "/a/vkl/vk-lab-09.png",
+   "name": "Sven, West Coast IPA"
+  },
+  {
+   "image": "/a/vkl/vk-lab-10.png",
+   "name": "Rosi, Hefeweizen"
+  },
+  {
+   "image": "/a/vkl/vk-lab-11.png",
+   "name": "Gabi, Sommer Lager"
+  },
+  {
+   "image": "/a/vkl/vk-lab-12.png",
+   "name": "Lisl, Session IPA"
+  },
+  {
+   "image": "/a/vkl/vk-lab-13.png",
+   "name": "Berliner Weisse, Mikkeller collaboration"
+  },
+  {
+   "image": "/a/vkl/vk-lab-14.png",
+   "name": "Willi, Berliner Weisse"
+  },
+  {
+   "image": "/a/vkl/vk-lab-15.png",
+   "name": "Hajo, Pale Ale"
+  },
+  {
+   "image": "/a/vkl/vk-lab-16.png",
+   "name": "Hubert, Keller Lager"
+  },
+  {
+   "image": "/a/vkl/vk-lab-17.png",
+   "name": "Walter, Bockbier"
+  },
+  {
+   "image": "/a/vkl/vk-lab-18.png",
+   "name": "Wolfi, Sommer Weisse"
+  },
+  {
+   "image": "/a/vkl/vk-lab-19.png",
+   "name": "Ferdl, Keller Zwickel"
+  },
+  {
+   "image": "/a/vkl/vk-lab-20.png",
+   "name": "Phanta, Pale Ale, Bräuhaus Ten.Fifty collaboration"
+  },
+  {
+   "image": "/a/vkl/vk-lab-21.png",
+   "name": "Hannelore, West Coast IPA"
+  },
+  {
+   "image": "/a/vkl/vk-lab-22.png",
+   "name": "Alois, Pale Ale"
+  },
+  {
+   "image": "/a/vkl/vk-lab-23.png",
+   "name": "Anna, Ananas India Pale Ale"
+  },
+  {
+   "image": "/a/vkl/vk-lab-24.png",
+   "name": "Aroha, NZ Zwickel"
+  },
+  {
+   "image": "/a/vkl/vk-lab-25.png",
+   "name": "Berti, West Coast IPA"
+  },
+  {
+   "image": "/a/vkl/vk-lab-26.png",
+   "name": "Jochen, Schwarzbier"
+  },
+  {
+   "image": "/a/vkl/vk-lab-27.png",
+   "name": "Mirli, Mango Madness India Pale Ale"
+  },
+  {
+   "image": "/a/vkl/vk-lab-28.png",
+   "name": "Tonja, Weissbier"
+  },
+  {
+   "image": "/a/vkl/vk-lab-29.png",
+   "name": "Anton, Zwickel"
+  },
+  {
+   "image": "/a/vkl/vk-lab-30.png",
+   "name": "Bernadette, West Coast IPA"
+  },
+  {
+   "image": "/a/vkl/vk-lab-31.png",
+   "name": "Bernd, Pale Ale"
+  },
+  {
+   "image": "/a/vkl/vk-lab-32.png",
+   "name": "Bettina, Schank IPA"
+  },
+  {
+   "image": "/a/vkl/vk-lab-33.png",
+   "name": "Conni, Cold IPA"
+  },
+  {
+   "image": "/a/vkl/vk-lab-34.png",
+   "name": "Erwin, Natur Pils"
+  },
+  {
+   "image": "/a/vkl/vk-lab-35.png",
+   "name": "Elfi, West Coast Pils"
+  },
+  {
+   "image": "/a/vkl/vk-lab-36.png",
+   "name": "Jürgen, Euro Helles"
+  },
+  {
+   "image": "/a/vkl/vk-lab-37.png",
+   "name": "Finnrik, Stout"
+  },
+  {
+   "image": "/a/vkl/vk-lab-38.png",
+   "name": "Hannelore, West Coast Pale Ale"
+  },
+  {
+   "image": "/a/vkl/vk-lab-39.png",
+   "name": "Idris, Citra Hazy IPA"
+  },
+  {
+   "image": "/a/vkl/vk-lab-40.png",
+   "name": "Helge, Dry Hopped Helles"
+  },
+  {
+   "image": "/a/vkl/vk-lab-41.png",
+   "name": "Karli, Hazy Pale Ale"
+  },
+  {
+   "image": "/a/vkl/vk-lab-42.png",
+   "name": "Perli, Pils"
+  },
+  {
+   "image": "/a/vkl/vk-lab-43.png",
+   "name": "Rudi, Winter Lager"
+  },
+  {
+   "image": "/a/vkl/vk-lab-44.png",
+   "name": "Rudi, Winterbier"
+  },
+  {
+   "image": "/a/vkl/vk-lab-45.png",
+   "name": "Sepp, Schwarzbier"
+  },
+  {
+   "image": "/a/vkl/vk-lab-46.png",
+   "name": "Simone, Smash Hell"
+  },
+  {
+   "image": "/a/vkl/vk-lab-47.png",
+   "name": "Paula, Sommermärzen"
+  },
+  {
+   "image": "/a/vkl/vk-lab-48.png",
+   "name": "Stephani, Wiener Lager"
+  },
+  {
+   "image": "/a/vkl/vk-lab-49.png",
+   "name": "Wai-iti, NZ Zwickel"
+  },
+  {
+   "image": "/a/vkl/vk-lab-50.png",
+   "name": "Werner, Weissbier"
+  },
+  {
+   "image": "/a/vkl/vk-lab-51.png",
+   "name": "Wanda, Witbier"
+  },
+  {
+   "image": "/a/vkl/vk-lab-52.png",
+   "name": "Anton, Zwickel (yellow)"
+  }
+ ]
 }

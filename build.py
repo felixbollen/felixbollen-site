@@ -327,7 +327,7 @@ for i, p in enumerate(P):
         if s.get("logos"):
             def _lp(x):
                 return ('<span class="lgt">%s</span>' % esc(x["text"])) if x.get("text") else ('<img data-src="%s" alt="">' % esc(x["image"]))
-            body += '<div class="lgw"><span class="lbl">%s</span><ul>%s</ul></div>' % (esc(s.get("logos_label") or ""), "".join('<li><div class="lgm">%s</div><span>%s</span></li>' % ('<i>×</i>'.join(_lp(x) for x in it["parts"]), esc(it["name"])) for it in s["logos"]))
+            body += '<div class="lgw"><span class="lbl">%s</span><ul>%s</ul></div>' % (esc(s.get("logos_label") or ""), "".join('<li%s><div class="lgm">%s</div><span>%s</span></li>' % (' class="w2"' if len(it["parts"])>2 else '', '<i>×</i>'.join(_lp(x) for x in it["parts"]), esc(it["name"])) for it in s["logos"]))
         if s.get("chips"):
             body += '<div class="chips"><span class="lbl">%s</span><ul>%s</ul></div>' % (esc(s.get("chips_label") or ""), "".join("<li>%s</li>" % esc(c) for c in s["chips"]))
         body += fest_block(s) + reels_block(s) + photos_block(s) + insta_block(s) + ig_grid(s) + press_teaser(s, p) + site_teaser(s)

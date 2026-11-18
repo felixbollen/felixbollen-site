@@ -1,239 +1,298 @@
 {
-  "order": 2,
-  "slug": "german-kraft-mayfair",
-  "name": "Mayfair",
-  "kind": "Brewery in a church",
-  "city": "London",
-  "years": "2019",
-  "role": "Director & creative lead",
-  "disciplines": [
-    "Art Direction",
-    "Graphic Design",
-    "Marketing & Sales"
-  ],
-  "logo": "my",
-  "background": "#16110d",
-  "text_colour": "#f3e6c8",
-  "tile": "#241b14",
-  "card": "#16110d",
-  "intro": "The first brewery in Mayfair, inside St Mark's on North Audley Street, with a brewhouse in the crypt and an altar bar made from our own broken pint glasses.",
-  "credit": "",
-  "hero": {
-    "type": "image",
-    "image": "/a/my-story-08.webp"
+ "order": 2,
+ "slug": "german-kraft-mayfair",
+ "name": "Mayfair",
+ "kind": "Brewery in a church",
+ "city": "London",
+ "years": "2019",
+ "role": "Director & creative lead",
+ "disciplines": [
+  "Art Direction",
+  "Graphic Design",
+  "Marketing & Sales"
+ ],
+ "logo": "my",
+ "background": "#16110d",
+ "text_colour": "#f3e6c8",
+ "tile": "#241b14",
+ "card": "#16110d",
+ "intro": "The first brewery in Mayfair, inside St Mark's Church near Oxford Street, with a brewhouse in the crypt and two bars on the altar, made by hand, by us, from our own broken pint glasses.",
+ "credit": "",
+ "hero": {
+  "type": "image",
+  "image": "/a/my-story-08.webp"
+ },
+ "bricks_heading": "The glass bricks",
+ "bricks_counter": 1000,
+ "bricks": [
+  {
+   "image": "/a/my-story-01.webp",
+   "text": "Every broken pint glass from our Elephant & Castle taproom went into a bucket instead of the bin."
   },
-  "bricks_heading": "The glass bricks",
-  "bricks_counter": 1000,
-  "bricks": [
+  {
+   "image": "/a/my-story-02.webp",
+   "text": "Hundreds of glasses, still with the KRAFT logo on."
+  },
+  {
+   "image": "/a/my-story-03.webp",
+   "text": "Melted down at 1,200 °C in a glass furnace."
+  },
+  {
+   "image": "/a/my-story-04.webp",
+   "text": "Poured by hand into a steel mould, one brick at a time."
+  },
+  {
+   "image": "/a/my-story-05.webp",
+   "text": "Coloured with pigment to the shade of our beers."
+  },
+  {
+   "image": "/a/my-story-06.webp",
+   "text": "Annealed and cooled slowly so they don't crack."
+  },
+  {
+   "image": "/a/my-story-07.webp",
+   "text": "Every brick unique: bubbles, swirls, beer colours."
+  },
+  {
+   "image": "/a/my-story-08.webp",
+   "text": "1,000+ bricks, made by us over four months."
+  },
+  {
+   "image": "/a/my-story-09.webp",
+   "text": "Stacked and lit from behind: the altar bar."
+  },
+  {
+   "image": "/a/my-story-10.webp",
+   "text": "At the altar of St Mark's, Mayfair."
+  }
+ ],
+ "sections": [
+  {
+   "type": "Branding",
+   "text": "Stoneware mugs, glassware and signage for a listed church, carrying the German Kraft mark.",
+   "stats": [],
+   "videos": [],
+   "images": [
     {
-      "image": "/a/my-story-01.webp",
-      "text": "Every broken pint glass from our Elephant & Castle taproom went into a bucket instead of the bin."
+     "image": "/a/my-brand-01.webp",
+     "caption": "Stoneware mugs at the altar",
+     "cutout": false
     },
     {
-      "image": "/a/my-story-02.webp",
-      "text": "Hundreds of glasses, still with the KRAFT logo on."
+     "image": "/a/my-brand-02.webp",
+     "caption": "The KRAFT mug",
+     "cutout": false
     },
     {
-      "image": "/a/my-story-03.webp",
-      "text": "Melted down at 1,200 °C in a glass furnace."
+     "image": "/a/my-brand-03.webp",
+     "caption": "Mug on the bar",
+     "cutout": false
     },
     {
-      "image": "/a/my-story-04.webp",
-      "text": "Poured by hand into a steel mould, one brick at a time."
+     "image": "/a/my-brand-04.webp",
+     "caption": "Mug on the brick bar",
+     "cutout": false
     },
     {
-      "image": "/a/my-story-05.webp",
-      "text": "Coloured with pigment to the shade of our beers."
+     "image": "/a/my-brand-05.webp",
+     "caption": "Mug against the glass bricks",
+     "cutout": false
     },
     {
-      "image": "/a/my-story-06.webp",
-      "text": "Annealed and cooled slowly so they don't crack."
+     "image": "/a/my-n12.webp",
+     "caption": "German Kraft mark",
+     "cutout": false
     },
     {
-      "image": "/a/my-story-07.webp",
-      "text": "Every brick unique: bubbles, swirls, beer colours."
+     "image": "/a/my-n16.webp",
+     "caption": "\"Thou shall not steal mugs!\" poster",
+     "cutout": false
     },
     {
-      "image": "/a/my-story-08.webp",
-      "text": "1,000+ bricks, made by us over four months."
+     "image": "/a/my-n17.webp",
+     "caption": "Mercato Mayfair pale ale label",
+     "cutout": false
     },
     {
-      "image": "/a/my-story-09.webp",
-      "text": "Stacked and lit from behind: the altar bar."
+     "image": "/a/my-okt.webp",
+     "caption": "Mayfair Oktoberfest poster",
+     "cutout": false
     },
     {
-      "image": "/a/my-story-10.webp",
-      "text": "At the altar of St Mark's, Mayfair."
+     "image": "/a/my-n02.webp",
+     "caption": "Kraft Bar sign",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-n03.webp",
+     "caption": "Kraft Bar lightbox",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-n04.webp",
+     "caption": "The KRAFT mug",
+     "cutout": false
     }
-  ],
-  "sections": [
+   ],
+   "deck": []
+  },
+  {
+   "type": "Conceptualisation",
+   "text": "A 250 L brewhouse lowered into the crypt, a bar under the stained glass and the crypt fitted out for 100 guests.",
+   "stats": [],
+   "videos": [],
+   "images": [
     {
-      "type": "Branding",
-      "text": "Stoneware mugs, glassware and signage for a listed church, carrying the German Kraft mark.",
-      "stats": [],
-      "videos": [],
-      "images": [
-        {
-          "image": "/a/my-brand-01.webp",
-          "caption": "Stoneware mugs at the altar",
-          "cutout": false
-        },
-        {
-          "image": "/a/my-brand-02.webp",
-          "caption": "The KRAFT mug",
-          "cutout": false
-        },
-        {
-          "image": "/a/my-brand-03.webp",
-          "caption": "Mug on the bar",
-          "cutout": false
-        },
-        {
-          "image": "/a/my-brand-04.webp",
-          "caption": "Mug on the brick bar",
-          "cutout": false
-        },
-        {
-          "image": "/a/my-brand-05.webp",
-          "caption": "Mug against the glass bricks",
-          "cutout": false
-        }
-      ],
-      "deck": []
+     "image": "/a/my-concept-01.webp",
+     "caption": "Section through the church",
+     "cutout": false
     },
     {
-      "type": "Marketing",
-      "text": "Opening campaign, menus for the bar and crypt, and social content.",
-      "stats": [
-        {
-          "figure": "£1m",
-          "label": "annual turnover"
-        },
-        {
-          "figure": "600",
-          "label": "capacity: 500 on the main level, 100 in the crypt"
-        }
-      ],
-      "videos": [
-        {
-          "video": "/v/my-comp.mp4",
-          "poster": "/v/my-comp.jpg",
-          "caption": "'German Kraft is on' social ad"
-        }
-      ],
-      "images": [
-        {
-          "image": "/a/my-mkt-01.webp",
-          "caption": "Opening night",
-          "cutout": false
-        },
-        {
-          "image": "/a/my-mkt-02.webp",
-          "caption": "At the bar",
-          "cutout": false
-        }
-      ],
-      "deck": []
+     "image": "/a/my-deck-01.webp",
+     "caption": "German Kraft Projects deck: Mayfair",
+     "cutout": false
     },
     {
-      "type": "P.R.",
-      "text": "I wrote the press release and pitched the story: a brewery in a church crypt and an altar bar made of recycled glass.",
-      "stats": [
-        {
-          "figure": "1st",
-          "label": "brewery ever in Mayfair"
-        },
-        {
-          "figure": "1,000+",
-          "label": "handmade glass bricks: the image that sold the story"
-        }
-      ],
-      "videos": [],
-      "images": [],
-      "deck": []
+     "image": "/a/my-deck-02.webp",
+     "caption": "A full church",
+     "cutout": false
     },
     {
-      "type": "Conceptualisation",
-      "text": "A 250 L brewhouse lowered into the crypt, a bar under the stained glass and the crypt fitted out for 100 guests.",
-      "stats": [],
-      "videos": [],
-      "images": [
-        {
-          "image": "/a/my-concept-01.webp",
-          "caption": "Section through the church",
-          "cutout": false
-        },
-        {
-          "image": "/a/my-concept-02.webp",
-          "caption": "North Audley Street",
-          "cutout": false
-        },
-        {
-          "image": "/a/my-concept-03.webp",
-          "caption": "Into the crypt",
-          "cutout": false
-        },
-        {
-          "image": "/a/my-concept-04.webp",
-          "caption": "The brewhouse in the crypt",
-          "cutout": false
-        },
-        {
-          "image": "/a/my-concept-05.webp",
-          "caption": "KRAFT BAR under the windows",
-          "cutout": false
-        },
-        {
-          "image": "/a/my-concept-06.webp",
-          "caption": "The crypt, full",
-          "cutout": false
-        }
-      ],
-      "deck": []
+     "image": "/a/my-deck-03.webp",
+     "caption": "Glass bricks from broken pint glasses",
+     "cutout": false
     },
     {
-      "type": "Photography & videography",
-      "text": "Photography in the church and crypt.",
-      "stats": [],
-      "videos": [],
-      "images": [
-        {
-          "image": "/a/my-photo-01.webp",
-          "caption": "The stein pour",
-          "cutout": false
-        },
-        {
-          "image": "/a/my-photo-02.webp",
-          "caption": "At the altar",
-          "cutout": false
-        },
-        {
-          "image": "/a/my-photo-03.webp",
-          "caption": "Stained glass",
-          "cutout": false
-        },
-        {
-          "image": "/a/my-photo-04.webp",
-          "caption": "Cheers under the windows",
-          "cutout": false
-        },
-        {
-          "image": "/a/my-photo-05.webp",
-          "caption": "Brew day",
-          "cutout": false
-        },
-        {
-          "image": "/a/my-photo-06.webp",
-          "caption": "Food and beer",
-          "cutout": false
-        },
-        {
-          "image": "/a/my-photo-07.webp",
-          "caption": "The tower",
-          "cutout": false
-        }
-      ],
-      "deck": []
+     "image": "/a/my-deck-04.webp",
+     "caption": "The crypt",
+     "cutout": false
     }
-  ]
+   ],
+   "deck": []
+  },
+  {
+   "type": "Photography",
+   "text": "Photography in the church and crypt.",
+   "stats": [],
+   "videos": [],
+   "images": [
+    {
+     "image": "/a/my-photo-01.webp",
+     "caption": "The stein pour",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-photo-02.webp",
+     "caption": "At the altar",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-photo-03.webp",
+     "caption": "Stained glass",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-photo-04.webp",
+     "caption": "Cheers under the windows",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-photo-05.webp",
+     "caption": "Brew day",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-photo-06.webp",
+     "caption": "Food and beer",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-photo-07.webp",
+     "caption": "The tower",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-concept-02.webp",
+     "caption": "North Audley Street",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-concept-03.webp",
+     "caption": "Into the crypt",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-concept-04.webp",
+     "caption": "The brewhouse in the crypt",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-concept-05.webp",
+     "caption": "KRAFT BAR under the windows",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-concept-06.webp",
+     "caption": "The crypt, full",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-n01.webp",
+     "caption": "The altar",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-n05.webp",
+     "caption": "Brewhouse in the crypt",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-n06.webp",
+     "caption": "Negroni",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-n07.webp",
+     "caption": "Clover Club",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-n08.webp",
+     "caption": "Elderflower tonic",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-n09.webp",
+     "caption": "Filling a Maß",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-n10.webp",
+     "caption": "Heidi lager",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-n11.webp",
+     "caption": "Herbert pale ale",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-n13.webp",
+     "caption": "Mixology",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-n14.webp",
+     "caption": "Behind the bar",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-n15.webp",
+     "caption": "North Audley Street entrance",
+     "cutout": false
+    }
+   ],
+   "deck": []
+  }
+ ]
 }

@@ -724,10 +724,13 @@ dialog button{margin-top:8px;border:1px solid #0b0b0b;padding:8px 16px;border-ra
 .lgw li{background:var(--bg);display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:30px 14px 18px;text-align:center}
 .lgm{display:flex;align-items:center;justify-content:center;gap:10px;height:44px}
 .lgm img{height:34px;width:auto;max-width:120px;object-fit:contain}
+.lgw li.w2{grid-column:span 2}
+.lgw li.w2 .lgm{gap:16px}
+.lgw li.w2 .lgm img{height:30px}
 .lgm i{font-style:normal;opacity:.6;font-size:14px}
 .lgm .lgt{font-weight:800;font-size:15px;letter-spacing:.02em;text-transform:uppercase;line-height:1.1;color:#fff}
 .lgw li>span{font-size:11px;letter-spacing:.08em;text-transform:uppercase;opacity:.7}
-@media(max-width:560px){.lgw ul{grid-template-columns:1fr 1fr}.lgm img{height:26px;max-width:84px}}
+@media(max-width:560px){.lgw ul{grid-template-columns:1fr 1fr}.lgm img{height:26px;max-width:84px}.lgw li.w2 .lgm img{height:22px;max-width:70px}}
 .hd.ov.lt{color:var(--bg)}.hd.ov.lt.sol{color:var(--fg)}
 .lgw ul{background:none;border:0;gap:0;border-top:1px solid rgba(255,255,255,.25);border-left:1px solid rgba(255,255,255,.25)}
 .lgw li{border-right:1px solid rgba(255,255,255,.25);border-bottom:1px solid rgba(255,255,255,.25);background:none}

@@ -733,3 +733,15 @@ dialog button{margin-top:8px;border:1px solid #0b0b0b;padding:8px 16px;border-ra
 .lgw li{border-right:1px solid rgba(255,255,255,.25);border-bottom:1px solid rgba(255,255,255,.25);background:none}
 .lgm img[data-src*="staatsballett"],.lgm img[src*="staatsballett"]{height:44px;max-width:150px}
 .hd.lt:not(.sol){color:var(--bg)}
+/* hero disciplines accordion */
+.hero ul.dsc>li{display:block;padding:0}
+.dsc details>summary{list-style:none;display:flex;justify-content:space-between;align-items:center;padding:12px 0;cursor:pointer;font-size:14px}
+.dsc details>summary::-webkit-details-marker{display:none}
+.dsc summary span{color:var(--mute);display:flex;align-items:center;gap:12px}
+.dsc summary span::after{content:"+";font-size:16px;line-height:1;color:var(--fg);transition:transform .3s var(--ease)}
+.dsc details[open] summary span::after{transform:rotate(45deg)}
+.dsc .dd{padding:2px 0 16px}
+.dsc .dd p{font-size:14px;line-height:1.5;margin-bottom:10px;color:#333}
+.dsc .dd ul{list-style:none;margin:0;border:0;display:flex;flex-wrap:wrap;gap:6px}
+.dsc .dd li{display:block;border:1px solid var(--ln);border-radius:99px;padding:5px 11px;font-size:12px}
+@media(max-width:860px){.vc .lg{height:34%;transform:translateY(-14%)}.vc .meta{bottom:14px}}

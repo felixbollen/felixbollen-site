@@ -132,6 +132,16 @@
      "image": "/a/my-n04.webp",
      "caption": "The KRAFT mug",
      "cutout": false
+    },
+    {
+     "image": "/a/my-n09.webp",
+     "caption": "Filling a Maß",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-n11.webp",
+     "caption": "Herbert pale ale",
+     "cutout": false
     }
    ],
    "deck": []
@@ -148,7 +158,19 @@
      "cutout": false
     }
    ],
-   "deck": []
+   "deck": [
+    {
+     "image": "/a/my-craft-01.webp",
+     "caption": "Scherben bringen Glück, pages 1–2",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-craft-02.webp",
+     "caption": "Scherben bringen Glück, pages 3–4",
+     "cutout": false
+    }
+   ],
+   "deck_title": "Meininger's CRAFT: Scherben bringen Glück"
   },
   {
    "type": "Photography",
@@ -242,18 +264,8 @@
      "cutout": false
     },
     {
-     "image": "/a/my-n09.webp",
-     "caption": "Filling a Maß",
-     "cutout": false
-    },
-    {
      "image": "/a/my-n10.webp",
      "caption": "Heidi lager",
-     "cutout": false
-    },
-    {
-     "image": "/a/my-n11.webp",
-     "caption": "Herbert pale ale",
      "cutout": false
     },
     {

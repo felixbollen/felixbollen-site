@@ -1,492 +1,475 @@
 {
-  "name": "Dufte",
-  "kind": "Culinary & cultural house",
-  "city": "Berlin",
-  "years": "2025–2026",
-  "role": "Managing Director",
-  "disciplines": [
-    "Management",
-    "Marketing & Sales",
-    "Concept",
-    "Partnerships"
-  ],
-  "intro": "A 1,000 m² culinary house of culture on the ground floor of the Kant-Garagenpalast, Charlottenburg: Europe's oldest surviving high-rise garage, built in 1930 in the Neue Sachlichkeit style and listed for its double-helix ramp. Four kitchens, a bakery and café, two bars, a gallery and a 300 m² south-facing beer garden under one roof, with a Berlin club-grade LED ceiling and eight audio zones, right on the S-Bahn tracks. Opened May 2026.",
-  "credit": "Logo and brand identity by Plusminus Studio. Conceptualisation, vendor contracts, implementation of branding to marketing, sales and day-to-day running, I led as Managing Director.",
-  "hero": {
-    "type": "lottie",
-    "animation": "/js/dufte-emblem.json",
-    "light": true
-  },
-  "sections": [
+ "name": "Dufte",
+ "kind": "Culinary & cultural house",
+ "city": "Berlin",
+ "years": "2025–2026",
+ "role": "Managing Director",
+ "disciplines": [
+  "Management",
+  "Marketing & Sales",
+  "Concept",
+  "Partnerships"
+ ],
+ "intro": "A 1,000 m² culinary house of culture on the ground floor of the Kant-Garagenpalast, Charlottenburg: Europe's oldest surviving high-rise garage, built in 1930 in the Neue Sachlichkeit style and listed for its double-helix ramp. Four kitchens, a bakery and café, two bars, a gallery and a 300 m² south-facing beer garden under one roof, with a Berlin club-grade LED ceiling and eight audio zones, right on the S-Bahn tracks. Opened May 2026.",
+ "credit": "Logo and brand identity by Plusminus Studio. Conceptualisation, vendor contracts, implementation of branding to marketing, sales and day-to-day running, I led as Managing Director.",
+ "hero": {
+  "type": "lottie",
+  "animation": "/js/dufte-emblem.json",
+  "light": true
+ },
+ "sections": [
+  {
+   "type": "management",
+   "title": "My role",
+   "text": "As Geschäftsführer of Dufte Kraft GmbH, my businesspartner Timo Scholz and I took Dufte from an empty garage floor to a venue with 450 guests on a busy night. What we are in charge of:",
+   "stats": [
     {
-      "type": "management",
-      "title": "My role",
-      "text": "As Geschäftsführer of Dufte Kraft GmbH, my businesspartner Timo Scholz and I took Dufte from an empty garage floor to a venue with 450 guests on a busy night. What we are in charge of:",
-      "stats": [
-        {
-          "figure": "1,000 m²",
-          "label": "indoor space, plus a 300 m² beer garden"
-        },
-        {
-          "figure": "10",
-          "label": "areas: 4 kitchens, bakery & café, 2 bars, gallery, beer garden"
-        },
-        {
-          "figure": "4.9★",
-          "label": "on Google"
-        },
-        {
-          "figure": "17",
-          "label": "brands and organisers hosted for B2B events so far"
-        }
-      ],
-      "points": [
-        {
-          "title": "Concept & business plan",
-          "text": "The 'culinary house of culture' idea: A foodmarket combining local Berlin culture with internationally proven business concept. No consumption minimum, art, music and events every week. Open for big group bookings & corporate events."
-        },
-        {
-          "title": "Vendor acquisition & leasing",
-          "text": "Creation of the food vendor package, signing the five concepts (Mani in Pasta, Abuya, The Curried Cactus, Tacho, Domberger Brot-Werk) and negotiating the subleases."
-        },
-        {
-          "title": "Build-out & opening",
-          "text": "Facade signage, furniture, floor plan and putting together the team for the opening itself in May 2026."
-        },
-        {
-          "title": "Operations & systems",
-          "text": "Lightspeed POS and cash rules for all tenants, opening hours, staffing set-up and revenue reporting across the vendors."
-        },
-        {
-          "title": "Marketing & communication",
-          "text": "Pre-opening teasers, Open House events, Instagram launch, marketing campaigns, newsletter, website brief for dufteberlin.com and the press that followed."
-        },
-        {
-          "title": "Weekly programme",
-          "text": "Formats like Kaffee Happy Hour, Tankrabatt Donnerstag, Freibier Freitag, Die Berliner Auster, Bingo, Kneipenquiz and comedy nights."
-        },
-        {
-          "title": "B2B events & sales",
-          "text": "Event deck and sales for brand events, together with the 1,500 m² event loft on the 5th floor. Booked by Google, Hermès, Adidas × Zalando, Lululemon and more."
-        },
-        {
-          "title": "Investors & partners",
-          "text": "Investor deck, landlord relations and the partnership with Better Life, who run organise B2B partners."
-        }
-      ],
-      "images": [],
-      "videos": []
+     "figure": "1,000 m²",
+     "label": "indoor space, plus a 300 m² beer garden"
     },
     {
-      "plan": "/a/du-floorplan.svg",
-      "text": "Logo, emblem and identity by Plusminus Studio. I carried it into everything guests touch, and ran the communication around it: pre-opening teasers, Open House events, the opening campaign, Instagram and the newsletter.",
-      "instagram": "dufte_berlin",
-      "title": "Brand & communication",
-      "images": [
-        {
-          "image": "/a/du-p-opening.webp",
-          "caption": "Opening poster",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-p-kaffee.webp",
-          "caption": "Dauerbrenner poster: Kaffee Flatrate, 50 × 40",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-p-tankrabatt.webp",
-          "caption": "Dauerbrenner poster: Tankrabatt Donnerstag, 50 × 40",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-p-freibier.webp",
-          "caption": "Dauerbrenner poster: Frischbier Freitag, 50 × 40",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-p-auster.webp",
-          "caption": "Dauerbrenner poster: Die Berliner Auster, 50 × 40",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-menu3-cafe-1.webp",
-          "caption": "Café Dufte menu, outside",
-          "cutout": false,
-          "bare": true
-        },
-        {
-          "image": "/a/du-menu3-cafe-2.webp",
-          "caption": "Café Dufte menu, inside",
-          "cutout": false,
-          "bare": true
-        },
-        {
-          "image": "/a/du-menu3-ws-1.webp",
-          "caption": "Sprit Tanken menu, outside",
-          "cutout": false,
-          "bare": true
-        },
-        {
-          "image": "/a/du-menu3-ws-2.webp",
-          "caption": "Sprit Tanken menu, inside",
-          "cutout": false,
-          "bare": true
-        },
-        {
-          "image": "/a/du-menu3-ws-3.webp",
-          "caption": "Wein & Sprit menu, outside",
-          "cutout": false,
-          "bare": true
-        },
-        {
-          "image": "/a/du-menu3-ws-4.webp",
-          "caption": "Wein & Sprit menu, inside",
-          "cutout": false,
-          "bare": true
-        },
-        {
-          "image": "/a/du-glass.webp",
-          "caption": "Glass design, Sahm Willi Becher 0.4 l",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-glass-1.webp",
-          "caption": "The Dufte glass",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-glass-2.webp",
-          "caption": "Fresh pint at the window",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-cans.webp",
-          "caption": "Heidi Helles cans",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-can-2.webp",
-          "caption": "Helles can",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-bottle-helles.webp",
-          "caption": "Helles AF bottle",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-bottle-weizen.webp",
-          "caption": "Weizen AF bottle",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-coffee.webp",
-          "caption": "Coffee packaging",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-knives.webp",
-          "caption": "Engraved cutlery",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-forks.webp",
-          "caption": "Engraved cutlery",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-keyring.webp",
-          "caption": "Keyring",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-jackets.webp",
-          "caption": "Staff jackets",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-jacket-beer.webp",
-          "caption": "Staff jacket",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-jacket-back.webp",
-          "caption": "Staff jacket, back",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-sign.webp",
-          "caption": "Emblem sign",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-emblem.webp",
-          "caption": "Emblem sculpture inside",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-building.webp",
-          "caption": "Kant-Garagenpalast with the emblem",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-facade.webp",
-          "caption": "The facade",
-          "cutout": false
-        },
-        {
-          "image": "/a/du-ph-facade-car.webp",
-          "caption": "Window lettering, Kantstraße",
-          "cutout": false
-        }
-      ],
-      "videos": [],
-      "gal_after_plan": true,
-      "type": "brand",
-      "plan_label": "Floor plan",
-      "stats": [
-        {
-          "figure": "334",
-          "label": "clean newsletter contacts at launch"
-        },
-        {
-          "figure": "4",
-          "label": "weekly regulars, from Kaffee Happy Hour to Freibier Freitag"
-        },
-        {
-          "figure": "4.9★",
-          "label": "Google rating"
-        }
-      ]
+     "figure": "10",
+     "label": "areas: 4 kitchens, bakery & café, 2 bars, gallery, beer garden"
     },
     {
-      "type": "events",
-      "title": "Events & partners",
-      "text": "Dufte and the 1,500 m² event loft on the 5th floor are sold together as one venue for brand events, launches and shoots. Within the first months 17 brands and organisers booked it.",
-      "stats": [
-        {
-          "figure": "17",
-          "label": "brands and organisers hosted"
-        },
-        {
-          "figure": "1,500 m²",
-          "label": "event loft on the 5th floor, run with Better Life"
-        },
-        {
-          "figure": "4.9★",
-          "label": "on Google"
-        }
-      ],
-      "images": [],
-      "videos": [],
-      "logos": [
-        {
-          "name": "Google",
-          "parts": [
-            {
-              "image": "/a/du-logos/google.svg"
-            }
-          ]
-        },
-        {
-          "name": "Hermès",
-          "parts": [
-            {
-              "image": "/a/du-logos/hermes.svg"
-            }
-          ]
-        },
-        {
-          "name": "Adidas × Zalando",
-          "parts": [
-            {
-              "image": "/a/du-logos/adidas.svg"
-            },
-            {
-              "image": "/a/du-logos/zalando.svg"
-            }
-          ]
-        },
-        {
-          "name": "Lululemon",
-          "parts": [
-            {
-              "image": "/a/du-logos/lululemon.png"
-            }
-          ]
-        },
-        {
-          "name": "Design Hotels × Amex",
-          "parts": [
-            {
-              "image": "/a/du-logos/designhotels.svg"
-            },
-            {
-              "image": "/a/du-logos/americanexpress.svg"
-            }
-          ]
-        },
-        {
-          "name": "Longchamp",
-          "parts": [
-            {
-              "image": "/a/du-logos/longchamp.svg"
-            }
-          ]
-        },
-        {
-          "name": "Avène × Lena Gercke",
-          "parts": [
-            {
-              "text": "Avène"
-            },
-            {
-              "text": "Lena Gercke"
-            }
-          ]
-        },
-        {
-          "name": "Instagram × Amazon",
-          "parts": [
-            {
-              "image": "/a/du-logos/instagram.svg"
-            },
-            {
-              "image": "/a/du-logos/amazon.svg"
-            }
-          ]
-        },
-        {
-          "name": "Škoda",
-          "parts": [
-            {
-              "image": "/a/du-logos/skoda.svg"
-            }
-          ]
-        },
-        {
-          "name": "Honda",
-          "parts": [
-            {
-              "image": "/a/du-logos/honda.svg"
-            }
-          ]
-        },
-        {
-          "name": "Bosch-Siemens at IFA",
-          "parts": [
-            {
-              "image": "/a/du-logos/bosch.svg"
-            },
-            {
-              "image": "/a/du-logos/siemens.svg"
-            },
-            {
-              "image": "/a/du-logos/ifa.svg"
-            }
-          ]
-        },
-        {
-          "name": "Berlin Fashion Week",
-          "parts": [
-            {
-              "text": "Berlin Fashion Week"
-            }
-          ]
-        },
-        {
-          "name": "Staatsballett Berlin",
-          "parts": [
-            {
-              "image": "/a/du-logos/staatsballett.svg"
-            }
-          ]
-        }
-      ],
-      "logos_label": "Booked by"
+     "figure": "4.9★",
+     "label": "on Google"
     },
     {
-      "type": "Photography & videography",
-      "title": "Dufte in pictures",
-      "text": "Opening night, the vendors and full houses.",
-      "photos_title": "Dufte in pictures",
-      "photos": [
-        {
-          "image": "/a/du-ph-18.webp",
-          "caption": "",
-          "w": 1920,
-          "h": 2560
-        },
-        {
-          "image": "/a/du-ph-07.webp",
-          "caption": "",
-          "w": 1920,
-          "h": 2560
-        },
-        {
-          "image": "/a/du-ph-01.webp",
-          "w": 1800,
-          "h": 1013,
-          "caption": ""
-        },
-        {
-          "image": "/a/du-ph-05.webp",
-          "w": 1800,
-          "h": 1200,
-          "caption": ""
-        },
-        {
-          "image": "/a/du-ph-06.webp",
-          "w": 933,
-          "h": 1400,
-          "caption": ""
-        },
-        {
-          "image": "/a/du-ph-10.webp",
-          "w": 933,
-          "h": 1400,
-          "caption": ""
-        },
-        {
-          "image": "/a/du-ph-11.webp",
-          "w": 1000,
-          "h": 667,
-          "caption": ""
-        },
-        {
-          "image": "/a/du-ph-13.webp",
-          "w": 1800,
-          "h": 1200,
-          "caption": ""
-        },
-        {
-          "image": "/a/du-ph-17.webp",
-          "w": 1800,
-          "h": 1201,
-          "caption": ""
-        },
-        {
-          "image": "/a/du-ph-19.webp",
-          "w": 1800,
-          "h": 1200,
-          "caption": ""
-        },
-        {
-          "image": "/a/du-ph-22.webp",
-          "w": 1800,
-          "h": 1201,
-          "caption": ""
-        }
-      ],
-      "images": [],
-      "videos": []
+     "figure": "17",
+     "label": "brands and organisers hosted for B2B events so far"
     }
-  ],
-  "order": 5,
-  "background": "#3479e1",
-  "text_colour": "#ffffff",
-  "card": "#3479e1",
-  "slug": "dufte-berlin",
-  "logo": "du",
-  "tile": "#ffffff"
+   ],
+   "points": [
+    {
+     "title": "Concept & business plan",
+     "text": "The 'culinary house of culture' idea: A foodmarket combining local Berlin culture with internationally proven business concept. No consumption minimum, art, music and events every week. Open for big group bookings & corporate events."
+    },
+    {
+     "title": "Vendor acquisition & leasing",
+     "text": "Creation of the food vendor package, signing the five concepts (Mani in Pasta, Abuya, The Curried Cactus, Tacho, Domberger Brot-Werk) and negotiating the subleases."
+    },
+    {
+     "title": "Build-out & opening",
+     "text": "Facade signage, furniture, floor plan and putting together the team for the opening itself in May 2026."
+    },
+    {
+     "title": "Operations & systems",
+     "text": "Lightspeed POS and cash rules for all tenants, opening hours, staffing set-up and revenue reporting across the vendors."
+    },
+    {
+     "title": "Marketing & communication",
+     "text": "Pre-opening teasers, Open House events, Instagram launch, marketing campaigns, newsletter, website brief for dufteberlin.com and the press that followed."
+    },
+    {
+     "title": "Weekly programme",
+     "text": "Formats like Kaffee Happy Hour, Tankrabatt Donnerstag, Freibier Freitag, Die Berliner Auster, Bingo, Kneipenquiz and comedy nights."
+    },
+    {
+     "title": "B2B events & sales",
+     "text": "Event deck and sales for brand events, together with the 1,500 m² event loft on the 5th floor. Booked by Google, Hermès, Adidas × Zalando, Lululemon and more."
+    },
+    {
+     "title": "Investors & partners",
+     "text": "Investor deck, landlord relations and the partnership with Better Life, who run organise B2B partners."
+    }
+   ],
+   "images": [],
+   "videos": []
+  },
+  {
+   "plan": "/a/du-floorplan.svg",
+   "text": "Logo, emblem and identity by Plusminus Studio. I carried it into everything guests touch, and ran the communication around it: pre-opening teasers, Open House events, the opening campaign, Instagram and the newsletter.",
+   "instagram": "dufte_berlin",
+   "title": "Brand & communication",
+   "images": [
+    {
+     "image": "/a/du-p-opening.webp",
+     "caption": "Opening poster",
+     "cutout": false
+    },
+    {
+     "image": "/a/du-p-kaffee.webp",
+     "caption": "Dauerbrenner poster: Kaffee Flatrate, 50 × 40",
+     "cutout": false
+    },
+    {
+     "image": "/a/du-p-tankrabatt.webp",
+     "caption": "Dauerbrenner poster: Tankrabatt Donnerstag, 50 × 40",
+     "cutout": false
+    },
+    {
+     "image": "/a/du-p-freibier.webp",
+     "caption": "Dauerbrenner poster: Frischbier Freitag, 50 × 40",
+     "cutout": false
+    },
+    {
+     "image": "/a/du-p-auster.webp",
+     "caption": "Dauerbrenner poster: Die Berliner Auster, 50 × 40",
+     "cutout": false
+    },
+    {
+     "image": "/a/du-menu3-cafe-1.webp",
+     "caption": "Café Dufte menu, outside",
+     "cutout": false,
+     "bare": true
+    },
+    {
+     "image": "/a/du-menu3-cafe-2.webp",
+     "caption": "Café Dufte menu, inside",
+     "cutout": false,
+     "bare": true
+    },
+    {
+     "image": "/a/du-menu3-ws-1.webp",
+     "caption": "Sprit Tanken menu, outside",
+     "cutout": false,
+     "bare": true
+    },
+    {
+     "image": "/a/du-menu3-ws-2.webp",
+     "caption": "Sprit Tanken menu, inside",
+     "cutout": false,
+     "bare": true
+    },
+    {
+     "image": "/a/du-menu3-ws-3.webp",
+     "caption": "Wein & Sprit menu, outside",
+     "cutout": false,
+     "bare": true
+    },
+    {
+     "image": "/a/du-menu3-ws-4.webp",
+     "caption": "Wein & Sprit menu, inside",
+     "cutout": false,
+     "bare": true
+    },
+    {
+     "image": "/a/du-glass.webp",
+     "caption": "Glass design, Sahm Willi Becher 0.4 l",
+     "cutout": false
+    },
+    {
+     "image": "/a/du-ph-glass-1.webp",
+     "caption": "The Dufte glass",
+     "cutout": false
+    },
+    {
+     "image": "/a/du-ph-glass-2.webp",
+     "caption": "Fresh pint at the window",
+     "cutout": false
+    },
+    {
+     "image": "/a/du-ph-cans.webp",
+     "caption": "Heidi Helles cans",
+     "cutout": false
+    },
+    {
+     "image": "/a/du-ph-can-2.webp",
+     "caption": "Helles can",
+     "cutout": false
+    },
+    {
+     "image": "/a/du-ph-bottle-helles.webp",
+     "caption": "Helles AF bottle",
+     "cutout": false
+    },
+    {
+     "image": "/a/du-ph-bottle-weizen.webp",
+     "caption": "Weizen AF bottle",
+     "cutout": false
+    },
+    {
+     "image": "/a/du-ph-coffee.webp",
+     "caption": "Coffee packaging",
+     "cutout": false
+    },
+    {
+     "image": "/a/du-ph-knives.webp",
+     "caption": "Engraved cutlery",
+     "cutout": false
+    },
+    {
+     "image": "/a/du-ph-forks.webp",
+     "caption": "Engraved cutlery",
+     "cutout": false
+    },
+    {
+     "image": "/a/du-ph-keyring.webp",
+     "caption": "Keyring",
+     "cutout": false
+    },
+    {
+     "image": "/a/du-ph-jackets.webp",
+     "caption": "Staff jackets",
+     "cutout": false
+    },
+    {
+     "image": "/a/du-ph-jacket-beer.webp",
+     "caption": "Staff jacket",
+     "cutout": false
+    },
+    {
+     "image": "/a/du-ph-jacket-back.webp",
+     "caption": "Staff jacket, back",
+     "cutout": false
+    },
+    {
+     "image": "/a/du-ph-sign.webp",
+     "caption": "Emblem sign",
+     "cutout": false
+    },
+    {
+     "image": "/a/du-ph-emblem.webp",
+     "caption": "Emblem sculpture inside",
+     "cutout": false
+    },
+    {
+     "image": "/a/du-ph-building.webp",
+     "caption": "Kant-Garagenpalast with the emblem",
+     "cutout": false
+    },
+    {
+     "image": "/a/du-ph-facade.webp",
+     "caption": "The facade",
+     "cutout": false
+    },
+    {
+     "image": "/a/du-ph-facade-car.webp",
+     "caption": "Window lettering, Kantstraße",
+     "cutout": false
+    }
+   ],
+   "videos": [],
+   "gal_after_plan": true,
+   "type": "brand",
+   "plan_label": "Floor plan",
+   "stats": []
+  },
+  {
+   "type": "events",
+   "title": "Events & partners",
+   "text": "Dufte and the 1,500 m² event loft on the 5th floor are sold together as one venue for brand events, launches and shoots. Within the first months 17 brands and organisers booked it.",
+   "stats": [
+    {
+     "figure": "17",
+     "label": "brands and organisers hosted"
+    },
+    {
+     "figure": "1,500 m²",
+     "label": "event loft on the 5th floor, run with Better Life"
+    }
+   ],
+   "images": [],
+   "videos": [],
+   "logos": [
+    {
+     "name": "Google",
+     "parts": [
+      {
+       "image": "/a/du-logos/google.svg"
+      }
+     ]
+    },
+    {
+     "name": "Hermès",
+     "parts": [
+      {
+       "image": "/a/du-logos/hermes.svg"
+      }
+     ]
+    },
+    {
+     "name": "Adidas × Zalando",
+     "parts": [
+      {
+       "image": "/a/du-logos/adidas.svg"
+      },
+      {
+       "image": "/a/du-logos/zalando.svg"
+      }
+     ]
+    },
+    {
+     "name": "Lululemon",
+     "parts": [
+      {
+       "image": "/a/du-logos/lululemon.png"
+      }
+     ]
+    },
+    {
+     "name": "Design Hotels × Amex",
+     "parts": [
+      {
+       "image": "/a/du-logos/designhotels.svg"
+      },
+      {
+       "image": "/a/du-logos/americanexpress.svg"
+      }
+     ]
+    },
+    {
+     "name": "Longchamp",
+     "parts": [
+      {
+       "image": "/a/du-logos/longchamp.svg"
+      }
+     ]
+    },
+    {
+     "name": "Avène × Lena Gercke",
+     "parts": [
+      {
+       "text": "Avène"
+      },
+      {
+       "text": "Lena Gercke"
+      }
+     ]
+    },
+    {
+     "name": "Instagram × Amazon",
+     "parts": [
+      {
+       "image": "/a/du-logos/instagram.svg"
+      },
+      {
+       "image": "/a/du-logos/amazon.svg"
+      }
+     ]
+    },
+    {
+     "name": "Škoda",
+     "parts": [
+      {
+       "image": "/a/du-logos/skoda.svg"
+      }
+     ]
+    },
+    {
+     "name": "Honda",
+     "parts": [
+      {
+       "image": "/a/du-logos/honda.svg"
+      }
+     ]
+    },
+    {
+     "name": "Bosch-Siemens at IFA",
+     "parts": [
+      {
+       "image": "/a/du-logos/bosch.svg"
+      },
+      {
+       "image": "/a/du-logos/siemens.svg"
+      },
+      {
+       "image": "/a/du-logos/ifa.svg"
+      }
+     ]
+    },
+    {
+     "name": "Berlin Fashion Week",
+     "parts": [
+      {
+       "text": "Berlin Fashion Week"
+      }
+     ]
+    },
+    {
+     "name": "Staatsballett Berlin",
+     "parts": [
+      {
+       "image": "/a/du-logos/staatsballett.svg"
+      }
+     ]
+    }
+   ],
+   "logos_label": "Booked by"
+  },
+  {
+   "type": "Photography & videography",
+   "title": "Dufte in pictures",
+   "text": "Opening night, the vendors and full houses.",
+   "photos_title": "Dufte in pictures",
+   "photos": [
+    {
+     "image": "/a/du-ph-18.webp",
+     "caption": "",
+     "w": 1920,
+     "h": 2560
+    },
+    {
+     "image": "/a/du-ph-07.webp",
+     "caption": "",
+     "w": 1920,
+     "h": 2560
+    },
+    {
+     "image": "/a/du-ph-01.webp",
+     "w": 1800,
+     "h": 1013,
+     "caption": ""
+    },
+    {
+     "image": "/a/du-ph-05.webp",
+     "w": 1800,
+     "h": 1200,
+     "caption": ""
+    },
+    {
+     "image": "/a/du-ph-06.webp",
+     "w": 933,
+     "h": 1400,
+     "caption": ""
+    },
+    {
+     "image": "/a/du-ph-10.webp",
+     "w": 933,
+     "h": 1400,
+     "caption": ""
+    },
+    {
+     "image": "/a/du-ph-11.webp",
+     "w": 1000,
+     "h": 667,
+     "caption": ""
+    },
+    {
+     "image": "/a/du-ph-13.webp",
+     "w": 1800,
+     "h": 1200,
+     "caption": ""
+    },
+    {
+     "image": "/a/du-ph-17.webp",
+     "w": 1800,
+     "h": 1201,
+     "caption": ""
+    },
+    {
+     "image": "/a/du-ph-19.webp",
+     "w": 1800,
+     "h": 1200,
+     "caption": ""
+    },
+    {
+     "image": "/a/du-ph-22.webp",
+     "w": 1800,
+     "h": 1201,
+     "caption": ""
+    }
+   ],
+   "images": [],
+   "videos": []
+  }
+ ],
+ "order": 5,
+ "background": "#3479e1",
+ "text_colour": "#ffffff",
+ "card": "#3479e1",
+ "slug": "dufte-berlin",
+ "logo": "du",
+ "tile": "#ffffff"
 }

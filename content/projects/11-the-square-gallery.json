@@ -1,9 +1,5 @@
 {
-  "order": 10,
-  "template": "case",
-  "slug": "the-square-gallery",
   "name": "The Square Gallery",
-  "card_name": "",
   "kind": "Brand, shopfront & web",
   "city": "London",
   "years": "2016–2018",
@@ -12,10 +8,6 @@
     "Graphic Design",
     "Art Direction"
   ],
-  "logo": "sq",
-  "background": "#ffffff",
-  "text_colour": "#0b0b0b",
-  "card": "#3b3437",
   "intro": "A white-walled contemporary art space on Battersea Square, set up to give emerging artists a stage and to make contemporary art affordable for south-west London. Morgane Wagner founded the gallery and I designed its identity, shopfront and website. It was one of my first 'real life' official applications.",
   "credit": "Photos: The Square Gallery archive.",
   "hero": {
@@ -23,6 +15,8 @@
     "shape": "wide",
     "caption": "Opening night, 12 May 2016: queues outside the slate shopfront, with the fascia mark and window artworks."
   },
+  "sections": [],
+  "card_name": "",
   "facts": [
     {
       "label": "Opened",
@@ -74,7 +68,7 @@
       "label": "03 · Shopfront",
       "heading": "A front that works on the square",
       "text": [
-        "The unit at 9B Battersea Square was painted dark slate grey, with the logo in white on the fascia and the services set in small type on the lower window panes, a calm front that lets the window hang do the selling."
+        "The unit at 9B Battersea Square was painted dark slate grey, with the logo in cream on the fascia and the services set in small type on the lower window panes, a calm front that lets the window hang do the selling."
       ],
       "image": "/a/sq/sq-fascia.webp",
       "caption": "Square icon and SQUARE GALLERY wordmark on the fascia."
@@ -92,7 +86,6 @@
   "apps_label": "Photos",
   "apps_heading": "Opening night and beyond",
   "apps_text": "",
-  "apps_shape": "wide",
   "applications": [
     {
       "image": "/a/sq/sq-front.webp",
@@ -103,6 +96,28 @@
       "caption": "herOiNE: The Future is Pink, first-birthday show, May 2017."
     }
   ],
+  "details": [
+    {
+      "label": "Logo, CI, shopfront, web",
+      "value": "Felix Bollen"
+    },
+    {
+      "label": "Co-founder",
+      "value": "Morgane Wagner"
+    },
+    {
+      "label": "Spatial design",
+      "value": "Anton Borkmann"
+    }
+  ],
+  "template": "case",
+  "order": 10,
+  "background": "#ffffff",
+  "text_colour": "#0b0b0b",
+  "card": "#3b3437",
+  "slug": "the-square-gallery",
+  "logo": "sq",
+  "apps_shape": "wide",
   "lists": [
     {
       "heading": "Programme",
@@ -158,20 +173,5 @@
         }
       ]
     }
-  ],
-  "details": [
-    {
-      "label": "Logo, CI, shopfront, web",
-      "value": "Felix Bollen"
-    },
-    {
-      "label": "Co-founder",
-      "value": "Morgane Wagner"
-    },
-    {
-      "label": "Spatial design",
-      "value": "Anton Borkmann"
-    }
-  ],
-  "sections": []
+  ]
 }

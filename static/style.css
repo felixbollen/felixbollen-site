@@ -49,7 +49,7 @@ img,video{display:block;max-width:100%}
 @keyframes scl{0%{background-position:0 -40%}60%,100%{background-position:0 160%}}
 @keyframes scb{0%,100%{transform:none;opacity:.7}50%{transform:translateY(4px);opacity:1}}
 @media (prefers-reduced-motion:reduce){.scroll,.scroll i{animation:none}}
-@media(max-width:860px){.hero{grid-template-columns:1fr;gap:40px;padding-top:110px}.mark svg{width:min(56vw,300px)}}
+@media(max-width:860px){.hero{grid-template-columns:1fr;gap:40px;padding-top:110px;padding-bottom:8px;min-height:0}.mark svg{width:min(56vw,300px)}}
 
 .sec{padding:16vh var(--pad) 0}
 .sh{display:flex;justify-content:space-between;align-items:baseline;border-bottom:1px solid var(--fg);padding-bottom:14px;margin-bottom:0}
@@ -755,3 +755,18 @@ dialog button{margin-top:8px;border:1px solid #0b0b0b;padding:8px 16px;border-ra
 
 .hero.pin .tx{align-self:start}
 .dsc .dd{overflow:hidden}
+
+.b4m{display:none}
+@media(max-width:760px){
+.b4m{display:block;margin:4px 0 6px}
+.b4m .old{width:auto;margin:6px 4px 0}
+.b4m .old figcaption{font-size:13px;bottom:12px}
+.b4m p{display:flex;align-items:baseline;flex-wrap:wrap;gap:4px 10px;margin-top:26px}
+.b4m p b{font-size:20px;line-height:1.1;font-weight:900;letter-spacing:-.03em;text-transform:uppercase}
+.b4m p i{font-style:normal;font-size:22px;line-height:1;animation:nudge 1.4s ease-in-out infinite}
+.b4 .rr>.old,.b4 .rr>.b4c{display:none}
+.b4 .rr{padding:12px 24px 24px;margin:0 -24px;scroll-padding-left:24px}
+.b4p{width:72vw}
+.sec5>button h3 small{display:block;margin:6px 0 0}
+}
+@media(max-width:860px){#work{padding-top:48px}.hero .scroll{margin-top:22px}}

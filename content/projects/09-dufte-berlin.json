@@ -1,7 +1,5 @@
 {
-  "order": 5,
-  "slug": "dufte-berlin",
-  "name": "Dufte Berlin",
+  "name": "Dufte",
   "kind": "Culinary & cultural house",
   "city": "Berlin",
   "years": "2025–2026",
@@ -12,13 +10,8 @@
     "Concept",
     "Partnerships"
   ],
-  "logo": "du",
-  "background": "#3479e1",
-  "text_colour": "#ffffff",
-  "tile": "#ffffff",
-  "card": "#3479e1",
-  "intro": "A 1,000 m² culinary house of culture on the ground floor of the Kant-Garagenpalast, Charlottenburg: Europe's oldest surviving high-rise garage, built in 1930 in the Neue Sachlichkeit style and listed for its double-helix ramp. Four kitchens, a bakery and café, two bars, a gallery and a 300 m² south-facing beer garden under one roof, with a 300-element LED ceiling and eight audio zones, right on the S-Bahn tracks. Opened May 2026.",
-  "credit": "Logo and brand identity by Plusminus Studio. Everything else, from concept, vendors and contracts to marketing, sales and day-to-day running, I led as Managing Director.",
+  "intro": "A 1,000 m² culinary house of culture on the ground floor of the Kant-Garagenpalast, Charlottenburg: Europe's oldest surviving high-rise garage, built in 1930 in the Neue Sachlichkeit style and listed for its double-helix ramp. Four kitchens, a bakery and café, two bars, a gallery and a 300 m² south-facing beer garden under one roof, with a Berlin club-grade LED ceiling and eight audio zones, right on the S-Bahn tracks. Opened May 2026.",
+  "credit": "Logo and brand identity by Plusminus Studio. Conceptualisation, vendor contracts, implementation of branding to marketing, sales and day-to-day running, I led as Managing Director.",
   "hero": {
     "type": "lottie",
     "animation": "/js/dufte-emblem.json",
@@ -28,7 +21,7 @@
     {
       "type": "management",
       "title": "My role",
-      "text": "As Geschäftsführer of Dufte Kraft GmbH I took Dufte from an empty garage floor to a venue with 450 guests on a busy night. What I was in charge of:",
+      "text": "As Geschäftsführer of Dufte Kraft GmbH, my businesspartner Timo Scholz and I took Dufte from an empty garage floor to a venue with 450 guests on a busy night. What we are in charge of:",
       "stats": [
         {
           "figure": "1,000 m²",
@@ -36,29 +29,29 @@
         },
         {
           "figure": "10",
-          "label": "spaces under one roof: 4 kitchens, bakery & café, 2 bars, gallery, beer garden"
+          "label": "areas: 4 kitchens, bakery & café, 2 bars, gallery, beer garden"
         },
         {
           "figure": "4.9★",
-          "label": "on Google from regulars"
+          "label": "on Google"
         },
         {
           "figure": "17",
-          "label": "brands and organisers hosted for B2B events"
+          "label": "brands and organisers hosted for B2B events so far"
         }
       ],
       "points": [
         {
           "title": "Concept & business plan",
-          "text": "The 'culinary house of culture' idea: no consumption minimum, no table service, art, music and events every week. Layouts, renderings and the plan behind them."
+          "text": "The 'culinary house of culture' idea: A foodmarket combining local Berlin culture with internationally proven business concept. No consumption minimum, art, music and events every week. Open for big group bookings & corporate events."
         },
         {
           "title": "Vendor acquisition & leasing",
-          "text": "Wrote the food vendor package, signed the five concepts (Mani in Pasta, Abuya, The Curried Cactus, Tacho, Domberger Brot-Werk) and negotiated the subleases and addenda."
+          "text": "Creation of the food vendor package, signing the five concepts (Mani in Pasta, Abuya, The Curried Cactus, Tacho, Domberger Brot-Werk) and negotiating the subleases."
         },
         {
           "title": "Build-out & opening",
-          "text": "Facade signage and neon, furniture, floor plan and the opening itself in May 2026."
+          "text": "Facade signage, furniture, floor plan and putting together the team for the opening itself in May 2026."
         },
         {
           "title": "Operations & systems",
@@ -78,31 +71,17 @@
         },
         {
           "title": "Investors & partners",
-          "text": "Investor deck, landlord relations and the partnership with Better Life, who run the event loft."
+          "text": "Investor deck, landlord relations and the partnership with Better Life, who run organise B2B partners."
         }
       ],
       "images": [],
       "videos": []
     },
     {
-      "type": "brand",
-      "title": "Brand & communication",
+      "plan": "/a/du-floorplan.svg",
       "text": "Logo, emblem and identity by Plusminus Studio. I carried it into everything guests touch, and ran the communication around it: pre-opening teasers, Open House events, the opening campaign, Instagram and the newsletter.",
-      "stats": [
-        {
-          "figure": "334",
-          "label": "clean newsletter contacts at launch"
-        },
-        {
-          "figure": "4",
-          "label": "weekly regulars, from Kaffee Happy Hour to Freibier Freitag"
-        },
-        {
-          "figure": "4.9★",
-          "label": "Google rating"
-        }
-      ],
       "instagram": "dufte_berlin",
+      "title": "Brand & communication",
       "images": [
         {
           "image": "/a/du-p-opening.webp",
@@ -262,9 +241,23 @@
         }
       ],
       "videos": [],
-      "plan": "/a/du-floorplan.svg",
+      "gal_after_plan": true,
+      "type": "brand",
       "plan_label": "Floor plan",
-      "gal_after_plan": true
+      "stats": [
+        {
+          "figure": "334",
+          "label": "clean newsletter contacts at launch"
+        },
+        {
+          "figure": "4",
+          "label": "weekly regulars, from Kaffee Happy Hour to Freibier Freitag"
+        },
+        {
+          "figure": "4.9★",
+          "label": "Google rating"
+        }
+      ]
     },
     {
       "type": "events",
@@ -488,5 +481,12 @@
       "images": [],
       "videos": []
     }
-  ]
+  ],
+  "order": 5,
+  "background": "#3479e1",
+  "text_colour": "#ffffff",
+  "card": "#3479e1",
+  "slug": "dufte-berlin",
+  "logo": "du",
+  "tile": "#ffffff"
 }

@@ -44,7 +44,11 @@ img,video{display:block;max-width:100%}
 .hero ul{list-style:none;margin-top:40px;border-top:1px solid var(--ln)}
 .hero li{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px solid var(--ln);font-size:14px}
 .hero li span{color:var(--mute)}
-.scroll{position:absolute;left:var(--pad);bottom:28px}
+.scroll{display:inline-flex;flex-direction:column;align-items:flex-start;gap:10px;margin-top:28px;color:var(--mute);text-decoration:none;animation:scb 2.4s var(--ease) infinite}
+.scroll i{display:block;width:1px;height:34px;background:linear-gradient(currentColor,currentColor) no-repeat 0 0/1px 45%;background-color:rgba(127,127,127,.25);animation:scl 2.4s var(--ease) infinite}
+@keyframes scl{0%{background-position:0 -40%}60%,100%{background-position:0 160%}}
+@keyframes scb{0%,100%{transform:none;opacity:.7}50%{transform:translateY(4px);opacity:1}}
+@media (prefers-reduced-motion:reduce){.scroll,.scroll i{animation:none}}
 @media(max-width:860px){.hero{grid-template-columns:1fr;gap:40px;padding-top:110px}.mark svg{width:min(56vw,300px)}}
 
 .sec{padding:16vh var(--pad) 0}

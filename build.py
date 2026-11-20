@@ -115,14 +115,13 @@ nums = "".join(f'<div><b>{esc(n["figure"])}</b><span>{esc(n["label"])}</span></d
 also = "".join(f'<li><b>{esc(a["name"])}</b><span>{esc(a["text"])}</span><em>{esc(a.get("tag"))}</em></li>' for a in HOME.get("also", []))
 abt = "".join(f"<p>{esc(x)}</p>" for x in HOME.get("about", []))
 dets = "".join(f'<div><dt class="lbl">{esc(d["label"])}</dt><dd>{esc(d["value"])}</dd></div>' for d in HOME.get("details", []))
-dl = "".join(f'<li><details><summary>{esc(d["title"])}<span>{n+1:02d}</span></summary><div class="dd"><p>{esc(d["text"])}</p><ul>{"".join(f"<li>{esc(x)}</li>" for x in d.get("items", []))}</ul></div></details></li>' for n, d in enumerate(HOME["disciplines"]))
+dl = "".join(f'<li><details><summary>{esc(d["title"])}<span></span></summary><div class="dd"><p>{esc(d["text"])}</p><ul>{"".join(f"<li>{esc(x)}</li>" for x in d.get("items", []))}</ul></div></details></li>' for n, d in enumerate(HOME["disciplines"]))
 opts = "".join(f"<option>{esc(d['title'])}</option>" for d in HOME["disciplines"]) + "<option>All of the above</option>"
 IMAP = f'<script type="importmap">{{"imports":{{"three":"/js/three.module.min.js"}}}}</script><script type="module" src="/home3d.js?{VER}"></script>'
 home = head(HOME["title"], HOME["description"], "/", extra=IMAP) + header() + f'''
 <main id="top">
 <section class="hero"><div class="mark"><div class="stk"><svg class="main" viewBox="{fvb}" aria-hidden="true"><path fill-rule="evenodd" d="{fp}"/></svg></div><button class="gyro" type="button">Tap to move with your phone</button></div>
-<div class="tx rv"><h1>{"<br>".join(esc(w) for w in HOME["name"].split(" ", 1))}</h1><p>{esc(HOME["intro"])}</p><ul class="dsc">{dl}</ul></div>
-<span class="scroll lbl mute">Scroll</span></section>
+<div class="tx rv"><h1>{"<br>".join(esc(w) for w in HOME["name"].split(" ", 1))}</h1><p>{esc(HOME["intro"])}</p><ul class="dsc">{dl}</ul><a class="scroll lbl mute" href="#work">Scroll<i aria-hidden="true"></i></a></div></section>
 <section class="sec" id="work"><div class="sh rv"><h2>Selected works</h2><span class="lbl mute">{len(P):02d}</span></div><div class="vg">{"".join(cards)}</div></section>
 {f'<section class="sec"><div class="sh rv"><h2>In numbers</h2></div><div class="nm rv">{nums}</div></section>' if nums else ""}
 {f'<section class="sec al"><div class="sh rv"><h2>Also</h2></div><ul class="rv">{also}</ul></section>' if also else ""}

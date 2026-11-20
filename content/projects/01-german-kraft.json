@@ -1,6 +1,4 @@
 {
-  "order": 1,
-  "slug": "german-kraft",
   "name": "German Kraft",
   "kind": "Brewery & bars",
   "city": "London",
@@ -11,11 +9,6 @@
     "Art Direction",
     "Marketing & Sales"
   ],
-  "logo": "gk",
-  "background": "#f1b517",
-  "text_colour": "#0b0b0b",
-  "tile": "#ffffff",
-  "card": "#f1b517",
   "intro": "The mother brand. Four school friends, a derelict site in Elephant & Castle and a brewhouse. German Kraft brewed on site and sold straight from the tank, then grew into breweries, a distillery and 18 bars across London.",
   "credit": "",
   "hero": {
@@ -24,6 +17,436 @@
     "poster": "/v/gk-hero.jpg",
     "hide_logo": true
   },
+  "sections": [
+    {
+      "deck_title": "The 2021 rebrand",
+      "pres_pdf": "/press/gk-lcc-presentation-2017.pdf",
+      "deck": [
+        {
+          "image": "/a/gk-reb-01.webp",
+          "caption": "Inspiration: vintage German beer branding",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-reb-02.webp",
+          "caption": "Type: retro display lettering",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-reb-03.webp",
+          "caption": "\"Bier.\" as the slogan",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-reb-04.webp",
+          "caption": "Roundel system",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-reb-05.webp",
+          "caption": "Core colours",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-reb-06.webp",
+          "caption": "Label colour combinations",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-reb-07.webp",
+          "caption": "Logo system",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-reb-08.webp",
+          "caption": "Layout and print",
+          "cutout": false
+        }
+      ],
+      "pres_title": "First German Kraft presentation for a UAL lecture, 2017",
+      "text": "I named the brewery, drew the KRAFT mark and built everything that carries it. In 2021 I led the rebrand from hand-drawn craft to a bold, retro German system: roundel labels, a single word as the slogan, and a cast of characters, one per beer.",
+      "pres": [
+        {
+          "image": "/a/gk-lcc/slide-01.webp"
+        },
+        {
+          "image": "/a/gk-lcc/slide-02.webp"
+        },
+        {
+          "image": "/a/gk-lcc/slide-03.webp"
+        },
+        {
+          "image": "/a/gk-lcc/slide-04.webp"
+        },
+        {
+          "image": "/a/gk-lcc/slide-05.webp"
+        },
+        {
+          "image": "/a/gk-lcc/slide-06.webp"
+        },
+        {
+          "image": "/a/gk-lcc/slide-07.webp"
+        },
+        {
+          "image": "/a/gk-lcc/slide-08.webp"
+        },
+        {
+          "image": "/a/gk-lcc/slide-09.webp"
+        },
+        {
+          "image": "/a/gk-lcc/slide-10.webp"
+        },
+        {
+          "image": "/a/gk-lcc/slide-11.webp"
+        },
+        {
+          "image": "/a/gk-lcc/slide-12.webp"
+        },
+        {
+          "image": "/a/gk-lcc/slide-13.webp"
+        },
+        {
+          "image": "/a/gk-lcc/slide-14.webp"
+        },
+        {
+          "image": "/a/gk-lcc/slide-15.webp"
+        },
+        {
+          "image": "/a/gk-lcc/slide-16.webp"
+        },
+        {
+          "image": "/a/gk-lcc/slide-17.webp"
+        },
+        {
+          "image": "/a/gk-lcc/slide-18.webp"
+        },
+        {
+          "image": "/a/gk-lcc/slide-19.webp"
+        },
+        {
+          "image": "/a/gk-lcc/slide-20.webp"
+        },
+        {
+          "image": "/a/gk-lcc/slide-21.webp"
+        },
+        {
+          "image": "/a/gk-lcc/slide-22.webp"
+        },
+        {
+          "image": "/a/gk-lcc/slide-23.webp"
+        },
+        {
+          "image": "/a/gk-lcc/slide-24.webp"
+        }
+      ],
+      "images": [
+        {
+          "image": "/a/gk-p-mayfair-okt.webp",
+          "caption": "Mayfair Oktoberfest poster",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-p-oktoberfest.webp",
+          "caption": "Oktoberfest poster",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-p-happy.webp",
+          "caption": "Holy Happy Hour poster",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-p-pints.webp",
+          "caption": "£5 pints poster",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-p-helles.webp",
+          "caption": "Fresh beer sold here: Helles poster",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-p-student.webp",
+          "caption": "Student Night: Pint 4 Pint",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-p-worldcup.webp",
+          "caption": "World Cup 2026 poster",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-p-oktmap.webp",
+          "caption": "Oktoberfest site map",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-p-closed.webp",
+          "caption": "Bar closed sign",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-p-upcycle.webp",
+          "caption": "Upcycled glass flyer",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-mailer-sissi.webp",
+          "caption": "Mailer: Sissi, Vienna Lager",
+          "cutout": false,
+          "thumb": "/a/gk-mailer-sissi-top.webp",
+          "scroll": true
+        },
+        {
+          "image": "/a/gk-mailer-sepp.webp",
+          "caption": "Mailer: Sepp, Schwarzbier",
+          "cutout": false,
+          "thumb": "/a/gk-mailer-sepp-top.webp",
+          "scroll": true
+        },
+        {
+          "image": "/a/gk-shirt-front.webp",
+          "caption": "Brewer shirt, front",
+          "cutout": true,
+          "bare": true
+        },
+        {
+          "image": "/a/gk-shirt-back.webp",
+          "caption": "Brewer shirt, back",
+          "cutout": true,
+          "bare": true
+        },
+        {
+          "image": "/a/gk-brand-04.webp",
+          "caption": "Meisters of Purity shirt",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-ph-glass.webp",
+          "caption": "The KRAFT glass",
+          "cutout": false
+        },
+        {
+          "image": "/a/gk-ph-brewery.webp",
+          "caption": "The brewery bar, Elephant & Castle",
+          "cutout": false
+        }
+      ],
+      "videos": [],
+      "type": "Branding",
+      "stats": []
+    },
+    {
+      "type": "Marketing",
+      "text": "Social-first campaigns, events and content that filled a 3,500-capacity beer garden, on a paid-social budget of under £500 a month. This is where I learned the most valuable lesson in marketing: if you have a good product, it will sell.",
+      "stats": [
+        {
+          "figure": "50,000 L",
+          "label": "tank capacity"
+        },
+        {
+          "figure": "3,500",
+          "label": "capacity beer garden"
+        },
+        {
+          "figure": "2 million+",
+          "label": "litres of beer produced"
+        }
+      ],
+      "videos": [],
+      "images": [],
+      "deck": [],
+      "instagram": "germankraftbeer"
+    },
+    {
+      "type": "P.R.",
+      "text": "Germans brewing lager in post-Brexit London made a story that travelled, from German national TV to The Times.",
+      "stats": [
+        {
+          "figure": "42+",
+          "label": "articles published, from The Times to Time Out"
+        },
+        {
+          "figure": "6+",
+          "label": "TV appearances, incl. ZDF, Pro 7, Taff and Sat.1"
+        },
+        {
+          "figure": "140M+",
+          "label": "combined monthly readership (UMVs) of the outlets"
+        }
+      ],
+      "videos": [],
+      "images": [],
+      "deck": [],
+      "press_teaser": {
+        "link": "/work/german-kraft/press/",
+        "label": "All press coverage",
+        "count": 9,
+        "source": "press-germankraft.json",
+        "heading": "Most of the press coverage came through our PR agency, Jukebox: interviews, guide inclusions, the World Cup fan zone and the last summer at Elephant & Castle."
+      }
+    },
+    {
+      "deck": [],
+      "pano_title": "Walk around the Elephant & Castle site in 360°",
+      "text": "When starting the brewery, my three highschool friends and me built everything from scratch: Bars, planters, seating areas, bar layouts, a 2 storey-walk-in fridge, poured concrete slabs, did plumbing, learned electrical work, built structures for the lagering tanks and set up music equipment. Being blessed with a 'pop up' license , we had the freedom to build with creative freedom without any regulations in central London.  ",
+      "pano": [
+        {
+          "image": "/a/pano/gk-360-g1.jpg",
+          "thumb": "/a/pano/gk-360-g1-t.jpg",
+          "caption": "Beer garden by the taproom entrance",
+          "vto": 0.6494
+        },
+        {
+          "image": "/a/pano/gk-360-g2.jpg",
+          "thumb": "/a/pano/gk-360-g2-t.jpg",
+          "caption": "Taproom bar and brewhouse",
+          "vto": 0.668
+        },
+        {
+          "image": "/a/pano/gk-360-g3.jpg",
+          "thumb": "/a/pano/gk-360-g3-t.jpg",
+          "caption": "Beer garden and keg bar",
+          "vto": 0.6914
+        },
+        {
+          "image": "/a/pano/gk-360-1.jpg",
+          "thumb": "/a/pano/gk-360-1-t.jpg",
+          "caption": "The bar, brewhouse and market hall"
+        },
+        {
+          "image": "/a/pano/gk-360-2.jpg",
+          "thumb": "/a/pano/gk-360-2-t.jpg",
+          "caption": "Brewhouse: fermenters and the stairs to the platform"
+        },
+        {
+          "image": "/a/pano/gk-360-3.jpg",
+          "thumb": "/a/pano/gk-360-3-t.jpg",
+          "caption": "Brewhouse: mash tun and fermentation tanks"
+        },
+        {
+          "image": "/a/pano/gk-360-4.jpg",
+          "thumb": "/a/pano/gk-360-4-t.jpg",
+          "caption": "Keg washing behind the brewhouse"
+        },
+        {
+          "image": "/a/pano/gk-360-5.jpg",
+          "thumb": "/a/pano/gk-360-5-t.jpg",
+          "caption": "The beer garden and tank-beer bar"
+        }
+      ],
+      "images": [],
+      "videos": [],
+      "type": "Conceptualisation",
+      "stats": [],
+      "before": {
+        "image": "/a/gk-before.webp",
+        "caption": "Elephant & Castle, winter 2017: before the beer garden",
+        "cta_kicker": "Then. Now:",
+        "cta": "Swipe to step inside in 360°"
+      }
+    },
+    {
+      "type": "Photography & videography",
+      "text": "Product and venue photography.",
+      "stats": [],
+      "videos": [
+        {
+          "video": "/v/gk-pour.mp4",
+          "poster": "/v/gk-pour.jpg",
+          "caption": "The pour"
+        },
+        {
+          "video": "/v/gk-garden.mp4",
+          "poster": "/v/gk-garden.jpg",
+          "caption": "The garden"
+        }
+      ],
+      "images": [],
+      "deck": [],
+      "photos_title": "German Kraft in pictures",
+      "photos": [
+        {
+          "image": "/a/gk-ph-03.webp",
+          "w": 2000,
+          "h": 1364,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-04.webp",
+          "w": 2000,
+          "h": 1333,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-05.webp",
+          "w": 2000,
+          "h": 1489,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-06.webp",
+          "w": 2000,
+          "h": 1333,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-07.webp",
+          "w": 1336,
+          "h": 2000,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-08.webp",
+          "w": 2000,
+          "h": 1335,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-09.webp",
+          "w": 2000,
+          "h": 1333,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-10.webp",
+          "w": 1191,
+          "h": 2000,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-11.webp",
+          "w": 2000,
+          "h": 1122,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-12.webp",
+          "w": 1333,
+          "h": 2000,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-13.webp",
+          "w": 1336,
+          "h": 2000,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-14.webp",
+          "w": 2000,
+          "h": 1352,
+          "caption": ""
+        },
+        {
+          "image": "/a/gk-ph-15.webp",
+          "w": 2000,
+          "h": 1334,
+          "caption": ""
+        }
+      ]
+    }
+  ],
   "tv_heading": "German brewers in\npost-Brexit London",
   "tv": [
     {
@@ -397,440 +820,11 @@
       "name": "Melanie, Hopfenweisse"
     }
   ],
-  "sections": [
-    {
-      "type": "Branding",
-      "text": "I named the brewery, drew the KRAFT mark and built everything that carries it. In 2021 I led the rebrand from hand-drawn craft to a bold, retro German system: roundel labels, a single word as the slogan, and a cast of characters, one per beer.",
-      "stats": [],
-      "videos": [],
-      "images": [
-        {
-          "image": "/a/gk-p-mayfair-okt.webp",
-          "caption": "Mayfair Oktoberfest poster",
-          "cutout": false
-        },
-        {
-          "image": "/a/gk-p-oktoberfest.webp",
-          "caption": "Oktoberfest poster",
-          "cutout": false
-        },
-        {
-          "image": "/a/gk-p-happy.webp",
-          "caption": "Holy Happy Hour poster",
-          "cutout": false
-        },
-        {
-          "image": "/a/gk-p-pints.webp",
-          "caption": "£5 pints poster",
-          "cutout": false
-        },
-        {
-          "image": "/a/gk-p-helles.webp",
-          "caption": "Fresh beer sold here: Helles poster",
-          "cutout": false
-        },
-        {
-          "image": "/a/gk-p-student.webp",
-          "caption": "Student Night: Pint 4 Pint",
-          "cutout": false
-        },
-        {
-          "image": "/a/gk-p-worldcup.webp",
-          "caption": "World Cup 2026 poster",
-          "cutout": false
-        },
-        {
-          "image": "/a/gk-p-oktmap.webp",
-          "caption": "Oktoberfest site map",
-          "cutout": false
-        },
-        {
-          "image": "/a/gk-p-closed.webp",
-          "caption": "Bar closed sign",
-          "cutout": false
-        },
-        {
-          "image": "/a/gk-p-upcycle.webp",
-          "caption": "Upcycled glass flyer",
-          "cutout": false
-        },
-        {
-          "image": "/a/gk-mailer-sissi.webp",
-          "caption": "Mailer: Sissi, Vienna Lager",
-          "cutout": false,
-          "thumb": "/a/gk-mailer-sissi-top.webp",
-          "scroll": true
-        },
-        {
-          "image": "/a/gk-mailer-sepp.webp",
-          "caption": "Mailer: Sepp, Schwarzbier",
-          "cutout": false,
-          "thumb": "/a/gk-mailer-sepp-top.webp",
-          "scroll": true
-        },
-        {
-          "image": "/a/gk-shirt-front.webp",
-          "caption": "Brewer shirt, front",
-          "cutout": true,
-          "bare": true
-        },
-        {
-          "image": "/a/gk-shirt-back.webp",
-          "caption": "Brewer shirt, back",
-          "cutout": true,
-          "bare": true
-        },
-        {
-          "image": "/a/gk-brand-04.webp",
-          "caption": "Meisters of Purity shirt",
-          "cutout": false
-        },
-        {
-          "image": "/a/gk-ph-glass.webp",
-          "caption": "The KRAFT glass",
-          "cutout": false
-        },
-        {
-          "image": "/a/gk-ph-brewery.webp",
-          "caption": "The brewery bar, Elephant & Castle",
-          "cutout": false
-        }
-      ],
-      "deck": [
-        {
-          "image": "/a/gk-reb-01.webp",
-          "caption": "Inspiration: vintage German beer branding",
-          "cutout": false
-        },
-        {
-          "image": "/a/gk-reb-02.webp",
-          "caption": "Type: retro display lettering",
-          "cutout": false
-        },
-        {
-          "image": "/a/gk-reb-03.webp",
-          "caption": "\"Bier.\" as the slogan",
-          "cutout": false
-        },
-        {
-          "image": "/a/gk-reb-04.webp",
-          "caption": "Roundel system",
-          "cutout": false
-        },
-        {
-          "image": "/a/gk-reb-05.webp",
-          "caption": "Core colours",
-          "cutout": false
-        },
-        {
-          "image": "/a/gk-reb-06.webp",
-          "caption": "Label colour combinations",
-          "cutout": false
-        },
-        {
-          "image": "/a/gk-reb-07.webp",
-          "caption": "Logo system",
-          "cutout": false
-        },
-        {
-          "image": "/a/gk-reb-08.webp",
-          "caption": "Layout and print",
-          "cutout": false
-        }
-      ],
-      "deck_title": "The 2021 rebrand",
-      "pres_title": "First German Kraft presentation for a UAL lecture, 2017",
-      "pres": [
-        {
-          "image": "/a/gk-lcc/slide-01.webp"
-        },
-        {
-          "image": "/a/gk-lcc/slide-02.webp"
-        },
-        {
-          "image": "/a/gk-lcc/slide-03.webp"
-        },
-        {
-          "image": "/a/gk-lcc/slide-04.webp"
-        },
-        {
-          "image": "/a/gk-lcc/slide-05.webp"
-        },
-        {
-          "image": "/a/gk-lcc/slide-06.webp"
-        },
-        {
-          "image": "/a/gk-lcc/slide-07.webp"
-        },
-        {
-          "image": "/a/gk-lcc/slide-08.webp"
-        },
-        {
-          "image": "/a/gk-lcc/slide-09.webp"
-        },
-        {
-          "image": "/a/gk-lcc/slide-10.webp"
-        },
-        {
-          "image": "/a/gk-lcc/slide-11.webp"
-        },
-        {
-          "image": "/a/gk-lcc/slide-12.webp"
-        },
-        {
-          "image": "/a/gk-lcc/slide-13.webp"
-        },
-        {
-          "image": "/a/gk-lcc/slide-14.webp"
-        },
-        {
-          "image": "/a/gk-lcc/slide-15.webp"
-        },
-        {
-          "image": "/a/gk-lcc/slide-16.webp"
-        },
-        {
-          "image": "/a/gk-lcc/slide-17.webp"
-        },
-        {
-          "image": "/a/gk-lcc/slide-18.webp"
-        },
-        {
-          "image": "/a/gk-lcc/slide-19.webp"
-        },
-        {
-          "image": "/a/gk-lcc/slide-20.webp"
-        },
-        {
-          "image": "/a/gk-lcc/slide-21.webp"
-        },
-        {
-          "image": "/a/gk-lcc/slide-22.webp"
-        },
-        {
-          "image": "/a/gk-lcc/slide-23.webp"
-        },
-        {
-          "image": "/a/gk-lcc/slide-24.webp"
-        }
-      ],
-      "pres_pdf": "/press/gk-lcc-presentation-2017.pdf"
-    },
-    {
-      "type": "Marketing",
-      "text": "Social-first campaigns, events and content that filled a 3,500-capacity beer garden, on a paid-social budget of under £500 a month. This is where I learned the most valuable lesson in marketing: if you have a good product, it will sell.",
-      "stats": [
-        {
-          "figure": "50,000 L",
-          "label": "tank capacity"
-        },
-        {
-          "figure": "3,500",
-          "label": "capacity beer garden"
-        },
-        {
-          "figure": "2 million+",
-          "label": "litres of beer produced"
-        }
-      ],
-      "videos": [],
-      "images": [],
-      "deck": [],
-      "instagram": "germankraftbeer"
-    },
-    {
-      "type": "P.R.",
-      "text": "Germans brewing lager in post-Brexit London made a story that travelled, from German national TV to The Times.",
-      "stats": [
-        {
-          "figure": "42+",
-          "label": "articles published, from The Times to Time Out"
-        },
-        {
-          "figure": "6+",
-          "label": "TV appearances, incl. ZDF, Pro 7, Taff and Sat.1"
-        },
-        {
-          "figure": "140M+",
-          "label": "combined monthly readership (UMVs) of the outlets"
-        }
-      ],
-      "videos": [],
-      "images": [],
-      "deck": [],
-      "press_teaser": {
-        "link": "/work/german-kraft/press/",
-        "label": "All press coverage",
-        "count": 9,
-        "source": "press-germankraft.json",
-        "heading": "Most of the press coverage came through our PR agency, Jukebox: interviews, guide inclusions, the World Cup fan zone and the last summer at Elephant & Castle."
-      }
-    },
-    {
-      "type": "Conceptualisation",
-      "text": "",
-      "stats": [],
-      "videos": [],
-      "images": [],
-      "deck": [],
-      "pano": [
-        {
-          "image": "/a/pano/gk-360-g1.jpg",
-          "thumb": "/a/pano/gk-360-g1-t.jpg",
-          "caption": "Beer garden by the taproom entrance",
-          "vto": 0.6494
-        },
-        {
-          "image": "/a/pano/gk-360-g2.jpg",
-          "thumb": "/a/pano/gk-360-g2-t.jpg",
-          "caption": "Taproom bar and brewhouse",
-          "vto": 0.668
-        },
-        {
-          "image": "/a/pano/gk-360-g3.jpg",
-          "thumb": "/a/pano/gk-360-g3-t.jpg",
-          "caption": "Beer garden and keg bar",
-          "vto": 0.6914
-        },
-        {
-          "image": "/a/pano/gk-360-1.jpg",
-          "thumb": "/a/pano/gk-360-1-t.jpg",
-          "caption": "The bar, brewhouse and market hall"
-        },
-        {
-          "image": "/a/pano/gk-360-2.jpg",
-          "thumb": "/a/pano/gk-360-2-t.jpg",
-          "caption": "Brewhouse: fermenters and the stairs to the platform"
-        },
-        {
-          "image": "/a/pano/gk-360-3.jpg",
-          "thumb": "/a/pano/gk-360-3-t.jpg",
-          "caption": "Brewhouse: mash tun and fermentation tanks"
-        },
-        {
-          "image": "/a/pano/gk-360-4.jpg",
-          "thumb": "/a/pano/gk-360-4-t.jpg",
-          "caption": "Keg washing behind the brewhouse"
-        },
-        {
-          "image": "/a/pano/gk-360-5.jpg",
-          "thumb": "/a/pano/gk-360-5-t.jpg",
-          "caption": "The beer garden and tank-beer bar"
-        }
-      ],
-      "pano_title": "Walk around the Elephant & Castle site in 360°",
-      "before": {
-        "image": "/a/gk-before.webp",
-        "caption": "Elephant & Castle, winter 2017: before the beer garden",
-        "cta_kicker": "Then. Now:",
-        "cta": "Swipe to step inside in 360°"
-      }
-    },
-    {
-      "type": "Photography & videography",
-      "text": "Product and venue photography.",
-      "stats": [],
-      "videos": [
-        {
-          "video": "/v/gk-pour.mp4",
-          "poster": "/v/gk-pour.jpg",
-          "caption": "The pour"
-        },
-        {
-          "video": "/v/gk-garden.mp4",
-          "poster": "/v/gk-garden.jpg",
-          "caption": "The garden"
-        }
-      ],
-      "images": [],
-      "deck": [],
-      "photos_title": "German Kraft in pictures",
-      "photos": [
-        {
-          "image": "/a/gk-ph-01.webp",
-          "w": 2000,
-          "h": 1334,
-          "caption": ""
-        },
-        {
-          "image": "/a/gk-ph-03.webp",
-          "w": 2000,
-          "h": 1364,
-          "caption": ""
-        },
-        {
-          "image": "/a/gk-ph-04.webp",
-          "w": 2000,
-          "h": 1333,
-          "caption": ""
-        },
-        {
-          "image": "/a/gk-ph-05.webp",
-          "w": 2000,
-          "h": 1489,
-          "caption": ""
-        },
-        {
-          "image": "/a/gk-ph-06.webp",
-          "w": 2000,
-          "h": 1333,
-          "caption": ""
-        },
-        {
-          "image": "/a/gk-ph-07.webp",
-          "w": 1336,
-          "h": 2000,
-          "caption": ""
-        },
-        {
-          "image": "/a/gk-ph-08.webp",
-          "w": 2000,
-          "h": 1335,
-          "caption": ""
-        },
-        {
-          "image": "/a/gk-ph-09.webp",
-          "w": 2000,
-          "h": 1333,
-          "caption": ""
-        },
-        {
-          "image": "/a/gk-ph-10.webp",
-          "w": 1191,
-          "h": 2000,
-          "caption": ""
-        },
-        {
-          "image": "/a/gk-ph-11.webp",
-          "w": 2000,
-          "h": 1122,
-          "caption": ""
-        },
-        {
-          "image": "/a/gk-ph-12.webp",
-          "w": 1333,
-          "h": 2000,
-          "caption": ""
-        },
-        {
-          "image": "/a/gk-ph-13.webp",
-          "w": 1336,
-          "h": 2000,
-          "caption": ""
-        },
-        {
-          "image": "/a/gk-ph-14.webp",
-          "w": 2000,
-          "h": 1352,
-          "caption": ""
-        },
-        {
-          "image": "/a/gk-ph-15.webp",
-          "w": 2000,
-          "h": 1334,
-          "caption": ""
-        }
-      ]
-    }
-  ]
+  "order": 1,
+  "background": "#f1b517",
+  "text_colour": "#0b0b0b",
+  "card": "#f1b517",
+  "slug": "german-kraft",
+  "logo": "gk",
+  "tile": "#ffffff"
 }

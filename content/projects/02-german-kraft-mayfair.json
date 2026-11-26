@@ -282,6 +282,46 @@
      "image": "/a/my-n15.webp",
      "caption": "North Audley Street entrance",
      "cutout": false
+    },
+    {
+     "image": "/a/my-p02.webp",
+     "caption": "Kraft Bar and Jim & Tonic under the altar",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-p03.webp",
+     "caption": "Opening night at the Kraft Bar",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-p04.webp",
+     "caption": "Kraft Bar, German Kraft Brewery",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-p05.webp",
+     "caption": "The Kraft Bar from above",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-p06.webp",
+     "caption": "Queue at the glass-brick bar",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-p07.webp",
+     "caption": "Under the stained glass",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-p08.webp",
+     "caption": "The altar and its windows",
+     "cutout": false
+    },
+    {
+     "image": "/a/my-p09.webp",
+     "caption": "Hands on the glass bricks",
+     "cutout": false
     }
    ],
    "deck": []

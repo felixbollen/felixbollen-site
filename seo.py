@@ -138,20 +138,24 @@ def project_ld(p, media=""):
             "breadcrumb": crumbs([("Felix Bollen", "/"), ("Work", "/#work"), (p["name"], f"/work/{p['slug']}/")])}
     return ld({"@context": "https://schema.org", "@graph": [page, work, {"@type": "Person", "@id": PID, "name": "Felix Bollen", "url": SITE + "/"}]})
 
-def home_ld(home, P, media=""):
+def home_ld(home, P, media="", press=()):
     items = [{"@type": "ListItem", "position": i + 1, "url": f"{SITE}/work/{p['slug']}/", "name": p["name"]} for i, p in enumerate(P)]
     prof = {"@type": "ProfilePage", "@id": SITE + "/", "url": SITE + "/", "name": home.get("seo_title") or home.get("title"),
             "description": home.get("seo_description") or home.get("description"), "isPartOf": {"@id": WID},
             "mainEntity": {"@id": PID}, "about": {"@id": PID}, "inLanguage": "en-GB", "dateModified": datetime.now(timezone.utc).replace(microsecond=0).isoformat(), "dateCreated": "2026-11-01T00:00:00+00:00",
             "primaryImageOfPage": {"@type": "ImageObject", "url": SITE + "/og.jpg", "width": 1200, "height": 630}}
-    return ld({"@context": "https://schema.org", "@graph": [prof, person(home, media), website(), service(),
+    pe = person(home, media)
+    feat = [{"@type": "Article", "headline": x.get("title"), "url": x["url"], "publisher": {"@type": "Organization", "name": x.get("outlet")}} for x in press if x.get("about_felix") and x.get("url")]
+    if feat: pe["subjectOf"] = feat
+    return ld({"@context": "https://schema.org", "@graph": [prof, pe, website(), service(),
                {"@type": "ItemList", "name": "Selected works by Felix Bollen", "itemListElement": items}]})
 
 def press_ld(pr, proj, base, its):
     url = SITE + base
     arts = [{"@type": "ListItem", "position": i + 1, "item": {"@type": "Article", "headline": x.get("title") or x.get("outlet"),
              "publisher": {"@type": "Organization", "name": x.get("outlet")}, **({"url": x["url"]} if x.get("url", "").startswith("http") else {}),
-             **({"about": {"@type": "Thing", "name": proj["name"]}} if proj else {})}} for i, x in enumerate(its)]
+             **({"about": [{"@type": "Thing", "name": proj["name"]}] + ([{"@id": PID}] if x.get("about_felix") else [])} if proj else {}),
+             **({"mentions": {"@id": PID}} if x.get("about_felix") else {})}} for i, x in enumerate(its)]
     cr = [("Felix Bollen", "/"), ("Work", "/#work")] + ([(proj["name"], f"/work/{proj['slug']}/")] if proj else []) + [(pr.get("heading") or "Press", base)]
     return ld({"@context": "https://schema.org", "@graph": [
         {"@type": "CollectionPage", "@id": url, "url": url, "name": pr.get("seo_title") or pr.get("title"), "description": pr.get("seo_description") or pr.get("intro"),

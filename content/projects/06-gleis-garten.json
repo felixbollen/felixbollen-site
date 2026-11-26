@@ -101,6 +101,16 @@
      "image": "/a/gg-oktoberfest.webp",
      "caption": "Oktoberfest poster",
      "cutout": false
+    },
+    {
+     "image": "/a/gg-sign-01.webp",
+     "caption": "Illuminated Gleis//Garten letters before install",
+     "cutout": false
+    },
+    {
+     "image": "/a/gg-sign-02.webp",
+     "caption": "Installing the sign on the tram depot gable",
+     "cutout": false
     }
    ],
    "deck": []

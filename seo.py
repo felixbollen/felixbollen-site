@@ -1,7 +1,7 @@
 """SEO helpers for felixbollen.com: structured data (JSON-LD), sitemap, robots, llms.txt.
 Imported by build.py. Content comes from content/*.json; nothing here needs editing for new projects."""
 import json, os, re, html
-from datetime import date
+from datetime import date, datetime, timezone
 
 SITE = "https://felixbollen.com"
 PID = SITE + "/#felix"          # Person @id
@@ -82,7 +82,7 @@ def website():
 
 def service():
     return {"@type": "ProfessionalService", "@id": SID, "name": "Felix Bollen – Graphic Design, Art Direction & Marketing",
-            "url": SITE + "/services/", "image": SITE + "/og.jpg", "founder": {"@id": PID}, "employee": {"@id": PID},
+            "url": SITE + "/services/", "image": SITE + "/og.jpg", "logo": SITE + "/logo-512.png", "founder": {"@id": PID}, "employee": {"@id": PID},
             "description": "Freelance graphic design, branding, art direction and marketing for hospitality, drinks, culture and small businesses. Berlin, London and remote.",
             "address": {"@type": "PostalAddress", "addressLocality": "Berlin", "addressCountry": "DE"},
             "areaServed": [{"@type": "City", "name": n} for n in ("Berlin", "London", "Vienna", "Hamburg", "Munich")] + [{"@type": "Country", "name": n} for n in ("Germany", "Austria", "Switzerland", "United Kingdom")],
@@ -140,7 +140,7 @@ def home_ld(home, P, media=""):
     items = [{"@type": "ListItem", "position": i + 1, "url": f"{SITE}/work/{p['slug']}/", "name": p["name"]} for i, p in enumerate(P)]
     prof = {"@type": "ProfilePage", "@id": SITE + "/", "url": SITE + "/", "name": home.get("seo_title") or home.get("title"),
             "description": home.get("seo_description") or home.get("description"), "isPartOf": {"@id": WID},
-            "mainEntity": {"@id": PID}, "about": {"@id": PID}, "inLanguage": "en-GB", "dateModified": date.today().isoformat(),
+            "mainEntity": {"@id": PID}, "about": {"@id": PID}, "inLanguage": "en-GB", "dateModified": datetime.now(timezone.utc).replace(microsecond=0).isoformat(), "dateCreated": "2026-11-01T00:00:00+00:00",
             "primaryImageOfPage": {"@type": "ImageObject", "url": SITE + "/og.jpg", "width": 1200, "height": 630}}
     return ld({"@context": "https://schema.org", "@graph": [prof, person(home, media), website(), service(),
                {"@type": "ItemList", "name": "Selected works by Felix Bollen", "itemListElement": items}]})

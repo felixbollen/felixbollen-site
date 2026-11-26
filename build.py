@@ -330,7 +330,19 @@ for i, p in enumerate(P):
         if deck:
             dk = f'<div class="deck"><span class="lbl">{esc(s.get("deck_title") or "Presentation")}</span><div class="rail">' + "".join(
                 f'<figure><img data-src="{esc(d["image"])}" alt=""><figcaption><b>{j+1:02d} / {len(deck):02d}</b>{esc(d.get("caption"))}</figcaption></figure>' for j, d in enumerate(deck)) + '</div><div class="nv"><button type="button" data-d="0" aria-label="Previous">←</button><button type="button" data-d="1" aria-label="Next">→</button></div></div>'
-        body = stats(s.get("stats")) + f'<p class="lede">{esc(s.get("text"))}</p>'
+        cv = s.get("case") or {}
+        csl = [x["image"] for x in cv.get("slides", []) if x.get("image")]
+        csh = ""
+        if csl:
+            _m = lambda u: (MEDIA + u) if u.startswith("/") else u
+            csh = ('<div class="csv" tabindex="0" aria-label="%s"><div class="csv-h"><span class="lbl">%s</span><b>%s</b></div>'
+                   '<div class="csv-st"><img data-src="%s" alt="%s · slide 1"><button type="button" class="csv-p" aria-label="Previous slide">←</button><button type="button" class="csv-n" aria-label="Next slide">→</button></div>'
+                   '<div class="csv-c"><span class="csv-i lbl">01 / %02d</span><span class="csv-b"><button type="button" class="csv-f">Full screen ⤢</button>%s</span></div>'
+                   '<script type="application/json" class="csv-d">%s</script></div>') % (
+                esc(cv.get("title")), esc(cv.get("kicker") or "Case study"), esc(cv.get("title")), esc(csl[0]), esc(cv.get("title")), len(csl),
+                ('<a class="csv-dl" href="%s" download>Download PDF ↓</a>' % esc(cv["pdf"])) if cv.get("pdf") else "",
+                json.dumps([_m(u) for u in csl]).replace("</", "<\\/"))
+        body = csh + stats(s.get("stats")) + f'<p class="lede">{esc(s.get("text"))}</p>'
         pts = [x for x in s.get("points", []) if x.get("title")]
         if pts:
             body += '<ol class="pts">' + "".join('<li><span class="pn">%02d</span><div><b>%s</b>%s</div></li>' % (j + 1, esc(x["title"]), ('<p>%s</p>' % esc(x["text"])) if x.get("text") else "") for j, x in enumerate(pts)) + '</ol>'
@@ -373,8 +385,9 @@ for i, p in enumerate(P):
         if s.get("gal_first") and gal:
             body = body.replace('</p>', '</p>' + gal, 1) if '<p class="lede">' in body else gal + body; gal = ""
         subh = f"<small>{esc(sub)}</small>" if sub else ""
+        mor = (f'<details class="more"><summary><span>{esc(s.get("more_label") or "More examples")}</span><i></i></summary><div class="more-in">{dk}{gal}</div></details>' if (dk or gal) else "") if s.get("more_label") else dk + gal
         secs.append(f'''<div class="sec5"><button type="button" aria-expanded="false"><span class="n">{n+1:02d}</span><h3>{esc(title)}{subh}</h3><span class="c">{(len(ims)+len(vids)) or ''}</span><span class="pm"></span></button>
-<div class="bd"><div><div class="in">{body}{dk}{gal}</div></div></div></div>''')
+<div class="bd"><div><div class="in">{body}{mor}</div></div></div></div>''')
     gl_ = [x for x in p.get("gallery", []) if x.get("image")]
     did = (f'<section class="sec" id="did"><div class="sh rv"><h2>What I did</h2><span class="lbl mute">{len(secs):02d}</span></div><div class="acc">{"".join(secs)}</div></section>' if secs else "") + (f'<section class="sec pgal" id="did"><div class="sh rv"><h2>What I did</h2><span class="lbl mute">{len(gl_):02d}</span></div><p class="lede rv">{esc(p.get("gallery_text"))}</p><div class="gal5 open" data-lbg>{"".join(gfig(x) for x in gl_)}</div></section>' if gl_ else "")
     meta = "".join(f'<div><dt>{a}</dt><dd>{esc(b)}</dd></div>' for a, b in [("Role", p.get("role")), ("Location", p.get("city")), ("Years", p.get("years") or "—"), ("Disciplines", ", ".join(p.get("disciplines", [])))] + ([("Also written", ", ".join(p["aka"][:4]))] if p.get("aka_visible") and p.get("aka") else []))

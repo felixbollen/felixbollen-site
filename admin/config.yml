@@ -272,6 +272,23 @@ collections:
               - {name: image, label: "360° image (equirectangular, 2:1)", widget: image}
               - {name: thumb, label: "Thumbnail (optional)", widget: image, required: false}
               - {name: caption, label: Caption, widget: string, required: false}
+          - name: case
+            label: "Case study viewer (shown first, with arrows, full screen and download)"
+            widget: object
+            required: false
+            collapsed: true
+            fields:
+              - {name: kicker, label: Kicker, widget: string, required: false}
+              - {name: title, label: Title, widget: string, required: false}
+              - {name: pdf, label: "Download PDF", widget: file, required: false}
+              - name: slides
+                label: Slides
+                widget: list
+                required: false
+                collapsed: true
+                fields:
+                  - {name: image, label: Slide, widget: image}
+          - {name: more_label, label: "Dropdown title for slide deck + images (optional; leave empty to show them open)", widget: string, required: false}
           - {name: deck_title, label: "Slide deck title (optional)", widget: string, required: false}
           - name: deck
             label: "Slide deck (optional)"

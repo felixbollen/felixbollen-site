@@ -94,3 +94,16 @@ const ib=D.getElementById('imp'),dg=D.getElementById('impd');if(ib&&dg)ib.onclic
   c.addEventListener('mouseleave',()=>{clearInterval(t);t=null});
   c.addEventListener('click',e=>{if(i){e.preventDefault();e.stopPropagation();const a=[c,...b.querySelectorAll('a[hidden]')][i];a&&a.click()}},true);
 })})();
+/* case study viewer */
+document.querySelectorAll('.csv').forEach(function(v){var L=JSON.parse(v.querySelector('.csv-d').textContent),im=v.querySelector('.csv-st img'),ix=v.querySelector('.csv-i'),c=0,pre={};
+function ld(i){if(i<0||i>=L.length||pre[i])return;var x=new Image();x.src=L[i];pre[i]=x}
+function go(i){c=(i+L.length)%L.length;im.src=L[c];im.alt=im.alt.replace(/\d+$/,c+1);ix.textContent=String(c+1).padStart(2,'0')+' / '+String(L.length).padStart(2,'0');ld(c+1);ld(c-1)}
+v.querySelector('.csv-p').onclick=function(){go(c-1)};v.querySelector('.csv-n').onclick=function(){go(c+1)};
+im.addEventListener('load',function(){if(!pre[1])ld(1)},{once:true});
+var fb=v.querySelector('.csv-f');function fsOn(){return document.fullscreenElement===v||v.classList.contains('fs')}
+function upd(){fb.textContent=fsOn()?'Exit full screen ✕':'Full screen ⤢'}
+fb.onclick=function(){if(fsOn()){if(document.fullscreenElement)document.exitFullscreen();v.classList.remove('fs');document.body.style.overflow=''}else if(v.requestFullscreen&&!/iP(hone|od)/.test(navigator.userAgent)){v.requestFullscreen().catch(function(){v.classList.add('fs');document.body.style.overflow='hidden';upd()})}else{v.classList.add('fs');document.body.style.overflow='hidden'}upd()};
+document.addEventListener('fullscreenchange',upd);
+v.addEventListener('keydown',function(e){if(e.key==='ArrowRight'){go(c+1);e.preventDefault()}if(e.key==='ArrowLeft'){go(c-1);e.preventDefault()}if(e.key==='Escape'&&v.classList.contains('fs')){v.classList.remove('fs');document.body.style.overflow='';upd()}});
+var sx=null;v.querySelector('.csv-st').addEventListener('touchstart',function(e){sx=e.touches[0].clientX},{passive:true});v.querySelector('.csv-st').addEventListener('touchend',function(e){if(sx===null)return;var d=e.changedTouches[0].clientX-sx;if(Math.abs(d)>40)go(c+(d<0?1:-1));sx=null});
+v.addEventListener('click',function(e){if(!e.target.closest('button,a'))v.focus({preventScroll:true})});});

@@ -113,7 +113,73 @@
      "cutout": false
     }
    ],
-   "deck": []
+   "deck": [],
+   "case": {
+    "kicker": "Case study · Brand identity",
+    "title": "Gleis//Garten — a brand drawn from a tram depot",
+    "pdf": "/press/felix-bollen-gleis-garten-brand-case-study.pdf",
+    "live": "/a/gg-cs/",
+    "slides": [
+     {
+      "image": "/a/gg-cs/gg-cs-01.webp"
+     },
+     {
+      "image": "/a/gg-cs/gg-cs-02.webp"
+     },
+     {
+      "image": "/a/gg-cs/gg-cs-03.webp"
+     },
+     {
+      "image": "/a/gg-cs/gg-cs-04.webp"
+     },
+     {
+      "image": "/a/gg-cs/gg-cs-05.webp"
+     },
+     {
+      "image": "/a/gg-cs/gg-cs-06.webp"
+     },
+     {
+      "image": "/a/gg-cs/gg-cs-07.webp"
+     },
+     {
+      "image": "/a/gg-cs/gg-cs-08.webp"
+     },
+     {
+      "image": "/a/gg-cs/gg-cs-09.webp"
+     },
+     {
+      "image": "/a/gg-cs/gg-cs-10.webp"
+     },
+     {
+      "image": "/a/gg-cs/gg-cs-11.webp"
+     },
+     {
+      "image": "/a/gg-cs/gg-cs-12.webp"
+     },
+     {
+      "image": "/a/gg-cs/gg-cs-13.webp"
+     },
+     {
+      "image": "/a/gg-cs/gg-cs-14.webp"
+     },
+     {
+      "image": "/a/gg-cs/gg-cs-15.webp"
+     },
+     {
+      "image": "/a/gg-cs/gg-cs-16.webp"
+     },
+     {
+      "image": "/a/gg-cs/gg-cs-17.webp"
+     },
+     {
+      "image": "/a/gg-cs/gg-cs-18.webp"
+     },
+     {
+      "image": "/a/gg-cs/gg-cs-19.webp"
+     }
+    ]
+   },
+   "more_label": "Further branding examples"
   },
   {
    "type": "Marketing",

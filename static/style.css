@@ -808,6 +808,7 @@ dialog button{margin-top:8px;border:1px solid #0b0b0b;padding:8px 16px;border-ra
 .csv-st button{position:absolute;top:50%;width:52px;height:52px;margin-top:-26px;border-radius:50%;border:1px solid #0b0b0b;background:rgba(255,255,255,.88);color:#0b0b0b;font-size:20px;cursor:pointer;opacity:.85;transition:opacity .2s,transform .2s}
 .csv-st button:hover{opacity:1;transform:scale(1.06)}
 .csv-p{left:14px}.csv-n{right:14px}
+.csv-lv{position:absolute;inset:0}.csv.live .csv-st>img{visibility:hidden}.csv-st button{z-index:2}
 .csv-c{display:flex;justify-content:space-between;align-items:center;gap:14px;margin-top:14px;flex-wrap:wrap}
 .csv-b{display:flex;gap:10px;flex-wrap:wrap}
 .csv-b button,.csv-b a{font:inherit;font-size:14px;font-weight:700;padding:10px 16px;border:1px solid currentColor;border-radius:40px;background:transparent;color:inherit;text-decoration:none;cursor:pointer}

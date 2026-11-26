@@ -335,11 +335,11 @@ for i, p in enumerate(P):
         csh = ""
         if csl:
             _m = lambda u: (MEDIA + u) if u.startswith("/") else u
-            csh = ('<div class="csv" tabindex="0" aria-label="%s"><div class="csv-h"><span class="lbl">%s</span><b>%s</b></div>'
+            csh = ('<div class="csv" tabindex="0"%s aria-label="%s"><div class="csv-h"><span class="lbl">%s</span><b>%s</b></div>'
                    '<div class="csv-st"><img data-src="%s" alt="%s · slide 1"><button type="button" class="csv-p" aria-label="Previous slide">←</button><button type="button" class="csv-n" aria-label="Next slide">→</button></div>'
                    '<div class="csv-c"><span class="csv-i lbl">01 / %02d</span><span class="csv-b"><button type="button" class="csv-f">Full screen ⤢</button>%s</span></div>'
                    '<script type="application/json" class="csv-d">%s</script></div>') % (
-                esc(cv.get("title")), esc(cv.get("kicker") or "Case study"), esc(cv.get("title")), esc(csl[0]), esc(cv.get("title")), len(csl),
+                (' data-live="%s"' % esc(_m(cv["live"]))) if cv.get("live") else "", esc(cv.get("title")), esc(cv.get("kicker") or "Case study"), esc(cv.get("title")), esc(csl[0]), esc(cv.get("title")), len(csl),
                 ('<a class="csv-dl" href="%s" download>Download PDF ↓</a>' % esc(cv["pdf"])) if cv.get("pdf") else "",
                 json.dumps([_m(u) for u in csl]).replace("</", "<\\/"))
         body = csh + stats(s.get("stats")) + f'<p class="lede">{esc(s.get("text"))}</p>'

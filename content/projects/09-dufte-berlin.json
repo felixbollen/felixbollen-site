@@ -471,5 +471,14 @@
  "card": "#3479e1",
  "slug": "dufte-berlin",
  "logo": "du",
- "tile": "#ffffff"
+ "tile": "#ffffff",
+ "seo_title": "Dufte Berlin – Culinary House, Kant-Garagen | Felix Bollen",
+ "seo_description": "Dufte Berlin, a 1,000 m² culinary and cultural house in the Kant-Garagenpalast, Charlottenburg. Concept, partnerships and marketing led by Felix Bollen.",
+ "aka": [
+  "Dufte",
+  "Dufte Berlin",
+  "Dufte Kantstraße",
+  "Dufte Kant-Garagen",
+  "Dufte Kraft"
+ ]
 }

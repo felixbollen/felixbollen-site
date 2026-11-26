@@ -1,0 +1,236 @@
+{
+  "en": {
+    "path": "/services/",
+    "lang": "en-GB",
+    "seo_title": "Freelance Graphic Designer & Marketing Consultant | Felix Bollen",
+    "seo_description": "Hire Felix Bollen: freelance graphic designer, brand designer, art director and marketing freelancer for hospitality, drinks and culture. Berlin & London.",
+    "kicker": "Services · Berlin, London & remote",
+    "h1": "Freelance graphic designer, art director & marketing consultant",
+    "lead": "I'm Felix Bollen. I design brands and then make sure people actually come: logos and identities, packaging and print, venue concepts, campaigns, social, PR and events. Ten years of building my own brands, from German Kraft Brewery in London to Gleis//Garten in Vienna and Dufte in Berlin, mean I design with the P&L in mind.",
+    "cta": "Start a project",
+    "services_h": "What I do",
+    "services": [
+      [
+        "Brand identity & logo design",
+        "Logos, corporate design and complete brand identities, built from scratch, with guidelines your team can actually use."
+      ],
+      [
+        "Packaging, labels & print",
+        "Beer labels, cans, bottles, gift boxes, menus, posters, flyers and merchandise, print-ready."
+      ],
+      [
+        "Art direction & venue concepts",
+        "The look and feel of a whole venue or business: from the shopfront, signage and glassware to the website and the smallest details on branded cutlery."
+      ],
+      [
+        "Marketing strategy & launches",
+        "Positioning in the local market, go-to-market plans and launch campaigns, measured against the P&L."
+      ],
+      [
+        "Social media, paid ads & CRM",
+        "Social content, Meta and Google Ads, email marketing and CRM set-up (Mailchimp, Zoho)."
+      ],
+      [
+        "PR & press",
+        "Press releases, media lists and working with PR agencies. My projects have been covered by Time Out, The Times, Londonist, Falstaff, Falter, Kurier, ZDF and Pro 7."
+      ],
+      [
+        "Events, festivals & ticketing",
+        "Event concepts, festival marketing, ticket shops and partnerships with brands."
+      ],
+      [
+        "Websites",
+        "Fast, simple websites on Webflow, Squarespace or custom-built, set up for search engines."
+      ],
+      [
+        "Photo & video direction",
+        "Briefing and directing photographers, videographers, creators and agencies."
+      ],
+      [
+        "Part-time CMO",
+        "A senior marketing lead for a few days a week: fractional or interim, remote or on site."
+      ]
+    ],
+    "who_h": "Who I work with",
+    "who": "Restaurants, bars, breweries, distilleries, food markets, hotels, festivals and cultural venues, as well as drinks brands, galleries, musicians, start-ups and small businesses in any sector that want a brand with character and the marketing to fill the room. I work in English and German, for clients in Germany, Austria, Switzerland and the UK, and remotely anywhere.",
+    "work_h": "Selected work",
+    "how_h": "How I work",
+    "how": [
+      [
+        "Freelance & project-based",
+        "A logo, a label, a campaign or a full brand."
+      ],
+      [
+        "Part-time or retained",
+        "Ongoing marketing and design support, or a part-time marketing lead."
+      ],
+      [
+        "Remote first",
+        "Based in Berlin and London; on site when it matters."
+      ],
+      [
+        "Languages",
+        "German (native) and English (fluent)."
+      ],
+      [
+        "Tools",
+        "Adobe Creative Cloud, Webflow, Squarespace, Google & Meta Ads, Mailchimp, Zoho, AI tools."
+      ],
+      [
+        "Education",
+        "BA (Hons) Graphic & Media Design, UAL London College of Communication; industry year at RCKT and Denkwerk, Berlin."
+      ]
+    ],
+    "faq_h": "FAQ",
+    "faq": [
+      [
+        "Who is Felix Bollen?",
+        "Felix Bollen is a German graphic designer, art director and marketing consultant based in Berlin and London. He studied Graphic & Media Design at UAL London College of Communication and in 2017 co-founded German Kraft Brewery in London, which grew into breweries, a distillery and 18 bars across London. He was founding partner and CMO of Gleis//Garten, Vienna's first food market, and managing director of Dufte, a culinary and cultural house in Berlin."
+      ],
+      [
+        "What services does Felix Bollen offer?",
+        "Brand identity and logo design, packaging and label design, print and menu design, signage, art direction and venue concepts, websites, marketing strategy and launch campaigns, social media and paid ads, CRM and email marketing, PR, event and festival marketing, and part-time or interim marketing leadership (fractional CMO)."
+      ],
+      [
+        "Can I hire Felix Bollen as a freelance graphic designer or marketing freelancer?",
+        "Yes. Felix takes on freelance, part-time and remote projects, from a single logo or beer label to a complete brand, launch campaign or an ongoing part-time marketing role. Write to felixbollen@gmail.com or use the contact form on felixbollen.com."
+      ],
+      [
+        "Where is Felix Bollen based?",
+        "Berlin and London. He works with clients across Germany, Austria, Switzerland and the United Kingdom, and remotely worldwide, in German and English."
+      ],
+      [
+        "Which industries does Felix specialise in?",
+        "Hospitality and food & drink: breweries, bars, restaurants, food markets, hotels, gin and spirits, festivals and events. Also art galleries, music artwork and small businesses and start-ups in other sectors."
+      ],
+      [
+        "What was Felix Bollen's role at Gleis//Garten?",
+        "Felix was founding partner and CMO of Gleis//Garten (also written Gleisgarten or Gleis Garten), Vienna's first food market, in a historic tram depot in Meidling. He led its brand, art direction and marketing, and co-founded the Vienna Kraft brewery and the Vienna Kraft Bier Fest inside it."
+      ],
+      [
+        "Which brands has Felix Bollen worked on?",
+        "German Kraft Brewery, German Kraft Mayfair, Kraft Dalston, Jim & Tonic, Model Market Lewisham, Gleis//Garten, Vienna Kraft, Dufte Berlin, The Square Gallery and the album artwork for Emancipator's 'Baralku'."
+      ],
+      [
+        "How do I contact Felix Bollen?",
+        "By email at felixbollen@gmail.com or through the contact form at felixbollen.com/#contact."
+      ]
+    ],
+    "contact_h": "Tell me what you're building.",
+    "alt_label": "Deutsch",
+    "alt_path": "/de/"
+  },
+  "de": {
+    "path": "/de/",
+    "lang": "de-DE",
+    "seo_title": "Felix Bollen – Grafikdesigner & Marketing Freelancer Berlin",
+    "seo_description": "Felix Bollen: freiberuflicher Grafikdesigner, Art Director und Marketing-Berater in Berlin & London. Corporate Design, Logos, Kampagnen, Gastro-Konzepte.",
+    "kicker": "Leistungen · Berlin, London & remote",
+    "h1": "Freiberuflicher Grafikdesigner, Art Director & Marketing-Berater",
+    "lead": "Ich bin Felix Bollen. Ich entwickle Marken und sorge dafür, dass die Leute dann auch kommen: Logos und Corporate Design, Verpackung und Print, Gastronomiekonzepte, Kampagnen, Social Media, PR und Events. Zehn Jahre eigene Marken, von der German Kraft Brauerei in London über Gleis//Garten in Wien bis Dufte in Berlin, heißt: Ich gestalte mit Blick auf die Zahlen.",
+    "cta": "Projekt anfragen",
+    "services_h": "Leistungen",
+    "services": [
+      [
+        "Corporate Design & Logo-Design",
+        "Logos, Corporate Design und komplette Markenidentitäten, von Grund auf entwickelt, mit Richtlinien, mit denen Ihr Team arbeiten kann."
+      ],
+      [
+        "Verpackung, Etiketten & Print",
+        "Bieretiketten, Dosen, Flaschen, Geschenkboxen, Speisekarten, Plakate, Flyer und Merchandise, druckfertig."
+      ],
+      [
+        "Art Direction & Gastronomiekonzepte",
+        "Das Erscheinungsbild eines ganzen Ladens oder Unternehmens: von Fassade, Beschilderung und Gläsern bis zur Website und dem kleinsten Detail auf dem Besteck."
+      ],
+      [
+        "Marketingstrategie & Launches",
+        "Positionierung im lokalen Markt, Go-to-Market und Launch-Kampagnen, gemessen an der GuV."
+      ],
+      [
+        "Social Media, Paid Ads & CRM",
+        "Social-Media-Content, Meta- und Google-Ads, E-Mail-Marketing und CRM (Mailchimp, Zoho)."
+      ],
+      [
+        "PR & Pressearbeit",
+        "Pressemitteilungen, Medienkontakte und Zusammenarbeit mit PR-Agenturen. Über meine Projekte berichteten u. a. Time Out, The Times, Londonist, Falstaff, Falter, Kurier, ZDF und Pro 7."
+      ],
+      [
+        "Events, Festivals & Ticketing",
+        "Eventkonzepte, Festivalmarketing, Ticketshops und Markenkooperationen."
+      ],
+      [
+        "Websites",
+        "Schnelle, schlichte Websites mit Webflow, Squarespace oder individuell, suchmaschinenoptimiert."
+      ],
+      [
+        "Foto- & Videoregie",
+        "Briefing und Regie für Fotografen, Videografen, Creator und Agenturen."
+      ],
+      [
+        "Teilzeit-CMO & Interim-Marketingleitung",
+        "Erfahrene Marketingleitung für ein paar Tage pro Woche, remote oder vor Ort."
+      ]
+    ],
+    "who_h": "Für wen ich arbeite",
+    "who": "Restaurants, Bars, Brauereien, Destillerien, Food Markets, Hotels, Festivals und Kulturorte, aber auch Getränkemarken, Galerien, Musiker, Start-ups und kleine Unternehmen jeder Branche, die eine Marke mit Charakter wollen und das Marketing, das den Laden füllt. Ich arbeite auf Deutsch und Englisch, für Kunden in Deutschland, Österreich, der Schweiz und Großbritannien, und remote überall.",
+    "work_h": "Ausgewählte Projekte",
+    "how_h": "Zusammenarbeit",
+    "how": [
+      [
+        "Freiberuflich & projektbasiert",
+        "Ein Logo, ein Etikett, eine Kampagne oder eine komplette Marke."
+      ],
+      [
+        "Teilzeit oder laufend",
+        "Laufende Unterstützung in Marketing und Design oder Marketingleitung in Teilzeit."
+      ],
+      [
+        "Remote first",
+        "Mit Sitz in Berlin und London, vor Ort, wenn es darauf ankommt."
+      ],
+      [
+        "Sprachen",
+        "Deutsch (Muttersprache) und Englisch (fließend)."
+      ],
+      [
+        "Tools",
+        "Adobe Creative Cloud, Webflow, Squarespace, Google- & Meta-Ads, Mailchimp, Zoho, KI-Tools."
+      ],
+      [
+        "Ausbildung",
+        "BA (Hons) Graphic & Media Design, UAL London College of Communication; Praxisjahr bei RCKT und Denkwerk, Berlin."
+      ]
+    ],
+    "faq_h": "Häufige Fragen",
+    "faq": [
+      [
+        "Wer ist Felix Bollen?",
+        "Felix Bollen ist ein deutscher Grafikdesigner, Art Director und Marketing-Berater mit Sitz in Berlin und London. Er hat Graphic & Media Design am London College of Communication (UAL) studiert und 2017 die German Kraft Brauerei in London mitgegründet, aus der Brauereien, eine Destillerie und 18 Bars in London wurden. Er war Gründungspartner und CMO von Gleis//Garten, dem ersten Food Market Wiens, und Geschäftsführer von Dufte, einem kulinarischen Kulturhaus in Berlin."
+      ],
+      [
+        "Welche Leistungen bietet Felix Bollen an?",
+        "Corporate Design und Logo-Design, Verpackungs- und Etikettendesign, Print und Speisekarten, Beschilderung, Art Direction und Gastronomiekonzepte, Websites, Marketingstrategie und Launch-Kampagnen, Social Media und Paid Ads, CRM und E-Mail-Marketing, PR, Event- und Festivalmarketing sowie Marketingleitung in Teilzeit oder als Interim (Fractional CMO)."
+      ],
+      [
+        "Kann ich Felix Bollen als freiberuflichen Grafikdesigner oder Marketing Freelancer buchen?",
+        "Ja. Felix übernimmt freiberufliche, Teilzeit- und Remote-Projekte, vom einzelnen Logo oder Bieretikett bis zur kompletten Marke, Launch-Kampagne oder laufenden Marketingrolle in Teilzeit. Schreiben Sie an felixbollen@gmail.com oder nutzen Sie das Kontaktformular auf felixbollen.com."
+      ],
+      [
+        "Wo arbeitet Felix Bollen?",
+        "In Berlin und London. Er arbeitet mit Kunden in Deutschland, Österreich, der Schweiz und Großbritannien und remote weltweit, auf Deutsch und Englisch."
+      ],
+      [
+        "Was hat Felix Bollen bei Gleis//Garten gemacht?",
+        "Felix war Gründungspartner und CMO von Gleis//Garten (auch Gleisgarten oder Gleis Garten geschrieben), dem ersten Food Market Wiens in einer historischen Straßenbahnremise in Meidling. Er verantwortete Marke, Art Direction und Marketing und gründete die Brauerei Vienna Kraft und das Vienna Kraft Bier Fest mit."
+      ],
+      [
+        "Wie erreiche ich Felix Bollen?",
+        "Per E-Mail an felixbollen@gmail.com oder über das Kontaktformular auf felixbollen.com/#contact."
+      ]
+    ],
+    "contact_h": "Erzählen Sie mir, was Sie aufbauen.",
+    "alt_label": "English",
+    "alt_path": "/services/"
+  }
+}

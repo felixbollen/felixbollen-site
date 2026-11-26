@@ -1,118 +1,125 @@
 {
-  "order": 9,
-  "slug": "jim-and-tonic",
-  "name": "Jim & Tonic",
-  "kind": "Gin & spirits",
-  "city": "London",
-  "years": "",
-  "role": "Creative input, branding & marketing",
-  "disciplines": [
-    "Graphic Design",
-    "Marketing & Sales"
-  ],
-  "logo": "jt",
-  "background": "#0b0b0b",
-  "text_colour": "#ffffff",
-  "tile": "#1a1a1a",
-  "card": "#0b0b0b",
-  "intro": "The gin and spirits brand we helped start alongside German Kraft. I had creative input on the branding and marketing, from bottles and gift boxes to a bar on a double-decker at London Pride.",
-  "credit": "",
-  "hero": {
-    "type": "image",
-    "image": "/a/jt-mkt-01.webp"
+ "order": 9,
+ "slug": "jim-and-tonic",
+ "name": "Jim & Tonic",
+ "kind": "Gin & spirits",
+ "city": "London",
+ "years": "",
+ "role": "Creative input, branding & marketing",
+ "disciplines": [
+  "Graphic Design",
+  "Marketing & Sales"
+ ],
+ "logo": "jt",
+ "background": "#0b0b0b",
+ "text_colour": "#ffffff",
+ "tile": "#1a1a1a",
+ "card": "#0b0b0b",
+ "intro": "The gin and spirits brand we helped start alongside German Kraft. I had creative input on the branding and marketing, from bottles and gift boxes to a bar on a double-decker at London Pride.",
+ "credit": "",
+ "hero": {
+  "type": "image",
+  "image": "/a/jt-mkt-01.webp"
+ },
+ "sections": [],
+ "gallery_text": "J&T is co-owned by German Kraft. J&T used to distil their first gins on site, next to our brewery, before moving to a bigger production site on Sugar House Island, London. I helped with various small branding projects, collaborated on 'hop gins', helped out at events such as Pride London, where they ran all the bars, and created content of their drinks at our bars.",
+ "gallery": [
+  {
+   "image": "/a/jt-brand-02.webp",
+   "caption": "Jim",
+   "cutout": true
   },
-  "sections": [],
-  "gallery_text": "J&T is co-owned by German Kraft. J&T used to distil their first gins on site, next to our brewery, before moving to a bigger production site on Sugar House Island, London. I helped with various small branding projects, collaborated on 'hop gins', helped out at events such as Pride London, where they ran all the bars, and created content of their drinks at our bars.",
-  "gallery": [
-    {
-      "image": "/a/jt-brand-02.webp",
-      "caption": "Jim",
-      "cutout": true
-    },
-    {
-      "image": "/a/jt-brand-03.webp",
-      "caption": "KRAFT hopped grapefruit gin",
-      "cutout": false
-    },
-    {
-      "image": "/a/jt-brand-04.webp",
-      "caption": "Gin and gift box",
-      "cutout": false
-    },
-    {
-      "image": "/a/jt-brand-05.webp",
-      "caption": "Recipe booklet",
-      "cutout": false
-    },
-    {
-      "image": "/a/jt-brand-06.webp",
-      "caption": "Martinez bottle",
-      "cutout": false
-    },
-    {
-      "image": "/a/jt-mkt-01.webp",
-      "caption": "The Pride bar bus",
-      "cutout": false
-    },
-    {
-      "image": "/a/jt-mkt-02.webp",
-      "caption": "Pride bar, Trafalgar Square",
-      "cutout": false
-    },
-    {
-      "image": "/a/jt-mkt-03.webp",
-      "caption": "On top of the bus",
-      "cutout": false
-    },
-    {
-      "image": "/a/jt-mkt-04.webp",
-      "caption": "Pride merch",
-      "cutout": false
-    },
-    {
-      "image": "/a/jt-mkt-05.webp",
-      "caption": "With German Kraft",
-      "cutout": false
-    },
-    {
-      "image": "/a/jt-mkt-06.webp",
-      "caption": "Canned G&T",
-      "cutout": false
-    },
-    {
-      "image": "/a/jt-concept-01.webp",
-      "caption": "The still",
-      "cutout": false
-    },
-    {
-      "image": "/a/jt-concept-02.webp",
-      "caption": "Mobile gin bar",
-      "cutout": false
-    },
-    {
-      "image": "/a/jt-concept-03.webp",
-      "caption": "Distillery bar",
-      "cutout": false
-    },
-    {
-      "image": "/a/jt-photo-01.webp",
-      "caption": "Cocktail for Ukraine",
-      "cutout": false
-    },
-    {
-      "image": "/a/jt-photo-02.webp",
-      "caption": "Roobee Doo",
-      "cutout": false
-    },
-    {
-      "image": "/a/jt-photo-03.webp",
-      "caption": "G&T",
-      "cutout": false
-    },
-    {
-      "image": "/a/jt-photo-04.webp",
-      "caption": "Behind the bar",
-      "cutout": false
-    }
-  ]
+  {
+   "image": "/a/jt-brand-03.webp",
+   "caption": "KRAFT hopped grapefruit gin",
+   "cutout": false
+  },
+  {
+   "image": "/a/jt-brand-04.webp",
+   "caption": "Gin and gift box",
+   "cutout": false
+  },
+  {
+   "image": "/a/jt-brand-05.webp",
+   "caption": "Recipe booklet",
+   "cutout": false
+  },
+  {
+   "image": "/a/jt-brand-06.webp",
+   "caption": "Martinez bottle",
+   "cutout": false
+  },
+  {
+   "image": "/a/jt-mkt-01.webp",
+   "caption": "The Pride bar bus",
+   "cutout": false
+  },
+  {
+   "image": "/a/jt-mkt-02.webp",
+   "caption": "Pride bar, Trafalgar Square",
+   "cutout": false
+  },
+  {
+   "image": "/a/jt-mkt-03.webp",
+   "caption": "On top of the bus",
+   "cutout": false
+  },
+  {
+   "image": "/a/jt-mkt-04.webp",
+   "caption": "Pride merch",
+   "cutout": false
+  },
+  {
+   "image": "/a/jt-mkt-05.webp",
+   "caption": "With German Kraft",
+   "cutout": false
+  },
+  {
+   "image": "/a/jt-mkt-06.webp",
+   "caption": "Canned G&T",
+   "cutout": false
+  },
+  {
+   "image": "/a/jt-concept-01.webp",
+   "caption": "The still",
+   "cutout": false
+  },
+  {
+   "image": "/a/jt-concept-02.webp",
+   "caption": "Mobile gin bar",
+   "cutout": false
+  },
+  {
+   "image": "/a/jt-concept-03.webp",
+   "caption": "Distillery bar",
+   "cutout": false
+  },
+  {
+   "image": "/a/jt-photo-01.webp",
+   "caption": "Cocktail for Ukraine",
+   "cutout": false
+  },
+  {
+   "image": "/a/jt-photo-02.webp",
+   "caption": "Roobee Doo",
+   "cutout": false
+  },
+  {
+   "image": "/a/jt-photo-03.webp",
+   "caption": "G&T",
+   "cutout": false
+  },
+  {
+   "image": "/a/jt-photo-04.webp",
+   "caption": "Behind the bar",
+   "cutout": false
+  }
+ ],
+ "seo_title": "Jim & Tonic Gin, London – Branding & Marketing | Felix Bollen",
+ "seo_description": "Creative input on branding and marketing for Jim & Tonic, the London gin and spirits brand: bottles, gift boxes, events and a double-decker bar at Pride.",
+ "aka": [
+  "Jim and Tonic",
+  "Jim & Tonic Distillery",
+  "Jim and Tonic Gin"
+ ]
 }

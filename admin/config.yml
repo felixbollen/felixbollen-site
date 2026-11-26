@@ -30,6 +30,9 @@ collections:
         fields:
           - {name: title, label: "Browser tab title", widget: string}
           - {name: description, label: "Google description", widget: text}
+          - {name: seo_title, label: "Google title (SEO, max ~60 characters)", widget: string, required: false}
+          - {name: seo_description, label: "Google description (SEO, 120-155 characters)", widget: text, required: false}
+          - {name: same_as, label: "Profile links (LinkedIn, Instagram, Behance…) for Google & AI", widget: list, required: false}
           - {name: name, label: "Name (big heading)", widget: string}
           - {name: intro, label: "Intro text", widget: text}
           - name: disciplines
@@ -190,6 +193,10 @@ collections:
       - {name: role, label: "My role", widget: string}
       - {name: disciplines, label: Disciplines, widget: select, multiple: true, options: ["Marketing & Sales", "Art Direction", "Graphic Design"]}
       - {name: intro, label: "Intro text", widget: text}
+      - {name: seo_title, label: "Google title (SEO, max ~60 characters)", widget: string, required: false}
+      - {name: seo_description, label: "Google description (SEO, 120-155 characters)", widget: text, required: false}
+      - {name: aka, label: "Other spellings / names people search for", widget: list, required: false}
+      - {name: aka_visible, label: "Show other spellings on the page", widget: boolean, required: false}
       - {name: credit, label: "Credit line (optional)", widget: text, required: false}
       - name: hero
         label: "Top of the page"

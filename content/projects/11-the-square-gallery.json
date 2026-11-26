@@ -1,177 +1,183 @@
 {
-  "name": "The Square Gallery",
-  "kind": "Brand, shopfront & web",
-  "city": "London",
-  "years": "2016–2018",
-  "role": "Logo, CI, shopfront, web design",
-  "disciplines": [
-    "Graphic Design",
-    "Art Direction"
-  ],
-  "intro": "A white-walled contemporary art space on Battersea Square, set up to give emerging artists a stage and to make contemporary art affordable for south-west London. Morgane Wagner founded the gallery and I designed its identity, shopfront and website. It was one of my first 'real life' official applications.",
-  "credit": "Photos: The Square Gallery archive.",
-  "hero": {
-    "image": "/a/sq/sq-opening.webp",
-    "shape": "wide",
-    "caption": "Opening night, 12 May 2016: queues outside the slate shopfront, with the fascia mark and window artworks."
+ "name": "The Square Gallery",
+ "kind": "Brand, shopfront & web",
+ "city": "London",
+ "years": "2016–2018",
+ "role": "Logo, CI, shopfront, web design",
+ "disciplines": [
+  "Graphic Design",
+  "Art Direction"
+ ],
+ "intro": "A white-walled contemporary art space on Battersea Square, set up to give emerging artists a stage and to make contemporary art affordable for south-west London. Morgane Wagner founded the gallery and I designed its identity, shopfront and website. It was one of my first 'real life' official applications.",
+ "credit": "Photos: The Square Gallery archive.",
+ "hero": {
+  "image": "/a/sq/sq-opening.webp",
+  "shape": "wide",
+  "caption": "Opening night, 12 May 2016: queues outside the slate shopfront, with the fascia mark and window artworks."
+ },
+ "sections": [],
+ "card_name": "",
+ "facts": [
+  {
+   "label": "Opened",
+   "value": "12 May 2016"
   },
-  "sections": [],
-  "card_name": "",
-  "facts": [
+  {
+   "label": "Location",
+   "value": "9B Battersea Square, London SW11 3RA"
+  },
+  {
+   "label": "My role",
+   "value": "Logo, CI, shopfront, web design"
+  },
+  {
+   "label": "With",
+   "value": "Morgane Wagner (co-founder) · Anton Borkmann (spatial design)"
+  }
+ ],
+ "chapters": [
+  {
+   "label": "The brief",
+   "heading": "A foot in the door for new artists",
+   "text": [
+    "London has few spaces where new artists can get a foot in the door. The Square Gallery was built to change that: a platform for exciting, affordably priced contemporary work, with artists scouted from the Royal Academy, the Royal College of Art, Goldsmiths and Central Saint Martins.",
+    "The gallery launched with a group show of eleven artists, including Sin Park, Gordon Berger and Zokatos, who opened the night with a live spray-painting session the guests could join. The ambition beyond the walls: workshops and classes that reconnect art with the local Battersea community."
+   ],
+   "image": "",
+   "caption": ""
+  },
+  {
+   "label": "01 · Logo",
+   "heading": "A mark named after its square",
+   "text": [
+    "The name comes from the address, so the mark is literally a square: a hand-brushed white frame, rough-edged like a painter's stroke, around widely spaced capitals. Stacked as SQUARE GALLERY LONDON for the window sign; simplified to a clean square icon beside the wordmark on the fascia."
+   ],
+   "image": "/a/sq/sq-logo-sign.webp",
+   "caption": "The window sign."
+  },
+  {
+   "label": "02 · Corporate identity",
+   "heading": "A design language that steps back",
+   "text": [
+    "A gallery's identity has to frame the work, not compete with it: dark slate, off-white and nothing else, so the art carries the colour. The brushed square doubles as a frame on posters and social, and later became the page avatar. The same language ran through exhibition window graphics, invites, print and social."
+   ],
+   "image": "/a/sq/sq-window.webp",
+   "caption": "Exhibition window graphics for Nothing To See Here."
+  },
+  {
+   "label": "03 · Shopfront",
+   "heading": "A front that works on the square",
+   "text": [
+    "The unit at 9B Battersea Square was painted dark slate grey, with the logo in cream on the fascia and the services set in small type on the lower window panes, a calm front that lets the window hang do the selling."
+   ],
+   "image": "/a/sq/sq-fascia.webp",
+   "caption": "Square icon and SQUARE GALLERY wordmark on the fascia."
+  },
+  {
+   "label": "04 · Space & web",
+   "heading": "White walls, online and off",
+   "text": [
+    "Anton Borkmann shaped the white-walled space, with warm wooden floors and picture lighting. I carried the same calm into the Squarespace website, which put artists, shows and event photos first."
+   ],
+   "image": "/a/sq/sq-space.webp",
+   "caption": "Visitors in the white-walled gallery on opening night."
+  }
+ ],
+ "apps_label": "Photos",
+ "apps_heading": "Opening night and beyond",
+ "apps_text": "",
+ "applications": [
+  {
+   "image": "/a/sq/sq-front.webp",
+   "caption": "The open front on opening night, May 2016."
+  },
+  {
+   "image": "/a/sq/sq-heroine.webp",
+   "caption": "herOiNE: The Future is Pink, first-birthday show, May 2017."
+  }
+ ],
+ "details": [
+  {
+   "label": "Logo, CI, shopfront, web",
+   "value": "Felix Bollen"
+  },
+  {
+   "label": "Co-founder",
+   "value": "Morgane Wagner"
+  },
+  {
+   "label": "Spatial design",
+   "value": "Anton Borkmann"
+  }
+ ],
+ "template": "case",
+ "order": 10,
+ "background": "#ffffff",
+ "text_colour": "#0b0b0b",
+ "card": "#3b3437",
+ "slug": "the-square-gallery",
+ "logo": "sq",
+ "apps_shape": "wide",
+ "lists": [
+  {
+   "heading": "Programme",
+   "items": [
     {
-      "label": "Opened",
-      "value": "12 May 2016"
+     "a": "Opening group show, 11 artists",
+     "b": "May 2016"
     },
     {
-      "label": "Location",
-      "value": "9B Battersea Square, London SW11 3RA"
+     "a": "The Sacred Screen",
+     "b": "Jan 2017"
     },
     {
-      "label": "My role",
-      "value": "Logo, CI, shopfront, web design"
+     "a": "The Sacred 419",
+     "b": "Feb 2017"
     },
     {
-      "label": "With",
-      "value": "Morgane Wagner (co-founder) · Anton Borkmann (spatial design)"
+     "a": "Art in the Attic, sale of surplus art",
+     "b": "Mar 2017"
+    },
+    {
+     "a": "HerOiNE: The Future is Pink",
+     "b": "May 2017"
+    },
+    {
+     "a": "Animals as Data",
+     "b": "Nov 2017"
+    },
+    {
+     "a": "Image of Love",
+     "b": "Mar 2018"
+    },
+    {
+     "a": "Southcott and Jones",
+     "b": "Jun 2018"
     }
-  ],
-  "chapters": [
+   ]
+  },
+  {
+   "heading": "Press",
+   "items": [
     {
-      "label": "The brief",
-      "heading": "A foot in the door for new artists",
-      "text": [
-        "London has few spaces where new artists can get a foot in the door. The Square Gallery was built to change that: a platform for exciting, affordably priced contemporary work, with artists scouted from the Royal Academy, the Royal College of Art, Goldsmiths and Central Saint Martins.",
-        "The gallery launched with a group show of eleven artists, including Sin Park, Gordon Berger and Zokatos, who opened the night with a live spray-painting session the guests could join. The ambition beyond the walls: workshops and classes that reconnect art with the local Battersea community."
-      ],
-      "image": "",
-      "caption": ""
+     "a": "London Loves Business",
+     "b": "Founder interview on the gallery's mission, February 2017"
     },
     {
-      "label": "01 · Logo",
-      "heading": "A mark named after its square",
-      "text": [
-        "The name comes from the address, so the mark is literally a square: a hand-brushed white frame, rough-edged like a painter's stroke, around widely spaced capitals. Stacked as SQUARE GALLERY LONDON for the window sign; simplified to a clean square icon beside the wordmark on the fascia."
-      ],
-      "image": "/a/sq/sq-logo-sign.webp",
-      "caption": "The window sign."
+     "a": "What's Hot London",
+     "b": "Launch feature on London's youngest gallery owner, 2016"
     },
     {
-      "label": "02 · Corporate identity",
-      "heading": "A design language that steps back",
-      "text": [
-        "A gallery's identity has to frame the work, not compete with it: dark slate, off-white and nothing else, so the art carries the colour. The brushed square doubles as a frame on posters and social, and later became the page avatar. The same language ran through exhibition window graphics, invites, print and social."
-      ],
-      "image": "/a/sq/sq-window.webp",
-      "caption": "Exhibition window graphics for Nothing To See Here."
-    },
-    {
-      "label": "03 · Shopfront",
-      "heading": "A front that works on the square",
-      "text": [
-        "The unit at 9B Battersea Square was painted dark slate grey, with the logo in cream on the fascia and the services set in small type on the lower window panes, a calm front that lets the window hang do the selling."
-      ],
-      "image": "/a/sq/sq-fascia.webp",
-      "caption": "Square icon and SQUARE GALLERY wordmark on the fascia."
-    },
-    {
-      "label": "04 · Space & web",
-      "heading": "White walls, online and off",
-      "text": [
-        "Anton Borkmann shaped the white-walled space, with warm wooden floors and picture lighting. I carried the same calm into the Squarespace website, which put artists, shows and event photos first."
-      ],
-      "image": "/a/sq/sq-space.webp",
-      "caption": "Visitors in the white-walled gallery on opening night."
+     "a": "ArtRabbit",
+     "b": "Exhibition listings, 2017–2018"
     }
-  ],
-  "apps_label": "Photos",
-  "apps_heading": "Opening night and beyond",
-  "apps_text": "",
-  "applications": [
-    {
-      "image": "/a/sq/sq-front.webp",
-      "caption": "The open front on opening night, May 2016."
-    },
-    {
-      "image": "/a/sq/sq-heroine.webp",
-      "caption": "herOiNE: The Future is Pink, first-birthday show, May 2017."
-    }
-  ],
-  "details": [
-    {
-      "label": "Logo, CI, shopfront, web",
-      "value": "Felix Bollen"
-    },
-    {
-      "label": "Co-founder",
-      "value": "Morgane Wagner"
-    },
-    {
-      "label": "Spatial design",
-      "value": "Anton Borkmann"
-    }
-  ],
-  "template": "case",
-  "order": 10,
-  "background": "#ffffff",
-  "text_colour": "#0b0b0b",
-  "card": "#3b3437",
-  "slug": "the-square-gallery",
-  "logo": "sq",
-  "apps_shape": "wide",
-  "lists": [
-    {
-      "heading": "Programme",
-      "items": [
-        {
-          "a": "Opening group show, 11 artists",
-          "b": "May 2016"
-        },
-        {
-          "a": "The Sacred Screen",
-          "b": "Jan 2017"
-        },
-        {
-          "a": "The Sacred 419",
-          "b": "Feb 2017"
-        },
-        {
-          "a": "Art in the Attic, sale of surplus art",
-          "b": "Mar 2017"
-        },
-        {
-          "a": "HerOiNE: The Future is Pink",
-          "b": "May 2017"
-        },
-        {
-          "a": "Animals as Data",
-          "b": "Nov 2017"
-        },
-        {
-          "a": "Image of Love",
-          "b": "Mar 2018"
-        },
-        {
-          "a": "Southcott and Jones",
-          "b": "Jun 2018"
-        }
-      ]
-    },
-    {
-      "heading": "Press",
-      "items": [
-        {
-          "a": "London Loves Business",
-          "b": "Founder interview on the gallery's mission, February 2017"
-        },
-        {
-          "a": "What's Hot London",
-          "b": "Launch feature on London's youngest gallery owner, 2016"
-        },
-        {
-          "a": "ArtRabbit",
-          "b": "Exhibition listings, 2017–2018"
-        }
-      ]
-    }
-  ]
+   ]
+  }
+ ],
+ "seo_title": "The Square Gallery, Battersea – Brand & Shopfront | Felix Bollen",
+ "seo_description": "Logo, identity, shopfront and website for The Square Gallery, a contemporary art space on Battersea Square, London, founded by Morgane Wagner.",
+ "aka": [
+  "The Square Gallery London",
+  "Square Gallery Battersea"
+ ]
 }

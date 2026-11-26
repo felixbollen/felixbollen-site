@@ -1,113 +1,119 @@
 {
-  "order": 8,
-  "template": "case",
-  "slug": "emancipator-baralku",
-  "name": "Emancipator: Baralku",
-  "card_name": "Emancipator",
-  "kind": "Album artwork & merchandise",
-  "city": "Portland, USA",
-  "years": "2017",
-  "role": "Artwork, illustration, merch graphics",
-  "disciplines": [
-    "Graphic Design",
-    "Art Direction"
-  ],
-  "logo": "em",
-  "background": "#ffffff",
-  "text_colour": "#0b0b0b",
-  "card": "#0d1320",
-  "intro": "What started as a university project on identity and the thumbprint became the cover of Emancipator’s fifth studio album, and the visual thread running through the record, the vinyl and the merch line.",
-  "credit": "Album and music © Emancipator / Loci Records.",
-  "hero": {
-    "image": "/a/em/em-cover.webp"
+ "order": 8,
+ "template": "case",
+ "slug": "emancipator-baralku",
+ "name": "Emancipator: Baralku",
+ "card_name": "Emancipator",
+ "kind": "Album artwork & merchandise",
+ "city": "Portland, USA",
+ "years": "2017",
+ "role": "Artwork, illustration, merch graphics",
+ "disciplines": [
+  "Graphic Design",
+  "Art Direction"
+ ],
+ "logo": "em",
+ "background": "#ffffff",
+ "text_colour": "#0b0b0b",
+ "card": "#0d1320",
+ "intro": "What started as a university project on identity and the thumbprint became the cover of Emancipator’s fifth studio album, and the visual thread running through the record, the vinyl and the merch line.",
+ "credit": "Album and music © Emancipator / Loci Records.",
+ "hero": {
+  "image": "/a/em/em-cover.webp"
+ },
+ "facts": [
+  {
+   "label": "Client",
+   "value": "Emancipator (Doug Appling)"
   },
-  "facts": [
-    {
-      "label": "Client",
-      "value": "Emancipator (Doug Appling)"
-    },
-    {
-      "label": "Label",
-      "value": "Loci Records, Portland"
-    },
-    {
-      "label": "Released",
-      "value": "17 November 2017"
-    },
-    {
-      "label": "Role",
-      "value": "Artwork, illustration, merch graphics"
-    }
-  ],
-  "chapters": [
-    {
-      "label": "01 — The idea",
-      "heading": "A thumbprint is the one mark that is only ever yours.",
-      "text": [
-        "The project began at university with a brief around identity. I kept coming back to the thumb: the print as a signature nobody can copy, and a record of everything that shapes a person. I built a series of prints out of other materials: street maps of a city, the grain of a tree.",
-        "In the tree-ring version the ridges read as growth over time, and placing the print where a face should be swapped a portrait for something more personal than a face could show."
-      ],
-      "image": "/a/em/em-streetmap.webp",
-      "caption": "From the original series: a thumbprint built from a city street map, identity shaped by place."
-    },
-    {
-      "label": "02 — From brief to record",
-      "heading": "An island in the stars",
-      "text": [
-        "Baralku is named after the spirit island of Yolngu belief, where departed souls light fires in the Milky Way. The faceless figure against a dark, star-flecked ground fitted that story: one individual, reduced to the mark only they leave behind.",
-        "The palette stays restrained, cold blue ridges warmed by a copper edge, with small, wide-tracked type so the image does the work at thumbnail size on streaming platforms as well as on a 12\" sleeve."
-      ],
-      "image": "/a/em/em-artwork.webp",
-      "caption": "The full Baralku artwork without typography."
-    }
-  ],
-  "apps_label": "03 — Applications",
-  "apps_heading": "One mark, a whole release",
-  "apps_text": "The thumbprint became the album’s identity across vinyl, digital and the official merch range, licensed to Emancipator Music for ongoing use.",
-  "applications": [
-    {
-      "image": "/a/em/em-vinyl.webp",
-      "caption": "Vinyl LP sleeve"
-    },
-    {
-      "image": "/a/em/em-tee-navy.webp",
-      "caption": "Thumbprint tee, navy"
-    },
-    {
-      "image": "/a/em/em-tee-black.webp",
-      "caption": "Thumbprint tee, black"
-    },
-    {
-      "image": "/a/em/em-tee-repeat.webp",
-      "caption": "Repeat-print tee"
-    },
-    {
-      "image": "/a/em/em-tank.webp",
-      "caption": "Racerback tank"
-    },
-    {
-      "image": "/a/em/em-usb.webp",
-      "caption": "Wooden USB album edition"
-    }
-  ],
-  "details": [
-    {
-      "label": "Album",
-      "value": "Baralku, 5th studio album, 14 tracks"
-    },
-    {
-      "label": "Formats",
-      "value": "Digital, CD, LP, deluxe 2xLP, USB"
-    },
-    {
-      "label": "Artwork",
-      "value": "Felix Bollen"
-    },
-    {
-      "label": "Listen",
-      "value": "emancipator.bandcamp.com",
-      "url": "https://emancipator.bandcamp.com"
-    }
-  ],
-  "sections": []
+  {
+   "label": "Label",
+   "value": "Loci Records, Portland"
+  },
+  {
+   "label": "Released",
+   "value": "17 November 2017"
+  },
+  {
+   "label": "Role",
+   "value": "Artwork, illustration, merch graphics"
+  }
+ ],
+ "chapters": [
+  {
+   "label": "01 — The idea",
+   "heading": "A thumbprint is the one mark that is only ever yours.",
+   "text": [
+    "The project began at university with a brief around identity. I kept coming back to the thumb: the print as a signature nobody can copy, and a record of everything that shapes a person. I built a series of prints out of other materials: street maps of a city, the grain of a tree.",
+    "In the tree-ring version the ridges read as growth over time, and placing the print where a face should be swapped a portrait for something more personal than a face could show."
+   ],
+   "image": "/a/em/em-streetmap.webp",
+   "caption": "From the original series: a thumbprint built from a city street map, identity shaped by place."
+  },
+  {
+   "label": "02 — From brief to record",
+   "heading": "An island in the stars",
+   "text": [
+    "Baralku is named after the spirit island of Yolngu belief, where departed souls light fires in the Milky Way. The faceless figure against a dark, star-flecked ground fitted that story: one individual, reduced to the mark only they leave behind.",
+    "The palette stays restrained, cold blue ridges warmed by a copper edge, with small, wide-tracked type so the image does the work at thumbnail size on streaming platforms as well as on a 12\" sleeve."
+   ],
+   "image": "/a/em/em-artwork.webp",
+   "caption": "The full Baralku artwork without typography."
+  }
+ ],
+ "apps_label": "03 — Applications",
+ "apps_heading": "One mark, a whole release",
+ "apps_text": "The thumbprint became the album’s identity across vinyl, digital and the official merch range, licensed to Emancipator Music for ongoing use.",
+ "applications": [
+  {
+   "image": "/a/em/em-vinyl.webp",
+   "caption": "Vinyl LP sleeve"
+  },
+  {
+   "image": "/a/em/em-tee-navy.webp",
+   "caption": "Thumbprint tee, navy"
+  },
+  {
+   "image": "/a/em/em-tee-black.webp",
+   "caption": "Thumbprint tee, black"
+  },
+  {
+   "image": "/a/em/em-tee-repeat.webp",
+   "caption": "Repeat-print tee"
+  },
+  {
+   "image": "/a/em/em-tank.webp",
+   "caption": "Racerback tank"
+  },
+  {
+   "image": "/a/em/em-usb.webp",
+   "caption": "Wooden USB album edition"
+  }
+ ],
+ "details": [
+  {
+   "label": "Album",
+   "value": "Baralku, 5th studio album, 14 tracks"
+  },
+  {
+   "label": "Formats",
+   "value": "Digital, CD, LP, deluxe 2xLP, USB"
+  },
+  {
+   "label": "Artwork",
+   "value": "Felix Bollen"
+  },
+  {
+   "label": "Listen",
+   "value": "emancipator.bandcamp.com",
+   "url": "https://emancipator.bandcamp.com"
+  }
+ ],
+ "sections": [],
+ "seo_title": "Emancipator 'Baralku' Album Artwork | Felix Bollen",
+ "seo_description": "The thumbprint cover for Emancipator's fifth studio album Baralku, plus the vinyl, CD and merchandise graphics, designed by graphic designer Felix Bollen.",
+ "aka": [
+  "Baralku album cover",
+  "Emancipator Baralku cover art"
+ ]
 }

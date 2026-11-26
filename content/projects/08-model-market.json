@@ -1,159 +1,167 @@
 {
-  "order": 6,
-  "slug": "model-market",
-  "name": "Model Market",
-  "kind": "Street-food market",
-  "city": "London",
-  "years": "2025–2026",
-  "role": "Director & marketing lead",
-  "disciplines": [
-    "Marketing & Sales"
-  ],
-  "logo": "mm",
-  "background": "#002e60",
-  "text_colour": "#fffef3",
-  "tile": "#fffef3",
-  "card": "#002e60",
-  "intro": "Bringing Lewisham's Model Market back to life after five years: German Kraft runs the revived 1950s market at Lewisham Shopping Centre for Landsec, as an all-day hub for street food, makers, events and our own taproom.",
-  "credit": "",
-  "hero": {
-    "type": "video",
-    "video": "/v/mm.mp4",
-    "poster": "/v/mm.jpg"
-  },
-  "sections": [
+ "order": 6,
+ "slug": "model-market",
+ "name": "Model Market",
+ "kind": "Street-food market",
+ "city": "London",
+ "years": "2025–2026",
+ "role": "Director & marketing lead",
+ "disciplines": [
+  "Marketing & Sales"
+ ],
+ "logo": "mm",
+ "background": "#002e60",
+ "text_colour": "#fffef3",
+ "tile": "#fffef3",
+ "card": "#002e60",
+ "intro": "Bringing Lewisham's Model Market back to life after five years: German Kraft runs the revived 1950s market at Lewisham Shopping Centre for Landsec, as an all-day hub for street food, makers, events and our own taproom.",
+ "credit": "",
+ "hero": {
+  "type": "video",
+  "video": "/v/mm.mp4",
+  "poster": "/v/mm.jpg"
+ },
+ "sections": [
+  {
+   "type": "P.R.",
+   "title": "Press & P.R.",
+   "text": "The announcement in June 2026 made the market's return a London story, from Time Out to The Caterer.",
+   "stats": [
     {
-      "type": "P.R.",
-      "title": "Press & P.R.",
-      "text": "The announcement in June 2026 made the market's return a London story, from Time Out to The Caterer.",
-      "stats": [
-        {
-          "figure": "18+",
-          "label": "articles in the first weeks after the announcement"
-        },
-        {
-          "figure": "15.5M",
-          "label": "monthly readers (UMVs) of Time Out alone"
-        }
-      ],
-      "press_teaser": {
-        "link": "/work/model-market/press/",
-        "label": "All press coverage",
-        "count": 9,
-        "source": "press-modelmarket.json",
-        "heading": "Most of the press coverage came through our PR agency, Jukebox."
-      },
-      "images": [],
-      "videos": []
+     "figure": "18+",
+     "label": "articles in the first weeks after the announcement"
     },
     {
-      "type": "Branding",
-      "text": "The revived Model Market identity, carried through the trader deck we used to sign the food vendors: retro lettering, hand-drawn illustrations and the market's orange.",
-      "images": [],
-      "videos": [],
-      "book": [
-        {
-          "image": "/a/mm-deck/s-01.webp",
-          "caption": ""
-        },
-        {
-          "image": "/a/mm-deck/s-02.webp",
-          "caption": ""
-        },
-        {
-          "image": "/a/mm-deck/s-03.webp",
-          "caption": ""
-        },
-        {
-          "image": "/a/mm-deck/s-04.webp",
-          "caption": ""
-        },
-        {
-          "image": "/a/mm-deck/s-05.webp",
-          "caption": ""
-        },
-        {
-          "image": "/a/mm-deck/s-06.webp",
-          "caption": ""
-        },
-        {
-          "image": "/a/mm-deck/s-07.webp",
-          "caption": ""
-        },
-        {
-          "image": "/a/mm-deck/s-08.webp",
-          "caption": ""
-        },
-        {
-          "image": "/a/mm-deck/s-09.webp",
-          "caption": ""
-        },
-        {
-          "image": "/a/mm-deck/s-10.webp",
-          "caption": ""
-        },
-        {
-          "image": "/a/mm-deck/s-11.webp",
-          "caption": ""
-        },
-        {
-          "image": "/a/mm-deck/s-12.webp",
-          "caption": ""
-        },
-        {
-          "image": "/a/mm-deck/s-13.webp",
-          "caption": ""
-        },
-        {
-          "image": "/a/mm-deck/s-14.webp",
-          "caption": ""
-        },
-        {
-          "image": "/a/mm-deck/s-15.webp",
-          "caption": ""
-        },
-        {
-          "image": "/a/mm-deck/s-16.webp",
-          "caption": ""
-        },
-        {
-          "image": "/a/mm-deck/s-17.webp",
-          "caption": ""
-        },
-        {
-          "image": "/a/mm-deck/s-18.webp",
-          "caption": ""
-        },
-        {
-          "image": "/a/mm-deck/s-19.webp",
-          "caption": ""
-        },
-        {
-          "image": "/a/mm-deck/s-20.webp",
-          "caption": ""
-        },
-        {
-          "image": "/a/mm-deck/s-21.webp",
-          "caption": ""
-        }
-      ]
-    },
-    {
-      "type": "Marketing",
-      "text": "Pre-opening and first-year marketing built against the P&L: a trader call-out, newsletter, Instagram, PR, launch events and outdoor.",
-      "stats": [
-        {
-          "figure": "250+",
-          "label": "food vendors applied"
-        },
-        {
-          "figure": "750+",
-          "label": "newsletter sign-ups pre-opening"
-        }
-      ],
-      "images": [],
-      "videos": [],
-      "instagram": "modelmarket.lewisham"
+     "figure": "15.5M",
+     "label": "monthly readers (UMVs) of Time Out alone"
     }
-  ]
+   ],
+   "press_teaser": {
+    "link": "/work/model-market/press/",
+    "label": "All press coverage",
+    "count": 9,
+    "source": "press-modelmarket.json",
+    "heading": "Most of the press coverage came through our PR agency, Jukebox."
+   },
+   "images": [],
+   "videos": []
+  },
+  {
+   "type": "Branding",
+   "text": "The revived Model Market identity, carried through the trader deck we used to sign the food vendors: retro lettering, hand-drawn illustrations and the market's orange.",
+   "images": [],
+   "videos": [],
+   "book": [
+    {
+     "image": "/a/mm-deck/s-01.webp",
+     "caption": ""
+    },
+    {
+     "image": "/a/mm-deck/s-02.webp",
+     "caption": ""
+    },
+    {
+     "image": "/a/mm-deck/s-03.webp",
+     "caption": ""
+    },
+    {
+     "image": "/a/mm-deck/s-04.webp",
+     "caption": ""
+    },
+    {
+     "image": "/a/mm-deck/s-05.webp",
+     "caption": ""
+    },
+    {
+     "image": "/a/mm-deck/s-06.webp",
+     "caption": ""
+    },
+    {
+     "image": "/a/mm-deck/s-07.webp",
+     "caption": ""
+    },
+    {
+     "image": "/a/mm-deck/s-08.webp",
+     "caption": ""
+    },
+    {
+     "image": "/a/mm-deck/s-09.webp",
+     "caption": ""
+    },
+    {
+     "image": "/a/mm-deck/s-10.webp",
+     "caption": ""
+    },
+    {
+     "image": "/a/mm-deck/s-11.webp",
+     "caption": ""
+    },
+    {
+     "image": "/a/mm-deck/s-12.webp",
+     "caption": ""
+    },
+    {
+     "image": "/a/mm-deck/s-13.webp",
+     "caption": ""
+    },
+    {
+     "image": "/a/mm-deck/s-14.webp",
+     "caption": ""
+    },
+    {
+     "image": "/a/mm-deck/s-15.webp",
+     "caption": ""
+    },
+    {
+     "image": "/a/mm-deck/s-16.webp",
+     "caption": ""
+    },
+    {
+     "image": "/a/mm-deck/s-17.webp",
+     "caption": ""
+    },
+    {
+     "image": "/a/mm-deck/s-18.webp",
+     "caption": ""
+    },
+    {
+     "image": "/a/mm-deck/s-19.webp",
+     "caption": ""
+    },
+    {
+     "image": "/a/mm-deck/s-20.webp",
+     "caption": ""
+    },
+    {
+     "image": "/a/mm-deck/s-21.webp",
+     "caption": ""
+    }
+   ]
+  },
+  {
+   "type": "Marketing",
+   "text": "Pre-opening and first-year marketing built against the P&L: a trader call-out, newsletter, Instagram, PR, launch events and outdoor.",
+   "stats": [
+    {
+     "figure": "250+",
+     "label": "food vendors applied"
+    },
+    {
+     "figure": "750+",
+     "label": "newsletter sign-ups pre-opening"
+    }
+   ],
+   "images": [],
+   "videos": [],
+   "instagram": "modelmarket.lewisham"
+  }
+ ],
+ "seo_title": "Model Market Lewisham – Street Food Market | Felix Bollen",
+ "seo_description": "Reviving Lewisham's 1950s Model Market for Landsec: launch marketing, events and PR for the street-food market at Lewisham Shopping Centre, London.",
+ "aka": [
+  "Model Market Lewisham",
+  "Lewisham Model Market",
+  "Kraft Lewisham",
+  "German Kraft Lewisham"
+ ]
 }

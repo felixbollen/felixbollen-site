@@ -2,7 +2,10 @@ import json
 #!/usr/bin/env python3
 """Builds felixbollen.com from content/*.json + static/ into public/.
 Edit content through /admin (Decap CMS); Netlify runs this on every save."""
-import os, re, json, shutil, html, glob
+import os, re, json, shutil, html, glob, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import seo
+from datetime import date
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 OUT = os.path.join(ROOT, "public")
@@ -57,20 +60,28 @@ mono = lambda k, lab="": f'<svg viewBox="0 0 10 10" role="img" aria-label="{esc(
 FBS = f'<svg viewBox="{fvb}" aria-hidden="true"><use href="#fb"/></svg>'
 EMAIL = HOME.get("email", "felixbollen@gmail.com")
 
-def head(title, desc, path, og="/v/gk-home.jpg", style="", extra=""):
-    return f'''<!DOCTYPE html><html lang="en-GB"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{esc(title)}</title><meta name="description" content="{esc(desc)}">
-<meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:type" content="website">
-<meta property="og:url" content="https://felixbollen.com{path}"><meta property="og:image" content="https://felixbollen.com/og.jpg"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="Felix Bollen monogram"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:image" content="https://felixbollen.com/og.jpg"><link rel="canonical" href="https://felixbollen.com{path}">
-<meta name="theme-color" content="#ffffff"><link rel="icon" href="/favicon.svg" type="image/svg+xml">
+def head(title, desc, path, og="/v/gk-home.jpg", style="", extra="", ld="", ogimg="/og.jpg", lang="en-GB", alts=None, noindex=False, ogtype="website"):
+    desc = re.sub(r"\s+", " ", str(desc or "")).strip()
+    if len(desc) > 165: desc = desc[:160].rsplit(" ", 1)[0].rstrip(",.;:") + "…"
+    url = "https://felixbollen.com" + path
+    hl = "".join(f'<link rel="alternate" hreflang="{k}" href="https://felixbollen.com{v}">' for k, v in (alts or {}).items())
+    return f'''<!DOCTYPE html><html lang="{lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{esc(title)}</title><meta name="description" content="{esc(desc)}"><meta name="author" content="Felix Bollen">
+<meta name="robots" content="{"noindex, follow" if noindex else "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"}">
+<link rel="canonical" href="{url}">{hl}
+<meta property="og:site_name" content="Felix Bollen"><meta property="og:locale" content="{lang.replace("-", "_")}"><meta property="og:type" content="{ogtype}">
+<meta property="og:title" content="{esc(title)}"><meta property="og:description" content="{esc(desc)}"><meta property="og:url" content="{url}">
+<meta property="og:image" content="https://felixbollen.com{ogimg}"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:image:alt" content="{esc(title)}">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{esc(title)}"><meta name="twitter:description" content="{esc(desc)}"><meta name="twitter:image" content="https://felixbollen.com{ogimg}">
+<meta name="theme-color" content="#ffffff"><link rel="icon" href="/favicon.svg" type="image/svg+xml"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="alternate" type="text/plain" title="LLM summary" href="/llms.txt">
 <link rel="preload" href="/fonts/hero-super.woff2" as="font" type="font/woff2" crossorigin><link rel="preload" href="/fonts/hero-light.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="/style.css?{VER}">{f"<style>:root{{{style}}}</style>" if style else ""}{extra}</head><body>{SPRITE}'''
+<link rel="stylesheet" href="/style.css?{VER}">{f"<style>:root{{{style}}}</style>" if style else ""}{extra}{ld}</head><body>{SPRITE}'''
 
 def header(ov=False, lt=False):
     return f'''<header class="hd{' ov' if ov else ''}{' lt' if lt else ''}"><a class="br" href="/" aria-label="Felix Bollen, home">{FBS}Felix Bollen</a>
 <nav><a href="/#work">Work</a><a class="hm" href="/#about">About</a><a href="/#contact">Contact</a></nav></header>'''
 
-FOOT = f'''<footer class="ft"><div class="r"><a href="/" aria-label="Home">{FBS}</a><span>© 2026 Felix Bollen. Marketing & Sales, Art Direction, Graphic Design.</span>
+FOOT = f'''<footer class="ft"><div class="r"><a href="/" aria-label="Home">{FBS}</a><span>© 2026 Felix Bollen. <a href="/services/">Freelance graphic designer, art director & marketing consultant</a>, Berlin & London · <a href="/de/" hreflang="de">Deutsch</a></span>
 <span><a href="mailto:{esc(EMAIL)}">{esc(EMAIL)}</a> · <button id="imp">Imprint & privacy</button></span></div></footer>
 <dialog id="impd"><h3>Imprint</h3><p><b>Felix Bollen</b><br>Felix Bollen Graphic Design<br>Richmond, London, United Kingdom<br>{esc(EMAIL)}</p>
 <h3 style="margin-top:20px">Privacy</h3><p>No cookies, trackers or analytics. Fonts are hosted on this site. The Gleis//Garten page embeds a Vimeo video. Messages from the contact form are delivered by Netlify and only used to reply to you.</p>
@@ -119,7 +130,7 @@ dl = "".join(f'<li><details><summary>{esc(d["title"])}<span></span></summary><di
 opts = "".join(f"<option>{esc(d['title'])}</option>" for d in HOME["disciplines"]) + "<option>All of the above</option>"
 IMAP = f'<script type="importmap">{{"imports":{{"three":"/js/three.module.min.js"}}}}</script><script type="module" src="/home3d.js?{VER}"></script>'
 ACCJS = "<script>(function(){var h=document.querySelector('.hero'),t=h.querySelector('.tx');\nfunction pin(){h.classList.remove('pin');t.style.marginTop='';if(innerWidth<=860)return;var a=t.getBoundingClientRect().top;h.classList.add('pin');var b=t.getBoundingClientRect().top;t.style.marginTop=Math.max(0,a-b)+'px'}\naddEventListener('load',pin);var rz;addEventListener('resize',function(){clearTimeout(rz);rz=setTimeout(function(){if(!h.querySelector('details[open]'))pin()},150)});\nvar M=matchMedia('(prefers-reduced-motion:reduce)').matches;\nh.querySelectorAll('.dsc details').forEach(function(d){var s=d.querySelector('summary'),c=d.querySelector('.dd');\ns.addEventListener('click',function(e){e.preventDefault();if(d._a)d._a.cancel();\nif(!d.open){d.open=true;var H=c.scrollHeight;if(M)return;d._a=c.animate([{height:'0px',opacity:0},{height:H+'px',opacity:1}],{duration:520,easing:'cubic-bezier(.22,.61,.36,1)'})}\nelse{var H=c.offsetHeight;if(M){d.open=false;return}d.classList.add('cl');d._a=c.animate([{height:H+'px',opacity:1},{height:'0px',opacity:0}],{duration:420,easing:'cubic-bezier(.22,.61,.36,1)'});d._a.onfinish=function(){d.open=false;d.classList.remove('cl');d._a=null}}})})})();</script>"
-home = head(HOME["title"], HOME["description"], "/", extra=IMAP) + header() + f'''
+home = head(HOME.get("seo_title") or HOME["title"], HOME.get("seo_description") or HOME["description"], "/", extra=IMAP, ld=seo.home_ld(HOME, P, MEDIA), alts={"en": "/", "de": "/de/", "x-default": "/"}) + header() + f'''
 <main id="top">
 <section class="hero"><div class="mark"><div class="stk"><svg class="main" viewBox="{fvb}" aria-hidden="true"><path fill-rule="evenodd" d="{fp}"/></svg></div><button class="gyro" type="button">Tap to move with your phone</button></div>
 <div class="tx rv"><h1>{"<br>".join(esc(w) for w in HOME["name"].split(" ", 1))}</h1><p>{esc(HOME["intro"])}</p><ul class="dsc">{dl}</ul><a class="scroll lbl mute" href="#work">Scroll<i aria-hidden="true"></i></a></div>{ACCJS}</section>
@@ -130,7 +141,7 @@ home = head(HOME["title"], HOME["description"], "/", extra=IMAP) + header() + f'
 <div class="abl"><h3 class="rv">{br(HOME.get("about_heading"))}</h3>{('<figure class="abp rv"><img src="%s" alt="%s" loading="lazy"></figure>' % (esc(HOME["about_image"]), esc(HOME.get("about_image_alt")))) if HOME.get("about_image") else ""}</div><div class="rv">{abt}<dl>{dets}</dl></div></div></section>
 <section class="ct" id="contact"><h2 class="rv">{br(HOME.get("contact_heading"))}</h2>
 <div class="cg"><div class="rv"><span class="lbl mute">Write to me</span><br><br><a class="ml" href="mailto:{esc(EMAIL)}">{esc(EMAIL)}</a>
-<p>{esc(HOME.get("contact_text"))}</p></div>
+<p>{esc(HOME.get("contact_text"))}</p><p><a class="ml2" href="/services/">Services &amp; how I work →</a></p></div>
 <div class="rv"><form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot" id="cf"><input type="hidden" name="form-name" value="contact"><p class="hp"><label>Leave empty <input name="bot"></label></p>
 <div class="fr"><div><label class="lbl" for="n">Name</label><input id="n" name="name" required></div><div><label class="lbl" for="e">Email</label><input id="e" type="email" name="email" required></div></div>
 <div><label class="lbl" for="t">Interested in</label><select id="t" name="topic">{opts}</select></div>
@@ -229,7 +240,7 @@ def render_case(i, p, pv, nx):
     def dval(d):
         return '<a href="%s" target="_blank" rel="noopener">%s ↗</a>' % (esc(d["url"]), esc(d["value"])) if d.get("url") else esc(d["value"])
     dets = "".join('<div><dt class="lbl">%s</dt><dd>%s</dd></div>' % (esc(d["label"]), dval(d)) for d in p.get("details", []))
-    page = head(f"{p['name']}: Felix Bollen", p.get("intro", ""), f"/work/{p['slug']}/") + header() + f'''
+    page = head(p.get("seo_title") or f"{p['name']}: Felix Bollen", p.get("seo_description") or p.get("intro", ""), f"/work/{p['slug']}/", ld=seo.project_ld(p, MEDIA), ogimg=f"/og/{p['slug']}.jpg", ogtype="article") + header() + f'''
 <main id="top" class="case">
 <section class="chero{' wide' if wide else ''}"><div class="cht"><span class="lbl rv">Case study · {esc(p.get("kind"))} · {esc(p.get("years"))}</span><h1 class="rv">{esc(title)}</h1>{f'<div class="art rv">{esc(artist)}</div>' if artist else ""}<p class="lead rv">{esc(p.get("intro"))}</p></div>
 {herofig}</section>
@@ -251,6 +262,9 @@ if(window.DeviceOrientationEvent){{if(typeof DeviceOrientationEvent.requestPermi
 var sy=Math.min(1,scrollY/innerHeight);w.style.transform='rotateY('+(cx*14)+'deg) rotateX('+(-cy*10)+'deg) translateY('+(sy*-40)+'px) scale('+(1-sy*.06)+')';w.style.setProperty('--sx',(50+cx*40)+'%');w.style.setProperty('--sy',(50+cy*40)+'%')}})(0);
 }})();
 </script>''' + FOOT
+    _alt = esc(f"{p['name']}, {p.get('kind')}, {p.get('city')} – work by Felix Bollen")
+    page = re.sub(r'(<img (?:data-)?src="[^"]+" )alt=""(?![^>]*class="c")', lambda m: m.group(1) + f'alt="{_alt}"', page)
+    page = re.sub(r'(<a href="[^"]+" data-lb[^>]*?) data-cap=""', r'\1 data-cap="" aria-label="' + _alt + '"', page)
     os.makedirs(f"{OUT}/work/{p['slug']}", exist_ok=True)
     open(f"{OUT}/work/{p['slug']}/index.html", "w", encoding="utf-8").write(page)
 
@@ -363,10 +377,10 @@ for i, p in enumerate(P):
 <div class="bd"><div><div class="in">{body}{dk}{gal}</div></div></div></div>''')
     gl_ = [x for x in p.get("gallery", []) if x.get("image")]
     did = (f'<section class="sec" id="did"><div class="sh rv"><h2>What I did</h2><span class="lbl mute">{len(secs):02d}</span></div><div class="acc">{"".join(secs)}</div></section>' if secs else "") + (f'<section class="sec pgal" id="did"><div class="sh rv"><h2>What I did</h2><span class="lbl mute">{len(gl_):02d}</span></div><p class="lede rv">{esc(p.get("gallery_text"))}</p><div class="gal5 open" data-lbg>{"".join(gfig(x) for x in gl_)}</div></section>' if gl_ else "")
-    meta = "".join(f'<div><dt>{a}</dt><dd>{esc(b)}</dd></div>' for a, b in [("Role", p.get("role")), ("Location", p.get("city")), ("Years", p.get("years") or "—"), ("Disciplines", ", ".join(p.get("disciplines", [])))])
+    meta = "".join(f'<div><dt>{a}</dt><dd>{esc(b)}</dd></div>' for a, b in [("Role", p.get("role")), ("Location", p.get("city")), ("Years", p.get("years") or "—"), ("Disciplines", ", ".join(p.get("disciplines", [])))] + ([("Also written", ", ".join(p["aka"][:4]))] if p.get("aka_visible") and p.get("aka") else []))
     nav = "".join(f'<a href="/work/{w["slug"]}/"{" class=cu aria-current=page" if w is p else ""} style="--cb:{esc(w["card"])}" aria-label="{esc(w["name"])}" title="{esc(w["name"])}">{navlogo(w)}</a>' for w in P)
     cr = f'<p class="cr">{esc(p["credit"])}</p>' if p.get("credit") else ""
-    page = head(f"{p['name']}: Felix Bollen", f"{p['name']}, {p.get('kind')}, {p.get('city')}. {p.get('intro')}", f"/work/{p['slug']}/", og, style, extra) + header(ov=(ht != "lottie"), lt=bool((p.get("hero") or {}).get("light"))) + f'''
+    page = head(p.get("seo_title") or f"{p['name']}: Felix Bollen", p.get("seo_description") or f"{p['name']}, {p.get('kind')}, {p.get('city')}. {p.get('intro')}", f"/work/{p['slug']}/", og, style, extra, ld=seo.project_ld(p, MEDIA), ogimg=f"/og/{p['slug']}.jpg", ogtype="article") + header(ov=(ht != "lottie"), lt=bool((p.get("hero") or {}).get("light"))) + f'''
 <main id="top">{hero}
 <div class="bot"><div><h1>{esc(p['name'])}</h1><div class="kd">{esc(p.get('kind'))} · {esc(p.get('city'))}{" · " + esc(p['years']) if p.get('years') else ""}</div></div><span class="lbl">{i+1:02d} / {N:02d}</span></div></section>
 {first}
@@ -375,6 +389,9 @@ for i, p in enumerate(P):
 {did}
 <section class="vn"><div class="row">{nav}</div><div class="pn"><a href="/work/{pv['slug']}/"><small class="lbl">← Previous</small><b>{esc(pv['name'])}</b></a>
 <a href="/work/{nx['slug']}/" style="text-align:right"><small class="lbl">Next →</small><b>{esc(nx['name'])}</b></a></div></section></main>''' + FOOT
+    _alt = esc(f"{p['name']}, {p.get('kind')}, {p.get('city')} – work by Felix Bollen")
+    page = re.sub(r'(<img (?:data-)?src="[^"]+" )alt=""(?![^>]*class="c")', lambda m: m.group(1) + f'alt="{_alt}"', page)
+    page = re.sub(r'(<a href="[^"]+" data-lb[^>]*?) data-cap=""', r'\1 data-cap="" aria-label="' + _alt + '"', page)
     os.makedirs(f"{OUT}/work/{p['slug']}", exist_ok=True)
     open(f"{OUT}/work/{p['slug']}/index.html", "w", encoding="utf-8").write(page)
 # ---------- press pages ----------
@@ -386,14 +403,90 @@ for f in sorted(glob.glob(os.path.join(ROOT, "content/press-*.json"))):
     def card(x):
         url = x.get("pdf") or x.get("url") or ""; ext = url.lower().endswith(".pdf"); tag = "PDF ↓" if ext else "Read article ↗"
         im = f'<div class="pt"><img src="{esc(x["image"])}" alt="" loading="lazy"></div>' if x.get("image") else '<div class="pt e"></div>'
-        inner = f'{im}<div class="pc"><span class="lbl">{esc(x.get("outlet"))}</span>{("<h3>" + esc(x["title"]) + "</h3>") if x.get("title") else ""}<div class="pd"><span>{esc(" · ".join(v for v in [x.get("reach"), x.get("date")] if v))}</span><span>{tag if url else ""}</span></div></div>'
+        inner = f'{im}<div class="pc"><span class="lbl">{esc(x.get("outlet"))}</span>{("<h2>" + esc(x["title"]) + "</h2>") if x.get("title") else ""}<div class="pd"><span>{esc(" · ".join(v for v in [x.get("reach"), x.get("date")] if v))}</span><span>{tag if url else ""}</span></div></div>'
         return f'<a class="pi rv" href="{esc(url)}" target="_blank" rel="noopener">{inner}</a>' if url else f'<div class="pi rv">{inner}</div>'
     back = f'<a class="bk lbl" href="/work/{proj["slug"]}/">← {esc(proj["name"])}</a>' if proj else ""
-    page = head(pr.get("title") or "Press", pr.get("intro") or "", base) + header() + f'''
+    page = head(pr.get("seo_title") or pr.get("title") or "Press", pr.get("seo_description") or pr.get("intro") or "", base, ld=seo.press_ld(pr, proj, base, its), ogimg=(f"/og/{proj['slug']}.jpg" if proj else "/og.jpg"), lang=pr.get("lang") or "en-GB") + header() + f'''
 <main id="top" class="press"><section class="ph">{back}<h1>{br(pr.get("heading") or "Press")}</h1><p class="lead">{esc(pr.get("intro"))}</p>
 <div class="pm"><span class="lbl mute">{len(its)} articles</span><span class="lbl mute">{esc(pr.get("contact"))}</span></div></section>
 <section class="pg">{"".join(card(x) for x in its)}</section></main>''' + FOOT
     os.makedirs(OUT + base, exist_ok=True); open(OUT + base + "index.html", "w", encoding="utf-8").write(page)
+# ---------- services pages (EN + DE): keyword landing pages ----------
+SV = json.load(open(os.path.join(ROOT, "content/services.json"), encoding="utf-8"))
+SVALT = {"en": SV["en"]["path"], "de": SV["de"]["path"], "x-default": SV["en"]["path"]}
+for lg, s in SV.items():
+    sl = "".join(f'<li><span class="lbl mute">{n+1:02d}</span><h3>{esc(a)}</h3><p>{esc(b)}</p></li>' for n, (a, b) in enumerate(s["services"]))
+    wk = "".join(f'<li><a href="/work/{p["slug"]}/"><b>{esc(p["name"])}</b><span>{esc(p.get("kind"))} · {esc(p.get("city"))}</span><em>{esc(p.get("role"))}</em></a></li>' for p in P)
+    hw = "".join(f'<div><dt class="lbl">{esc(a)}</dt><dd>{esc(b)}</dd></div>' for a, b in s["how"])
+    fq = "".join(f'<details><summary>{esc(q)}<span></span></summary><p>{esc(a)}</p></details>' for q, a in s["faq"])
+    crumb = [("Felix Bollen", "/"), (s["services_h"], s["path"])]
+    page = head(s["seo_title"], s["seo_description"], s["path"], lang=s["lang"], alts=SVALT,
+                ld=seo.faq_ld(seo.SITE + s["path"], s["faq"], s["lang"], s["seo_title"], s["seo_description"], crumb)) + header() + f'''
+<main id="top" class="sv"><section class="svh"><span class="lbl mute">{esc(s["kicker"])}</span><h1>{esc(s["h1"])}</h1><p class="lead">{esc(s["lead"])}</p>
+<p class="svc"><a class="bt" href="/#contact">{esc(s["cta"])} →</a><a class="ml2" href="mailto:{esc(EMAIL)}">{esc(EMAIL)}</a><a class="lng lbl" href="{s["alt_path"]}" hreflang="{"de" if lg == "en" else "en"}">{esc(s["alt_label"])}</a></p></section>
+<section class="sec"><div class="sh"><h2>{esc(s["services_h"])}</h2><span class="lbl mute">{len(s["services"]):02d}</span></div><ol class="svl">{sl}</ol></section>
+<section class="sec"><div class="sh"><h2>{esc(s["who_h"])}</h2></div><p class="svp">{esc(s["who"])}</p></section>
+<section class="sec"><div class="sh"><h2>{esc(s["work_h"])}</h2><span class="lbl mute">{len(P):02d}</span></div><ul class="svw">{wk}</ul></section>
+<section class="sec"><div class="sh"><h2>{esc(s["how_h"])}</h2></div><dl class="svd">{hw}</dl></section>
+<section class="sec"><div class="sh"><h2>{esc(s["faq_h"])}</h2></div><div class="faq">{fq}</div></section>
+<section class="ct"><h2>{esc(s["contact_h"])}</h2><p class="svc"><a class="bt" href="/#contact">{esc(s["cta"])} →</a><a class="ml2" href="mailto:{esc(EMAIL)}">{esc(EMAIL)}</a></p></section></main>''' + FOOT
+    os.makedirs(OUT + s["path"], exist_ok=True); open(OUT + s["path"] + "index.html", "w", encoding="utf-8").write(page)
+
+# ---------- 404 ----------
+open(OUT + "/404.html", "w", encoding="utf-8").write(head("Page not found | Felix Bollen", "This page does not exist. See the work of graphic designer and marketing consultant Felix Bollen.", "/404.html", noindex=True) + header() +
+     '<main id="top" class="sv"><section class="svh"><span class="lbl mute">404</span><h1>This page doesn’t exist.</h1><p class="lead">Maybe it moved. Start with the <a href="/#work">selected works</a>, the <a href="/services/">services</a> or <a href="/#contact">get in touch</a>.</p></section></main>' + FOOT)
+
+# ---------- sitemap, robots, llms.txt ----------
+today = date.today().isoformat()
+SM = [("/", today, "1.0", [(HOME.get("about_image"), "Felix Bollen")] if HOME.get("about_image") else [], {"en": "/", "de": "/de/", "x-default": "/"}),
+      (SV["en"]["path"], today, "0.9", [], SVALT), (SV["de"]["path"], today, "0.9", [], SVALT)]
+for p in P: SM.append((f"/work/{p['slug']}/", today, "0.8", seo.project_images(p), None))
+PRESSPAGES = []
+for f in sorted(glob.glob(os.path.join(ROOT, "content/press-*.json"))):
+    pr = json.load(open(f, encoding="utf-8")); proj = next((p for p in P if p["slug"] == pr.get("project")), None)
+    if not proj: continue
+    base = f"/work/{proj['slug']}/{pr.get('path') or 'presse'}/"
+    SM.append((base, today, "0.6", [(x["image"], x.get("title") or "") for x in pr.get("items", []) if x.get("image")], None)); PRESSPAGES.append((proj, pr, base))
+open(OUT + "/sitemap.xml", "w", encoding="utf-8").write(seo.sitemap(SM, MEDIA))
+open(OUT + "/robots.txt", "w", encoding="utf-8").write(seo.robots())
+
+def md(t): return re.sub(r"\s+", " ", str(t or "")).strip()
+L = ["# Felix Bollen", "", "> Felix Bollen is a freelance graphic designer, art director and marketing consultant based in Berlin and London. "
+     "He co-founded German Kraft Brewery (London, 2017) and Gleis//Garten (also written Gleisgarten or Gleis Garten), Vienna's first food market, "
+     "and builds brands from scratch for hospitality, drinks, culture and small businesses. Available for freelance, part-time and remote work in English and German.", "",
+     f"- Website: {seo.SITE}/", f"- Contact: {EMAIL} or {seo.SITE}/#contact", "- Based in: Berlin, Germany and London, United Kingdom (works remotely)",
+     "- Disciplines: Marketing & Sales, Art Direction, Graphic Design", "- Education: BA (Hons) Graphic & Media Design, UAL London College of Communication",
+     "- Languages: German (native), English (fluent)", "", "## Services", "", f"- [Services (English)]({seo.SITE}/services/): " + "; ".join(a for a, _ in SV["en"]["services"]),
+     f"- [Leistungen (Deutsch)]({seo.SITE}/de/): freiberuflicher Grafikdesigner, Art Director und Marketing-Berater in Berlin", "", "## Work", ""]
+for p in P:
+    L.append(f"- [{p['name']}]({seo.SITE}/work/{p['slug']}/): {md(p.get('kind'))}, {md(p.get('city'))}{', ' + md(p.get('years')) if p.get('years') else ''}. Role: {md(p.get('role'))}. {md(p.get('intro'))}" + (f" Also known as: {', '.join(p['aka'])}." if p.get("aka") else ""))
+L += ["", "## Press", ""] + [f"- [{proj['name']} press coverage]({seo.SITE}{b}): {len(pr.get('items', []))} articles" for proj, pr, b in PRESSPAGES]
+L += ["", "## Optional", "", f"- [Full text of the site for language models]({seo.SITE}/llms-full.txt)", f"- [Sitemap]({seo.SITE}/sitemap.xml)", ""]
+open(OUT + "/llms.txt", "w", encoding="utf-8").write("\n".join(L))
+F = ["# Felix Bollen – full site text", "", md(HOME.get("seo_description")), "", "## About", ""] + [md(x) for x in HOME.get("about", [])] + [""]
+F += [f"- {d['label']}: {d['value']}" for d in HOME.get("details", [])] + ["", "## Disciplines", ""]
+for d in HOME["disciplines"]: F += [f"### {d['title']}", md(d["text"]), "Includes: " + ", ".join(d.get("items", [])), ""]
+F += ["## In numbers", ""] + [f"- {n['figure']}: {n['label']}" for n in HOME.get("numbers", [])] + ["", "## Services", ""]
+F += [f"- {a}: {b}" for a, b in SV["en"]["services"]] + ["", "## FAQ", ""] + [f"**{q}** {a}\n" for q, a in SV["en"]["faq"]] + ["## Projects", ""]
+for p in P:
+    F += [f"### {p['name']} ({seo.SITE}/work/{p['slug']}/)", f"{md(p.get('kind'))} · {md(p.get('city'))}{' · ' + md(p.get('years')) if p.get('years') else ''} · Role: {md(p.get('role'))}"]
+    if p.get("aka"): F.append("Also known as: " + ", ".join(p["aka"]))
+    F += [md(p.get("intro")), ""]
+    for s in p.get("sections", []):
+        t = s.get("text"); t = " ".join(t) if isinstance(t, list) else t
+        pts = [md(x if isinstance(x, str) else (x.get("text") or x.get("title") or "")) for x in (s.get("points") or [])]
+        st = [f"{x.get('figure')} {x.get('label')}" for x in (s.get("stats") or []) if x.get("figure")]
+        if t or pts or st:
+            F.append(f"#### {s.get('title') or s.get('type')}")
+            if t: F.append(md(t))
+            F += [f"- {x}" for x in pts + st if x.strip()]
+            F.append("")
+    for c in p.get("chapters", []):
+        F += [f"#### {md(c.get('heading'))}"] + [md(x) for x in (c.get("text") or [])] + [""]
+F += ["## Contact", "", f"Email: {EMAIL}", f"Contact form: {seo.SITE}/#contact", ""]
+open(OUT + "/llms-full.txt", "w", encoding="utf-8").write("\n".join(F))
+INDEXNOW = "f3b1c9d27a4e4c8e9b6a0d5e1c2f7a84"
+open(f"{OUT}/{INDEXNOW}.txt", "w").write(INDEXNOW)
 # ---------- serve media from GitHub Pages (free bandwidth) ----------
 if MEDIA:
     rx = re.compile(r'((?:src|href|data-src|poster)=")/((?:v|a|ds|media|press)/)')

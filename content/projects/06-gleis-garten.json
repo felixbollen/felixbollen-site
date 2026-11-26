@@ -1,299 +1,311 @@
 {
-  "disciplines": [
-    "Art Direction",
-    "Graphic Design",
-    "Marketing & Sales"
-  ],
-  "city": "Vienna",
-  "logo": "gg",
-  "name": "Gleis//Garten",
-  "slug": "gleis-garten",
-  "intro": "Vienna's first food market, in a historic tram depot in Meidling, with local food, two bars and a brewery.",
-  "background": "#0a220b",
-  "sections": [
+ "disciplines": [
+  "Art Direction",
+  "Graphic Design",
+  "Marketing & Sales"
+ ],
+ "city": "Vienna",
+ "logo": "gg",
+ "name": "Gleis//Garten",
+ "slug": "gleis-garten",
+ "intro": "Vienna's first food market, in a historic tram depot in Meidling, with local food, two bars and a brewery.",
+ "background": "#0a220b",
+ "sections": [
+  {
+   "type": "Branding",
+   "text": "The name, translated to 'Track//Garden' as we planted trees inbetweent he old train tracks inside the old building. The logo is positioned to be family friendly & welcoming with a calming colour palette and a timeless serif font.",
+   "stats": [],
+   "videos": [],
+   "images": [
     {
-      "type": "Branding",
-      "text": "The name, translated to 'Track//Garden' as we planted trees inbetweent he old train tracks inside the old building. The logo is positioned to be family friendly & welcoming with a calming colour palette and a timeless serif font.",
-      "stats": [],
-      "videos": [],
-      "images": [
-        {
-          "image": "/a/gg-brand-01.webp",
-          "caption": "Primary logo",
-          "cutout": false
-        },
-        {
-          "image": "/media/gleisgarten-business-cards-mockup.webp",
-          "caption": "Business Cards",
-          "cutout": false
-        },
-        {
-          "cutout": false,
-          "image": "/media/t-shirt-mock-up-gg-1-front.webp",
-          "caption": "Staff Uniform"
-        },
-        {
-          "image": "/media/t-shirt-mock-up-gg-1-back.webp",
-          "caption": "T-shirt Merch",
-          "cutout": false
-        },
-        {
-          "image": "/a/gg-brand-05.webp",
-          "caption": "Gift card",
-          "cutout": false
-        },
-        {
-          "image": "/a/gg-brand-06.webp",
-          "caption": "Vendor signage",
-          "cutout": true
-        },
-        {
-          "cutout": false,
-          "image": "/media/screenshot-2026-11-16-at-10.14.21.webp",
-          "caption": "Venue signage"
-        },
-        {
-          "cutout": false,
-          "image": "/media/screenshot-2026-11-16-at-09.24.41.webp",
-          "caption": "Design Systems"
-        },
-        {
-          "cutout": false,
-          "image": "/media/tote-bag-mockup-gg.webp",
-          "caption": "Tote Bag Merch"
-        },
-        {
-          "cutout": false,
-          "image": "/media/screenshot-2026-11-16-at-10.14.42.webp",
-          "caption": "Colour system"
-        },
-        {
-          "cutout": false,
-          "image": "/media/chatgpt-image-jan-8-2026-07-07-59-am-2.webp",
-          "caption": "Printed Poster Campagin"
-        },
-        {
-          "cutout": false,
-          "image": "/media/gemini-generated-image-f8vow8f8vow8f8vo.webp",
-          "caption": "Printed Poster Campagin 2"
-        },
-        {
-          "cutout": false,
-          "image": "/media/gleisgarten-brochure-mockup.webp",
-          "caption": "Brochures"
-        },
-        {
-          "cutout": false,
-          "image": "/media/ubahn-poster-0.4x.webp",
-          "caption": "Poster Design"
-        },
-        {
-          "cutout": false,
-          "image": "/media/img-7043.webp",
-          "caption": "Central Train Station Advertisement"
-        },
-        {
-          "cutout": false,
-          "image": "/media/gleisgarten-berliner.webp",
-          "caption": "Branded Pastries"
-        },
-        {
-          "image": "/a/gg-oktoberfest.webp",
-          "caption": "Oktoberfest poster",
-          "cutout": false
-        }
-      ],
-      "deck": []
+     "image": "/a/gg-brand-01.webp",
+     "caption": "Primary logo",
+     "cutout": false
     },
     {
-      "type": "Marketing",
-      "text": "Pre-opening aquisition of newsletter contacts, Construction-site party, opening, recruitment, newsletters, expos and ads.",
-      "stats": [
-        {
-          "figure": "1,900 m²",
-          "label": "Historic tram depot turned food hall"
-        },
-        {
-          "figure": "9",
-          "label": "local food concepts"
-        },
-        {
-          "figure": "950",
-          "label": "capacity"
-        }
-      ],
-      "videos": [],
-      "images": [
-        {
-          "image": "/media/gleisgarten-website-performance.jpg",
-          "caption": "Website Insights",
-          "cutout": false
-        },
-        {
-          "image": "/media/gleisgarten-newsletter-report.jpg",
-          "caption": "Newsletter Insights",
-          "cutout": false
-        }
-      ],
-      "deck": [],
-      "instagram": "gleisgarten",
-      "gal_first": true
+     "image": "/media/gleisgarten-business-cards-mockup.webp",
+     "caption": "Business Cards",
+     "cutout": false
     },
     {
-      "type": "P.R.",
-      "text": "Our Press outreach. I was working together closely with 'Himmelhoch' P.R. company, creating monthly press releases",
-      "stats": [
-        {
-          "figure": "'The best beer bar Vienna'",
-          "label": "Vienna 2024, Bier Guide"
-        },
-        {
-          "figure": "100+ Listings",
-          "label": "outlets, incl. ORF, Kurier, Der Standard, Falstaff"
-        }
-      ],
-      "videos": [],
-      "images": [],
-      "deck": [],
-      "link": "",
-      "link_label": "",
-      "press_teaser": {
-        "link": "/work/gleis-garten/presse/",
-        "label": "All press coverage",
-        "count": 9
-      }
+     "cutout": false,
+     "image": "/media/t-shirt-mock-up-gg-1-front.webp",
+     "caption": "Staff Uniform"
     },
     {
-      "type": "Conceptualisation",
-      "text": "The depot before, the concept and the hoardings.",
-      "stats": [
-        {
-          "figure": "2 years of construction",
-          "label": "Working closely together with the local government"
-        }
-      ],
-      "videos": [
-        {
-          "video": "/v/gg-aufbau.mp4",
-          "poster": "/v/gg-aufbau.jpg",
-          "caption": "Building Gleis//Garten"
-        }
-      ],
-      "images": [
-        {
-          "image": "/a/gg-concept-01.webp",
-          "caption": "Bird's-eye concept",
-          "cutout": false
-        },
-        {
-          "image": "/a/gg-concept-02.webp",
-          "caption": "The depot before",
-          "cutout": false
-        },
-        {
-          "image": "/a/gg-concept-04.webp",
-          "caption": "Blueprint hoarding",
-          "cutout": false
-        }
-      ],
-      "deck": [],
-      "reels_title": "Building Gleis//Garten",
-      "reels": [
-        {
-          "video": "/v/reels/gg-reel-01.mp4",
-          "poster": "/v/reels/gg-reel-01.jpg",
-          "caption": ""
-        },
-        {
-          "video": "/v/reels/gg-reel-02.mp4",
-          "poster": "/v/reels/gg-reel-02.jpg",
-          "caption": ""
-        },
-        {
-          "video": "/v/reels/gg-reel-03.mp4",
-          "poster": "/v/reels/gg-reel-03.jpg",
-          "caption": ""
-        },
-        {
-          "video": "/v/reels/gg-reel-04.mp4",
-          "poster": "/v/reels/gg-reel-04.jpg",
-          "caption": ""
-        },
-        {
-          "video": "/v/reels/gg-reel-05.mp4",
-          "poster": "/v/reels/gg-reel-05.jpg",
-          "caption": ""
-        },
-        {
-          "video": "/v/reels/gg-reel-06.mp4",
-          "poster": "/v/reels/gg-reel-06.jpg",
-          "caption": ""
-        },
-        {
-          "video": "/v/reels/gg-reel-07.mp4",
-          "poster": "/v/reels/gg-reel-07.jpg",
-          "caption": ""
-        },
-        {
-          "video": "/v/reels/gg-reel-08.mp4",
-          "poster": "/v/reels/gg-reel-08.jpg",
-          "caption": ""
-        },
-        {
-          "video": "/v/reels/gg-reel-09.mp4",
-          "poster": "/v/reels/gg-reel-09.jpg",
-          "caption": ""
-        },
-        {
-          "video": "/v/reels/gg-reel-10.mp4",
-          "poster": "/v/reels/gg-reel-10.jpg",
-          "caption": ""
-        },
-        {
-          "video": "/v/reels/gg-reel-11.mp4",
-          "poster": "/v/reels/gg-reel-11.jpg",
-          "caption": ""
-        },
-        {
-          "video": "/v/reels/gg-reel-12.mp4",
-          "poster": "/v/reels/gg-reel-12.jpg",
-          "caption": ""
-        },
-        {
-          "video": "/v/reels/gg-reel-13.mp4",
-          "poster": "/v/reels/gg-reel-13.jpg",
-          "caption": ""
-        }
-      ]
+     "image": "/media/t-shirt-mock-up-gg-1-back.webp",
+     "caption": "T-shirt Merch",
+     "cutout": false
     },
     {
-      "type": "Website",
-      "text": "Designed and kept the website up to date.",
-      "stats": [],
-      "videos": [],
-      "images": [],
-      "deck": [],
-      "link_label": "",
-      "link": "",
-      "site_teaser": {
-        "image": "/a/gg-site-full.webp",
-        "url": "https://www.gleisgarten.com/",
-        "display": "gleisgarten.com",
-        "label": "Visit website"
-      }
+     "image": "/a/gg-brand-05.webp",
+     "caption": "Gift card",
+     "cutout": false
+    },
+    {
+     "image": "/a/gg-brand-06.webp",
+     "caption": "Vendor signage",
+     "cutout": true
+    },
+    {
+     "cutout": false,
+     "image": "/media/screenshot-2026-11-16-at-10.14.21.webp",
+     "caption": "Venue signage"
+    },
+    {
+     "cutout": false,
+     "image": "/media/screenshot-2026-11-16-at-09.24.41.webp",
+     "caption": "Design Systems"
+    },
+    {
+     "cutout": false,
+     "image": "/media/tote-bag-mockup-gg.webp",
+     "caption": "Tote Bag Merch"
+    },
+    {
+     "cutout": false,
+     "image": "/media/screenshot-2026-11-16-at-10.14.42.webp",
+     "caption": "Colour system"
+    },
+    {
+     "cutout": false,
+     "image": "/media/chatgpt-image-jan-8-2026-07-07-59-am-2.webp",
+     "caption": "Printed Poster Campagin"
+    },
+    {
+     "cutout": false,
+     "image": "/media/gemini-generated-image-f8vow8f8vow8f8vo.webp",
+     "caption": "Printed Poster Campagin 2"
+    },
+    {
+     "cutout": false,
+     "image": "/media/gleisgarten-brochure-mockup.webp",
+     "caption": "Brochures"
+    },
+    {
+     "cutout": false,
+     "image": "/media/ubahn-poster-0.4x.webp",
+     "caption": "Poster Design"
+    },
+    {
+     "cutout": false,
+     "image": "/media/img-7043.webp",
+     "caption": "Central Train Station Advertisement"
+    },
+    {
+     "cutout": false,
+     "image": "/media/gleisgarten-berliner.webp",
+     "caption": "Branded Pastries"
+    },
+    {
+     "image": "/a/gg-oktoberfest.webp",
+     "caption": "Oktoberfest poster",
+     "cutout": false
     }
-  ],
-  "tile": "#f2ead7",
-  "order": 3,
-  "card": "#0a220b",
-  "kind": "Food market & brewery",
-  "role": "Founding Partner & CMO",
-  "years": "2022–2026",
-  "credit": "",
-  "hero": {
-    "type": "video",
-    "video": "/v/gg-drone.mp4",
-    "poster": "/v/gg-drone.jpg"
+   ],
+   "deck": []
   },
-  "text_colour": "#f2ead7"
+  {
+   "type": "Marketing",
+   "text": "Pre-opening aquisition of newsletter contacts, Construction-site party, opening, recruitment, newsletters, expos and ads.",
+   "stats": [
+    {
+     "figure": "1,900 m²",
+     "label": "Historic tram depot turned food hall"
+    },
+    {
+     "figure": "9",
+     "label": "local food concepts"
+    },
+    {
+     "figure": "950",
+     "label": "capacity"
+    }
+   ],
+   "videos": [],
+   "images": [
+    {
+     "image": "/media/gleisgarten-website-performance.jpg",
+     "caption": "Website Insights",
+     "cutout": false
+    },
+    {
+     "image": "/media/gleisgarten-newsletter-report.jpg",
+     "caption": "Newsletter Insights",
+     "cutout": false
+    }
+   ],
+   "deck": [],
+   "instagram": "gleisgarten",
+   "gal_first": true
+  },
+  {
+   "type": "P.R.",
+   "text": "Our Press outreach. I was working together closely with 'Himmelhoch' P.R. company, creating monthly press releases",
+   "stats": [
+    {
+     "figure": "'The best beer bar Vienna'",
+     "label": "Vienna 2024, Bier Guide"
+    },
+    {
+     "figure": "100+ Listings",
+     "label": "outlets, incl. ORF, Kurier, Der Standard, Falstaff"
+    }
+   ],
+   "videos": [],
+   "images": [],
+   "deck": [],
+   "link": "",
+   "link_label": "",
+   "press_teaser": {
+    "link": "/work/gleis-garten/presse/",
+    "label": "All press coverage",
+    "count": 9
+   }
+  },
+  {
+   "type": "Conceptualisation",
+   "text": "The depot before, the concept and the hoardings.",
+   "stats": [
+    {
+     "figure": "2 years of construction",
+     "label": "Working closely together with the local government"
+    }
+   ],
+   "videos": [
+    {
+     "video": "/v/gg-aufbau.mp4",
+     "poster": "/v/gg-aufbau.jpg",
+     "caption": "Building Gleis//Garten"
+    }
+   ],
+   "images": [
+    {
+     "image": "/a/gg-concept-01.webp",
+     "caption": "Bird's-eye concept",
+     "cutout": false
+    },
+    {
+     "image": "/a/gg-concept-02.webp",
+     "caption": "The depot before",
+     "cutout": false
+    },
+    {
+     "image": "/a/gg-concept-04.webp",
+     "caption": "Blueprint hoarding",
+     "cutout": false
+    }
+   ],
+   "deck": [],
+   "reels_title": "Building Gleis//Garten",
+   "reels": [
+    {
+     "video": "/v/reels/gg-reel-01.mp4",
+     "poster": "/v/reels/gg-reel-01.jpg",
+     "caption": ""
+    },
+    {
+     "video": "/v/reels/gg-reel-02.mp4",
+     "poster": "/v/reels/gg-reel-02.jpg",
+     "caption": ""
+    },
+    {
+     "video": "/v/reels/gg-reel-03.mp4",
+     "poster": "/v/reels/gg-reel-03.jpg",
+     "caption": ""
+    },
+    {
+     "video": "/v/reels/gg-reel-04.mp4",
+     "poster": "/v/reels/gg-reel-04.jpg",
+     "caption": ""
+    },
+    {
+     "video": "/v/reels/gg-reel-05.mp4",
+     "poster": "/v/reels/gg-reel-05.jpg",
+     "caption": ""
+    },
+    {
+     "video": "/v/reels/gg-reel-06.mp4",
+     "poster": "/v/reels/gg-reel-06.jpg",
+     "caption": ""
+    },
+    {
+     "video": "/v/reels/gg-reel-07.mp4",
+     "poster": "/v/reels/gg-reel-07.jpg",
+     "caption": ""
+    },
+    {
+     "video": "/v/reels/gg-reel-08.mp4",
+     "poster": "/v/reels/gg-reel-08.jpg",
+     "caption": ""
+    },
+    {
+     "video": "/v/reels/gg-reel-09.mp4",
+     "poster": "/v/reels/gg-reel-09.jpg",
+     "caption": ""
+    },
+    {
+     "video": "/v/reels/gg-reel-10.mp4",
+     "poster": "/v/reels/gg-reel-10.jpg",
+     "caption": ""
+    },
+    {
+     "video": "/v/reels/gg-reel-11.mp4",
+     "poster": "/v/reels/gg-reel-11.jpg",
+     "caption": ""
+    },
+    {
+     "video": "/v/reels/gg-reel-12.mp4",
+     "poster": "/v/reels/gg-reel-12.jpg",
+     "caption": ""
+    },
+    {
+     "video": "/v/reels/gg-reel-13.mp4",
+     "poster": "/v/reels/gg-reel-13.jpg",
+     "caption": ""
+    }
+   ]
+  },
+  {
+   "type": "Website",
+   "text": "Designed and kept the website up to date.",
+   "stats": [],
+   "videos": [],
+   "images": [],
+   "deck": [],
+   "link_label": "",
+   "link": "",
+   "site_teaser": {
+    "image": "/a/gg-site-full.webp",
+    "url": "https://www.gleisgarten.com/",
+    "display": "gleisgarten.com",
+    "label": "Visit website"
+   }
+  }
+ ],
+ "tile": "#f2ead7",
+ "order": 3,
+ "card": "#0a220b",
+ "kind": "Food market & brewery",
+ "role": "Founding Partner & CMO",
+ "years": "2022–2026",
+ "credit": "",
+ "hero": {
+  "type": "video",
+  "video": "/v/gg-drone.mp4",
+  "poster": "/v/gg-drone.jpg"
+ },
+ "text_colour": "#f2ead7",
+ "seo_title": "Gleisgarten Wien – Gleis//Garten Branding | Felix Bollen",
+ "seo_description": "Gleis//Garten (Gleisgarten), Vienna's first food market in a historic tram depot in Meidling. Brand, art direction and marketing by co-founder Felix Bollen.",
+ "aka": [
+  "Gleisgarten",
+  "Gleis Garten",
+  "GleisGarten",
+  "Gleis//Garten Wien",
+  "Gleisgarten Wien",
+  "Gleisgarten Vienna",
+  "Gleisgarten Meidling"
+ ],
+ "aka_visible": true
 }

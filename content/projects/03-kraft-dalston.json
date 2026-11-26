@@ -107,6 +107,44 @@
  },
  "sections": [
   {
+   "case": {
+    "kicker": "Case study · Brand identity",
+    "title": "Kraft Dalston — from German Kraft to KRAFT",
+    "pdf": "/press/felix-bollen-kraft-dalston-brand-case-study.pdf",
+    "slides": [
+     {
+      "image": "/a/kd-cs/kd-cs-01.webp"
+     },
+     {
+      "image": "/a/kd-cs/kd-cs-02.webp"
+     },
+     {
+      "image": "/a/kd-cs/kd-cs-03.webp"
+     },
+     {
+      "image": "/a/kd-cs/kd-cs-04.webp"
+     },
+     {
+      "image": "/a/kd-cs/kd-cs-05.webp"
+     },
+     {
+      "image": "/a/kd-cs/kd-cs-06.webp"
+     },
+     {
+      "image": "/a/kd-cs/kd-cs-07.webp"
+     },
+     {
+      "image": "/a/kd-cs/kd-cs-08.webp"
+     },
+     {
+      "image": "/a/kd-cs/kd-cs-09.webp"
+     },
+     {
+      "image": "/a/kd-cs/kd-cs-10.webp"
+     }
+    ]
+   },
+   "more_label": "Further branding examples",
    "type": "Branding",
    "text": "Developed the trademarked logomark 'KRAFT' further into a modern, less 'traditional beer only' logo and adapted it to the modern space built within the design hotel Locke Dalston.",
    "stats": [],

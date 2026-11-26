@@ -187,11 +187,41 @@
    }
   },
   {
-   "type": "Conceptualisation",
-   "text": "The bar, brewery and rooftop inside the hotel.",
+   "type": "Photography",
+   "text": "Food, drink and people.",
    "stats": [],
    "videos": [],
    "images": [
+    {
+     "image": "/a/da-photo-01.webp",
+     "caption": "Cocktails",
+     "cutout": false
+    },
+    {
+     "image": "/a/da-photo-02.webp",
+     "caption": "Pints",
+     "cutout": false
+    },
+    {
+     "image": "/a/da-photo-04.webp",
+     "caption": "The team",
+     "cutout": false
+    },
+    {
+     "image": "/a/da-photo-05.webp",
+     "caption": "Le Bab at Kraft",
+     "cutout": false
+    },
+    {
+     "image": "/a/da-photo-06.webp",
+     "caption": "Launch night",
+     "cutout": false
+    },
+    {
+     "image": "/a/dl-p03.webp",
+     "caption": "Seoul in a Bottle launch",
+     "cutout": false
+    },
     {
      "image": "/a/da-concept-01.webp",
      "caption": "The bar in Kingsland Locke",
@@ -230,45 +260,6 @@
     {
      "image": "/a/da-concept-08.webp",
      "caption": "Copper kettle and tiled column",
-     "cutout": false
-    }
-   ],
-   "deck": []
-  },
-  {
-   "type": "Photography",
-   "text": "Food, drink and people.",
-   "stats": [],
-   "videos": [],
-   "images": [
-    {
-     "image": "/a/da-photo-01.webp",
-     "caption": "Cocktails",
-     "cutout": false
-    },
-    {
-     "image": "/a/da-photo-02.webp",
-     "caption": "Pints",
-     "cutout": false
-    },
-    {
-     "image": "/a/da-photo-04.webp",
-     "caption": "The team",
-     "cutout": false
-    },
-    {
-     "image": "/a/da-photo-05.webp",
-     "caption": "Le Bab at Kraft",
-     "cutout": false
-    },
-    {
-     "image": "/a/da-photo-06.webp",
-     "caption": "Launch night",
-     "cutout": false
-    },
-    {
-     "image": "/a/dl-p03.webp",
-     "caption": "Seoul in a Bottle launch",
      "cutout": false
     }
    ],

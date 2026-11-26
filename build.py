@@ -82,7 +82,7 @@ def header(ov=False, lt=False):
 <nav><a href="/#work">Work</a><a class="hm" href="/#about">About</a><a href="/#contact">Contact</a></nav></header>'''
 
 FOOT = f'''<footer class="ft"><div class="r"><a href="/" aria-label="Home">{FBS}</a><span>© 2026 Felix Bollen. <a href="/services/">Freelance graphic designer, art director & marketing consultant</a>, Berlin & London · <a href="/de/" hreflang="de">Deutsch</a></span>
-<span><a href="mailto:{esc(EMAIL)}">{esc(EMAIL)}</a> · <button id="imp">Imprint & privacy</button></span></div></footer>
+<span><a href="mailto:{esc(EMAIL)}">{esc(EMAIL)}</a> · {"".join(f'<a href="{esc(u)}" rel="me noopener" target="_blank">LinkedIn</a> · ' for u in HOME.get("same_as", []) if "linkedin" in u)}<button id="imp">Imprint & privacy</button></span></div></footer>
 <dialog id="impd"><h3>Imprint</h3><p><b>Felix Bollen</b><br>Felix Bollen Graphic Design<br>Richmond, London, United Kingdom<br>{esc(EMAIL)}</p>
 <h3 style="margin-top:20px">Privacy</h3><p>No cookies, trackers or analytics. Fonts are hosted on this site. The Gleis//Garten page embeds a Vimeo video. Messages from the contact form are delivered by Netlify and only used to reply to you.</p>
 <p>Dufte Berlin logo, animation and brand identity © Plusminus Studio. Gleis//Garten interior photographs © Stefan Joham. German Kraft photography in part from germankraft.com. TV clips © the respective broadcasters.</p><form method="dialog" style="display:block"><button>Close</button></form></dialog>
@@ -454,7 +454,7 @@ def md(t): return re.sub(r"\s+", " ", str(t or "")).strip()
 L = ["# Felix Bollen", "", "> Felix Bollen is a freelance graphic designer, art director and marketing consultant based in Berlin and London. "
      "He co-founded German Kraft Brewery (London, 2017) and Gleis//Garten (also written Gleisgarten or Gleis Garten), Vienna's first food market, "
      "and builds brands from scratch for hospitality, drinks, culture and small businesses. Available for freelance, part-time and remote work in English and German.", "",
-     f"- Website: {seo.SITE}/", f"- Contact: {EMAIL} or {seo.SITE}/#contact", "- Based in: Berlin, Germany and London, United Kingdom (works remotely)",
+     f"- Website: {seo.SITE}/", "- LinkedIn: https://www.linkedin.com/in/felix-bollen-426014123/", f"- Contact: {EMAIL} or {seo.SITE}/#contact", "- Based in: Berlin, Germany and London, United Kingdom (works remotely)",
      "- Disciplines: Marketing & Sales, Art Direction, Graphic Design", "- Education: BA (Hons) Graphic & Media Design, UAL London College of Communication",
      "- Languages: German (native), English (fluent)", "", "## Services", "", f"- [Services (English)]({seo.SITE}/services/): " + "; ".join(a for a, _ in SV["en"]["services"]),
      f"- [Leistungen (Deutsch)]({seo.SITE}/de/): freiberuflicher Grafikdesigner, Art Director und Marketing-Berater in Berlin", "", "## Work", ""]

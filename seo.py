@@ -115,7 +115,9 @@ def project_ld(p, media=""):
     url = f"{SITE}/work/{p['slug']}/"
     typ, city, cc = VENUE.get(p["slug"], ("Organization", p.get("city"), None))
     imgs = project_images(p)
-    subj = {"@type": typ, "name": p["name"]}
+    # Venues are described as Organization (+ additionalType) so Google does not treat this portfolio page as the venue's own business listing.
+    subj = {"@type": "MusicAlbum" if typ == "MusicAlbum" else "Organization", "name": p["name"]}
+    if typ not in ("MusicAlbum", "Organization"): subj["additionalType"] = "https://schema.org/" + typ
     if p.get("aka"): subj["alternateName"] = p["aka"]
     if typ == "MusicAlbum":
         subj.update({"name": "Baralku", "byArtist": {"@type": "MusicGroup", "name": "Emancipator"}, "image": ab(imgs[0][0], media) if imgs else None})
